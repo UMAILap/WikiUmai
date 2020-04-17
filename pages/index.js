@@ -1,9 +1,13 @@
 import React from 'react';
 
-import { Layout } from 'containers';
+import { Layout, Home } from 'containers';
 
 function Home() {
-  return <Layout>Hola WikiUmai</Layout>;
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
 
 export default Home;
