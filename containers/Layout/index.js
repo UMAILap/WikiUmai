@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Children } from 'react';
 
-//  Importar Header y  footer
+import { Header, Footer } from 'components';
 
-function Layout() {
-  return 'Layout';
+function Layout({ children }) {
+  return (
+    <>
+      <Header />
+      {/* ABRE WRAPPER */}
+      {children}
+      {/* CIERRA WRAPPER */}
+      <Footer />
+    </>
+  );
 }
 
 export default Layout;
