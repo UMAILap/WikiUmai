@@ -1,14 +1,15 @@
 import React from 'react';
 
 import { Header, Footer } from 'components';
+import {Wrapper} from './styles';
 
 function Layout({ children }) {
   return (
     <>
       <Header />
-      {/* ABRE WRAPPER */}
-      {children}
-      {/* CIERRA WRAPPER */}
+      <Wrapper>
+        {children}
+      </Wrapper>
       <Footer />
     </>
   );
