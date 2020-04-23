@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-`;
-export const Container = styled.footer`
-  background-color: #fff;
-`;
+  display: flex;
+  justify-content: space-between;
+  `;
+
 export const ContainerFooter = styled.div`
-  width: 50%;
-  float: left;
   img {
-    float: right;
     margin-left: 20px;
   }
 `;
-export const Texto = styled.p`
+export const Texto = styled.a`
   font-size: 18px;
+  color: #75757575;
 `;
