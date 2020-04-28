@@ -28,13 +28,21 @@ export const User = styled.img`
   
 `;
 export const ContainerSearch = styled.div`
-  justify-content: center;
+  justify-content: left;
   width: 100%;
   display: flex;
   input{
     border: none;
     padding: 10px;
-    width: 70%;
-    border-radius: 10px;
+    width: 50%;
+    border-radius: 20px;
   }
+`;
+
+export const ContainerBotones = styled.div`
+  
+`;
+
+export const Link = styled.a`
+  
 `;

@@ -7,7 +7,9 @@ import {
   Logo,
   ContainerUser, 
   Notification, 
-  User
+  User,
+  ContainerBotones,
+  Link
 } from './styles';
 
 function Header() {
@@ -23,6 +25,11 @@ function Header() {
               name="search"
               placeholder="Buscar contenido (L)"></input>
         </ContainerSearch>
+        <ContainerBotones>
+          <Link>
+            Planetas
+          </Link>
+        </ContainerBotones>
         <ContainerUser>
           <Notification src="./notificacion-header.png"/>
           <User src="./perfil-header.png"/>
