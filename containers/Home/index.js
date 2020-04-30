@@ -5,8 +5,8 @@ import {Container, Wrapper, Banner} from './styles';
 function HomeContainer() {
   return (
     <Container>
+      <Banner  src="./fondo-main.png"/>
       <Wrapper>
-        Hola Umai lpm
       </Wrapper>
     </Container>
   );

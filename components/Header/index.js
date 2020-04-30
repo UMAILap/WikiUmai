@@ -5,11 +5,11 @@ import {
   Wrapper,
   ContainerSearch,
   Logo,
-  ContainerUser, 
-  Notification, 
+  ContainerUser,
+  Notification,
   User,
   ContainerBotones,
-  Link
+  Link,
 } from './styles';
 
 function Header() {
@@ -20,19 +20,19 @@ function Header() {
           <img src="./logo.png" />
         </Logo>
         <ContainerSearch>
-            <input
-              type="text"
-              name="search"
-              placeholder="Buscar contenido (L)"></input>
+          <input
+            type="text"
+            name="search"
+            placeholder="Buscar contenido (L)"></input><i class="fas fa-search"></i>
         </ContainerSearch>
         <ContainerBotones>
-          <Link>
-            Planetas
-          </Link>
+          <Link>Planetas</Link>
+          <Link>Foro</Link>
+          <Link>Ayudas y reglas</Link>
         </ContainerBotones>
         <ContainerUser>
-          <Notification src="./notificacion-header.png"/>
-          <User src="./perfil-header.png"/>
+          <Notification src="./notificacion-header.png" />
+          <User src="./perfil-header.png" />
         </ContainerUser>
       </Wrapper>
     </Container>
