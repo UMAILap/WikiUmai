@@ -1,12 +1,17 @@
 import React from 'react';
 
-import {Container, Wrapper, Banner} from './styles';
+import {Container, Wrapper, Banner, Titulos, Textos} from './styles';
 
 function HomeContainer() {
   return (
     <Container>
-      <Banner  src="./fondo-main.png"/>
       <Wrapper>
+        <Titulos>
+          ¡Bienvenido, Facundo Brahim!
+        </Titulos>
+        <Textos>
+          El universo Transmedia de la Escuela de Comunicación y Diseño Multimedial de Universidad Maimonides es un proyecto colaborativo libre de derechos.
+        </Textos>
       </Wrapper>
     </Container>
   );

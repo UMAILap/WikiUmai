@@ -23,7 +23,7 @@ function Header() {
           <input
             type="text"
             name="search"
-            placeholder="Buscar contenido (L)"></input><i class="fas fa-search"></i>
+            placeholder="Buscar contenido (L)"></input><i className="fas fa-search"></i>
         </ContainerSearch>
         <ContainerBotones>
           <Link>Planetas</Link>
