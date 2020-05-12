@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Header, Footer } from 'components';
-import { Wrapper, Container } from './styles';
+import { Container } from './styles';
 
 function Layout({ children }) {
   return (
     <Container>
       <Header />
-      {children}
+        {children}
       <Footer />
     </Container>
   );

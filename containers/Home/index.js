@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Container, Wrapper, Banner, Titulos, Textos } from './styles';
+import { Container, Banner, Titulos, Textos } from './styles';
+import { Wrapper } from 'components';
 
 function HomeContainer() {
   return (

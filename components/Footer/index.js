@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Wrapper, Texto, ContainerFooter } from './styles';
+import { Texto, ContainerFooter, Imagenes} from './styles';
+import { Wrapper } from 'components';
 
 function Footer() {
   return (
@@ -11,10 +12,10 @@ function Footer() {
             de Multimedia. <br/> Escuela de Comunicación y Diseño Multimedial,
             Universidad Maimónides.
           </Texto>
-        </ContainerFooter>
-        <ContainerFooter>
-          <img src="./creative_commons.png" />
-          <img src="./logo_footer.png" />
+          <Imagenes>
+            <img src="./creative_commons.png" />
+            <img src="./logo_footer.png" />
+          </Imagenes>
         </ContainerFooter>
       </Wrapper>
   );
