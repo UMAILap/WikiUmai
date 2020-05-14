@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
-export const ContainerFooter = styled.div`
+export const Container = styled.header`
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height:100px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-self: flex-end;
+`;
+
+
+export const ContainerFooter = styled.footer`
   width: 100%;
   display: flex;
   grid-template-columns: 50% 50%;

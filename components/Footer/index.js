@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Texto, ContainerFooter, Imagenes} from './styles';
+import {Container, Texto, ContainerFooter, Imagenes} from './styles';
 import { Wrapper } from 'components';
 
 function Footer() {
   return (
+    <Container>
       <Wrapper>
         <ContainerFooter>
           <Texto>
@@ -16,8 +17,10 @@ function Footer() {
             <img src="./creative_commons.png" />
             <img src="./logo_footer.png" />
           </Imagenes>
-        </ContainerFooter>
-      </Wrapper>
+          </ContainerFooter>
+          </Wrapper>
+        </Container>
+      
   );
 }
 
