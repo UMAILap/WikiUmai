@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints } from 'constants';
+import { breakpoints, leerColor, colores } from 'constants';
 
 export const ContainerMain = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -23,12 +23,11 @@ export const SectorTitulos = styled.div`
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
-  background-color: #ffbd69;
+  background-color: ${leerColor(colores.naranja)};
   @media (min-width: 376px) {
     background-image: url(./fondo-main.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-color: #ffbd69;
   }
 `;
 export const Banner = styled.img;
