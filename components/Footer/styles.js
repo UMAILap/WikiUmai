@@ -11,16 +11,36 @@ export const Container = styled.footer`
 
 
 export const ContainerFooter = styled.div`
+  grid-template-columns: 100%;
+
+  @media (min-width: 376px) {
   width: 100%;
-  display: flex;
+  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   justify-content: space-between;
+  }
 `;
 export const Texto = styled.a`
-  font-size: 18px;
+ font-size: 8px;
   color: #75757575;
+  @media (min-width: 376px) {
+  font-size: 18px;
+  }
 `;
 export const Imagenes = styled.div`
-  
+display:flex;
+justify-content: space-between;
+    img{
+      width:25%;
+    }
+    @media (min-width: 376px) {
+      img{
+      width:15%;
+      margin:0 10px;
+    }
+    display:flex;
+    justify-content: flex-end;
+
+    }
 `;

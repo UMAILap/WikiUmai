@@ -15,8 +15,9 @@ export const SectorTitulos = styled.div`
     align-items: center;  
   }
   width: 100%;
+  display:grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 150px;
+  grid-template-rows: 35% 150px;
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
@@ -31,19 +32,23 @@ export const ContainerBanner = styled.div`
 export const Banner = styled.img;
 
 export const Titulos = styled.h1`
-  font-size: 35px;
+  font-size: 20px;  
   font-style: bold;
   color: #381460;
-  padding-top:50px;
+  padding-top:30px;
   font-weight: bolder;
   @media (min-width: 376px) {
-    font-size: 27px;  
+    font-size: 35px;
   }
 `;
 export const Textos = styled.p`
-  font-size: 17px;
+  font-size: 14px;
   color: #381460;
   margin: 3% 0%;
+  line-height:24px;
+  @media (min-width: 376px) {
+  font-size: 17px;
+  }
 `;
 
 export const ContainerUniversos = styled.div`
@@ -52,14 +57,24 @@ export const ContainerUniversos = styled.div`
 
 export const Slider = styled.div`
   display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  justify-content: space-around;
+ 
+
+@media (min-width: 376px) {
+  display: grid;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
   grid-template-rows: 100%;
   justify-content: space-around;
-
+}
 `;
 
 export const Card = styled.div`
-  background-color: #ececec;
+ &:nth-child(n+4) {
+  display:none;
+  }
+    background-color: #ececec;
     border-radius: 10px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -67,6 +82,11 @@ export const Card = styled.div`
     justify-content: center;
     text-align: center;
     padding: 3%;
+    @media (min-width: 376px) {
+      &:nth-child(n+3) {
+      display:block;
+  }
+    }
 `;
 
 export const CardImg = styled.img`
@@ -76,23 +96,40 @@ export const CardImg = styled.img`
 `;
 
 export const TituloCard = styled.h2`
-  font-size: 23px;
+  font-size: 15px;
   color: #4d1b84;
   margin: 3% 0%;
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: bolder;
+@media (min-width: 376px) {
+  font-size: 23px;
+}
 `;
 
 export const LineaDeTiempoBoton = styled.a`
-border-radius: 20px;
-background-color:#fe346e;
-padding: 15px 40px;
-color: #fff;
-text-transform: uppercase;
-  font-weight: bolder;
-  margin: 30px auto;
+    border-radius: 20px;
+    padding: 10px 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 30px auto;
+    display: grid;
+    width: 85%;
+    text-align: center;
+    background-color:#FE346E;
+    font-size:13px;
+
+    @media (min-width: 376px) {
+    border-radius: 20px;
+    padding: 15px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 30px auto;
     display: grid;
     width: 25%;
     text-align: center;
+    }
+
 `;
