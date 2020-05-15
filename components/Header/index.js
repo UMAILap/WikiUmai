@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, ContainerHeader, ContainerSearch, Logo, ContainerUser, Notification, User, ContainerBotones, Link } from './styles';
+import { Container, ContainerHeader, ContainerSearch, Search, MenuHamburguesa, Logo, ContainerUser, Notification, User, ContainerBotones, Link } from './styles';
 import { Wrapper } from 'components';
 
 function Header() {
@@ -8,6 +8,9 @@ function Header() {
     <Container>
       <Wrapper>
         <ContainerHeader>
+          <MenuHamburguesa>
+            <img src="./menu.svg"/>
+          </MenuHamburguesa>
           <Logo>
             <img src="./logo.png" />
           </Logo>
@@ -24,6 +27,9 @@ function Header() {
             <Link>Ayudas y reglas</Link>
           </ContainerBotones>
           <ContainerUser>
+            <Search>
+              <img src="./search.png" />
+            </Search>
             <Notification src="./notificacion-header.png" />
             <User src="./perfil-header.png" />
           </ContainerUser>

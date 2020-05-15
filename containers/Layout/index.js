@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Header, Footer } from 'components';
-import { Container } from './styles';
+import { ContainerBody } from './styles';
 
 function Layout({ children }) {
   return (
-    <Container>
+    <ContainerBody>
       <Header />
         {children}
       <Footer />
-    </Container>
+    </ContainerBody>
   );
 }
 

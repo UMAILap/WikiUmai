@@ -9,12 +9,27 @@ export const Container = styled.header`
 `;
 
 export const ContainerHeader = styled.header`
+  @media (min-width: 376px){
+    display: grid;
+    grid-template-columns: 10% 35% 45% 10%;
+  }
   display: grid;
-  grid-template-columns: 10% 35% 45% 10%;
+  grid-template-columns: 15% 55% 30%;
   grid-template-rows: 1fr;
   align-items: center;
 `;
-export const Logo = styled.h1``;
+export const Logo = styled.h1`
+  img{
+    max-width: 60%;
+  }
+  
+  @media (min-width: 376px) {
+    max-width: 100%;
+    img{
+      max-width: 100%;
+    }
+  }
+`;
 export const ContainerUser = styled.div`
   display: flex;
   justify-content: space-around;
@@ -25,27 +40,52 @@ export const Notification = styled.img`
 `;
 
 export const User = styled.img`
-
-
+  display: none;
+  @media (min-width: 376px) {
+    display: block;
+  }
+`;
+export const MenuHamburguesa = styled.h1`
+  display: block;
+  max-width: 60%;
+  @media (min-width: 376px) {
+    display: none;
+  }
 `;
 export const ContainerSearch = styled.div`
-  justify-content: left;
-  width: 100%;
-  display: flex;
-  input {
-    border: none;
-    padding: 10px 20px;
-    width: 95%;
-    border-radius: 20px;
-    height: fit-content;
+  @media (min-width: 376px) {
+    justify-content: left;
+    width: 100%;
+    display: flex;
+    input {
+      border: none;
+      padding: 10px 20px;
+      width: 95%;
+      border-radius: 20px;
+      height: fit-content;
+    } 
+  }
+  display: none;
+`;
+export const Search = styled.a`
+  @media (min-width: 376px) {
+    display: none;
+  }
+  max-width: 30%;
+  display: block;
+  img{
+    max-width: 100%;
   }
 `;
 
 export const ContainerBotones = styled.div`
-width:80%;
-justify-content: space-around;
-display: flex;
-height: fit-content;
+  @media (min-width: 376px) {
+    width:80%;
+    justify-content: space-around;
+    display: flex;
+    height: fit-content;  
+  }
+  display: none;
 `;
 
 export const Link = styled.a`

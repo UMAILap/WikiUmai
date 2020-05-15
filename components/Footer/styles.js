@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
+export const Container = styled.footer`
   background-color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -10,7 +10,7 @@ export const Container = styled.header`
 `;
 
 
-export const ContainerFooter = styled.footer`
+export const ContainerFooter = styled.div`
   width: 100%;
   display: flex;
   grid-template-columns: 50% 50%;

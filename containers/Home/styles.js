@@ -1,20 +1,32 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  background-image: url(./fondo-main.png);
-  background-repeat: no-repeat;
+export const ContainerMain = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 export const SectorTitulos = styled.div`
-  max-width: 1440px;
+  @media (min-width: 376px) {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 25% 150px;
+    align-items: center;  
+  }
   width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 100%;
   grid-template-rows: 25% 150px;
-  align-items: center;
-  
+`;
+export const ContainerBanner = styled.div`
+  background-image: none;
+  background-color: #ffbd69;
+  @media (min-width: 376px) {
+    background-image: url(./fondo-main.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffbd69;
+  }
 `;
 export const Banner = styled.img;
 
@@ -24,6 +36,9 @@ export const Titulos = styled.h1`
   color: #381460;
   padding-top:50px;
   font-weight: bolder;
+  @media (min-width: 376px) {
+    font-size: 27px;  
+  }
 `;
 export const Textos = styled.p`
   font-size: 17px;
@@ -44,8 +59,7 @@ export const Slider = styled.div`
 `;
 
 export const Card = styled.div`
-
-background-color: #ececec;
+  background-color: #ececec;
     border-radius: 10px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -53,8 +67,6 @@ background-color: #ececec;
     justify-content: center;
     text-align: center;
     padding: 3%;
-
-
 `;
 
 export const CardImg = styled.img`
@@ -72,7 +84,6 @@ export const TituloCard = styled.h2`
   font-weight: bolder;
 `;
 
-
 export const LineaDeTiempoBoton = styled.a`
 border-radius: 20px;
 background-color:#fe346e;
@@ -84,7 +95,4 @@ text-transform: uppercase;
     display: grid;
     width: 25%;
     text-align: center;
-
-
 `;
-
