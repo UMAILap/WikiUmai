@@ -36,7 +36,7 @@ justify-content: space-between;
     }
     @media (min-width: 376px) {
       img{
-      width:15%;
+      width:16%;
       margin:0 10px;
     }
     display:flex;
