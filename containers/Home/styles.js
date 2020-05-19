@@ -8,24 +8,22 @@ export const ContainerMain = styled.div`
 
 export const SectorTitulos = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 25% 150px;
+    width: 40%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   width: 100%;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 35% 150px;
+  grid-template-rows: 35% 150px; */
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
   @media (min-width: 376px) {
     background-image: url(./fondo-main.png);
+    height: 26vh;
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -40,6 +38,7 @@ export const Titulos = styled.h1`
   font-weight: bolder;
   @media (min-width: 376px) {
     font-size: 35px;
+    align-self: start;
   }
 `;
 export const Textos = styled.p`
@@ -51,9 +50,17 @@ export const Textos = styled.p`
     font-size: 17px;
   }
 `;
+export const Container = styled.div`
+  width: 100%;
+  flex-direction: column;
+`;
+export const ContainerUniversos = styled.div`
+  width: 100%;
+`;
 
-export const ContainerUniversos = styled.div``;
+export const ContainerSlider = styled.div`
 
+`;
 export const Slider = styled.div`
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -84,18 +91,19 @@ export const Card = styled.div`
     &:nth-child(n + 3) {
       display: block;
     }
+    width: 80%;
   }
 `;
 
 export const CardImg = styled.img`
   border-radius: 10px;
-  width: 80%;
+  width: 100%;
 `;
 
 export const TituloCard = styled.h2`
   font-size: 15px;
   color: #4d1b84;
-  margin: 3% 0%;
+  padding: 10% 0;
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: bolder;

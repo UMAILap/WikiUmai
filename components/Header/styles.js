@@ -10,6 +10,7 @@ export const Container = styled.header`
 
 export const ContainerHeader = styled.header`
   @media (min-width: 376px){
+    width: 100%;
     display: grid;
     grid-template-columns: 10% 35% 45% 10%;
   }
