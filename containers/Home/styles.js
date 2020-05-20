@@ -7,26 +7,41 @@ export const ContainerMain = styled.div`
 `;
 
 export const SectorTitulos = styled.div`
+width:100%;
   @media (min-width: ${breakpoints.mobile}) {
-    width: 40%;
+    width: 95%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 26vh;
+    justify-content: center;
   }
-  width: 100%;
   /* display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 35% 150px; */
+
+  @media (min-width: ${breakpoints.tablet}){
+    width: 95%;
+  }
+
+  @media (min-width: ${breakpoints.notebook}){
+    width: 40%;
+  }
+
+
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
-  @media (min-width: 376px) {
-    background-image: url(./fondo-main.png);
+  @media (min-width: ${breakpoints.mobile}) {
+    
     height: 26vh;
     background-repeat: no-repeat;
     background-position: right;
   }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    background-image: url(./fondo-main.png);  }
 `;
 export const Banner = styled.img;
 
@@ -53,6 +68,7 @@ export const Textos = styled.p`
 export const Container = styled.div`
   width: 100%;
   flex-direction: column;
+ 
 `;
 export const ContainerUniversos = styled.div`
   width: 100%;
@@ -112,6 +128,11 @@ export const TituloCard = styled.h2`
   }
 `;
 
+
+export const ContainerBotonSlider = styled.div`
+  padding: 20px 0px;
+`;
+
 export const LineaDeTiempoBoton = styled.a`
   border-radius: 20px;
   padding: 10px 5px;
@@ -125,7 +146,7 @@ export const LineaDeTiempoBoton = styled.a`
   background-color: #fe346e;
   font-size: 13px;
 
-  @media (min-width: 376px) {
+  @media (min-width: ${breakpoints.mobile})  {
     border-radius: 20px;
     padding: 15px 40px;
     color: #fff;
@@ -135,5 +156,14 @@ export const LineaDeTiempoBoton = styled.a`
     display: grid;
     width: 25%;
     text-align: center;
+  }
+
+
+  @media (min-width: ${breakpoints.tablet})  {
+    width: 50%;
+  }
+
+  @media (min-width: ${breakpoints.notebook})  {
+    width: 25%;
   }
 `;

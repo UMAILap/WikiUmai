@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 
 
-import { ContainerMain, ContainerBanner, SectorTitulos, Titulos, Textos, Container, ContainerUniversos, ContainerSlider, Card, CardImg, TituloCard, LineaDeTiempoBoton } from './styles';
+import { ContainerMain, ContainerBanner, SectorTitulos, Titulos, Textos, Container, ContainerUniversos, ContainerSlider, Card, CardImg, TituloCard, ContainerBotonSlider, LineaDeTiempoBoton } from './styles';
 import { Wrapper } from 'components';
 
 function HomeContainer() {
@@ -85,8 +85,10 @@ function HomeContainer() {
               </div>
             </Slider> 
           </ContainerSlider>
-
+          
+        <ContainerBotonSlider>
           <LineaDeTiempoBoton>Ver Linea de tiempo universal</LineaDeTiempoBoton>
+          </ContainerBotonSlider>
         </Container>
 
         </Wrapper>

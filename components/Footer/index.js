@@ -10,7 +10,7 @@ function Footer() {
         <ContainerFooter>
           <Texto>
             Este sitio ha sido diseñado y desarrollado por alumnos de la Carrera
-            de Multimedia. <br/> Escuela de Comunicación y Diseño Multimedial,
+            de Multimedia. Escuela de Comunicación y Diseño Multimedial,
             Universidad Maimónides.
           </Texto>
           <Imagenes>

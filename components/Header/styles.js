@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { breakpoints, leerColor, colores } from 'constants';
+
 
 export const Container = styled.header`
   background-color: #381460;
@@ -9,55 +11,113 @@ export const Container = styled.header`
 `;
 
 export const ContainerHeader = styled.header`
-  @media (min-width: 376px){
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 35% 45% 10%;
-  }
+
   display: grid;
   grid-template-columns: 15% 55% 30%;
   grid-template-rows: 1fr;
   align-items: center;
+
+  @media (min-width: ${breakpoints.mobile}) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 35% 45% 10%;
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    width: 100%;
+    grid-template-columns: 10% 60% 30%;
+
+  }
+  
+  @media (min-width: ${breakpoints.laptopL}) {
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 35% 45% 10%;
+  }
 `;
+
 export const Logo = styled.h1`
   img{
     max-width: 60%;
   }
   
-  @media (min-width: 376px) {
+  @media (min-width: ${breakpoints.mobile}) {
     max-width: 100%;
     img{
       max-width: 100%;
     }
   }
+
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 80%;
+    
+  }
+  
 `;
 export const ContainerUser = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    justify-content: flex-end;
+    
+  }
+  
 `;
+
+
 export const Notification = styled.img`
 
+@media (min-width: ${breakpoints.laptopL}){
+        width: 20%;
+ }
 `;
 
 export const User = styled.img`
   display: none;
-  @media (min-width: 376px) {
+  @media (min-width: ${breakpoints.mobile}){
     display: block;
   }
+
+  @media (min-width: ${breakpoints.tablet}){
+        display:none;
+ }
+
+  @media (min-width: ${breakpoints.laptopL}){
+        width: 30%;
+        display:block;
+ }
 `;
 export const MenuHamburguesa = styled.h1`
   display: block;
   max-width: 60%;
-  @media (min-width: 376px) {
-    display: none;
+  @media (min-width: ${breakpoints.mobile}) {
+    display: block;
   }
+
+  @media (min-width: ${breakpoints.tablet}) {
+   display:block;
+   img{
+     width: 95%;
+   }
+
+  }
+
+  @media (min-width: ${breakpoints.notebook}){
+    display:none;
+  }
+
 `;
 export const ContainerSearch = styled.div`
-  @media (min-width: 376px) {
+    display: none;
+
+  @media (min-width: ${breakpoints.mobile}) {
     justify-content: left;
     width: 100%;
-    display: flex;
     input {
       border: none;
       padding: 10px 20px;
@@ -65,28 +125,79 @@ export const ContainerSearch = styled.div`
       border-radius: 20px;
       height: fit-content;
     } 
-  }
-  display: none;
-`;
-export const Search = styled.a`
-  @media (min-width: 376px) {
     display: none;
   }
-  max-width: 30%;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    display:none;
+  
+  }
+  @media (min-width: ${breakpoints.notebook}){
+    display: flex;
+
+  }
+  
+
+  @media (min-width: ${breakpoints.laptopL}) {
+    justify-content: start;
+    input {
+      width: 90%;
+      display:block;
+
+    }
+  }
+
+ 
+
+  
+`;
+export const Search = styled.a`
+
+max-width: 30%;
   display: block;
   img{
     max-width: 100%;
   }
+
+  @media (min-width: ${breakpoints.mobile}) {
+    display: block;
+  }
+ 
+  @media (min-width: ${breakpoints.tablet}) {
+   display:block;
+   img{
+    max-width: 50%;
+  }
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+   display:none;
+  }
+
+ 
 `;
 
 export const ContainerBotones = styled.div`
+  display: none;
+
   @media (min-width: 376px) {
     width:80%;
     justify-content: space-around;
     display: flex;
     height: fit-content;  
   }
-  display: none;
+  
+
+  @media (min-width: ${breakpoints.tablet}) {
+   display:none;
+  }
+
+  @media (min-width: ${breakpoints.laptopL}) {
+   display:block;
+  }
+ 
+
+
 `;
 
 export const Link = styled.a`
