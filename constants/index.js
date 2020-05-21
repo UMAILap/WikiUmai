@@ -30,4 +30,5 @@ export const leerColor = color => color.hsl().string();
 export const colores = {
   blanco: Color.rgb(255, 255, 255),
   naranja: Color.rgb(255, 189, 105),
+  violeta: Color.rgb(77, 27, 132),
 };

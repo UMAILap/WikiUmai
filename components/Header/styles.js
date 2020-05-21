@@ -29,13 +29,13 @@ export const ContainerHeader = styled.header`
 
   }
   
-  @media (min-width: ${breakpoints.laptopL}) {
+  @media (min-width: ${breakpoints.laptop}) {
+    grid-template-columns: 10% 35% 45% 10%;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 35% 45% 10%;
   }
 `;
 
@@ -87,7 +87,7 @@ export const User = styled.img`
         display:none;
  }
 
-  @media (min-width: ${breakpoints.laptopL}){
+  @media (min-width: ${breakpoints.laptop}){
         width: 30%;
         display:block;
  }
@@ -103,11 +103,11 @@ export const MenuHamburguesa = styled.h1`
    display:block;
    img{
      width: 95%;
-   }
+   }    
 
   }
 
-  @media (min-width: ${breakpoints.notebook}){
+  @media (min-width: ${breakpoints.laptop}){
     display:none;
   }
 
@@ -118,6 +118,7 @@ export const ContainerSearch = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
     justify-content: left;
     width: 100%;
+    display: none;
     input {
       border: none;
       padding: 10px 20px;
@@ -125,12 +126,26 @@ export const ContainerSearch = styled.div`
       border-radius: 20px;
       height: fit-content;
     } 
-    display: none;
   }
 
   @media (min-width: ${breakpoints.tablet}) {
     display:none;
+    justify-content:center;
   
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    justify-content: center;
+    width: 100%;
+    display: block;
+    input {
+      border: none;
+      display: none;
+      padding: 10px 20px;
+      width: 95%;
+      border-radius: 20px;
+      height: fit-content;
+    } 
+
   }
   @media (min-width: ${breakpoints.notebook}){
     display: flex;
@@ -138,18 +153,14 @@ export const ContainerSearch = styled.div`
   }
   
 
-  @media (min-width: ${breakpoints.laptopL}) {
+  @media (min-width: ${breakpoints.laptop}) {
     justify-content: start;
+    display:block;
     input {
       width: 90%;
       display:block;
-
     }
   }
-
- 
-
-  
 `;
 export const Search = styled.a`
 
@@ -170,7 +181,7 @@ max-width: 30%;
   }
   }
 
-  @media (min-width: ${breakpoints.notebook}) {
+  @media (min-width: ${breakpoints.laptop}) {
    display:none;
   }
 
@@ -192,18 +203,20 @@ export const ContainerBotones = styled.div`
    display:none;
   }
 
-  @media (min-width: ${breakpoints.laptopL}) {
+  @media (min-width: ${breakpoints.laptop}) {
    display:block;
+   width:100%;
   }
- 
-
-
 `;
 
 export const Link = styled.a`
+@media (min-width: ${breakpoints.laptop}) {
 border-radius: 20px;
 background-color:#4d1b84;
-padding: 10px 40px;
+padding: 10px 25px;
 color: #fff;
-
+}
+@media (min-width: ${breakpoints.laptopL}) {
+padding: 10px 40px;
+}
 `;
