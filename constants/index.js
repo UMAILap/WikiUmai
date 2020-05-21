@@ -31,4 +31,6 @@ export const colores = {
   blanco: Color.rgb(255, 255, 255),
   naranja: Color.rgb(255, 189, 105),
   violeta: Color.rgb(77, 27, 132),
+  rosa: Color.rgb(254, 52, 110),
+  gris: Color.rgb(236, 236, 236)
 };
