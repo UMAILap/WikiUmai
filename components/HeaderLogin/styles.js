@@ -7,20 +7,17 @@ export const Container = styled.header`
   padding-bottom: 20px;
   max-height:100px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: none;
   @media (min-width: ${breakpoints.laptop}) {
     display: grid;
   }
-
 `;
 
 export const ContainerHeader = styled.header`
-
   display: grid;
   grid-template-columns: 15% 55% 30%;
   grid-template-rows: 1fr;
   align-items: center;
-
+  display: none;
   @media (min-width: ${breakpoints.mobile}) {
     width: 100%;
     grid-template-columns: 10% 35% 45% 10%;
@@ -29,7 +26,6 @@ export const ContainerHeader = styled.header`
   @media (min-width: ${breakpoints.tablet}) {
     width: 100%;
     grid-template-columns: 10% 60% 30%;
-
   }
   
   @media (min-width: ${breakpoints.laptop}) {
@@ -50,9 +46,8 @@ export const Logo = styled.h1`
     display:block;
     img{
       max-width: 60%;
+    }
   }
-  }
-  
   
   @media (min-width: ${breakpoints.mobile}) {
     max-width: 100%;
@@ -65,5 +60,4 @@ export const Logo = styled.h1`
     width: 80%;
     
   }
-  
 `;
