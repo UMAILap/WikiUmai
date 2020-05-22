@@ -37,7 +37,10 @@ export const Texto = styled.a`
   font-size: 8px;
   color: #fff;
   @media (min-width:${breakpoints.mobile}) {
+    width:85%;
     font-size: 11px;
+    display:flex;
+    justify-self:center;
   }
 
   
@@ -51,7 +54,7 @@ export const Imagenes = styled.div`
   }
   @media (min-width:${breakpoints.mobile}) {
     img {
-      width: 10%;
+    width: 10%;
     margin: 10px 10px;
     }
   }

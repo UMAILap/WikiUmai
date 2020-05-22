@@ -7,6 +7,11 @@ export const Container = styled.header`
   padding-bottom: 20px;
   max-height:100px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: none;
+  @media (min-width: ${breakpoints.laptop}) {
+    display: grid;
+  }
+
 `;
 
 export const ContainerHeader = styled.header`
@@ -18,7 +23,6 @@ export const ContainerHeader = styled.header`
 
   @media (min-width: ${breakpoints.mobile}) {
     width: 100%;
-    display: grid;
     grid-template-columns: 10% 35% 45% 10%;
   }
 
@@ -39,9 +43,16 @@ export const ContainerHeader = styled.header`
 `;
 
 export const Logo = styled.h1`
-  img{
-    max-width: 60%;
+  @media (min-width: ${breakpoints.mobile}) {
+    display:none;
   }
+  @media (min-width: ${breakpoints.laptop}) {
+    display:block;
+    img{
+      max-width: 60%;
+  }
+  }
+  
   
   @media (min-width: ${breakpoints.mobile}) {
     max-width: 100%;
