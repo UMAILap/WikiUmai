@@ -54,8 +54,8 @@ export const Text = styled.div`
   }
 `;
 
-export const Bienvenido = styled.h1`
-  color: ${leerColor(colores.naranja)};
+export const Cuenta = styled.h1`
+  color: ${leerColor(colores.violeta)};
   font-weight: bolder;
   font-size: 1.5em;
   align-self: center;
@@ -87,6 +87,7 @@ export const ImagenLogin = styled.img`
 export const Intro = styled.p`
   width:100%;
   color: ${leerColor(colores.violeta)};
+
   @media (min-width: ${breakpoints.mobile}) {
     
   }
@@ -110,17 +111,33 @@ export const ContenedorForm = styled.div`
 `;
 
 export const FormLogin = styled.form`
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
   width:100%;
-  input{
+    input{
     width:100%;
     background: none;
     border: none;
     border-bottom: 1px solid  ${leerColor(colores.violeta)};
     padding: 15px 0px;
     margin: 5px 0px;
+    grid-column: 1 / 3;
+  }
+  .input1{
+    width:45%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid  ${leerColor(colores.violeta)};
+    padding: 15px 0px;
+    margin: 5px 0;
+  }
+  .input2{
+    width:45%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid  ${leerColor(colores.violeta)};
+    padding: 15px 0px;
+    margin: 5px 0 5px 5%;
   }
 
   input::placeholder{

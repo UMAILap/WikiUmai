@@ -5,4 +5,6 @@ export { default as Footer } from './Footer';
 export { default as HeaderLogin } from './HeaderLogin';
 export { default as FooterLogin } from './FooterLogin';
 export { default as Wrapper } from './Wrapper';
+export { default as Containerrectangulo } from './Containerrectangulo';
+
 
