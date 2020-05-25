@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import GlobalStyle from 'constants/globalStyle';
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -15,6 +14,7 @@ export default function MyApp({ Component, pageProps }) {
 
         <title>Wiki Umai</title>
       </Head>
+      <GlobalStyle />
       <Component {...pageProps} />
     </>
   );

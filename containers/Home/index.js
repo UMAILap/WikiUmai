@@ -1,8 +1,22 @@
 import React from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
 
-
-import { ContainerMain, ContainerBanner, SectorTitulos, Titulos, Textos, Container, ContainerUniversos, ContainerSlider, Card, CardImg, TituloCard, ContainerBotonSlider, LineaDeTiempoBoton } from './styles';
+import {
+  ContainerMain,
+  ContainerBanner,
+  SectorTitulos,
+  Titulos,
+  Textos,
+  Container,
+  ContainerUniversos,
+  ContainerSlider,
+  Card,
+  CardImg,
+  TituloCard,
+  ContainerBotonSlider,
+  LineaDeTiempoBoton,
+} from './styles';
 import { Wrapper } from 'components';
 
 function HomeContainer() {
@@ -19,16 +33,16 @@ function HomeContainer() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
@@ -36,11 +50,10 @@ function HomeContainer() {
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
-
-        }
-      }
-    ]
-  }
+        },
+      },
+    ],
+  };
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -60,38 +73,60 @@ function HomeContainer() {
         <Container>
           <ContainerUniversos>
             <Titulos>Explorar el universo</Titulos>
-            <Textos>Ingresá a los mundos para poder ver sus hitos, historias, personajes y objetos.</Textos>
+            <Textos>
+              Ingresá a los mundos para poder ver sus hitos, historias,
+              personajes y objetos.
+            </Textos>
           </ContainerUniversos>
 
           <ContainerSlider>
             <Slider {...settings}>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Sol</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Sol</TituloCard>
+                </Card>
               </div>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Nima</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Nima</TituloCard>
+                </Card>
               </div>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Wereld</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Wereld</TituloCard>
+                </Card>
               </div>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Adhera</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Adhera</TituloCard>
+                </Card>
               </div>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Ikigai</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Ikigai</TituloCard>
+                </Card>
               </div>
               <div>
-                <Card><CardImg src="./sliderImg.png"></CardImg><TituloCard>Zoro</TituloCard></Card>
+                <Card>
+                  <CardImg src="./sliderImg.png"></CardImg>
+                  <TituloCard>Zoro</TituloCard>
+                </Card>
               </div>
-            </Slider> 
+            </Slider>
           </ContainerSlider>
-          
-        <ContainerBotonSlider>
-          <LineaDeTiempoBoton>Ver Linea de tiempo universal</LineaDeTiempoBoton>
+
+          <ContainerBotonSlider>
+            <LineaDeTiempoBoton>
+              Ver Linea de tiempo universal
+            </LineaDeTiempoBoton>
           </ContainerBotonSlider>
         </Container>
-
-        </Wrapper>
+      </Wrapper>
     </ContainerMain>
   );
 }
