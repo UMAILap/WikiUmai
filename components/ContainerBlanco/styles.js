@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-
-export const GrisContainer = styled.div`
+export const WhiteContainer = styled.div`
   background-color: #fff;
   border-radius: 20px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
