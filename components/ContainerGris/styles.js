@@ -1,8 +1,8 @@
-import styled from './node_modules/styled-components';
+import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 
-export const RectanguloContainer = styled.div`
+export const GrisContainer = styled.div`
   background-color: #fff;
   border-radius: 20px;
   display:flex;

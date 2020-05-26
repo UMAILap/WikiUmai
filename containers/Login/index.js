@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { ContainerMain, ContenedorForm, FormLogin, Boton1, Boton2, Text, Bienvenido, Intro, ImagenLogin, Olvidaste} from '../Login/syles';
-import { Wrapper, ContainerRectangulo } from 'components';
+import { Wrapper, ContainerGris } from 'components';
 
 
 function LoginContainer() {
@@ -11,7 +11,7 @@ function LoginContainer() {
     <ContainerMain>
         <Wrapper>
         <ContenedorForm>
-          <ContainerRectangulo>
+          <ContainerGris>
             <Text>
               <Bienvenido>¡Bienvenido!</Bienvenido>
               <ImagenLogin src="./logo_colores.svg"/>
@@ -26,7 +26,7 @@ function LoginContainer() {
                       <Boton1 id='submit'>Iniciar Sesión</Boton1>
                       <Boton2 id='submit'>Solicitar cuenta</Boton2>
                   </FormLogin>
-            </ContainerRectangulo>
+            </ContainerGris>
           </ContenedorForm>
 
         </Wrapper>
