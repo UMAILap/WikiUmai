@@ -9,7 +9,7 @@ export const WrapperContainer = styled.div`
   margin: 0 auto;
   justify-content: flex-start;
   @media (min-width: ${breakpoints.mobile}) {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     align-items: center;
   }
@@ -23,7 +23,7 @@ export const WrapperContainer = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    max-width: 1300px;
+    max-width: 850px;
     width: 100%;
   }
 

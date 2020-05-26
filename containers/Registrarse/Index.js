@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { ContainerMain, ContenedorForm, FormLogin, Boton1, Boton2, Text, Cuenta, Intro, ImagenLogin, Olvidaste} from '../Registrarse/styles';
-import { Wrapper, Containerrectangulo } from 'components';
+import { Wrapper, ContainerRectangulo } from 'components';
 
 
 function RegistroContainer() {
@@ -11,7 +11,7 @@ function RegistroContainer() {
     <ContainerMain>
         <Wrapper>
         <ContenedorForm>
-          <Containerrectangulo>
+          <ContainerRectangulo>
             <Text>
               <Cuenta>Solicitar cuenta</Cuenta>
               <ImagenLogin src="./logo_colores.svg"/>
@@ -28,7 +28,7 @@ function RegistroContainer() {
                   </FormLogin>
                   <Olvidaste>¿No sabes tu número? </Olvidaste>     
                       <Boton1 id='submit'>Solicitar cuenta</Boton1>
-            </Containerrectangulo>
+            </ContainerRectangulo>
           </ContenedorForm>
 
         </Wrapper>

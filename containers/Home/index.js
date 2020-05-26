@@ -2,12 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 
+
 import {
   ContainerMain,
   ContainerBanner,
   SectorTitulos,
-  Titulos,
   Textos,
+  Textos2,
   Container,
   ContainerUniversos,
   ContainerSlider,
@@ -17,15 +18,18 @@ import {
   ContainerBotonSlider,
   LineaDeTiempoBoton,
 } from './styles';
-import { Wrapper } from 'components';
+
+import { Wrapper, Titulos } from 'components';
 
 function HomeContainer() {
-  const settings = {
+  var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 0,
+    initialSlide: 0,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -33,27 +37,29 @@ function HomeContainer() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
-        },
+          dots: true
+        }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
-        },
+          initialSlide: 2
+        }
       },
       {
-        breakpoint: 480,
+        breakpoint: 375,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-        },
-      },
-    ],
+          slidesToScroll: 6,
+          arrows: false
+          
+        }
+      }
+    ]
   };
+
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -73,10 +79,10 @@ function HomeContainer() {
         <Container>
           <ContainerUniversos>
             <Titulos>Explorar el universo</Titulos>
-            <Textos>
+            <Textos2>
               Ingresá a los mundos para poder ver sus hitos, historias,
               personajes y objetos.
-            </Textos>
+            </Textos2>
           </ContainerUniversos>
 
           <ContainerSlider>

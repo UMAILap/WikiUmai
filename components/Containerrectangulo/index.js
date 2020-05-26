@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from './node_modules/react';
+import PropTypes from './node_modules/prop-types';
 
 import { RectanguloContainer } from './styles';
 
-function Containerrectangulo({ children }) {
+function ContainerRectangulo({ children }) {
   return (
     <RectanguloContainer>
       {children}
@@ -11,8 +11,8 @@ function Containerrectangulo({ children }) {
   );
 }
 
-Containerrectangulo.propTypes = {
+ContainerRectangulo.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default Containerrectangulo;
+export default ContainerRectangulo;

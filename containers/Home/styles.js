@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
+
+
 export const ContainerMain = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
 `;
 
 export const SectorTitulos = styled.div`
@@ -13,7 +14,7 @@ width:100%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 26vh;
+    height: 20vh;
     justify-content: center;
   }
   /* display: grid;
@@ -21,12 +22,19 @@ width:100%;
   grid-template-rows: 35% 150px; */
 
   @media (min-width: ${breakpoints.tablet}){
-    width: 95%;
+    width: 40%;
+    height: 26vh;
   }
 
-  @media (min-width: ${breakpoints.notebook}){
+  @media (min-width: ${breakpoints.laptop}){
+    width: 100%;
+  }
+
+  @media (min-width: ${breakpoints.laptopL}){
     width: 40%;
   }
+
+ 
 
 
 `;
@@ -35,36 +43,63 @@ export const ContainerBanner = styled.div`
   background-color: ${leerColor(colores.naranja)};
   @media (min-width: ${breakpoints.mobile}) {
     
-    height: 26vh;
+    height: 20vh;
     background-repeat: no-repeat;
     background-position: right;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    background-image: url(./fondo-main.png);  }
+    background-image: none; 
+    height: 26vh;
+  
+  }
+
+
+@media (min-width: ${breakpoints.laptopL}) {
+  background-image: url(./fondo-main.png);  
+  
+  }
 `;
+
+
 export const Banner = styled.img;
 
-export const Titulos = styled.h1`
-  font-size: 20px;
-  font-style: bold;
-  color: #381460;
-  padding-top: 30px;
-  font-weight: bolder;
-  @media (min-width: 376px) {
-    font-size: 35px;
-    align-self: start;
-  }
-`;
+
 export const Textos = styled.p`
-  font-size: 14px;
+font-family: "Proxima Nova";
+  font-size: 11px;
   color: #381460;
   margin: 3% 0%;
-  line-height: 24px;
-  @media (min-width: 376px) {
-    font-size: 17px;
+  line-height: 18px;
+  @media ${breakpoints.mobile} {
+    
+  }
+
+
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 15px;
+  
   }
 `;
+
+export const Textos2 = styled.p`
+font-family: "Proxima Nova";
+  font-size: 11px;
+  color: #381460;
+  margin: 6% 0%;
+  line-height: 18px;
+  width:70%;
+  @media ${breakpoints.mobile} {
+    width:60%;
+  }
+
+
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 15px;
+  
+  }
+`;
+
 export const Container = styled.div`
   width: 100%;
   flex-direction: column;
@@ -82,6 +117,18 @@ export const Slider = styled.div`
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100%;
   justify-content: space-around;
+
+  .slick-dots li button::before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    }
 
   @media (min-width: 376px) {
     display: grid;
@@ -148,22 +195,21 @@ export const LineaDeTiempoBoton = styled.a`
 
   @media (min-width: ${breakpoints.mobile})  {
     border-radius: 20px;
-    padding: 15px 40px;
+    padding: 11px 40px;
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
     margin: 30px auto;
     display: grid;
-    width: 25%;
+    width: 90%;
     text-align: center;
+    font-size: 10px;
   }
 
 
   @media (min-width: ${breakpoints.tablet})  {
-    width: 50%;
-  }
-
-  @media (min-width: ${breakpoints.notebook})  {
     width: 25%;
   }
+
+ 
 `;
