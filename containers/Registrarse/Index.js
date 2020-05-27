@@ -14,6 +14,8 @@ import {
 } from '../Registrarse/styles';
 import { Wrapper, ContainerBlanco } from 'components';
 
+// Comentario para el commit
+
 function RegistroContainer() {
   return (
     <ContainerMain>
