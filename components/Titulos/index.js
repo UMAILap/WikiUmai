@@ -6,7 +6,7 @@ import { EstilosTitulos } from './styles';
 function Titulos({ children }) {
   return (
     <EstilosTitulos>
-      {children}
+      {children} 
     </EstilosTitulos>
   );
 }

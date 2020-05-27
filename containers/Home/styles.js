@@ -17,6 +17,8 @@ width:100%;
     height: 20vh;
     justify-content: center;
   }
+
+
   /* display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 35% 150px; */
@@ -96,7 +98,10 @@ font-family: "Proxima Nova";
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
-  
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    margin: 3% 0%;
+
   }
 `;
 
