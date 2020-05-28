@@ -8,21 +8,27 @@ export const WhiteContainer = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 20px;
+  padding: 25px 25px 40px;
+  height: fit-content;
   @media (min-width: ${breakpoints.mobile}) {
-    width: 85%;
-    padding: 35px;
+    
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
     width: 80%;
     padding: 50px 40px;
+    margin: 0 auto;
   }
-  @media (min-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {    
+    margin: unset;
     width: 50%;
     padding: 40px 25px;
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 45%;
-    padding: 30px 40px;
+    padding: 25px 40px 30px;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 40%;
+    padding: 25px 40px 30px;
   }
 `;

@@ -4,10 +4,9 @@ import { LayoutLogin, Login as LoginContainer } from 'containers';
 
 function Login() {
   return (
-      
-      <LayoutLogin>
-          <LoginContainer />
-      </LayoutLogin>
+    <LayoutLogin>
+      <LoginContainer />
+    </LayoutLogin>
   );
 }
 
