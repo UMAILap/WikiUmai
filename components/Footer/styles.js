@@ -7,9 +7,14 @@ export const Container = styled.footer`
   padding-top: 20px;
   padding-bottom: 20px;
   max-height: 100px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Proxima Nova";
   align-self: flex-end;
+
+  @media (min-width: ${breakpoints.tablet}){
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
 `;
 
 export const ContainerFooter = styled.div`
@@ -26,7 +31,7 @@ export const ContainerFooter = styled.div`
     
   }
 
-  @media (min-width: ${breakpoints.notebook}) {
+  @media (min-width: ${breakpoints.laptop}) {
     grid-template-columns: 50% 50%;
 
   }
@@ -40,6 +45,16 @@ export const Texto = styled.a`
     font-size: 11px;
   }
 
+  @media (min-width:${breakpoints.tablet}) {
+    font-size: 10px;
+  }
+
+
+  @media (min-width:${breakpoints.laptop}) {
+    font-size: 13px;
+  }
+ 
+
   
 
 `;
@@ -51,13 +66,42 @@ export const Imagenes = styled.div`
   }
   @media (min-width:${breakpoints.mobile}) {
     img {
-      width: 10%;
+      width: 20%;
     margin: 10px 10px;
     }
   }
 
-  @media (min-width: ${breakpoints.notebook}){
-    justify-content: flex-end;
+  @media (min-width:${breakpoints.mobileGrande}) {
+    img {
+      width: 20%;
+      margin: 0;
+    
+    }
+  }
 
+  @media (min-width:${breakpoints.tablet}) {
+    img {
+      width: 10%;
+          
+    }
+  }
+
+
+  @media (min-width: ${breakpoints.laptop}){
+    justify-content: flex-end;
+    align-items: baseline;
+    img{
+      width:24%;
+      padding-right: 10px;
+
+    }
+
+  }
+
+  @media (min-width:${breakpoints.laptopL}) {
+    img {
+      width: 12%;
+          
+    }
   }
 `;

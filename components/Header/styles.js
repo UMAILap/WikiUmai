@@ -7,12 +7,7 @@ export const Container = styled.header`
   padding-bottom: 5px;
   display: flex;
   align-items: center;
-  @media (min-width: ${breakpoints.mobile}) {
-
-  }
-  @media (min-width: ${breakpoints.mobileGrande}) {
-     
-  }
+ 
 `;
 
 export const ContainerHeader = styled.div`
@@ -26,19 +21,19 @@ export const ContainerHeader = styled.div`
     padding: 10px 0;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    padding-left: 10px;
-    padding-right: 10px;
+   
   }
   @media (min-width: ${breakpoints.tablet}) {
-
+    grid-template-columns: 15% 65% 20%;
   }
   @media (min-width: ${breakpoints.laptop}) {
     grid-template-columns: 15% 30% 40% 15%;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    grid-template-columns: 10% 35% 45% 10%;
+    grid-template-columns: 10% 35% 40% 15%;
   }
   @media (min-width: ${breakpoints.notebook}) {
+    grid-template-columns: 10% 35% 40% 15%;
     
   }
 `;
@@ -49,11 +44,13 @@ export const Logo = styled.h1`
     width: 50%;
   }
   @media (min-width: ${breakpoints.mobile}) {
-    
+    img{
+      width: 38%;
+    }
   }
   @media (min-width: ${breakpoints.tablet}) {
     img{
-      width: 40%;
+      width: 30%;
     }
   }
   @media (min-width: ${breakpoints.laptop}) {
@@ -62,20 +59,30 @@ export const Logo = styled.h1`
     }
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    width: 80%;
+    width: 90%;
   }
 
+  @media (min-width: ${breakpoints.notebook}) {
+    img{
+      width: 100%;
+      }
+  }
 `;
 export const ContainerUser = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: normal;
+
+  @media (min-width: ${breakpoints.mobile}){
+    
+  }
 
   @media (min-width: ${breakpoints.mobileGrande}){
-    justify-content: start; 
+    justify-content: flex-end; 
   }
   @media (min-width: ${breakpoints.tablet}) {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
   }
   @media (min-width: ${breakpoints.laptop}){
     justify-content: flex-end;
@@ -92,9 +99,20 @@ export const User = styled.img`
     display: none;
  }
   @media (min-width: ${breakpoints.laptop}){
-    width: 30%;
+    width: 25%;
     display: block;
  }
+
+ @media (min-width: ${breakpoints.laptopL}){
+    width: 18%;
+    display: block;
+ }
+
+ @media (min-width: ${breakpoints.notebook}){
+  width: 18%;
+ }
+
+ 
 `;
 
 export const MenuHamburguesa = styled.h1`
@@ -102,10 +120,14 @@ export const MenuHamburguesa = styled.h1`
   max-width: 50%;
   @media (min-width: ${breakpoints.mobile}) {
     display: block;
+    img{
+      width: 70%;
+    }
   }
   @media (min-width: ${breakpoints.tablet}) {
+    max-width:60%;
     img{
-      width: 95%;
+      width: 65%;
     }    
   }
   @media (min-width: ${breakpoints.laptop}){
@@ -150,10 +172,13 @@ export const Search = styled.a`
     width: 40%;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    width: 50%;
+    
+    img{
+      width: 75%;
+    }
   }
   @media (min-width: ${breakpoints.tablet}) {
-    width: 40%;
+    width: 30%;
   }
   @media (min-width: ${breakpoints.laptop}) {
     display:none;
@@ -163,24 +188,31 @@ export const Search = styled.a`
 export const Notification = styled.img`
   width: 30%;
   @media (min-width: ${breakpoints.mobile}){
-
+    width: 40%;
+  
   }
   @media (min-width: ${breakpoints.mobileGrande}){
-    width: 50%;
-  }
+    width: 30%;
+    
+      }
   @media (min-width: ${breakpoints.tablet}){
-    width: 40%;
+    width: 25%;
   }
   @media (min-width: ${breakpoints.laptop}){
-    width: 30%;
+    width: 25%;
     margin-right: 10px;
   }
   @media (min-width: ${breakpoints.laptopL}){
-    width: 25%;
+    width: 15%;
+  }
+
+  @media (min-width: ${breakpoints.notebook}){
+    width: 15%;
   }
 `;
 
 export const ContainerBotones = styled.div`
+  font-family: "Raleway";
   display: none;
   @media (min-width: 376px) {
 
@@ -192,7 +224,8 @@ export const ContainerBotones = styled.div`
     width: 100%;    
     height: fit-content;  
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+
   }
 `;
 
@@ -202,8 +235,11 @@ border-radius: 20px;
 background-color:#4d1b84;
 padding: 10px 25px;
 color: #fff;
+font-size: 12px;
 }
 @media (min-width: ${breakpoints.laptopL}) {
 padding: 10px 40px;
+margin: 2%;
+
 }
 `;

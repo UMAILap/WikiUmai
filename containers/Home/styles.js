@@ -14,24 +14,28 @@ export const SectorTitulos = styled.div`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    width: 90%;
-    height: 100%;
+  
+  align-items: center;
+    justify-self: center;
+    height: 15vh;
 
   }
 
   @media (min-width: ${breakpoints.laptop}) {
     width: 40%;
+    height: 20vh;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     width: 40%;
+    height: 25vh;
   }
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
   @media (min-width: ${breakpoints.mobile}) {
-    height: 35vh;
+    height: 16vh;
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -40,24 +44,25 @@ export const ContainerBanner = styled.div`
   }
   @media (min-width: ${breakpoints.tablet}) {
     background-image: none;
-    height: 40vh;
+    max-height: 100%;
   }
+
   @media (min-width: ${breakpoints.laptop}) {
     background-image: url(./fondo-main.png);
-    width:100%;
-    background-size: 1400px 100%;
-    height: 50vh;
+    width: 100%;
+    background-size: 1380px 100%;
+    height: 20vh;
   }
   @media (min-width: ${breakpoints.laptopL}) {
     background-image: url(./fondo-main.png);
     width:100%;
-    background-size: 1400px 100%;
+    background-size: 2000px 100%;
     height: 26vh;
   }
   @media (min-width: ${breakpoints.notebook}) {
     background-image: url(./fondo-main.png);
     width:100%;
-    background-size: 1400px 100%;
+    background-size: 2000px 100%;
     height: 26vh;
   }
 `;
@@ -74,15 +79,24 @@ export const Textos = styled.p`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 10px;
-  }
-  @media (min-width: ${breakpoints.laptopL}) {
     font-size: 13px;
   }
+  @media (min-width: ${breakpoints.laptopL}) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    font-size: 17px;
+    line-height: 33px;
+  }
+
+ 
+}
   
 `;
 
@@ -98,11 +112,26 @@ export const Textos2 = styled.p`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 15px;
+    font-size: 20px;
   }
   @media (min-width: ${breakpoints.laptop}) {
     margin: 3% 0%;
+    font-size: 13px;
   }
+
+  @media (min-width: ${breakpoints.laptopL}) {
+   
+    font-size: 17px;
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+   
+    margin: 2% 0%;
+ }
+
+  
+
+  
 `;
 
 export const Container = styled.div`
@@ -111,6 +140,7 @@ export const Container = styled.div`
 `;
 export const ContainerUniversos = styled.div`
   width: 100%;
+  margin-top: 3%;
 `;
 
 export const ContainerSlider = styled.div``;
@@ -141,6 +171,7 @@ export const Slider = styled.div`
 `;
 
 export const Card = styled.div`
+
   &:nth-child(n + 4) {
     display: none;
   }
@@ -169,6 +200,7 @@ export const CardImg = styled.img`
 `;
 
 export const TituloCard = styled.h2`
+  font-family: 'Raleway';
   font-size: 15px;
   color: #4d1b84;
   padding: 10% 0;
@@ -176,15 +208,16 @@ export const TituloCard = styled.h2`
   text-transform: uppercase;
   font-weight: bolder;
   @media (min-width: 376px) {
-    font-size: 23px;
+    font-size: 17px;
   }
 `;
 
 export const ContainerBotonSlider = styled.div`
-  padding: 20px 0px;
+  padding: 10px 0px 0px 0px;
 `;
 
 export const LineaDeTiempoBoton = styled.a`
+font-family: 'Proxima Nova';
   border-radius: 20px;
   padding: 10px 5px;
   color: #fff;
@@ -211,12 +244,21 @@ export const LineaDeTiempoBoton = styled.a`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    width: 60%;
+    width: 40%;
+    font-size: 15px;
+    
   }
   @media (min-width: ${breakpoints.laptop}) {
-    width: 32%;
+    width: 40%;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    width: 24%;
+    width: 30%;
+    font-size: 17px;
   }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    padding: 16px;
+
+  }
+
 `;

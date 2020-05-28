@@ -3,7 +3,7 @@ import { breakpoints, leerColor, colores } from 'constants';
 
 
 export const WrapperContainer = styled.div`
-  max-width: 350px;
+  max-width: 300px;
   width: 100%;
   display: flex;
   margin: 0 auto;
