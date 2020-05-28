@@ -2,18 +2,14 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const ContainerMain = styled.div`
+  display:flex;
+  @media (min-width: ${breakpoints.mobile}) {
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    @media (min-width: ${breakpoints.mobile}) {
-        display:flex;
-    }
-    @media (min-width: ${breakpoints.laptop}) {
-        display:flex;
-    }
+  }
+  @media (min-width: ${breakpoints.laptop}) {
 
+  }
 `;
-
 
 export const ContainerLogin = styled.div`
   background-color: #fff;
@@ -59,25 +55,25 @@ export const Cuenta = styled.h1`
   font-weight: bolder;
   font-size: 1.5em;
   align-self: center;
+  font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
     
   }
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 2em;
-    padding: 30px 0px;
   }
 `;
 
 export const ImagenLogin = styled.img`
-    width: 15%;
+  width: 15%;
   @media (min-width: ${breakpoints.mobile}) {
 
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    width: 8%;
+
   }
   @media (min-width: ${breakpoints.tablet}) {
-
+    width: 10%;
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 10%;
@@ -85,61 +81,38 @@ export const ImagenLogin = styled.img`
 `;
 
 export const Intro = styled.p`
-  width:100%;
+  width: 100%;
   color: ${leerColor(colores.violeta)};
-
+  line-height: 30px;
+  font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
     
   }
   @media (min-width: ${breakpoints.laptop}) {
     padding: 20px 0px;
-
   }
 `; 
-export const ContenedorForm = styled.div`
-  width:100%;
-  display:flex;
-  justify-content:center;
-  padding-top:30px;
-  @media (min-width: ${breakpoints.mobile}) {
-    
-  }
-  @media (min-width: ${breakpoints.laptop}) {
-    justify-content:start;
-
-  }
-`;
 
 export const FormLogin = styled.form`
-
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
-  width:100%;
-    input{
-    width:100%;
+  width: 100%;
+  padding: 20px 0;
+  input{
+    width: 45%;
     background: none;
     border: none;
     border-bottom: 1px solid  ${leerColor(colores.violeta)};
     padding: 15px 0px;
-    margin: 5px 0px;
-    grid-column: 1 / 3;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  .input1{
-    width:45%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid  ${leerColor(colores.violeta)};
-    padding: 15px 0px;
-    margin: 5px 0;
+  input:last-child{
+    width: 100%;
   }
-  .input2{
-    width:45%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid  ${leerColor(colores.violeta)};
-    padding: 15px 0px;
-    margin: 5px 0 5px 5%;
-  }
-
   input::placeholder{
     color:  ${leerColor(colores.violeta)}
   }
@@ -147,62 +120,45 @@ export const FormLogin = styled.form`
     
   }  
   @media (min-width: ${breakpoints.laptop}) {
-    input{
-      margin: 20px 0px;
-    }
+    padding: 10px 0;
   }
 `;
 
 export const Olvidaste = styled.a`
-  width:100%;
+  width: 100%;
   color: ${leerColor(colores.violeta)};
   padding: 20px 0px;
-  font-size:0.7em;
+  font-size: 12px;
+  font-family: 'Proxima Nova';
+  font-weight: bold;
   @media (min-width: ${breakpoints.mobile}) {
     
   }
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: 14px;
+  }
 `;
 
-
-
 export const Boton1 = styled.button`
-  width:100%;
-  background-color:  ${leerColor(colores.naranja)};
+  width: 100%;
+  background-color: ${leerColor(colores.naranja)};
   color: ${leerColor(colores.violeta)};
   border-radius: 50px;
   padding: 10px 0px;
   border: none;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-size: 14px;
   margin: 20px 0px;
-
   @media (min-width: ${breakpoints.mobile}) {
       
   }
-  @media (min-width: ${breakpoints.laptop}) {
-    width:80%;
-    padding: 20px 0px;
-  }
-    
-`;
-
-export const Boton2 = styled.button`
-  width:100%;
-  background-color:  ${leerColor(colores.gris)};
-  color: ${leerColor(colores.violeta)};
-  border-radius: 50px;
-  padding: 10px 0px;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bolder;
-  @media (min-width: ${breakpoints.mobile}) {
-    
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 16px;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    width:80%;
-    padding: 20px 0px;
-    margin: 20px 0px;
+    width: 80%;
+    padding: 15px 0;
   }
 `;
-
-

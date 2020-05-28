@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
   ContainerMain,
-  ContenedorForm,
   FormLogin,
   Boton1,
   Boton2,
@@ -18,25 +17,21 @@ function LoginContainer() {
   return (
     <ContainerMain>
       <Wrapper>
-        <ContenedorForm>
           <ContainerBlanco>
             <Text>
               <Bienvenido>¡Bienvenido!</Bienvenido>
               <ImagenLogin src="./logo_colores.svg" />
             </Text>
-            <Intro>all boys y aca va info de la wiki chicoz</Intro>
+            <Intro>No se que poner aca pero va un texto sobre el Universo Narrativo</Intro>
             <FormLogin id="form">
               <input className="input" type="text" placeholder="Usuario" />
               <input className="input" type="text" placeholder="Contraseña" />
-              <Olvidaste>Olvidaste tu contraseña? JODETE</Olvidaste>
+              <Olvidaste>¿Olvidaste tu contraseña?</Olvidaste>
               <Boton1 id="submit">Iniciar Sesión</Boton1>
               <Boton2 id="submit">Solicitar cuenta</Boton2>
             </FormLogin>
           </ContainerBlanco>
-        </ContenedorForm>
       </Wrapper>
-
-      {/* <Footer /> */}
     </ContainerMain>
   );
 }

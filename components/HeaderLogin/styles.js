@@ -5,10 +5,9 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const Container = styled.header`
   padding-top: 20px;
   padding-bottom: 20px;
-  max-height:100px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-height: 100px;
   @media (min-width: ${breakpoints.laptop}) {
-    display: grid;
+
   }
 `;
 
@@ -34,7 +33,6 @@ export const ContainerHeader = styled.header`
 
   @media (min-width: ${breakpoints.notebook}) {
     width: 100%;
-    display: grid;
   }
 `;
 
