@@ -17,9 +17,11 @@ import {
   TituloCard,
   ContainerBotonSlider,
   LineaDeTiempoBoton,
+  ContainerAgregar,
 } from './styles';
 
-import { Wrapper, Titulos } from 'components';
+import { Wrapper, Titulos, BotonVioleta } from 'components';
+import { Link } from '../../components/Header/styles';
 
 function HomeContainer() {
   var settings = {
@@ -59,8 +61,9 @@ function HomeContainer() {
       {
         breakpoint: 375,
         settings: {
+          centerMode:true,
           slidesToShow: 3,
-          slidesToScroll: 6,
+          slidesToScroll: 1,
           arrows: false,
         },
       },
@@ -85,10 +88,12 @@ function HomeContainer() {
       <Wrapper>
         <Container>
           <ContainerUniversos>
-            <Titulos>Explorar el universo</Titulos>
+            <ContainerAgregar>
+            <Titulos>Explora y crea el universo Maimonides </Titulos>
+            <BotonVioleta> + Agregar entrada</BotonVioleta>
+            </ContainerAgregar>
             <Textos2>
-              Ingresá a los mundos para poder ver sus hitos, historias,
-              personajes y objetos.
+            Compuesto por planetas independientes, que orbitan alrededor de una estrella de aspecto similar al sol, en el esquema gravitatorio de una Roseta de Klemperer. Todos están habitados en su mayoría por seres humanos que recuerdan vagamente las características étnicas de nuestro mundo real, con religiones diferentes que veneran al Sol.
             </Textos2>
           </ContainerUniversos>
 

@@ -3,6 +3,13 @@ import { breakpoints, leerColor, colores } from 'constants';
 
 export const ContainerMain = styled.div``;
 
+export const ContainerAgregar = styled.div`
+  display:flex;
+  justify-content:space-between;
+  align-content:center;
+`;
+
+
 export const SectorTitulos = styled.div`
   width: 100%;
   @media (min-width: ${breakpoints.mobile}) {
@@ -56,13 +63,13 @@ export const ContainerBanner = styled.div`
   @media (min-width: ${breakpoints.laptopL}) {
     background-image: url(./fondo-main.png);
     width:100%;
-    background-size: 2000px 100%;
+    background-size: 1800px 100%;
     height: 26vh;
   }
   @media (min-width: ${breakpoints.notebook}) {
     background-image: url(./fondo-main.png);
     width:100%;
-    background-size: 2000px 100%;
+    background-size: 1800px 100%;
     height: 26vh;
   }
 `;
@@ -96,7 +103,7 @@ export const Textos = styled.p`
   }
 
  
-}
+
   
 `;
 
@@ -112,10 +119,10 @@ export const Textos2 = styled.p`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 20px;
+    font-size: 15px;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    margin: 3% 0%;
+    margin: 1% 0% 3% 0%;
     font-size: 13px;
   }
 
@@ -167,14 +174,14 @@ export const Slider = styled.div`
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
     grid-template-rows: 100%;
     justify-content: space-around;
+    .slick-initialized .slick-slide{
+    height:500px;
   }
+  }
+  
 `;
 
 export const Card = styled.div`
-
-  &:nth-child(n + 4) {
-    display: none;
-  }
   background-color: #ececec;
   border-radius: 10px;
   -webkit-box-pack: center;
@@ -183,11 +190,10 @@ export const Card = styled.div`
   justify-content: center;
   text-align: center;
   padding: 3%;
+  width:150px;
   @media (min-width: ${breakpoints.mobile}) {
-    &:nth-child(n + 3) {
-    display: none;
-  }
-    width: 80%;
+   
+    width: 150px;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width:90%;
