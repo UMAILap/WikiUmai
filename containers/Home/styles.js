@@ -1,122 +1,119 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-
-
-export const ContainerMain = styled.div`
-  
-`;
+export const ContainerMain = styled.div``;
 
 export const SectorTitulos = styled.div`
-width:100%;
+  width: 100%;
   @media (min-width: ${breakpoints.mobile}) {
     width: 95%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    justify-content: center;
+   justify-content: center;
   }
 
+  @media (min-width: ${breakpoints.tablet}) {
+    width: 90%;
+    height: 100%;
 
-  /* display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 35% 150px; */
-
-  @media (min-width: ${breakpoints.tablet}){
-    width: 40%;
-    height: 26vh;
   }
 
-  @media (min-width: ${breakpoints.laptop}){
-    width: 100%;
-  }
-
-  @media (min-width: ${breakpoints.laptopL}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 40%;
   }
 
- 
-
-
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 40%;
+  }
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
   @media (min-width: ${breakpoints.mobile}) {
-    
-    height: 20vh;
+    height: 35vh;
     background-repeat: no-repeat;
     background-position: right;
   }
-
-  @media (min-width: ${breakpoints.laptop}) {
-    background-image: none; 
-    height: 26vh;
-  
+  @media (min-width: ${breakpoints.mobileGrande}) {
+    max-width:100%;
   }
-
-
-@media (min-width: ${breakpoints.laptopL}) {
-  background-image: url(./fondo-main.png);  
-  
+  @media (min-width: ${breakpoints.tablet}) {
+    background-image: none;
+    height: 40vh;
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    background-image: url(./fondo-main.png);
+    width:100%;
+    background-size: 1400px 100%;
+    height: 50vh;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    background-image: url(./fondo-main.png);
+    width:100%;
+    background-size: 1400px 100%;
+    height: 26vh;
+  }
+  @media (min-width: ${breakpoints.notebook}) {
+    background-image: url(./fondo-main.png);
+    width:100%;
+    background-size: 1400px 100%;
+    height: 26vh;
   }
 `;
 
-
 export const Banner = styled.img;
 
-
 export const Textos = styled.p`
-font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-size: 11px;
   color: #381460;
   margin: 3% 0%;
   line-height: 18px;
   @media ${breakpoints.mobile} {
-    
   }
-
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
-  
   }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: 10px;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    font-size: 13px;
+  }
+  
 `;
 
 export const Textos2 = styled.p`
-font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-size: 11px;
   color: #381460;
   margin: 6% 0%;
   line-height: 18px;
-  width:70%;
+  width: 70%;
   @media ${breakpoints.mobile} {
-    width:60%;
+    width: 60%;
   }
-
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
   }
   @media (min-width: ${breakpoints.laptop}) {
     margin: 3% 0%;
-
   }
 `;
 
 export const Container = styled.div`
   width: 100%;
   flex-direction: column;
- 
 `;
 export const ContainerUniversos = styled.div`
   width: 100%;
 `;
 
-export const ContainerSlider = styled.div`
-
-`;
+export const ContainerSlider = styled.div``;
 export const Slider = styled.div`
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -133,8 +130,8 @@ export const Slider = styled.div`
     height: 20px;
     content: '•';
     text-align: center;
-    }
-
+  }
+  
   @media (min-width: 376px) {
     display: grid;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
@@ -155,11 +152,14 @@ export const Card = styled.div`
   justify-content: center;
   text-align: center;
   padding: 3%;
-  @media (min-width: 376px) {
+  @media (min-width: ${breakpoints.mobile}) {
     &:nth-child(n + 3) {
-      display: block;
-    }
+    display: none;
+  }
     width: 80%;
+  }
+  @media (min-width: ${breakpoints.mobileGrande}) {
+    max-width:90%;
   }
 `;
 
@@ -180,7 +180,6 @@ export const TituloCard = styled.h2`
   }
 `;
 
-
 export const ContainerBotonSlider = styled.div`
   padding: 20px 0px;
 `;
@@ -198,7 +197,7 @@ export const LineaDeTiempoBoton = styled.a`
   background-color: #fe346e;
   font-size: 13px;
 
-  @media (min-width: ${breakpoints.mobile})  {
+  @media (min-width: ${breakpoints.mobile}) {
     border-radius: 20px;
     padding: 11px 40px;
     color: #fff;
@@ -211,10 +210,13 @@ export const LineaDeTiempoBoton = styled.a`
     font-size: 10px;
   }
 
-
-  @media (min-width: ${breakpoints.tablet})  {
-    width: 25%;
+  @media (min-width: ${breakpoints.tablet}) {
+    width: 60%;
   }
-
- 
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 32%;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 24%;
+  }
 `;

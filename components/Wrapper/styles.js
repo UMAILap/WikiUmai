@@ -14,11 +14,11 @@ export const WrapperContainer = styled.div`
     align-items: center;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    max-width: 700px;
+    max-width: 400px;
     width: 100%;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    max-width: 900px;
+    max-width: 700px;
     width: 100%;
   }
 
@@ -29,6 +29,10 @@ export const WrapperContainer = styled.div`
 
   @media (min-width: ${breakpoints.laptopL}) {
     max-width: 1240px;
+    width: 100%;
+  }
+  @media (min-width: ${breakpoints.notebook}) {
+    max-width: 1440px;
     width: 100%;
   }
 `;
