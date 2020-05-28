@@ -137,49 +137,20 @@ export const ContainerUniversos = styled.div`
   margin-top: 3%;
 `;
 
-export const ContainerSlider = styled.div``;
-export const Slider = styled.div`
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100%;
-  justify-content: space-around;
-
-  .slick-dots li button::before {
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-  }
-
-  @media (min-width: 376px) {
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    grid-template-rows: 100%;
-    justify-content: space-around;
-    .slick-initialized .slick-slide {
-      height: 500px;
-    }
+export const ContainerSlider = styled.div`
+  & .slick-slide > div {
+    margin: auto 10px;
   }
 `;
 
 export const Card = styled.div`
   background-color: #ececec;
   border-radius: 10px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
+  display: flex;
   text-align: center;
   padding: 3%;
-  width: 150px;
-  @media (min-width: ${breakpoints.mobile}) {
-    width: 150px;
-  }
+
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width: 90%;
   }
