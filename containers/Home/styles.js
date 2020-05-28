@@ -4,11 +4,10 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const ContainerMain = styled.div``;
 
 export const ContainerAgregar = styled.div`
-  display:flex;
-  justify-content:space-between;
-  align-content:center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 `;
-
 
 export const SectorTitulos = styled.div`
   width: 100%;
@@ -17,15 +16,13 @@ export const SectorTitulos = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-  
-  align-items: center;
+    align-items: center;
     justify-self: center;
     height: 15vh;
-
   }
 
   @media (min-width: ${breakpoints.laptop}) {
@@ -47,7 +44,7 @@ export const ContainerBanner = styled.div`
     background-position: right;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    max-width:100%;
+    max-width: 100%;
   }
   @media (min-width: ${breakpoints.tablet}) {
     background-image: none;
@@ -62,13 +59,13 @@ export const ContainerBanner = styled.div`
   }
   @media (min-width: ${breakpoints.laptopL}) {
     background-image: url(./fondo-main.png);
-    width:100%;
+    width: 100%;
     background-size: 1800px 100%;
     height: 26vh;
   }
   @media (min-width: ${breakpoints.notebook}) {
     background-image: url(./fondo-main.png);
-    width:100%;
+    width: 100%;
     background-size: 1800px 100%;
     height: 26vh;
   }
@@ -101,10 +98,6 @@ export const Textos = styled.p`
     font-size: 17px;
     line-height: 33px;
   }
-
- 
-
-  
 `;
 
 export const Textos2 = styled.p`
@@ -127,18 +120,12 @@ export const Textos2 = styled.p`
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-   
     font-size: 17px;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
-   
     margin: 2% 0%;
- }
-
-  
-
-  
+  }
 `;
 
 export const Container = styled.div`
@@ -168,17 +155,16 @@ export const Slider = styled.div`
     content: '•';
     text-align: center;
   }
-  
+
   @media (min-width: 376px) {
     display: grid;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
     grid-template-rows: 100%;
     justify-content: space-around;
-    .slick-initialized .slick-slide{
-    height:500px;
+    .slick-initialized .slick-slide {
+      height: 500px;
+    }
   }
-  }
-  
 `;
 
 export const Card = styled.div`
@@ -190,13 +176,12 @@ export const Card = styled.div`
   justify-content: center;
   text-align: center;
   padding: 3%;
-  width:150px;
+  width: 150px;
   @media (min-width: ${breakpoints.mobile}) {
-   
     width: 150px;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    max-width:90%;
+    max-width: 90%;
   }
 `;
 
@@ -223,7 +208,7 @@ export const ContainerBotonSlider = styled.div`
 `;
 
 export const LineaDeTiempoBoton = styled.a`
-font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova';
   border-radius: 20px;
   padding: 10px 5px;
   color: #fff;
@@ -252,7 +237,6 @@ font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.tablet}) {
     width: 40%;
     font-size: 15px;
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 40%;
@@ -264,7 +248,5 @@ font-family: 'Proxima Nova';
 
   @media (min-width: ${breakpoints.notebook}) {
     padding: 16px;
-
   }
-
 `;

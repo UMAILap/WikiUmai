@@ -8,4 +8,3 @@ export { default as Wrapper } from './Wrapper';
 export { default as ContainerBlanco } from './ContainerBlanco';
 export { default as Titulos } from './Titulos';
 export { default as BotonVioleta } from './BotonVioleta';
-
