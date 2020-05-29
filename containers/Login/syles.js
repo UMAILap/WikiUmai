@@ -1,26 +1,22 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-export const ContainerMain = styled.div`    
-  display:flex;
+export const ContainerMain = styled.div`
+  display: flex;
   @media (min-width: ${breakpoints.mobile}) {
-
   }
   @media (min-width: ${breakpoints.laptop}) {
-
   }
 `;
 
 export const Text = styled.div`
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0;
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
-    
   }
 `;
 
@@ -31,7 +27,6 @@ export const Bienvenido = styled.h1`
   align-self: center;
   font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 2em;
@@ -41,10 +36,8 @@ export const Bienvenido = styled.h1`
 export const ImagenLogin = styled.img`
   width: 15%;
   @media (min-width: ${breakpoints.mobile}) {
-
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-
   }
   @media (min-width: ${breakpoints.tablet}) {
     width: 10%;
@@ -60,12 +53,11 @@ export const Intro = styled.p`
   line-height: 30px;
   font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
     padding: 20px 0px;
   }
-`; 
+`;
 
 export const FormLogin = styled.form`
   display: flex;
@@ -73,20 +65,19 @@ export const FormLogin = styled.form`
   align-items: center;
   width: 100%;
   padding: 20px 0;
-  input{
+  input {
     width: 100%;
     background: none;
     border: none;
-    border-bottom: 1px solid  ${leerColor(colores.violeta)};
+    border-bottom: 1px solid ${leerColor(colores.violeta)};
     padding: 15px 0px;
     margin: 5px 0px;
   }
-  input::placeholder{
-    color:  ${leerColor(colores.violeta)}
+  input::placeholder {
+    color: ${leerColor(colores.violeta)};
   }
   @media (min-width: ${breakpoints.mobile}) {
-    
-  }  
+  }
   @media (min-width: ${breakpoints.laptop}) {
     padding: 10px 0;
   }
@@ -100,7 +91,6 @@ export const Olvidaste = styled.a`
   font-family: 'Proxima Nova';
   font-weight: bold;
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
@@ -120,7 +110,6 @@ export const Boton1 = styled.button`
   font-size: 14px;
   margin: 20px 0px;
   @media (min-width: ${breakpoints.mobile}) {
-      
   }
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 16px;
@@ -139,11 +128,10 @@ export const Boton2 = styled.button`
   padding: 10px 0;
   border: none;
   text-transform: uppercase;
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-weight: bold;
   font-size: 14px;
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 16px;
@@ -153,5 +141,3 @@ export const Boton2 = styled.button`
     padding: 15px 0;
   }
 `;
-
-

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-
 export const WrapperContainer = styled.div`
   max-width: 300px;
   width: 100%;

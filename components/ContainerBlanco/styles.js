@@ -11,14 +11,13 @@ export const WhiteContainer = styled.div`
   padding: 25px 25px 40px;
   height: fit-content;
   @media (min-width: ${breakpoints.mobile}) {
-    
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
     width: 80%;
     padding: 50px 40px;
     margin: 0 auto;
   }
-  @media (min-width: ${breakpoints.tablet}) {    
+  @media (min-width: ${breakpoints.tablet}) {
     margin: unset;
     width: 50%;
     padding: 40px 25px;

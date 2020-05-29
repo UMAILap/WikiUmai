@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-
 export const Container = styled.header`
   padding-top: 20px;
   padding-bottom: 20px;
   max-height: 100px;
   @media (min-width: ${breakpoints.laptop}) {
-
   }
 `;
 
@@ -26,7 +24,7 @@ export const ContainerHeader = styled.header`
     width: 100%;
     grid-template-columns: 10% 60% 30%;
   }
-  
+
   @media (min-width: ${breakpoints.laptop}) {
     grid-template-columns: 10% 35% 45% 10%;
   }
@@ -38,24 +36,23 @@ export const ContainerHeader = styled.header`
 
 export const Logo = styled.h1`
   @media (min-width: ${breakpoints.mobile}) {
-    display:none;
+    display: none;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    display:block;
-    img{
+    display: block;
+    img {
       max-width: 60%;
     }
   }
-  
+
   @media (min-width: ${breakpoints.mobile}) {
     max-width: 100%;
-    img{
+    img {
       max-width: 100%;
     }
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     width: 80%;
-    
   }
 `;

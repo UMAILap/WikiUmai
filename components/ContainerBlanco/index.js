@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 import { WhiteContainer } from './styles';
 
 function ContainerBlanco({ children }) {
-  return (
-    <WhiteContainer>
-      {children}
-    </WhiteContainer>
-  )
+  return <WhiteContainer>{children}</WhiteContainer>;
 }
 
 ContainerBlanco.propTypes = {
