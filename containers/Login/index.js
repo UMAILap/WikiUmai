@@ -10,7 +10,7 @@ import {
   Intro,
   ImagenLogin,
   Olvidaste,
-} from '../Login/syles';
+} from './styles';
 import { Wrapper, ContainerBlanco } from 'components';
 
 function LoginContainer() {
