@@ -10,11 +10,12 @@ export const ContainerMain = styled.div`
 
 export const ContainerBanner = styled.div`
   background-image: none;
-  background-color: ${leerColor(colores.violeta)};
-  height:300px;
-  width:100%;
+  height: 300px;
+  width: 100%;
   display: flex;
-  
+  background-image: url(./banner_personajes.svg);
+  background-color: ${leerColor(colores.violeta)};
+
 `;
 export const ContainerInfoBanner = styled.div`
   display: flex;
@@ -29,7 +30,6 @@ export const ContainerInfoBanner = styled.div`
   }
 `;
 
-
 export const TituloPersonaje = styled.h1`
   font-family: 'Raleway';
   color: ${leerColor(colores.naranja)};
@@ -42,8 +42,8 @@ export const TituloPersonaje = styled.h1`
 export const BajadaPersonaje = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
-  height:fit-content;
-  padding:0 20px;
+  height: fit-content;
+  padding: 0 20px;
 
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
@@ -51,44 +51,44 @@ export const BajadaPersonaje = styled.p`
 `;
 
 export const IconoPersonaje = styled.h1`
- width:10%;
- display:inline-table;
- padding:0 20px;
+  width: 10%;
+  display: inline-table;
+  padding: 0 20px;
 
   @media (min-width: ${breakpoints.laptop}) {
   }
 `;
 export const ContenedorPuntos = styled.div`
-  width: 20%;  
-  height:fit-content;
+  width: 20%;
+  height: fit-content;
 `;
 export const FotoPersonaje = styled.img`
   border-radius: 10px;
-  width: 20%;  
-  height:fit-content;
+  width: 20%;
+  height: fit-content;
 `;
 export const Fuerza = styled.img`
   width: 20px;
-  height:20px;  
+  height: 20px;
 `;
 export const Inteligencia = styled.img`
   width: 20px;
-  height:20px;  
+  height: 20px;
 `;
 export const Estrella = styled.img`
   width: 20px;
-  height:20px;  
+  height: 20px;
 `;
 export const Suerte = styled.img`
   width: 20px;
-  height:20px;  
+  height: 20px;
 `;
 
 export const PuntosPersonaje = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
-  width:40%;
-  height:fit-content;
+  width: 40%;
+  height: fit-content;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
   }
