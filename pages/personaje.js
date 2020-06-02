@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout, Personajes as PersonajesContainer, } from 'containers';
+import { Layout, Personajes as PersonajesContainer } from 'containers';
 
 function Personajes() {
   return (
