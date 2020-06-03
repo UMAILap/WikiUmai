@@ -20,11 +20,11 @@ import { Wrapper } from 'components';
 function PersonajesContainer() {
   return (
     <ContainerMain>
-        <ContainerBanner>
+      <ContainerBanner>
         <Wrapper>
           <ContainerInfoBanner>
             <IconoPersonaje>
-              <img src="./logo.png" />
+              <img src="./Robot_Personajes.svg" />
             </IconoPersonaje>
             <BajadaPersonaje>Personaje</BajadaPersonaje>
             <TituloPersonaje>Obi Kubu</TituloPersonaje>
@@ -47,8 +47,8 @@ function PersonajesContainer() {
             <PuntosPersonaje>1</PuntosPersonaje>
           </ContenedorPuntos>
           <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-          </Wrapper>
-        </ContainerBanner>
+        </Wrapper>
+      </ContainerBanner>
     </ContainerMain>
   );
 }
