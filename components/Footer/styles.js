@@ -32,26 +32,32 @@ export const ContainerFooter = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
+
 
   }
 
   
 `;
 export const Texto = styled.a`
-  font-size: 8px;
-  color: #75757575;
-  @media (min-width:${breakpoints.mobile}) {
+    font-size: 8px;
+    color: #75757575;
     font-size: 11px;
-  }
+    font-style: italic;
+    line-height: 13px;
+  
 
   @media (min-width:${breakpoints.tablet}) {
-    font-size: 10px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 16px;
   }
 
 
   @media (min-width:${breakpoints.laptop}) {
-    font-size: 13px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 16px;
   }
  
 
@@ -59,23 +65,18 @@ export const Texto = styled.a`
 
 `;
 export const Imagenes = styled.div`
-  display: flex;
-  justify-content: space-between;
-  img {
-    width: 25%;
-  }
-  @media (min-width:${breakpoints.mobile}) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px;
     img {
       width: 20%;
-    margin: 10px 10px;
-    }
-  }
-
+      }
+    
   @media (min-width:${breakpoints.mobileGrande}) {
     img {
-      width: 20%;
+      width: 15%;
       margin: 0;
-    
     }
   }
 
@@ -86,12 +87,11 @@ export const Imagenes = styled.div`
     }
   }
 
-
   @media (min-width: ${breakpoints.laptop}){
     justify-content: flex-end;
     align-items: baseline;
     img{
-      width:24%;
+      width: 15%;
       padding-right: 10px;
 
     }

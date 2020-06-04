@@ -18,11 +18,11 @@ function Header() {
             <input
               type="text"
               name="search"
-              placeholder="Buscar contenido (L)"></input>
+              placeholder="Buscar contenido"></input>
             <i className="fas fa-search"></i>
           </ContainerSearch>
           <ContainerBotones>
-            <Link>Planetas</Link>
+            <Link>Universo</Link>
             <Link>Foro</Link>
             <Link>Ayudas y reglas</Link>
           </ContainerBotones>
@@ -30,7 +30,7 @@ function Header() {
             <Search>
               <img src="./search.png" />
             </Search>
-            <Notification src="./notificacion-header.png" />
+            <Notification src="./notificacion-header.svg" />
             <User src="./perfil-header.png" />
           </ContainerUser>
         </ContainerHeader>

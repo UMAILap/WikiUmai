@@ -11,15 +11,13 @@ export const Container = styled.header`
 `;
 
 export const ContainerHeader = styled.div`
-  width: 100%;
-  display: grid;  
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 1fr;
-  align-items: center;
-
-  @media (min-width: ${breakpoints.mobile}) {
+    width: 100%;
+    display: grid;  
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 1fr;
+    align-items: center;
     padding: 10px 0;
-  }
+  
   @media (min-width: ${breakpoints.mobileGrande}) {
    
   }
@@ -116,14 +114,13 @@ export const User = styled.img`
 `;
 
 export const MenuHamburguesa = styled.h1`
-  display: block;
-  max-width: 50%;
-  @media (min-width: ${breakpoints.mobile}) {
     display: block;
-    img{
-      width: 70%;
-    }
-  }
+    max-width: 50%;
+    display: block;
+      img{
+        width: 100%;
+      }
+  
   @media (min-width: ${breakpoints.tablet}) {
     max-width:60%;
     img{
@@ -155,6 +152,7 @@ export const ContainerSearch = styled.div`
       width: 90%;
       border-radius: 20px;
       height: fit-content;
+      background-image: url(./search.png);
     }
   }
   @media (min-width: ${breakpoints.notebook}){
@@ -166,8 +164,8 @@ export const Search = styled.a`
   width: 30%;
   display: block;
   img{
-    width: 100%;
-  }
+    width: 93%;
+}
   @media (min-width: ${breakpoints.mobile}) {
     width: 40%;
   }
@@ -186,28 +184,25 @@ export const Search = styled.a`
 `;
 
 export const Notification = styled.img`
-  width: 30%;
-  @media (min-width: ${breakpoints.mobile}){
-    width: 40%;
-  
-  }
+  width: 35%;
+
   @media (min-width: ${breakpoints.mobileGrande}){
     width: 30%;
     
       }
   @media (min-width: ${breakpoints.tablet}){
-    width: 25%;
+    width: 18%;
   }
   @media (min-width: ${breakpoints.laptop}){
-    width: 25%;
-    margin-right: 10px;
+    width: 18%;
+    margin-right: 20px;
   }
   @media (min-width: ${breakpoints.laptopL}){
-    width: 15%;
+    width: 13%;
   }
 
   @media (min-width: ${breakpoints.notebook}){
-    width: 15%;
+    width: 13%;
   }
 `;
 
