@@ -5,7 +5,7 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const EstilosTitulos = styled.h1`
   font-size: 20px;
   font-style: bold;
-  color: #381460;
+  color: ${leerColor(colores.violeta)};
   padding-top: 20px;
   font-weight: bolder;
   font-family: "Raleway";

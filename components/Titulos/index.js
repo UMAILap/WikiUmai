@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 import { EstilosTitulos } from './styles';
 
 function Titulos({ children }) {
-  return <EstilosTitulos>{children}</EstilosTitulos>;
+  return (
+    <EstilosTitulos>
+      {children}
+    </EstilosTitulos>
+  );
 }
 
 Titulos.propTypes = {
