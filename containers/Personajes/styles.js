@@ -15,7 +15,6 @@ export const ContainerBanner = styled.div`
   display: flex;
   background-image: url(./banner_personajes.svg);
   background-color: ${leerColor(colores.violeta)};
-
 `;
 export const ContainerInfoBanner = styled.div`
   display: flex;
