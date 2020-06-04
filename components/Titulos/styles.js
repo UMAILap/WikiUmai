@@ -23,6 +23,6 @@ export const EstilosTitulos = styled.h1`
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    font-size: 34px;
+    font-size: 31px;
   }
 `;

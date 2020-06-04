@@ -27,13 +27,13 @@ export const SectorTitulos = styled.div`
 
   @media (min-width: ${breakpoints.laptop}) {
     width: 40%;
-    height: 20vh;
+    height: 18vh;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     width: 40%;
     height: 25vh;
-  }
+      }
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
@@ -52,22 +52,22 @@ export const ContainerBanner = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    background-image: url(./fondo-main.png);
+    background-image: url(./patternHome.svg);
     width: 100%;
-    background-size: 1380px 100%;
-    height: 20vh;
+    background-size: auto 100%;
+    height: 170px;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    background-image: url(./fondo-main.png);
+    background-image: url(./patternHome.svg);
     width: 100%;
-    background-size: 1800px 100%;
-    height: 26vh;
+    background-size: auto 100%;
+    height: 225px;
   }
   @media (min-width: ${breakpoints.notebook}) {
-    background-image: url(./fondo-main.png);
+    background-image: url(./patternHome.svg); 
     width: 100%;
-    background-size: 1800px 100%;
-    height: 26vh;
+    background-size: auto 100%;
+    height: 225px;
   }
 `;
 
@@ -100,31 +100,67 @@ export const Textos = styled.p`
   }
 `;
 
-export const Textos2 = styled.p`
+export const TextosPlanetas = styled.p`
   font-family: 'Proxima Nova';
   font-size: 11px;
   color: #381460;
   margin: 6% 0%;
   line-height: 18px;
   width: 70%;
+  line-height: 32px;
+  display:none;
   @media ${breakpoints.mobile} {
     width: 60%;
   }
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
+  
+
   }
   @media (min-width: ${breakpoints.laptop}) {
     margin: 1% 0% 3% 0%;
     font-size: 13px;
+    display:block;
+
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     font-size: 17px;
+    display:block;
+
   }
 
   @media (min-width: ${breakpoints.notebook}) {
-    margin: 2% 0%;
+    margin: 0% 0% 4% 0%;
+    display:block;
+
+  }
+`;
+
+export const TextosPlanetasMobile = styled.p`
+  font-family: 'Proxima Nova';
+  font-size: 11px;
+  color: #381460;
+  margin: 6% 0%;
+  line-height: 18px;
+  display:block;
+  width: 89%;
+  
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 15px;
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    display:none;
+
+  }
+
+  @media (min-width: ${breakpoints.laptopL}) {
+    display:none;
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    display:none;
   }
 `;
 
@@ -174,50 +210,53 @@ export const TituloCard = styled.h2`
   }
 `;
 
-export const ContainerBotonSlider = styled.div`
-  padding: 10px 0px 0px 0px;
+
+export const SeccionActualizaciones = styled.div`
+   
 `;
 
-export const LineaDeTiempoBoton = styled.a`
-  font-family: 'Proxima Nova';
-  border-radius: 20px;
-  padding: 10px 5px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin: 30px auto;
-  display: grid;
-  width: 85%;
-  text-align: center;
-  background-color: #fe346e;
-  font-size: 13px;
 
-  @media (min-width: ${breakpoints.mobile}) {
-    border-radius: 20px;
-    padding: 11px 40px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin: 30px auto;
+export const GrillaSeccionActualizaciones = styled.div`
+   grid-template-columns: repeat(4, 1fr);
     display: grid;
-    width: 90%;
-    text-align: center;
-    font-size: 10px;
-  }
+    grid-column-gap: 15px;
 
-  @media (min-width: ${breakpoints.tablet}) {
-    width: 40%;
-    font-size: 15px;
-  }
-  @media (min-width: ${breakpoints.laptop}) {
-    width: 40%;
-  }
-  @media (min-width: ${breakpoints.laptopL}) {
-    width: 30%;
-    font-size: 17px;
-  }
-
-  @media (min-width: ${breakpoints.notebook}) {
-    padding: 16px;
-  }
 `;
+
+
+
+export const ActualizacionesAlumnos = styled.div`
+ justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./paula.png);
+  background-repeat: no-repeat;
+  height: 287px;
+  width: 347px;
+  img{
+    width:100%;
+  }
+
+`;
+
+export const TextosOverlay = styled.div`
+
+`;
+export const EdicionActualizacionesTitulo = styled.h3`
+ 
+`;
+
+
+export const TextoOverlay = styled.h2`
+font-family: "Proxima Nova";
+  
+`;
+
+export const TituloOverlay = styled.h3`
+font-family: "Proxima Nova";
+  
+  
+`;
+
+
+
