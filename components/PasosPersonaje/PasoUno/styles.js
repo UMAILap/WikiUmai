@@ -10,7 +10,7 @@ export const PasoTitulo = styled.h1`
   font-family: 'Raleway';
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
-  font-size: 35px; 
+  font-size: 35px;
 `;
 
 export const Avatares = styled.div`
@@ -24,7 +24,7 @@ export const AvataresTitulo = styled.h3`
   font-family: 'Raleway';
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
-  font-size: 21px; 
+  font-size: 21px;
   padding-bottom: 20px;
 `;
 export const AvataresImagenes = styled.div`
@@ -33,7 +33,7 @@ export const AvataresImagenes = styled.div`
   grid-template-columns: 200px 1fr;
 `;
 export const ImagenPrincipal = styled.img`
-  width: 100%; 
+  width: 100%;
   border-radius: 20px;
 `;
 export const ImagenesSecundarias = styled.div`
@@ -47,14 +47,14 @@ export const Imagen = styled.img`
   border-radius: 5px;
 `;
 export const AvatarNombre = styled.div`
-  input{
+  input {
     border: none;
     border-bottom: 2px solid ${leerColor(colores.violeta)};
     background-color: none;
     padding: 15px 0;
     font-family: 'Proxima Nova';
     ::placeholder {
-        color: ${leerColor(colores.violeta)};
+      color: ${leerColor(colores.violeta)};
     }
   }
 `;
@@ -76,5 +76,6 @@ export const Planeta = styled.div`
   font-weight: bold;
   text-align: center;
   margin: auto;
-  background-color: ${props => props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+  background-color: ${props =>
+    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
 `;

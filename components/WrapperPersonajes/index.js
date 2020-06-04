@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 import { WrapperContainer } from './styles';
 
 function WrapperPersonajes({ children }) {
-  return (
-    <WrapperContainer>
-      {children}
-    </WrapperContainer>
-  );
+  return <WrapperContainer>{children}</WrapperContainer>;
 }
 
 WrapperPersonajes.propTypes = {

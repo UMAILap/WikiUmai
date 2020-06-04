@@ -10,7 +10,7 @@ export const ContainerMain = styled.div`
 
 export const ContainerBanner = styled.div`
   display: flex;
-  width: 100%; 
+  width: 100%;
   background-image: url(./images/crearPersonajeBanner.svg);
   background-repeat: no-repeat;
   height: 152px;
@@ -23,5 +23,5 @@ export const Titulo = styled.h1`
   font-family: 'Raleway';
   font-weight: bold;
   color: ${leerColor(colores.blanco)};
-  font-size: 35px; 
+  font-size: 35px;
 `;

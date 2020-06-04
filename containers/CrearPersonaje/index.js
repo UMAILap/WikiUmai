@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { ContainerMain, ContainerBanner, PasosContainer, Titulo, Avatares, AvataresTitulo, AvataresImagenes } from './styles';
+import {
+  ContainerMain,
+  ContainerBanner,
+  PasosContainer,
+  Titulo,
+  Avatares,
+  AvataresTitulo,
+  AvataresImagenes,
+} from './styles';
 import { WrapperPersonajes } from 'components';
 import { PasoUno } from '../../components/PasosPersonaje';
 
@@ -9,14 +17,11 @@ function CrearPersonajeContainer() {
     <ContainerMain>
       <ContainerBanner>
         <WrapperPersonajes>
-          <Titulo>
-            Crear un nuevo personaje
-          </Titulo>
+          <Titulo>Crear un nuevo personaje</Titulo>
         </WrapperPersonajes>
       </ContainerBanner>
       <WrapperPersonajes>
-        <PasoUno/>
-        
+        <PasoUno />
       </WrapperPersonajes>
     </ContainerMain>
   );
