@@ -212,48 +212,97 @@ export const TituloCard = styled.h2`
 
 
 export const SeccionActualizaciones = styled.div`
-   
+    display: grid;
+    margin: 80px 0px;
 `;
 
 
 export const GrillaSeccionActualizaciones = styled.div`
-   grid-template-columns: repeat(4, 1fr);
     display: grid;
-    grid-column-gap: 15px;
+    margin: 50px 0px;
+    grid-template-columns: 100%;
+    grid-gap: 20px 0px;
+
+    @media (min-width: ${breakpoints.tablet}) {
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px 0px;
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px 0px;
+
+  }
+
+  @media (min-width: ${breakpoints.laptopL}) {
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 20px 0px;
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 20px 0px;
+  }
 
 `;
 
 
 
 export const ActualizacionesAlumnos = styled.div`
- justify-content: center;
+
   flex-direction: column;
-  width: 20%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./paula.png);
+  display:flex;
+  border-radius: 15px;
+  margin: 0px 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./paula.png);
   background-repeat: no-repeat;
-  height: 287px;
-  width: 347px;
+  height: 250px;
+  max-height: 250px;
+
+  justify-content: flex-end;
   img{
     width:100%;
   }
 
 `;
 
-export const TextosOverlay = styled.div`
-
+export const FotoAlumno = styled.div`
+    background-image: url(./SOFI.png);
+    background-repeat: no-repeat;
+    width:100%;
 `;
+
 export const EdicionActualizacionesTitulo = styled.h3`
- 
+    font-family: "Proxima Nova";
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0px 90px 30px;
+
 `;
 
 
 export const TextoOverlay = styled.h2`
-font-family: "Proxima Nova";
+    font-family: "Proxima Nova";
+    color: #fff;
+    font-size: 17px;
+    margin: 0px 30px;
   
 `;
 
 export const TituloOverlay = styled.h3`
-font-family: "Proxima Nova";
+    font-family: "Proxima Nova";
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 5px 30px 30px;
+    line-height: 26px;
   
   
 `;
