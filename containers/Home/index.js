@@ -21,7 +21,7 @@ import {
   SeccionActualizaciones,
   ActualizacionesAlumnos,
   EdicionActualizacionesTitulo,
-  TextosOverlay,
+  FotoAlumno,
   TextoOverlay,
   TituloOverlay,
 } from './styles';
@@ -125,7 +125,8 @@ function HomeContainer() {
 
        
         </Container>
- 
+        <Wrapper>
+
         <SeccionActualizaciones>
     
          <Titulos>Últimas actualizaciones</Titulos>
@@ -133,34 +134,59 @@ function HomeContainer() {
          <GrillaSeccionActualizaciones>
            
               <ActualizacionesAlumnos>
-                <TextosOverlay>
-                  <TextoOverlay>Historia</TextoOverlay>
-                  <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-                </TextosOverlay>
-                <EdicionActualizacionesTitulo>Última edición por Sofía Hadjilias</EdicionActualizacionesTitulo>
+                  <FotoAlumno></FotoAlumno>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                      <TextoOverlay>Personaje</TextoOverlay>
+                      <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
               </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
-              <TextoOverlay>Historia</TextoOverlay>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
                 <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-                <EdicionActualizacionesTitulo>Última edición por Sofía Hadjilias</EdicionActualizacionesTitulo>
               </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
-                <TextoOverlay>Historia</TextoOverlay>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
                 <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-                <EdicionActualizacionesTitulo>Última edición por Sofía Hadjilias</EdicionActualizacionesTitulo>
               </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
-                <TextoOverlay>Historia</TextoOverlay>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
                 <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-                <EdicionActualizacionesTitulo>Última edición por Sofía Hadjilias</EdicionActualizacionesTitulo>
+              </ActualizacionesAlumnos>
+
+              <ActualizacionesAlumnos>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+              <ActualizacionesAlumnos>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+              <ActualizacionesAlumnos>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+              <ActualizacionesAlumnos>
+                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                <TextoOverlay>Personaje</TextoOverlay>
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
               </ActualizacionesAlumnos>
    
           </GrillaSeccionActualizaciones>
 
        </SeccionActualizaciones>
+
+       </Wrapper>
       </Wrapper>
     </ContainerMain>
   );
