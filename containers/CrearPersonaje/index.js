@@ -7,6 +7,8 @@ import {
   PasoDos,
   PasoTres,
   PasoCuatro,
+  PasoCinco, 
+  PasoSeis
 } from '../../components/PasosPersonaje';
 
 function CrearPersonajeContainer() {
@@ -22,6 +24,8 @@ function CrearPersonajeContainer() {
         <PasoDos />
         <PasoTres />
         <PasoCuatro />
+        <PasoCinco />
+        <PasoSeis />
       </WrapperPersonajes>
     </ContainerMain>
   );
