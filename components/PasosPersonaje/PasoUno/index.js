@@ -13,6 +13,7 @@ import {
   Imagen,
   AvatarNombre,
   AvatarPlaneta,
+  Planetas, 
   AvatarPlanetaTitulo,
   Planeta,
 } from './styles';
@@ -20,10 +21,9 @@ import {
 function PasoUno({ colorFondo }) {
   return (
     <PasoContainer>
-      <PasoTitulo>¿Quién es tu personaje?</PasoTitulo>
+      <PasoTitulo>¿Quién es tu personaje?</PasoTitulo>        
+      <AvataresTitulo>Avatares</AvataresTitulo>
       <Avatares>
-        <AvataresTitulo>Avatares</AvataresTitulo>
-        <AvataresInfo>
           <AvataresImagenes>
             <ImagenPrincipal src="./placeholderAvatar.png" />
             <ImagenesSecundarias>
@@ -31,19 +31,22 @@ function PasoUno({ colorFondo }) {
               <Imagen src="./placeholderAvatar.png" />
               <Imagen src="./placeholderAvatar.png" />
             </ImagenesSecundarias>
-          </AvataresImagenes>
-          <AvatarNombre>
-            <input type="text" placeholder="Nombre completo del personaje" />
-          </AvatarNombre>
-          <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
-          <AvatarPlaneta>
-            <Planeta colorFondo={colorFondo}>Wereld</Planeta>
-            <Planeta colorFondo={null}>Zoro</Planeta>
-            <Planeta colorFondo={null}>Sol</Planeta>
-            <Planeta colorFondo={null}>Ikigai</Planeta>
-            <Planeta colorFondo={null}>Nima</Planeta>
-            <Planeta colorFondo={null}>Adhera</Planeta>
-          </AvatarPlaneta>
+          </AvataresImagenes>        
+          <AvataresInfo>
+            <AvatarNombre>
+              <input type="text" placeholder="Nombre completo del personaje" />
+            </AvatarNombre>
+            <AvatarPlaneta>          
+              <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
+              <Planetas>
+                <Planeta colorFondo={false}>Wereld</Planeta>
+                <Planeta colorFondo={false}>Zoro</Planeta>
+                <Planeta colorFondo={false}>Sol</Planeta>
+                <Planeta colorFondo={false}>Ikigai</Planeta>
+                <Planeta colorFondo={true}>Nima</Planeta>
+                <Planeta colorFondo={false}>Adhera</Planeta>
+              </Planetas>
+            </AvatarPlaneta>
         </AvataresInfo>
       </Avatares>
     </PasoContainer>

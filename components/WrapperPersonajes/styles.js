@@ -4,9 +4,8 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const WrapperContainer = styled.div`
   max-width: 300px;
   width: 100%;
-  display: flex;
+  display: inherit;
   margin: 0 auto;
-  justify-content: flex-start;
   @media (min-width: ${breakpoints.mobile}) {
     max-width: 300px;
     width: 100%;

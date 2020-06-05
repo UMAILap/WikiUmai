@@ -3,14 +3,10 @@ import React from 'react';
 import {
   ContainerMain,
   ContainerBanner,
-  PasosContainer,
-  Titulo,
-  Avatares,
-  AvataresTitulo,
-  AvataresImagenes,
+  Titulo
 } from './styles';
 import { WrapperPersonajes } from 'components';
-import { PasoUno } from '../../components/PasosPersonaje';
+import { PasoUno, PasoDos, PasoTres, PasoCuatro } from '../../components/PasosPersonaje';
 
 function CrearPersonajeContainer() {
   return (
@@ -22,6 +18,9 @@ function CrearPersonajeContainer() {
       </ContainerBanner>
       <WrapperPersonajes>
         <PasoUno />
+        <PasoDos />
+        <PasoTres />
+        <PasoCuatro />
       </WrapperPersonajes>
     </ContainerMain>
   );
