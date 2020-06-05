@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  PasoContainer, 
-  PasoTitulo, 
-  Datos, 
-  InformacionBasica, 
-  Caracteristicas, 
-  CaracteristicasIconos, 
-  CaracteristicasPuntos, 
-  CaracteristicasNombres
+  PasoContainer,
+  PasoTitulo,
+  Datos,
+  InformacionBasica,
+  Caracteristicas,
+  CaracteristicasIconos,
+  CaracteristicasPuntos,
+  CaracteristicasNombres,
 } from './styles';
 
 function PasoTres({ colorFondo }) {
   return (
     <PasoContainer>
-      <PasoTitulo>Información básica y características</PasoTitulo> 
+      <PasoTitulo>Información básica y características</PasoTitulo>
       <Datos>
         <InformacionBasica>
           <input type="text" placeholder="Raza del personaje" />
@@ -26,10 +26,10 @@ function PasoTres({ colorFondo }) {
         </InformacionBasica>
         <Caracteristicas>
           <CaracteristicasIconos>
-            <img src='./fuerza.svg'/>
-            <img src='./inteligencia.svg'/>
-            <img src='./habilidad.svg'/>
-            <img src='./suerte.svg'/>
+            <img src="./fuerza.svg" />
+            <img src="./inteligencia.svg" />
+            <img src="./habilidad.svg" />
+            <img src="./suerte.svg" />
           </CaracteristicasIconos>
           <CaracteristicasPuntos>
             <input type="text" />
@@ -44,7 +44,7 @@ function PasoTres({ colorFondo }) {
             <h6>Suerte</h6>
           </CaracteristicasNombres>
         </Caracteristicas>
-      </Datos> 
+      </Datos>
     </PasoContainer>
   );
 }

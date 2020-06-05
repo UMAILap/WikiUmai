@@ -14,12 +14,12 @@ export const PasoTitulo = styled.h1`
 `;
 export const Datos = styled.div`
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   width: 100%;
 `;
 export const Objetos = styled.div`
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ export const Objetos = styled.div`
     border-bottom: 1px solid ${leerColor(colores.violeta)};
     background-color: none;
     padding: 10px 0;
-    margin-top: 10px; 
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Proxima Nova';
     width: 100%;

@@ -1,12 +1,13 @@
 import React from 'react';
 
-import {
-  ContainerMain,
-  ContainerBanner,
-  Titulo
-} from './styles';
+import { ContainerMain, ContainerBanner, Titulo } from './styles';
 import { WrapperPersonajes } from 'components';
-import { PasoUno, PasoDos, PasoTres, PasoCuatro } from '../../components/PasosPersonaje';
+import {
+  PasoUno,
+  PasoDos,
+  PasoTres,
+  PasoCuatro,
+} from '../../components/PasosPersonaje';
 
 function CrearPersonajeContainer() {
   return (

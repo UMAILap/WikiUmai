@@ -14,12 +14,12 @@ export const PasoTitulo = styled.h1`
 `;
 export const Datos = styled.div`
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   width: 100%;
 `;
 export const InformacionBasica = styled.div`
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ export const InformacionBasica = styled.div`
     border-bottom: 1px solid ${leerColor(colores.violeta)};
     background-color: none;
     padding: 10px 0;
-    margin-top: 10px; 
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Proxima Nova';
     width: 100%;
@@ -37,7 +37,7 @@ export const InformacionBasica = styled.div`
       color: ${leerColor(colores.violeta)};
     }
   }
-  input:nth-last-child(2){
+  input:nth-last-child(2) {
     width: 45%;
   }
   input:last-child {
@@ -49,7 +49,7 @@ export const InformacionBasica = styled.div`
 `;
 export const Caracteristicas = styled.div`
   display: grid;
-  background-color: ${leerColor(colores.gris)}; 
+  background-color: ${leerColor(colores.gris)};
   border-radius: 20px;
   grid-template-columns: 25% 25% 50%;
   margin-left: 5%;

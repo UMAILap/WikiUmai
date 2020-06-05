@@ -79,7 +79,7 @@ export const Planetas = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-row-gap: 10px;
-    grid-column-gap: 10px;
+  grid-column-gap: 10px;
 `;
 export const Planeta = styled.div`
   color: ${leerColor(colores.violeta)};
