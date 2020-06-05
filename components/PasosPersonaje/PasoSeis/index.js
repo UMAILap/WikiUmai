@@ -6,9 +6,7 @@ import { PasoContainer, Datos, BotonRosa } from './styles';
 function PasoSeis({ colorFondo }) {
   return (
     <PasoContainer>
-      <BotonRosa>
-        Crear personaje
-      </BotonRosa>
+      <BotonRosa>Crear personaje</BotonRosa>
     </PasoContainer>
   );
 }

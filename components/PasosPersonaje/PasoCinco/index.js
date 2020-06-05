@@ -7,9 +7,9 @@ function PasoCinco({ colorFondo }) {
   return (
     <PasoContainer>
       <PasoTitulo>Sinopsis *</PasoTitulo>
-        <Sinopsis>
-          <textarea type="text" placeholder="Había una vez..." />
-        </Sinopsis>
+      <Sinopsis>
+        <textarea type="text" placeholder="Había una vez..." />
+      </Sinopsis>
     </PasoContainer>
   );
 }
