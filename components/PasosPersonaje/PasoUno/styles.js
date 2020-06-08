@@ -81,7 +81,8 @@ export const Planetas = styled.div`
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 `;
-export const Planeta = styled.div`
+export const Planeta = styled.span`
+  cursor: pointer;
   color: ${leerColor(colores.violeta)};
   padding: 10px 40px;
   border-radius: 7px;

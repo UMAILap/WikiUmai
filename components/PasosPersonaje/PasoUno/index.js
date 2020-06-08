@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, {useState} from 'react';
 
 import {
   PasoContainer,
@@ -18,7 +17,16 @@ import {
   Planeta,
 } from './styles';
 
-function PasoUno({ colorFondo }) {
+function PasoUno() {
+  const [ 
+    selectedPlanet, 
+    setSelectedPlanet
+  ] = useState(null);
+
+  function handleClickPlaneta(planet_name) {
+    setSelectedPlanet(planet_name);
+  }
+
   return (
     <PasoContainer>
       <PasoTitulo>¿Quién es tu personaje?</PasoTitulo>
@@ -39,12 +47,36 @@ function PasoUno({ colorFondo }) {
           <AvatarPlaneta>
             <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
             <Planetas>
-              <Planeta colorFondo={false}>Wereld</Planeta>
-              <Planeta colorFondo={false}>Zoro</Planeta>
-              <Planeta colorFondo={false}>Sol</Planeta>
-              <Planeta colorFondo={false}>Ikigai</Planeta>
-              <Planeta colorFondo={true}>Nima</Planeta>
-              <Planeta colorFondo={false}>Adhera</Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'wereld' ? true : false} 
+                onClick={() => handleClickPlaneta('wereld')}>
+                Wereld
+              </Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'zoro' ? true : false}
+                onClick={() => handleClickPlaneta('zoro')}>
+                Zoro
+              </Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'sol' ? true : false}
+                onClick={() => handleClickPlaneta('sol')}>
+                Sol
+              </Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'ikigai' ? true : false}
+                onClick={() => handleClickPlaneta('ikigai')}>
+                Ikigai
+              </Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'nima' ? true : false}
+                onClick={() => handleClickPlaneta('nima')}>
+                Nima
+              </Planeta>
+              <Planeta 
+                colorFondo={selectedPlanet === 'adhera' ? true : false}
+                onClick={() => handleClickPlaneta('adhera')}>
+                Adhera
+              </Planeta>
             </Planetas>
           </AvatarPlaneta>
         </AvataresInfo>
@@ -52,8 +84,5 @@ function PasoUno({ colorFondo }) {
     </PasoContainer>
   );
 }
-PasoUno.propTypes = {
-  colorFondo: PropTypes.element.isRequired,
-};
 
 export default PasoUno;
