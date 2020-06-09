@@ -127,22 +127,22 @@ function PersonajesContainer() {
           <TituloGaleria>Relacionados</TituloGaleria>
           <ContenedorRelacionados>
             <Relacionados>
-            <img src="./images/Wereld_img.png" />
+              <img src="./images/Wereld_img.png" />
               <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
               <SubtitulosVioleta>Nima</SubtitulosVioleta>
             </Relacionados>
             <Relacionados>
-            <img src="./images/Wereld_img.png" />
+              <img src="./images/Wereld_img.png" />
               <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
               <SubtitulosVioleta>Wereld</SubtitulosVioleta>
             </Relacionados>
             <Relacionados>
-            <img src="./images/Wereld_img.png" />
+              <img src="./images/Wereld_img.png" />
               <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
               <SubtitulosVioleta>Guardián Zoro</SubtitulosVioleta>
             </Relacionados>
             <Relacionados>
-            <img src="./images/Wereld_img.png" />
+              <img src="./images/Wereld_img.png" />
               <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
               <SubtitulosVioleta>Guardián Zoro Hermano</SubtitulosVioleta>
             </Relacionados>

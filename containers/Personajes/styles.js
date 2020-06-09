@@ -17,13 +17,13 @@ export const ContainerBanner = styled.div`
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
   @media (min-width: ${breakpoints.laptop}) {
-  background-image: none;
-  height: 450px;
-  width: 100%;
-  display: flex;
-  background-image: url(./banner_personajes.svg);
-  background-color: ${leerColor(colores.violetaOscuro)};
-  background-size: auto 100%;
+    background-image: none;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    background-image: url(./banner_personajes.svg);
+    background-color: ${leerColor(colores.violetaOscuro)};
+    background-size: auto 100%;
   }
 `;
 export const NombrePersonaje = styled.div`
@@ -39,6 +39,7 @@ export const ContainerInfoBanner = styled.div`
   padding: 20px 0;
   max-width: 50%;
 `;
+
 
 export const TituloPersonaje = styled.h1`
   font-family: 'Raleway';
@@ -111,9 +112,9 @@ export const FotoPersonaje = styled.img`
   width: auto;
   height: 100%;
   @media (min-width: ${breakpoints.laptop}) {
-  border-radius: 10px;
-  width: auto;
-  height: 100%;
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
   }
 `;
 export const Fuerza = styled.img`

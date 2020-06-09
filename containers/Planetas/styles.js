@@ -17,10 +17,10 @@ export const ContainerBanner = styled.div`
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
 `;
-export const NombrePersonaje = styled.div`
+export const NombrePlaneta = styled.div`
   display: inline-block;
   width: 90%;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 `;
 export const ContainerInfoBanner = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ export const ContainerInfoBanner = styled.div`
   max-width: 70%;
 `;
 
-export const TituloPersonaje = styled.h1`
+export const TituloPlaneta = styled.h1`
   font-family: 'Raleway';
   color: ${leerColor(colores.naranja)};
   font-weight: bolder;
@@ -41,18 +41,8 @@ export const TituloPersonaje = styled.h1`
     font-size: 32px;
   }
 `;
-export const TituloSeccion = styled.p`
-  font-family: 'Raleway';
-  color: ${leerColor(colores.blanco)};
-  height: fit-content;
-  font-weight: bolder;
-  padding-bottom: 25px;
-  width: 100%;
-  @media (min-width: ${breakpoints.laptop}) {
-    font-size: 14px;
-  }
-`;
-export const BajadaPersonaje = styled.p`
+
+export const BajadaPlaneta = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
   height: fit-content;
@@ -64,188 +54,89 @@ export const BajadaPersonaje = styled.p`
   }
 `;
 
-export const IconoPersonaje = styled.h1`
-  width: 10%;
-  display: inline-table;
-  padding: 20px 0;
-
-  @media (min-width: ${breakpoints.laptop}) {
-  }
-`;
-
-export const ContenedorCaracteristicasPersonaje = styled.div`
+export const ContenedorImagenPlaneta = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
 `;
 
-export const ContenedorPersonajeImg = styled.div`
+export const ContenedorPlanetaImg = styled.div`
   height: 200px;
   border-radius: 20px;
 `;
-export const ContenedorPuntos = styled.div`
-  width: auto;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`;
-export const ContenedorPuntosImagenes = styled.div`
-  width: auto;
-  height: fit-content;
-  display: flex;
-  padding: 0 40px 20px 0;
-`;
-export const FotoPersonaje = styled.img`
+
+
+export const FotoPlaneta = styled.img`
   border-radius: 50%;
   width: auto;
   height: 90%;
 `;
-export const Fuerza = styled.img`
-  width: 20px;
-  height: auto;
-`;
-export const Inteligencia = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-export const Estrella = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-export const Suerte = styled.img`
-  width: 20px;
-  height: 20px;
-`;
 
-export const PuntosPersonaje = styled.p`
-  font-family: 'Raleway';
-  color: ${leerColor(colores.blanco)};
-  height: fit-content;
-  padding-left: 20px;
+export const ContenidoPlaneta = styled.div`
+  width: 100%;
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 32px;
   }
 `;
 
-export const ContenidoPrincipal = styled.div`
-  width: 60%;
-  padding-top: 90px;
-`;
-export const ContenidoSecundario = styled.div`
-  width: 40%;
-  margin-left: 40px;
-
-  padding-top: 90px;
-  align-self: flex-start;
-`;
-export const TextoPrincipal = styled.p`
-  font-family: 'Proxima Nova';
-  color: ${leerColor(colores.violeta)};
-  font-size: 18px;
-  line-height: 40px;
-  padding-bottom: 40px;
-`;
 export const TextoSecundario = styled.p`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.negro)};
-  font-size: 18px;
+  font-size: 14px;
   line-height: 40px;
   padding-bottom: 40px;
 `;
 
-export const TituloHitstorias = styled.h2`
-  font-family: 'Raleway';
-  color: ${leerColor(colores.rosa)};
-  font-size: 32px;
-  padding-bottom: 20px;
-  font-weight: bolder;
-`;
-export const TituloGaleria = styled.h2`
-  font-family: 'Raleway';
-  color: ${leerColor(colores.violeta)};
-  font-size: 32px;
-  padding: 40px 0;
-  font-weight: bolder;
-`;
+
 export const AgregarHistoriaBoton = styled.a`
   font-family: 'Proxima Nova';
   border-radius: 20px;
-  background-color: ${leerColor(colores.rosa)};
+  background-color: ${leerColor(colores.violeta)};
   color: ${leerColor(colores.blanco)};
   font-size: 5px;
-  padding-bottom: 40px;
-
   @media (min-width: ${breakpoints.tablet}) {
     padding: 10px 40px;
-    margin: 2%;
     font-size: 10px;
     display: block;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    margin: 2%;
+    padding: 10px 10px;
     font-size: 14px;
     display: block;
-    width: 24%;
+    width: 30%;
     align-content: center;
   }
 `;
-export const ContenedorGaleria = styled.div`
+export const ContenedorHistorias = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+`;
+export const Historias = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
+  flex-direction: column;
 `;
-export const ContenedorPersonajeGaleria = styled.div`
-  height: 200px;
-  width: 200px;
-  background-color: ${leerColor(colores.gris)};
-  border-radius: 20px;
-`;
-
-export const ContenedorRelacionados = styled.div`
-  width: 100%;
+export const Personajes = styled.div`
+  width: 60%;
   display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: self-end;
-  flex-wrap: wrap;
-`;
-export const RelacionadosSubtitulos = styled.p`
-  color: ${leerColor(colores.violeta)};
-  width: fit-content;
-  display: flex;
   align-items: center;
-  flex-wrap: wrap;
-`;
-export const Relacionados = styled.div`
-  background-color: ${leerColor(colores.gris)};
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  border-radius: 10px;
-  img {
-    border-radius: 50%;
-    height: 100%;
+  padding: 20px 0;
+  :last-child {
+    width: 100%;
   }
 `;
-export const TablaPersonaje = styled.div`
-  background-color: ${leerColor(colores.gris)};
-  width: 70%;
-  padding: 20px;
-  border-radius: 30px;
-  margin-bottom: 40px;
+export const FotoPersonaje = styled.img`
+  border-radius: 50%;
+  width: 10%;
 `;
-export const ObjetosPersonaje = styled.div`
-  display: flex;
-`;
-export const RectangulosNaranja = styled.div`
-  background-color: ${leerColor(colores.naranja)};
-  color: ${leerColor(colores.blanco)};
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px 15px 5px 0;
-`;
+
+
+
