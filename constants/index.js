@@ -34,5 +34,5 @@ export const colores = {
   violetaOscuro: Color.rgb(56, 20, 96),
   rosa: Color.rgb(254, 52, 110),
   gris: Color.rgb(236, 236, 236),
-  negro: Color.rgb(0,0,0)
+  negro: Color.rgb(0, 0, 0),
 };

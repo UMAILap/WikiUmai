@@ -16,19 +16,11 @@ export const ContainerBanner = styled.div`
   background-image: url(./banner_personajes.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
-  @media (min-width: ${breakpoints.laptop}) {
-  background-image: none;
-  height: 450px;
-  width: 100%;
-  display: flex;
-  background-image: url(./banner_personajes.svg);
-  background-color: ${leerColor(colores.violetaOscuro)};
-  background-size: auto 100%;
-  }
 `;
 export const NombrePersonaje = styled.div`
   display: inline-block;
   width: 90%;
+  padding-bottom:20px;
 `;
 export const ContainerInfoBanner = styled.div`
   display: flex;
@@ -37,7 +29,7 @@ export const ContainerInfoBanner = styled.div`
   justify-content: start;
   align-items: center;
   padding: 20px 0;
-  max-width: 50%;
+  max-width: 70%;
 `;
 
 export const TituloPersonaje = styled.h1`
@@ -64,7 +56,7 @@ export const BajadaPersonaje = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
   height: fit-content;
-  width: 80%;
+  width: 100%;
   font-weight: bolder;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
@@ -85,13 +77,12 @@ export const ContenedorCaracteristicasPersonaje = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 30%;
 `;
 
 export const ContenedorPersonajeImg = styled.div`
   height: 200px;
   border-radius: 20px;
-  background-color: ${leerColor(colores.gris)};
 `;
 export const ContenedorPuntos = styled.div`
   width: auto;
@@ -107,14 +98,9 @@ export const ContenedorPuntosImagenes = styled.div`
   padding: 0 40px 20px 0;
 `;
 export const FotoPersonaje = styled.img`
-  border-radius: 10px;
+  border-radius: 50%;
   width: auto;
-  height: 100%;
-  @media (min-width: ${breakpoints.laptop}) {
-  border-radius: 10px;
-  width: auto;
-  height: 100%;
-  }
+  height: 90%;
 `;
 export const Fuerza = styled.img`
   width: 20px;

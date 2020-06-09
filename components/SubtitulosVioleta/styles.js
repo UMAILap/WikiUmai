@@ -5,7 +5,7 @@ export const VioletaSubtitulos = styled.p`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.violeta)};
   font-size: 5px;
-  font-weight:bolder;
+  font-weight: bolder;
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 10px;
   }
