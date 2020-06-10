@@ -2,13 +2,15 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 
+
 export const Container = styled.footer`
-  background-color: #fff;
+  
   padding-top: 20px;
   padding-bottom: 20px;
   max-height: 100px;
   font-family: "Proxima Nova";
   align-self: flex-end;
+  background-color: ${leerColor(colores.gris)};
 
   @media (min-width: ${breakpoints.tablet}){
     padding-top: 10px;

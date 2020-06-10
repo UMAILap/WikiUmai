@@ -9,6 +9,7 @@ import {
   SectorTitulos,
   Textos,
   TextosPlanetas,
+  Negrita,
   TextosPlanetasMobile,
   Container,
   ContainerUniversos,
@@ -16,14 +17,16 @@ import {
   Card,
   CardImg,
   TituloCard,
-  ContainerAgregar,
+  ParteSuperior,
   GrillaSeccionActualizaciones,
   SeccionActualizaciones,
+  Contenidos,
   ActualizacionesAlumnos,
   EdicionActualizacionesTitulo,
-  FotoAlumno,
+  ImagenesContenidos,
   TextoOverlay,
   TituloOverlay,
+  FondoGris,
 } from './styles';
 
 import { Wrapper, Titulos, BotonVioleta } from 'components';
@@ -58,7 +61,7 @@ function HomeContainer() {
   return (
     <ContainerMain>
       <ContainerBanner>
-        <Wrapper direction = "row">
+        <Wrapper direction="row">
           <SectorTitulos>
             <Titulos>¡Bienvenido, Facundo Brahim!</Titulos>
             <Textos>
@@ -70,124 +73,193 @@ function HomeContainer() {
         </Wrapper>
       </ContainerBanner>
 
-      <Wrapper direction = "column">
+      <Wrapper direction="column">
         <Container>
           <ContainerUniversos>
-            <ContainerAgregar>
+            <ParteSuperior>
               <Titulos>Explora y crea el universo Maimónides </Titulos>
               <BotonVioleta> + Agregar entrada</BotonVioleta>
-            </ContainerAgregar>
+            </ParteSuperior>
             <TextosPlanetas>
-              Compuesto por planetas independientes, que orbitan alrededor de
-              una estrella de aspecto similar al sol, en el esquema gravitatorio
-              de una Roseta de Klemperer. Todos están habitados en su mayoría
-              por seres humanos que recuerdan vagamente las características
-              étnicas de nuestro mundo real, con religiones diferentes que
-              veneran al Sol.
+            Compuesto por planetas independientes, que orbitan alrededor de una estrella 
+            de aspecto similar al sol, en el esquema gravitatorio de una <Negrita>Roseta de Klemperer. </Negrita>  
+            Todos están habitados en su mayoría por seres humanos que recuerdan vagamente las 
+            características étnicas de nuestro mundo real, con religiones diferentes que veneran al Sol.
             </TextosPlanetas>
-          
+
             <TextosPlanetasMobile>
-            Ingresá a los mundos para poder ver sus hitos, historias, personajes y objetos.
+              Ingresá a los mundos para poder ver sus hitos, historias,
+              personajes y objetos.
             </TextosPlanetasMobile>
           </ContainerUniversos>
 
           <ContainerSlider>
             <Slider {...settings}>
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/1.png"></CardImg>
                 <TituloCard>Sol</TituloCard>
               </Card>
 
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/2.png"></CardImg>
                 <TituloCard>Nima</TituloCard>
               </Card>
 
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/3.png"></CardImg>
                 <TituloCard>Wereld</TituloCard>
               </Card>
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/4.png"></CardImg>
                 <TituloCard>Adhera</TituloCard>
               </Card>
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/5.png"></CardImg>
                 <TituloCard>Ikigai</TituloCard>
               </Card>
 
               <Card>
-                <CardImg src="./sliderImg.png"></CardImg>
+                <CardImg src="./images/slider/6.png"></CardImg>
                 <TituloCard>Zoro</TituloCard>
               </Card>
             </Slider>
           </ContainerSlider>
-
-       
         </Container>
-        <Wrapper>
-
-        <SeccionActualizaciones>
-    
-         <Titulos>Últimas actualizaciones</Titulos>
-
-         <GrillaSeccionActualizaciones>
-           
-              <ActualizacionesAlumnos>
-                  <FotoAlumno></FotoAlumno>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                      <TextoOverlay>Personaje</TextoOverlay>
-                      <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-
-              <ActualizacionesAlumnos>
-                <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
-                <TextoOverlay>Personaje</TextoOverlay>
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
-   
-          </GrillaSeccionActualizaciones>
-
-       </SeccionActualizaciones>
-
-       </Wrapper>
       </Wrapper>
+
+
+      <FondoGris>
+        <Wrapper>
+          <SeccionActualizaciones>
+          <ParteSuperior>
+            <Titulos>Últimas actualizaciones</Titulos>
+            <BotonVioleta>Ver más</BotonVioleta>
+            </ParteSuperior>
+
+            <GrillaSeccionActualizaciones>
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+
+              <ActualizacionesAlumnos>
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                </Contenidos>
+
+                <Contenidos>
+                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <TextoOverlay>Personaje</TextoOverlay>
+                </Contenidos>
+        
+                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+              </ActualizacionesAlumnos>
+
+            </GrillaSeccionActualizaciones>
+          </SeccionActualizaciones>
+        </Wrapper>
+      </FondoGris>
     </ContainerMain>
   );
 }

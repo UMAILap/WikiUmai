@@ -3,7 +3,7 @@ import { breakpoints, leerColor, colores } from 'constants';
 
 export const ContainerMain = styled.div``;
 
-export const ContainerAgregar = styled.div`
+export const ParteSuperior = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -33,7 +33,7 @@ export const SectorTitulos = styled.div`
   @media (min-width: ${breakpoints.laptopL}) {
     width: 40%;
     height: 25vh;
-      }
+  }
 `;
 export const ContainerBanner = styled.div`
   background-image: none;
@@ -64,7 +64,7 @@ export const ContainerBanner = styled.div`
     height: 225px;
   }
   @media (min-width: ${breakpoints.notebook}) {
-    background-image: url(./patternHome.svg); 
+    background-image: url(./patternHome.svg);
     width: 100%;
     background-size: auto 100%;
     height: 225px;
@@ -108,33 +108,28 @@ export const TextosPlanetas = styled.p`
   line-height: 18px;
   width: 70%;
   line-height: 32px;
-  display:none;
+  display: none;
   @media ${breakpoints.mobile} {
     width: 60%;
   }
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
-  
-
   }
   @media (min-width: ${breakpoints.laptop}) {
     margin: 1% 0% 3% 0%;
     font-size: 13px;
-    display:block;
-
+    display: block;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     font-size: 17px;
-    display:block;
-
+    display: block;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
     margin: 0% 0% 4% 0%;
-    display:block;
-
+    display: block;
   }
 `;
 
@@ -144,25 +139,31 @@ export const TextosPlanetasMobile = styled.p`
   color: #381460;
   margin: 6% 0%;
   line-height: 18px;
-  display:block;
+  display: block;
   width: 89%;
-  
+
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 15px;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    display:none;
-
+    display: none;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    display:none;
+    display: none;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
-    display:none;
+    display: none;
   }
 `;
+
+
+export const Negrita = styled.span`
+font-weight: 800;
+`;
+
+
 
 export const Container = styled.div`
   width: 100%;
@@ -188,13 +189,15 @@ export const Card = styled.div`
   padding: 3%;
 
   @media (min-width: ${breakpoints.mobileGrande}) {
-    max-width: 90%;
+    max-width: 95%;
   }
 `;
 
 export const CardImg = styled.img`
   border-radius: 10px;
-  width: 100%;
+    width: 90%;
+    margin: 10px auto;
+  
 `;
 
 export const TituloCard = styled.h2`
@@ -204,108 +207,124 @@ export const TituloCard = styled.h2`
   padding: 10% 0;
   border-radius: 10px;
   text-transform: uppercase;
-  font-weight: bolder;
-  @media (min-width: 376px) {
-    font-size: 17px;
+  letter-spacing: 4px;
+  font-weight: 800;
+
+
+
+  @media (min-width:${breakpoints.notebook}) {
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-weight: 800;
   }
+`;
+
+export const FondoGris = styled.div`
+  width:100%;
+  background-color:${leerColor(colores.gris)};
+  margin: 90px 0px 0px 0px;
+  
 `;
 
 
 export const SeccionActualizaciones = styled.div`
-    display: grid;
-    margin: 80px 0px;
+  display: grid;
+  margin: 40px 0px;
 `;
 
-
 export const GrillaSeccionActualizaciones = styled.div`
-    display: grid;
-    margin: 50px 0px;
-    grid-template-columns: 100%;
-    grid-gap: 20px 0px;
+  display: grid;
+  margin: 30px 0px;
+  grid-template-columns: 100%;
+  grid-gap: 20px 0px;
 
-    @media (min-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {
     display: grid;
-    margin: 50px 0px;
+    margin: 30px 0px;
     grid-template-columns: 50% 50%;
     grid-gap: 20px 0px;
   }
   @media (min-width: ${breakpoints.laptop}) {
     display: grid;
-    margin: 50px 0px;
+    margin: 30px 0px;
     grid-template-columns: 50% 50%;
     grid-gap: 20px 0px;
-
+    
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
     display: grid;
-    margin: 50px 0px;
+    margin: 30px 0px;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 20px 0px;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
     display: grid;
-    margin: 50px 0px;
+    margin: 30px 0px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px 0px;
   }
-
 `;
 
 
 
-export const ActualizacionesAlumnos = styled.div`
 
+
+
+export const ActualizacionesAlumnos = styled.div`
   flex-direction: column;
-  display:flex;
+  display: flex;
   border-radius: 15px;
   margin: 0px 10px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./paula.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./paula.png);
   background-repeat: no-repeat;
   height: 250px;
   max-height: 250px;
 
   justify-content: flex-end;
-  img{
-    width:100%;
+  img {
+    width: 100%;
   }
-
 `;
 
-export const FotoAlumno = styled.div`
-    background-image: url(./SOFI.png);
-    background-repeat: no-repeat;
-    width:100%;
+export const ImagenesContenidos = styled.div`
+width:11%;
+  img{
+    width:auto;
+  }
+ 
 `;
+
+export const Contenidos = styled.div`
+ margin: 0px 30px;
+ align-items: center;
+ display:flex;
+ height: 16vh;
+`;
+
+
 
 export const EdicionActualizacionesTitulo = styled.h3`
-    font-family: "Proxima Nova";
-    color: #fff;
-    font-size: 14px;
-    margin: 10px 0px 90px 30px;
+  font-family: 'Proxima Nova';
+  color: #fff;
+  font-size: 14px;
 
 `;
 
-
 export const TextoOverlay = styled.h2`
-    font-family: "Proxima Nova";
-    color: #fff;
-    font-size: 17px;
-    margin: 0px 30px;
-  
+  font-family: 'Proxima Nova';
+  color: #fff;
+  font-size: 17px;
+
 `;
 
 export const TituloOverlay = styled.h3`
-    font-family: "Proxima Nova";
-    color: #fff;
-    font-weight: 900;
-    font-size: 20px;
-    margin: 5px 30px 30px;
-    line-height: 26px;
-  
-  
+  font-family: 'Proxima Nova';
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 5px 30px 30px;
+  line-height: 26px;
 `;
-
-
-

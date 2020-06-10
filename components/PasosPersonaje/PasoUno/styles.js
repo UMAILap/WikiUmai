@@ -84,6 +84,7 @@ export const Planetas = styled.div`
 export const Planeta = styled.span`
   cursor: pointer;
   color: ${leerColor(colores.violeta)};
+  width: 100%;
   padding: 10px 40px;
   border-radius: 7px;
   font-family: 'Raleway';
@@ -91,5 +92,5 @@ export const Planeta = styled.span`
   text-align: center;
   margin: auto;
   background-color: ${props =>
-    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+  props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
 `;

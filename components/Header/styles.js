@@ -207,7 +207,7 @@ export const Notification = styled.img`
 `;
 
 export const ContainerBotones = styled.div`
-  font-family: "Raleway";
+  font-family: "Chivo";
   display: none;
   @media (min-width: 376px) {
 
@@ -228,12 +228,13 @@ export const Link = styled.a`
 @media (min-width: ${breakpoints.laptop}) {
 border-radius: 20px;
 background-color:#4d1b84;
-padding: 10px 25px;
+padding: 12px 15px;
 color: #fff;
 font-size: 12px;
+margin: 2%;
 }
 @media (min-width: ${breakpoints.laptopL}) {
-padding: 10px 40px;
+padding: 12px 30px;
 margin: 2%;
 
 }
