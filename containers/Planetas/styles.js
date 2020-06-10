@@ -26,19 +26,18 @@ export const ContainerInfoBanner = styled.div`
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px 0;
-  max-width: 70%;
+  max-width: 60%;
 `;
 
 export const TituloPlaneta = styled.h1`
   font-family: 'Raleway';
   color: ${leerColor(colores.naranja)};
-  font-weight: bolder;
   width: 100%;
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 32px;
+    font-size: 48px;
   }
 `;
 
@@ -46,7 +45,7 @@ export const BajadaPlaneta = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
   height: fit-content;
-  width: 100%;
+  width: 90%;
   font-weight: bolder;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
@@ -66,7 +65,6 @@ export const ContenedorPlanetaImg = styled.div`
   border-radius: 20px;
 `;
 
-
 export const FotoPlaneta = styled.img`
   border-radius: 50%;
   width: auto;
@@ -75,6 +73,9 @@ export const FotoPlaneta = styled.img`
 
 export const ContenidoPlaneta = styled.div`
   width: 100%;
+  display:grid;
+  justify-content:center;
+  grid-template-columns:89%;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 32px;
   }
@@ -87,7 +88,6 @@ export const TextoSecundario = styled.p`
   line-height: 40px;
   padding-bottom: 40px;
 `;
-
 
 export const AgregarHistoriaBoton = styled.a`
   font-family: 'Proxima Nova';
@@ -104,8 +104,8 @@ export const AgregarHistoriaBoton = styled.a`
     padding: 10px 10px;
     font-size: 14px;
     display: block;
-    width: 30%;
-    align-content: center;
+    width: 35%;
+
   }
 `;
 export const ContenedorHistorias = styled.div`
@@ -129,14 +129,13 @@ export const Personajes = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  :last-child {
-    width: 100%;
-  }
+  
 `;
 export const FotoPersonaje = styled.img`
   border-radius: 50%;
-  width: 10%;
+  width: 20%;
+  padding-right:40px;
 `;
-
-
-
+export const PersonajesRelacionados = styled.div`
+  width: 100%;
+`;

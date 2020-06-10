@@ -17,8 +17,9 @@ import {
   Historias,
   Personajes,
   FotoPersonaje,
+  PersonajesRelacionados,
 } from './styles';
-import { Wrapper,Titulos } from 'components';
+import { Wrapper, Titulos } from 'components';
 
 function PlanetasContainer() {
   return (
@@ -49,34 +50,42 @@ function PlanetasContainer() {
         </Wrapper>
       </ContainerBanner>
       <Wrapper>
-      <ContenidoPlaneta>
-        <Titulos>Hitos</Titulos>
-        <ContenedorHistorias>
-          <Historias>
-            <Titulos>Historias</Titulos>
-            <TextoSecundario>Aun no hay historias en este hito</TextoSecundario>
-            <AgregarHistoriaBoton>+ Agregar historia</AgregarHistoriaBoton>
-          </Historias>
-          <Personajes>
-            <Titulos>Personajes</Titulos>
-            <FotoPersonaje  src="./images/wereld_img.png"></FotoPersonaje>
-            <FotoPersonaje  src="./images/wereld_img.png"></FotoPersonaje>
-            <FotoPersonaje  src="./images/wereld_img.png"></FotoPersonaje>
-            <FotoPersonaje  src="./images/wereld_img.png"></FotoPersonaje>
-            <AgregarHistoriaBoton>+ Agregar personaje</AgregarHistoriaBoton>
-          </Personajes>
-          <Historias>
-            <Titulos>Objetos y tecnologias</Titulos>
-            <TextoSecundario>no se encuentran objetos en este hito</TextoSecundario>
-            <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
-          </Historias>
-          <Historias>
-            <Titulos>Articulos externos relacionados</Titulos>
-            <TextoSecundario>no se encuentran objetos en este hito</TextoSecundario>
-            <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
-          </Historias>
-        </ContenedorHistorias>
-      </ContenidoPlaneta>
+        <ContenidoPlaneta>
+          <Titulos>Hitos</Titulos>
+          <ContenedorHistorias>
+            <Historias>
+              <Titulos>Historias</Titulos>
+              <TextoSecundario>
+                Aun no hay historias en este hito
+              </TextoSecundario>
+              <AgregarHistoriaBoton>+ Agregar historia</AgregarHistoriaBoton>
+            </Historias>
+            <Personajes>
+              <Titulos>Personajes</Titulos>
+              <PersonajesRelacionados>
+                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
+                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
+                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
+                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
+              </PersonajesRelacionados>
+              <AgregarHistoriaBoton>+ Agregar personaje</AgregarHistoriaBoton>
+            </Personajes>
+            <Historias>
+              <Titulos>Objetos y tecnologias</Titulos>
+              <TextoSecundario>
+                no se encuentran objetos en este hito
+              </TextoSecundario>
+              <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
+            </Historias>
+            <Historias>
+              <Titulos>Articulos externos relacionados</Titulos>
+              <TextoSecundario>
+                no se encuentran objetos en este hito
+              </TextoSecundario>
+              <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
+            </Historias>
+          </ContenedorHistorias>
+        </ContenidoPlaneta>
       </Wrapper>
     </ContainerMain>
   );

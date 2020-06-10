@@ -40,7 +40,6 @@ export const ContainerInfoBanner = styled.div`
   max-width: 50%;
 `;
 
-
 export const TituloPersonaje = styled.h1`
   font-family: 'Raleway';
   color: ${leerColor(colores.naranja)};
