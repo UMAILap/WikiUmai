@@ -18,7 +18,7 @@ export const AvataresTitulo = styled.h3`
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
   font-size: 21px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 `;
 export const Avatares = styled.div`
   display: flex;
@@ -57,6 +57,7 @@ export const AvatarNombre = styled.div`
     padding: 15px 0;
     font-family: 'Proxima Nova';
     width: 100%;
+    font-size: 17px;
     ::placeholder {
       color: ${leerColor(colores.violeta)};
     }
@@ -69,7 +70,7 @@ export const AvatarPlaneta = styled.div`
   justify-content: flex-end;
 `;
 export const AvatarPlanetaTitulo = styled.h6`
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'Proxima Nova';
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
@@ -92,5 +93,5 @@ export const Planeta = styled.span`
   text-align: center;
   margin: auto;
   background-color: ${props =>
-  props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
 `;

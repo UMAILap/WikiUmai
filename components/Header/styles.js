@@ -7,19 +7,17 @@ export const Container = styled.header`
   padding-bottom: 5px;
   display: flex;
   align-items: center;
- 
 `;
 
 export const ContainerHeader = styled.div`
-    width: 100%;
-    display: grid;  
-    grid-template-columns: 15% 65% 20%;
-    grid-template-rows: 1fr;
-    align-items: center;
-    padding: 10px 0;
-  
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 10px 0;
+
   @media (min-width: ${breakpoints.mobileGrande}) {
-   
   }
   @media (min-width: ${breakpoints.tablet}) {
     grid-template-columns: 15% 65% 20%;
@@ -32,27 +30,26 @@ export const ContainerHeader = styled.div`
   }
   @media (min-width: ${breakpoints.notebook}) {
     grid-template-columns: 10% 35% 40% 15%;
-    
   }
 `;
 
 export const Logo = styled.h1`
   width: 100%;
-  img{
+  img {
     width: 50%;
   }
   @media (min-width: ${breakpoints.mobile}) {
-    img{
+    img {
       width: 38%;
     }
   }
   @media (min-width: ${breakpoints.tablet}) {
-    img{
+    img {
       width: 30%;
     }
   }
   @media (min-width: ${breakpoints.laptop}) {
-    img{
+    img {
       width: 100%;
     }
   }
@@ -61,9 +58,9 @@ export const Logo = styled.h1`
   }
 
   @media (min-width: ${breakpoints.notebook}) {
-    img{
+    img {
       width: 100%;
-      }
+    }
   }
 `;
 export const ContainerUser = styled.div`
@@ -71,18 +68,17 @@ export const ContainerUser = styled.div`
   justify-content: space-around;
   align-items: normal;
 
-  @media (min-width: ${breakpoints.mobile}){
-    
+  @media (min-width: ${breakpoints.mobile}) {
   }
 
-  @media (min-width: ${breakpoints.mobileGrande}){
-    justify-content: flex-end; 
+  @media (min-width: ${breakpoints.mobileGrande}) {
+    justify-content: flex-end;
   }
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: space-evenly;
     align-items: center;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     justify-content: flex-end;
     align-items: center;
   }
@@ -90,57 +86,51 @@ export const ContainerUser = styled.div`
 
 export const User = styled.img`
   display: none;
-  @media (min-width: ${breakpoints.mobile}){
-
+  @media (min-width: ${breakpoints.mobile}) {
   }
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     display: none;
- }
-  @media (min-width: ${breakpoints.laptop}){
+  }
+  @media (min-width: ${breakpoints.laptop}) {
     width: 25%;
     display: block;
- }
+  }
 
- @media (min-width: ${breakpoints.laptopL}){
+  @media (min-width: ${breakpoints.laptopL}) {
     width: 18%;
     display: block;
- }
+  }
 
- @media (min-width: ${breakpoints.notebook}){
-  width: 18%;
- }
-
- 
+  @media (min-width: ${breakpoints.notebook}) {
+    width: 18%;
+  }
 `;
 
 export const MenuHamburguesa = styled.h1`
-    display: block;
-    max-width: 50%;
-    display: block;
-      img{
-        width: 100%;
-      }
-  
-  @media (min-width: ${breakpoints.tablet}) {
-    max-width:60%;
-    img{
-      width: 65%;
-    }    
+  display: block;
+  max-width: 50%;
+  display: block;
+  img {
+    width: 100%;
   }
-  @media (min-width: ${breakpoints.laptop}){
-    display:none;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    max-width: 60%;
+    img {
+      width: 65%;
+    }
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    display: none;
   }
 `;
 export const ContainerSearch = styled.div`
   display: none;
   @media (min-width: ${breakpoints.mobile}) {
-
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-
   }
   @media (min-width: ${breakpoints.tablet}) {
-
   }
   @media (min-width: ${breakpoints.laptop}) {
     display: flex;
@@ -155,7 +145,7 @@ export const ContainerSearch = styled.div`
       background-image: url(./search.png);
     }
   }
-  @media (min-width: ${breakpoints.notebook}){
+  @media (min-width: ${breakpoints.notebook}) {
     display: flex;
   }
 `;
@@ -163,15 +153,14 @@ export const ContainerSearch = styled.div`
 export const Search = styled.a`
   width: 30%;
   display: block;
-  img{
+  img {
     width: 93%;
-}
+  }
   @media (min-width: ${breakpoints.mobile}) {
     width: 40%;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    
-    img{
+    img {
       width: 75%;
     }
   }
@@ -179,63 +168,58 @@ export const Search = styled.a`
     width: 30%;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    display:none;
-  } 
+    display: none;
+  }
 `;
 
 export const Notification = styled.img`
   width: 35%;
 
-  @media (min-width: ${breakpoints.mobileGrande}){
+  @media (min-width: ${breakpoints.mobileGrande}) {
     width: 30%;
-    
-      }
-  @media (min-width: ${breakpoints.tablet}){
+  }
+  @media (min-width: ${breakpoints.tablet}) {
     width: 18%;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 18%;
     margin-right: 20px;
   }
-  @media (min-width: ${breakpoints.laptopL}){
+  @media (min-width: ${breakpoints.laptopL}) {
     width: 13%;
   }
 
-  @media (min-width: ${breakpoints.notebook}){
+  @media (min-width: ${breakpoints.notebook}) {
     width: 13%;
   }
 `;
 
 export const ContainerBotones = styled.div`
-  font-family: "Chivo";
+  font-family: 'Chivo';
   display: none;
   @media (min-width: 376px) {
-
   }
   @media (min-width: ${breakpoints.tablet}) {
-
   }
   @media (min-width: ${breakpoints.laptop}) {
-    width: 100%;    
-    height: fit-content;  
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: start;
-
   }
 `;
 
 export const Link = styled.a`
-@media (min-width: ${breakpoints.laptop}) {
-border-radius: 20px;
-background-color:#4d1b84;
-padding: 12px 15px;
-color: #fff;
-font-size: 12px;
-margin: 2%;
-}
-@media (min-width: ${breakpoints.laptopL}) {
-padding: 12px 30px;
-margin: 2%;
-
-}
+  @media (min-width: ${breakpoints.laptop}) {
+    border-radius: 20px;
+    background-color: #4d1b84;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 12px;
+    margin: 2%;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    padding: 12px 30px;
+    margin: 2%;
+  }
 `;

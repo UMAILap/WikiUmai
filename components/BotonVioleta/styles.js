@@ -7,7 +7,7 @@ export const VioletaBoton = styled.a`
   background-color: #4d1b84;
   color: #fff;
   font-size: 5px;
-  padding: 15px 25px; 
+  padding: 15px 25px;
   display: none;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -24,7 +24,5 @@ export const VioletaBoton = styled.a`
     font-size: 14px;
     display: block;
     font-weight: 700;
-    
   }
 `;
-

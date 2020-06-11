@@ -33,6 +33,7 @@ export const Objetos = styled.div`
     margin-bottom: 10px;
     font-family: 'Proxima Nova';
     width: 100%;
+    font-size:17px;
     ::placeholder {
       color: ${leerColor(colores.violeta)};
     }

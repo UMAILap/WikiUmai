@@ -47,7 +47,7 @@ function PasoUno() {
               <Planeta
                 colorFondo={selectedPlanet === 'wereld' ? true : false}
                 onClick={() => handleClickPlaneta('wereld')}>
-                Wereld
+               Wereld
               </Planeta>
               <Planeta
                 colorFondo={selectedPlanet === 'zoro' ? true : false}

@@ -81,10 +81,12 @@ function HomeContainer() {
               <BotonVioleta> + Agregar entrada</BotonVioleta>
             </ParteSuperior>
             <TextosPlanetas>
-            Compuesto por planetas independientes, que orbitan alrededor de una estrella 
-            de aspecto similar al sol, en el esquema gravitatorio de una <Negrita>Roseta de Klemperer. </Negrita>  
-            Todos están habitados en su mayoría por seres humanos que recuerdan vagamente las 
-            características étnicas de nuestro mundo real, con religiones diferentes que veneran al Sol.
+              Compuesto por planetas independientes, que orbitan alrededor de
+              una estrella de aspecto similar al sol, en el esquema gravitatorio
+              de una <Negrita>Roseta de Klemperer. </Negrita>
+              Todos están habitados en su mayoría por seres humanos que
+              recuerdan vagamente las características étnicas de nuestro mundo
+              real, con religiones diferentes que veneran al Sol.
             </TextosPlanetas>
 
             <TextosPlanetasMobile>
@@ -127,135 +129,206 @@ function HomeContainer() {
         </Container>
       </Wrapper>
 
-
       <FondoGris>
         <Wrapper>
           <SeccionActualizaciones>
-          <ParteSuperior>
-            <Titulos>Últimas actualizaciones</Titulos>
-            <BotonVioleta>Ver más</BotonVioleta>
+            <ParteSuperior>
+              <Titulos>Últimas actualizaciones</Titulos>
+              <BotonVioleta>Ver más</BotonVioleta>
             </ParteSuperior>
 
             <GrillaSeccionActualizaciones>
-
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
+
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
               </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
 
               <ActualizacionesAlumnos>
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./SOFI.png" /></ImagenesContenidos>
-                  <EdicionActualizacionesTitulo>sofi.hadjilias</EdicionActualizacionesTitulo>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./SOFI.png" />
+                  </ImagenesContenidos>
+                  <EdicionActualizacionesTitulo>
+                    sofi.hadjilias
+                  </EdicionActualizacionesTitulo>
                 </Contenidos>
 
                 <Contenidos>
-                  <ImagenesContenidos> <img src="./historias.png" /></ImagenesContenidos>
+                  <ImagenesContenidos>
+                    {' '}
+                    <img src="./historias.png" />
+                  </ImagenesContenidos>
                   <TextoOverlay>Personaje</TextoOverlay>
                 </Contenidos>
-        
-                <TituloOverlay>Título de encabezado de lo que sea</TituloOverlay>
-              </ActualizacionesAlumnos>
 
+                <TituloOverlay>
+                  Título de encabezado de lo que sea
+                </TituloOverlay>
+              </ActualizacionesAlumnos>
             </GrillaSeccionActualizaciones>
           </SeccionActualizaciones>
         </Wrapper>

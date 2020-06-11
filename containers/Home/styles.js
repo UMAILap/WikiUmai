@@ -158,12 +158,9 @@ export const TextosPlanetasMobile = styled.p`
   }
 `;
 
-
 export const Negrita = styled.span`
-font-weight: 800;
+  font-weight: 800;
 `;
-
-
 
 export const Container = styled.div`
   width: 100%;
@@ -195,9 +192,8 @@ export const Card = styled.div`
 
 export const CardImg = styled.img`
   border-radius: 10px;
-    width: 90%;
-    margin: 10px auto;
-  
+  width: 90%;
+  margin: 10px auto;
 `;
 
 export const TituloCard = styled.h2`
@@ -210,9 +206,7 @@ export const TituloCard = styled.h2`
   letter-spacing: 4px;
   font-weight: 800;
 
-
-
-  @media (min-width:${breakpoints.notebook}) {
+  @media (min-width: ${breakpoints.notebook}) {
     font-size: 19px;
     letter-spacing: 4px;
     font-weight: 800;
@@ -220,12 +214,10 @@ export const TituloCard = styled.h2`
 `;
 
 export const FondoGris = styled.div`
-  width:100%;
-  background-color:${leerColor(colores.gris)};
+  width: 100%;
+  background-color: ${leerColor(colores.gris)};
   margin: 90px 0px 0px 0px;
-  
 `;
-
 
 export const SeccionActualizaciones = styled.div`
   display: grid;
@@ -249,7 +241,6 @@ export const GrillaSeccionActualizaciones = styled.div`
     margin: 30px 0px;
     grid-template-columns: 50% 50%;
     grid-gap: 20px 0px;
-    
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
@@ -266,11 +257,6 @@ export const GrillaSeccionActualizaciones = styled.div`
     grid-gap: 20px 0px;
   }
 `;
-
-
-
-
-
 
 export const ActualizacionesAlumnos = styled.div`
   flex-direction: column;
@@ -290,34 +276,29 @@ export const ActualizacionesAlumnos = styled.div`
 `;
 
 export const ImagenesContenidos = styled.div`
-width:11%;
-  img{
-    width:auto;
+  width: 11%;
+  img {
+    width: auto;
   }
- 
 `;
 
 export const Contenidos = styled.div`
- margin: 0px 30px;
- align-items: center;
- display:flex;
- height: 16vh;
+  margin: 0px 30px;
+  align-items: center;
+  display: flex;
+  height: 16vh;
 `;
-
-
 
 export const EdicionActualizacionesTitulo = styled.h3`
   font-family: 'Proxima Nova';
   color: #fff;
   font-size: 14px;
-
 `;
 
 export const TextoOverlay = styled.h2`
   font-family: 'Proxima Nova';
   color: #fff;
   font-size: 17px;
-
 `;
 
 export const TituloOverlay = styled.h3`

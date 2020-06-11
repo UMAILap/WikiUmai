@@ -32,6 +32,7 @@ export const InformacionBasica = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Proxima Nova';
+    font-size: 17px;
     width: 100%;
     ::placeholder {
       color: ${leerColor(colores.violeta)};

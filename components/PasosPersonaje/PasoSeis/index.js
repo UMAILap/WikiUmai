@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { PasoContainer, Datos, BotonRosa } from './styles';
+import { PasoContainer, PasoTitulo, Datos, Sinopsis } from './styles';
 
 function PasoSeis({ colorFondo }) {
   return (
     <PasoContainer>
-      <BotonRosa>Crear personaje</BotonRosa>
+      <PasoTitulo>Historia *</PasoTitulo>
+      <Sinopsis>
+        <textarea type="text" placeholder="Nació en Villa Maria..." />
+      </Sinopsis>
     </PasoContainer>
   );
 }
@@ -15,3 +18,4 @@ PasoSeis.propTypes = {
 };
 
 export default PasoSeis;
+ 

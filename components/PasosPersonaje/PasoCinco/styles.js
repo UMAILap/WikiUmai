@@ -28,6 +28,6 @@ export const Sinopsis = styled.div`
     width: 100%;
     height: 170px;
     font-size: 14px;
-    border-left: 5px solid ${leerColor(colores.rosa)};
+    border-left: 5px solid ${leerColor(colores.violeta)};
   }
 `;

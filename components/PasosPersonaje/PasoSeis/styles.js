@@ -4,14 +4,30 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const PasoContainer = styled.div`
   padding-top: 100px;
   width: 100%;
-  display: flex;
 `;
-export const BotonRosa = styled.a`
-  font-family: 'Proxima Nova';
-  border-radius: 20px;
-  background-color: ${leerColor(colores.rosa)};
-  color: #fff;
-  font-size: 16px;
-  padding: 15px 40px;
+export const PasoTitulo = styled.h1`
+  font-family: 'Raleway';
   font-weight: bold;
+  color: ${leerColor(colores.violeta)};
+  font-size: 35px;
+  padding-bottom: 40px;
+`;
+export const Sinopsis = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  textarea {
+    background-color: ${leerColor(colores.gris)};
+    border: none;
+    padding: 20px;
+    font-family: 'Proxima Nova';
+    resize: none;
+    width: 100%;
+    height: 300px;
+    font-size: 14px;
+    border-left: 5px solid ${leerColor(colores.violeta)};
+  }
 `;

@@ -65,7 +65,6 @@ export const BajadaPersonaje = styled.p`
   color: ${leerColor(colores.blanco)};
   height: fit-content;
   width: 80%;
-  font-weight: bolder;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
     line-height: 30px;
@@ -104,7 +103,7 @@ export const ContenedorPuntosImagenes = styled.div`
   width: auto;
   height: fit-content;
   display: flex;
-  padding: 0 40px 20px 0;
+  padding: 13px 40px 20px 0px;
 `;
 export const FotoPersonaje = styled.img`
   border-radius: 10px;
@@ -159,7 +158,7 @@ export const TextoPrincipal = styled.p`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.violeta)};
   font-size: 18px;
-  line-height: 40px;
+  line-height: 38px;
   padding-bottom: 40px;
 `;
 export const TextoSecundario = styled.p`
@@ -248,13 +247,17 @@ export const Relacionados = styled.div`
 export const TablaPersonaje = styled.div`
   background-color: ${leerColor(colores.gris)};
   width: 70%;
-  padding: 20px;
+  padding: 35px;
   border-radius: 30px;
   margin-bottom: 40px;
 `;
+
 export const ObjetosPersonaje = styled.div`
   display: flex;
 `;
+
+
+
 export const RectangulosNaranja = styled.div`
   background-color: ${leerColor(colores.naranja)};
   color: ${leerColor(colores.blanco)};
