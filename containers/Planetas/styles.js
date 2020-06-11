@@ -29,7 +29,7 @@ export const ContainerInfoBanner = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 20px 0;
-  max-width: 60%;
+  max-width: 75%;
 `;
 
 export const TituloPlaneta = styled.h1`
@@ -57,7 +57,7 @@ export const ContenedorImagenPlaneta = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 20%;
 `;
 
 export const ContenedorPlanetaImg = styled.div`
@@ -73,9 +73,9 @@ export const FotoPlaneta = styled.img`
 
 export const ContenidoPlaneta = styled.div`
   width: 100%;
-  display:grid;
-  justify-content:center;
-  grid-template-columns:89%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 89%;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 32px;
   }
@@ -105,7 +105,6 @@ export const AgregarHistoriaBoton = styled.a`
     font-size: 14px;
     display: block;
     width: 35%;
-
   }
 `;
 export const ContenedorHistorias = styled.div`
@@ -122,20 +121,20 @@ export const Historias = styled.div`
   flex-direction: column;
 `;
 export const Personajes = styled.div`
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  
 `;
 export const FotoPersonaje = styled.img`
   border-radius: 50%;
-  width: 20%;
-  padding-right:40px;
+  width: 13%;
+  padding-right: 40px;
 `;
 export const PersonajesRelacionados = styled.div`
   width: 100%;
 `;
+
