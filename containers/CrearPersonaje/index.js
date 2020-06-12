@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ContainerMain, ContainerBanner, Titulo } from './styles';
-import { WrapperPersonajes } from 'components';
+import { Wrapper, WrapperPersonajesPlanetas } from 'components';
 import {
   PasoUno,
   PasoDos,
@@ -16,20 +16,24 @@ function CrearPersonajeContainer() {
   return (
     <ContainerMain>
       <ContainerBanner>
-        <WrapperPersonajes>
+        <WrapperPersonajesPlanetas>
           <Titulo>Crear un nuevo personaje</Titulo>
-        </WrapperPersonajes>
+        </WrapperPersonajesPlanetas>
       </ContainerBanner>
-      <WrapperPersonajes>
+      <WrapperPersonajesPlanetas>
         <PasoUno />
+      </WrapperPersonajesPlanetas>
+      <Wrapper>
         <PasoDos />
+      </Wrapper>
+      <WrapperPersonajesPlanetas>
         <PasoTres />
         <PasoCuatro />
         <PasoCinco />
         <PasoSeis />
         <PasoFinal />
-      </WrapperPersonajes>
-    </ContainerMain>
+      </WrapperPersonajesPlanetas>
+    </ContainerMain >
   );
 }
 

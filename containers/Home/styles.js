@@ -178,7 +178,7 @@ export const ContainerSlider = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: #ececec;
+  background-color: ${leerColor(colores.gris)};
   border-radius: 10px;
   justify-content: center;
   display: flex;

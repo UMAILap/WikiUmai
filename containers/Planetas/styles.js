@@ -19,17 +19,17 @@ export const ContainerBanner = styled.div`
 `;
 export const NombrePlaneta = styled.div`
   display: inline-block;
-  width: 90%;
+  width: 100%;
   padding-bottom: 20px;
 `;
 export const ContainerInfoBanner = styled.div`
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px 0;
-  max-width: 75%;
+  max-width: 100%;
 `;
 
 export const TituloPlaneta = styled.h1`
@@ -45,7 +45,7 @@ export const BajadaPlaneta = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
   height: fit-content;
-  width: 90%;
+  width: 100%;
   font-weight: bolder;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 14px;
@@ -75,7 +75,7 @@ export const ContenidoPlaneta = styled.div`
   width: 100%;
   display: grid;
   justify-content: center;
-  grid-template-columns: 89%;
+  grid-template-columns: 100%;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 32px;
   }

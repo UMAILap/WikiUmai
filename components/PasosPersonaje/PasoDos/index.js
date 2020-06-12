@@ -2,11 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { PasoContainer, PasoTitulo } from './styles';
+import { Wrapper, WrapperPersonajesPlanetas, HitosTimeLine } from 'components';
+
 
 function PasoDos({ colorFondo }) {
   return (
     <PasoContainer>
-      <PasoTitulo>¿Cuándo se ubica tu personaje?</PasoTitulo>
+      <WrapperPersonajesPlanetas>
+        <PasoTitulo>¿Cuándo se ubica tu personaje?</PasoTitulo>
+      </WrapperPersonajesPlanetas>
+      <Wrapper>
+        <HitosTimeLine />
+      </Wrapper>
     </PasoContainer>
   );
 }

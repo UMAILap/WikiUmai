@@ -5,10 +5,10 @@ export { default as Footer } from './Footer';
 export { default as HeaderLogin } from './HeaderLogin';
 export { default as FooterLogin } from './FooterLogin';
 export { default as Wrapper } from './Wrapper';
-export { default as WrapperPersonajes } from './WrapperPersonajes';
+export { default as WrapperPersonajesPlanetas } from './WrapperPersonajesPlanetas';
 export { default as ContainerBlanco } from './ContainerBlanco';
 export { default as Titulos } from './Titulos';
 export { default as BotonVioleta } from './BotonVioleta';
 export { default as SubtitulosVioleta } from './SubtitulosVioleta';
-export { default as TimeLine } from './TimeLine';
+export { default as HitosTimeLine } from './HitosTimeLine';
 

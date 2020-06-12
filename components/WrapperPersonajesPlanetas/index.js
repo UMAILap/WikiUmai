@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import { WrapperContainer } from './styles';
 
-function WrapperPersonajes({ children }) {
+function WrapperPersonajesPlanetas({ children }) {
   return <WrapperContainer>{children}</WrapperContainer>;
 }
 
-WrapperPersonajes.propTypes = {
+WrapperPersonajesPlanetas.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default WrapperPersonajes;
+export default WrapperPersonajesPlanetas;
