@@ -29,7 +29,7 @@ export const ContainerInfoBanner = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 20px 0;
-  max-width: 100%;
+  max-width: 80%;
 `;
 
 export const TituloPlaneta = styled.h1`
@@ -69,6 +69,7 @@ export const FotoPlaneta = styled.img`
   border-radius: 50%;
   width: auto;
   height: 90%;
+  border: 4px solid ${leerColor(colores.naranja)};
 `;
 
 export const ContenidoPlaneta = styled.div`
@@ -95,6 +96,7 @@ export const AgregarHistoriaBoton = styled.a`
   background-color: ${leerColor(colores.violeta)};
   color: ${leerColor(colores.blanco)};
   font-size: 5px;
+  text-align: center;
   @media (min-width: ${breakpoints.tablet}) {
     padding: 10px 40px;
     font-size: 10px;
@@ -127,7 +129,7 @@ export const Personajes = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-bottom: 40px;
 `;
 export const FotoPersonaje = styled.img`
   border-radius: 50%;
