@@ -19,7 +19,12 @@ import {
   FotoPersonaje,
   PersonajesRelacionados,
 } from './styles';
-import { Wrapper, WrapperPersonajesPlanetas, Titulos, HitosTimeLine } from 'components';
+import {
+  Wrapper,
+  WrapperPersonajesPlanetas,
+  Titulos,
+  HitosTimeLine,
+} from 'components';
 
 function PlanetasContainer() {
   return (
@@ -61,9 +66,7 @@ function PlanetasContainer() {
         <ContenedorHistorias>
           <Historias>
             <Titulos>Historias</Titulos>
-            <TextoSecundario>
-              Aun no hay historias en este hito
-              </TextoSecundario>
+            <TextoSecundario>Aun no hay historias en este hito</TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar historia</AgregarHistoriaBoton>
           </Historias>
           <Personajes>
@@ -80,19 +83,19 @@ function PlanetasContainer() {
             <Titulos>Objetos y tecnologias</Titulos>
             <TextoSecundario>
               no se encuentran objetos en este hito
-              </TextoSecundario>
+            </TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
           </Historias>
           <Historias>
             <Titulos>Articulos externos relacionados</Titulos>
             <TextoSecundario>
               no se encuentran objetos en este hito
-              </TextoSecundario>
+            </TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
           </Historias>
         </ContenedorHistorias>
       </WrapperPersonajesPlanetas>
-    </ContainerMain >
+    </ContainerMain>
   );
 }
 

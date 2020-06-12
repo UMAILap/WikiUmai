@@ -11,4 +11,3 @@ export { default as Titulos } from './Titulos';
 export { default as BotonVioleta } from './BotonVioleta';
 export { default as SubtitulosVioleta } from './SubtitulosVioleta';
 export { default as HitosTimeLine } from './HitosTimeLine';
-

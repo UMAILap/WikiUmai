@@ -18,8 +18,7 @@ export const Hito = styled.span`
   padding: 3% 15%;
   line-height: 20px;
   background-color: ${props =>
-    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)
-  };
+    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
 
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width: 95%;
@@ -29,14 +28,10 @@ export const HitoTitulo = styled.h1`
   font-family: 'Raleway';
   font-size: 15px;
   color: ${props =>
-    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)
-  }; 
-  font-weight: ${props =>
-    props.fontWeight ? "bold" : "400"
-  };
+    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)};
+  font-weight: ${props => (props.fontWeight ? 'bold' : '400')};
   padding: 10% 0;
   @media (min-width: ${breakpoints.notebook}) {
-
   }
 `;
 
@@ -44,13 +39,9 @@ export const HitoAnio = styled.p`
   font-family: 'Proxima Nova';
   font-size: 15px;
   color: ${props =>
-    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)
-  }; 
-  font-weight: ${props =>
-    props.fontWeight ? "bold" : "400"
-  }; 
+    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)};
+  font-weight: ${props => (props.fontWeight ? 'bold' : '400')};
   padding-bottom: 10%;
   @media (min-width: ${breakpoints.notebook}) {
-
   }
 `;

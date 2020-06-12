@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { PasoContainer, PasoTitulo } from './styles';
 import { Wrapper, WrapperPersonajesPlanetas, HitosTimeLine } from 'components';
 
-
 function PasoDos({ colorFondo }) {
   return (
     <PasoContainer>

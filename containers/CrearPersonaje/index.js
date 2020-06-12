@@ -33,7 +33,7 @@ function CrearPersonajeContainer() {
         <PasoSeis />
         <PasoFinal />
       </WrapperPersonajesPlanetas>
-    </ContainerMain >
+    </ContainerMain>
   );
 }
 
