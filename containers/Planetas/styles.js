@@ -137,4 +137,3 @@ export const FotoPersonaje = styled.img`
 export const PersonajesRelacionados = styled.div`
   width: 100%;
 `;
-

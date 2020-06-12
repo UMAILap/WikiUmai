@@ -34,6 +34,8 @@ import {
   TablaPersonaje,
   RectangulosNaranja,
   ObjetosPersonaje,
+  ContainerMainContent,
+  Banner,
 } from './styles';
 import { Wrapper, SubtitulosVioleta } from 'components';
 
@@ -42,22 +44,14 @@ function PersonajesContainer() {
     <ContainerMain>
       <ContainerBanner>
         <Wrapper>
+          <Banner>
           <ContainerInfoBanner>
             <IconoPersonaje>
               <img src="./Robot_Personajes.svg" />
             </IconoPersonaje>
-            <NombrePersonaje>
               <TituloSeccion>Personaje</TituloSeccion>
               <TituloPersonaje>Obi Kubu</TituloPersonaje>
-            </NombrePersonaje>
-            <BajadaPersonaje>
-              Nació en la capital del continente, recibió la mejor educación
-              desde chico y acompañado de una familia de clase alta se formo
-              como diseñador. Tiene entranimiento militar avanzado, hoy en dia
-              se dedica solo al diseño pero esta listo para usar todas sus
-              habilidades pero esta
-            </BajadaPersonaje>
-          </ContainerInfoBanner>
+          </ContainerInfoBanner>          
           <ContenedorCaracteristicasPersonaje>
             <ContenedorPuntos>
               <ContenedorPuntosImagenes>
@@ -81,9 +75,45 @@ function PersonajesContainer() {
               <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
             </ContenedorPersonajeImg>
           </ContenedorCaracteristicasPersonaje>
+          <BajadaPersonaje>
+              Nació en la capital del continente, recibió la mejor educación
+              desde chico y acompañado de una familia de clase alta se formo
+              como diseñador. Tiene entranimiento militar avanzado, hoy en dia
+              se dedica solo al diseño pero esta listo para usar todas sus
+              habilidades pero esta
+            </BajadaPersonaje>
+          </Banner>
         </Wrapper>
       </ContainerBanner>
       <Wrapper>
+        <ContainerMainContent>
+      <ContenidoSecundario>
+          <TablaPersonaje>
+            <SubtitulosVioleta>Raza</SubtitulosVioleta>
+            <TextoSecundario>Humano con modificaciones</TextoSecundario>
+            <SubtitulosVioleta>Género</SubtitulosVioleta>
+            <TextoSecundario>Hombre</TextoSecundario>
+            <SubtitulosVioleta>Edad</SubtitulosVioleta>
+            <TextoSecundario>30</TextoSecundario>
+            <SubtitulosVioleta>Altura</SubtitulosVioleta>
+            <TextoSecundario>1,72 mt</TextoSecundario>
+            <SubtitulosVioleta>Planeta</SubtitulosVioleta>
+            <TextoSecundario>Iknagi</TextoSecundario>
+            <SubtitulosVioleta>Profesión</SubtitulosVioleta>
+            <TextoSecundario>Diseñador de experiencias</TextoSecundario>
+          </TablaPersonaje>
+          <SubtitulosVioleta>Objetos de profesión:</SubtitulosVioleta>
+          <ObjetosPersonaje>
+            <RectangulosNaranja>Pala</RectangulosNaranja>
+            <RectangulosNaranja>Casco</RectangulosNaranja>
+            <RectangulosNaranja>Pico</RectangulosNaranja>
+          </ObjetosPersonaje>
+          <SubtitulosVioleta>Inventario</SubtitulosVioleta>
+          <ObjetosPersonaje>
+            <RectangulosNaranja>Cuchillo Ejercito Wereld</RectangulosNaranja>
+            <RectangulosNaranja>Reloj</RectangulosNaranja>
+          </ObjetosPersonaje>
+        </ContenidoSecundario>
         <ContenidoPrincipal>
           <TextoPrincipal>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -152,34 +182,9 @@ function PersonajesContainer() {
               <SubtitulosVioleta>Wereld Cuchillo</SubtitulosVioleta>
             </Relacionados>
           </ContenedorRelacionados>
+          <TextoPrincipal>Ultima edicion por Facundo Brahim</TextoPrincipal>
         </ContenidoPrincipal>
-        <ContenidoSecundario>
-          <TablaPersonaje>
-            <SubtitulosVioleta>Raza</SubtitulosVioleta>
-            <TextoSecundario>Humano con modificaciones</TextoSecundario>
-            <SubtitulosVioleta>Género</SubtitulosVioleta>
-            <TextoSecundario>Hombre</TextoSecundario>
-            <SubtitulosVioleta>Edad</SubtitulosVioleta>
-            <TextoSecundario>30</TextoSecundario>
-            <SubtitulosVioleta>Altura</SubtitulosVioleta>
-            <TextoSecundario>1,72 mt</TextoSecundario>
-            <SubtitulosVioleta>Planeta</SubtitulosVioleta>
-            <TextoSecundario>Iknagi</TextoSecundario>
-            <SubtitulosVioleta>Profesión</SubtitulosVioleta>
-            <TextoSecundario>Diseñador de experiencias</TextoSecundario>
-          </TablaPersonaje>
-          <SubtitulosVioleta>Objetos de profesión:</SubtitulosVioleta>
-          <ObjetosPersonaje>
-            <RectangulosNaranja>Pala</RectangulosNaranja>
-            <RectangulosNaranja>Casco</RectangulosNaranja>
-            <RectangulosNaranja>Pico</RectangulosNaranja>
-          </ObjetosPersonaje>
-          <SubtitulosVioleta>Inventario</SubtitulosVioleta>
-          <ObjetosPersonaje>
-            <RectangulosNaranja>Cuchillo Ejercito Wereld</RectangulosNaranja>
-            <RectangulosNaranja>Reloj</RectangulosNaranja>
-          </ObjetosPersonaje>
-        </ContenidoSecundario>
+        </ContainerMainContent>
       </Wrapper>
     </ContainerMain>
   );

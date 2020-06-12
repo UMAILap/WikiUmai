@@ -19,7 +19,7 @@ import {
   FotoPersonaje,
   PersonajesRelacionados,
 } from './styles';
-import { Wrapper, Titulos,TimeLine } from 'components';
+import { Wrapper, Titulos, TimeLine } from 'components';
 
 function PlanetasContainer() {
   return (
@@ -52,7 +52,7 @@ function PlanetasContainer() {
       <Wrapper>
         <ContenidoPlaneta>
           <Titulos>Hitos</Titulos>
-         <TimeLine></TimeLine>
+          <TimeLine></TimeLine>
           <ContenedorHistorias>
             <Historias>
               <Titulos>Historias</Titulos>
