@@ -57,40 +57,6 @@ function PlanetasContainer() {
       <WrapperPersonajesPlanetas>
         <ContenidoPlaneta>
           <Titulos>Hitos</Titulos>
-          <HitosTimeLine />
-          <ContenedorHistorias>
-            <Historias>
-              <Titulos>Historias</Titulos>
-              <TextoSecundario>
-                Aun no hay historias en este hito
-              </TextoSecundario>
-              <AgregarHistoriaBoton>+ Agregar historia</AgregarHistoriaBoton>
-            </Historias>
-            <Personajes>
-              <Titulos>Personajes</Titulos>
-              <PersonajesRelacionados>
-                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
-                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
-                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
-                <FotoPersonaje src="./images/wereld_img.png"></FotoPersonaje>
-              </PersonajesRelacionados>
-              <AgregarHistoriaBoton>+ Agregar personaje</AgregarHistoriaBoton>
-            </Personajes>
-            <Historias>
-              <Titulos>Objetos y tecnologias</Titulos>
-              <TextoSecundario>
-                no se encuentran objetos en este hito
-              </TextoSecundario>
-              <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
-            </Historias>
-            <Historias>
-              <Titulos>Articulos externos relacionados</Titulos>
-              <TextoSecundario>
-                no se encuentran objetos en este hito
-              </TextoSecundario>
-              <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
-            </Historias>
-          </ContenedorHistorias>
         </ContenidoPlaneta>
       </WrapperPersonajesPlanetas>
       <Wrapper>
@@ -100,7 +66,9 @@ function PlanetasContainer() {
         <ContenedorHistorias>
           <Historias>
             <Titulos>Historias</Titulos>
-            <TextoSecundario>Aun no hay historias en este hito</TextoSecundario>
+            <TextoSecundario>
+              Aun no hay historias en este hito
+              </TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar historia</AgregarHistoriaBoton>
           </Historias>
           <Personajes>
@@ -117,19 +85,19 @@ function PlanetasContainer() {
             <Titulos>Objetos y tecnologias</Titulos>
             <TextoSecundario>
               no se encuentran objetos en este hito
-            </TextoSecundario>
+              </TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
           </Historias>
           <Historias>
             <Titulos>Articulos externos relacionados</Titulos>
             <TextoSecundario>
               no se encuentran objetos en este hito
-            </TextoSecundario>
+              </TextoSecundario>
             <AgregarHistoriaBoton>+ Agregar objetos</AgregarHistoriaBoton>
           </Historias>
         </ContenedorHistorias>
-      </WrapperPersonajesPlanetas>
-    </ContainerMain>
+      </WrapperPersonajesPlanetas >
+    </ContainerMain >
   );
 }
 
