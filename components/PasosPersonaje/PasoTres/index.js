@@ -6,13 +6,13 @@ import {
   PasoTitulo,
   Datos,
   InformacionBasica,
-  CaracteristicasPersonaje, 
+  CaracteristicasPersonaje,
   Caracteristicas,
   CaracteristicasIconos,
   CaracteristicasPuntos,
   CaracteristicasNombres,
   PuntosHabilidad,
-  Puntos
+  Puntos,
 } from './styles';
 
 function PasoTres() {
@@ -22,20 +22,20 @@ function PasoTres() {
       fuerza: false,
       habilidad: false,
       inteligencia: false,
-      suerte: false
-    }
+      suerte: false,
+    },
   });
 
-  function handleInputChange(value) {  
-    console.log("valor " + value);
+  function handleInputChange(value) {
+    console.log('valor ' + value);
 
-    usedValues.valuesArray.push(value);   
+    usedValues.valuesArray.push(value);
 
-    console.log("value array despues: " + usedValues.valuesArray);
+    console.log('value array despues: ' + usedValues.valuesArray);
 
     setUsedValues();
 
-    if(usedValues.valuesArray.includes(value)){
+    if (usedValues.valuesArray.includes(value)) {
     }
   }
 
@@ -59,10 +59,30 @@ function PasoTres() {
               <img src="./suerte.svg" />
             </CaracteristicasIconos>
             <CaracteristicasPuntos>
-              <input type="number" min="1" max="4" onChange={event => handleInputChange(event.target.value)}/>
-              <input type="number" min="1" max="4" onChange={event => handleInputChange(event.target.value)}/>
-              <input type="number" min="1" max="4" onChange={event => handleInputChange(event.target.value)}/>
-              <input type="number" min="1" max="4" onChange={event => handleInputChange(event.target.value)}/>
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
             </CaracteristicasPuntos>
             <CaracteristicasNombres>
               <h6>Fuerza</h6>
@@ -72,15 +92,16 @@ function PasoTres() {
             </CaracteristicasNombres>
           </Caracteristicas>
           <PuntosHabilidad>
-            <p>Distribuí los siguientes puntos en las habilidades de tu personaje</p>
-            
+            <p>
+              Distribuí los siguientes puntos en las habilidades de tu personaje
+            </p>
+
             <Puntos>
               <span>1</span>
               <span>2</span>
               <span>3</span>
               <span>4</span>
             </Puntos>
-
           </PuntosHabilidad>
         </CaracteristicasPersonaje>
       </Datos>

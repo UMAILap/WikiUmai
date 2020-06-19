@@ -49,7 +49,7 @@ export const InformacionBasica = styled.div`
   }
 `;
 export const CaracteristicasPersonaje = styled.div`
-    margin-left: 5%;
+  margin-left: 5%;
 `;
 export const Caracteristicas = styled.div`
   display: grid;
