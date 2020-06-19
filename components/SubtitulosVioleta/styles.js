@@ -6,4 +6,5 @@ export const VioletaSubtitulos = styled.p`
   color: ${leerColor(colores.violeta)};
   font-size: 18px;
   font-weight: bolder;
+  padding-top: 20px;
 `;

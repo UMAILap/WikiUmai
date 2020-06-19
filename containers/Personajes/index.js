@@ -15,7 +15,7 @@ import {
   ContenedorPuntos,
   ContainerInfoBanner,
   NombrePersonaje,
-  TituloSeccion,
+  PersonajeSeccion,
   ContenedorPersonajeImg,
   ContenedorPuntosImagenes,
   ContenedorCaracteristicasPersonaje,
@@ -36,6 +36,7 @@ import {
   ObjetosPersonaje,
   ContainerMainContent,
   Banner,
+  RelacionadosTitulos,
 } from './styles';
 import { Wrapper, SubtitulosVioleta } from 'components';
 
@@ -49,7 +50,7 @@ function PersonajesContainer() {
               <IconoPersonaje>
                 <img src="./Robot_Personajes.svg" />
               </IconoPersonaje>
-              <TituloSeccion>Personaje</TituloSeccion>
+              <PersonajeSeccion>Personaje</PersonajeSeccion>
               <TituloPersonaje>Obi Kubu</TituloPersonaje>
             </ContainerInfoBanner>
             <ContenedorCaracteristicasPersonaje>
@@ -137,10 +138,9 @@ function PersonajesContainer() {
               versions from the 1914 translation by H. Rackham.
             </TextoPrincipal>
             <TituloHitstorias>Historias</TituloHitstorias>
-            <TextoSecundario>
-              Este personaje no aparece en una historia aún. *llora* ¿Por qué no
-              escribis una?
-            </TextoSecundario>
+            <TextoPrincipal>
+              Origen personaje
+            </TextoPrincipal>
             <AgregarHistoriaBoton>+ Agregar historias</AgregarHistoriaBoton>
             <TituloGaleria>Galeria</TituloGaleria>
             <ContenedorGaleria>
@@ -159,27 +159,27 @@ function PersonajesContainer() {
               <Relacionados>
                 <img src="./images/Wereld_img.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <SubtitulosVioleta>Nima</SubtitulosVioleta>
+                <RelacionadosTitulos>Nima</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
                 <img src="./images/Wereld_img.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <SubtitulosVioleta>Wereld</SubtitulosVioleta>
+                <RelacionadosTitulos>Wereld</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
                 <img src="./images/Wereld_img.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <SubtitulosVioleta>Guardián Zoro</SubtitulosVioleta>
+                <RelacionadosTitulos>Guardián Zoro</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
                 <img src="./images/Wereld_img.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <SubtitulosVioleta>Guardián Zoro Hermano</SubtitulosVioleta>
+                <RelacionadosTitulos>Guardián Zoro Hermano</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
                 <img src="./images/Wereld_img.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <SubtitulosVioleta>Wereld Cuchillo</SubtitulosVioleta>
+                <RelacionadosTitulos>Wereld Cuchillo</RelacionadosTitulos>
               </Relacionados>
             </ContenedorRelacionados>
             <TextoPrincipal>Ultima edicion por Facundo Brahim</TextoPrincipal>
