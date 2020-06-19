@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import {
@@ -6,13 +6,39 @@ import {
   PasoTitulo,
   Datos,
   InformacionBasica,
+  CaracteristicasPersonaje,
   Caracteristicas,
   CaracteristicasIconos,
   CaracteristicasPuntos,
   CaracteristicasNombres,
+  PuntosHabilidad,
+  Puntos,
 } from './styles';
 
-function PasoTres({ colorFondo }) {
+function PasoTres() {
+  const [usedValues, setUsedValues] = useState({
+    valuesArray: [],
+    inputErrors: {
+      fuerza: false,
+      habilidad: false,
+      inteligencia: false,
+      suerte: false,
+    },
+  });
+
+  function handleInputChange(value) {
+    console.log('valor ' + value);
+
+    usedValues.valuesArray.push(value);
+
+    console.log('value array despues: ' + usedValues.valuesArray);
+
+    setUsedValues();
+
+    if (usedValues.valuesArray.includes(value)) {
+    }
+  }
+
   return (
     <PasoContainer>
       <PasoTitulo>Información básica y características</PasoTitulo>
@@ -24,32 +50,63 @@ function PasoTres({ colorFondo }) {
           <input type="text" placeholder="Edad" />
           <input type="text" placeholder="Altura" />
         </InformacionBasica>
-        <Caracteristicas>
-          <CaracteristicasIconos>
-            <img src="./fuerza.svg" />
-            <img src="./inteligencia.svg" />
-            <img src="./habilidad.svg" />
-            <img src="./suerte.svg" />
-          </CaracteristicasIconos>
-          <CaracteristicasPuntos>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </CaracteristicasPuntos>
-          <CaracteristicasNombres>
-            <h6>Fuerza</h6>
-            <h6>Inteligencia</h6>
-            <h6>Habilidad</h6>
-            <h6>Suerte</h6>
-          </CaracteristicasNombres>
-        </Caracteristicas>
+        <CaracteristicasPersonaje>
+          <Caracteristicas>
+            <CaracteristicasIconos>
+              <img src="./fuerza.svg" />
+              <img src="./inteligencia.svg" />
+              <img src="./habilidad.svg" />
+              <img src="./suerte.svg" />
+            </CaracteristicasIconos>
+            <CaracteristicasPuntos>
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+              <input
+                type="number"
+                min="1"
+                max="4"
+                onChange={event => handleInputChange(event.target.value)}
+              />
+            </CaracteristicasPuntos>
+            <CaracteristicasNombres>
+              <h6>Fuerza</h6>
+              <h6>Inteligencia</h6>
+              <h6>Habilidad</h6>
+              <h6>Suerte</h6>
+            </CaracteristicasNombres>
+          </Caracteristicas>
+          <PuntosHabilidad>
+            <p>
+              Distribuí los siguientes puntos en las habilidades de tu personaje
+            </p>
+
+            <Puntos>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+            </Puntos>
+          </PuntosHabilidad>
+        </CaracteristicasPersonaje>
       </Datos>
     </PasoContainer>
   );
 }
-PasoTres.propTypes = {
-  colorFondo: PropTypes.element.isRequired,
-};
 
 export default PasoTres;
