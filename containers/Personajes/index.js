@@ -138,9 +138,7 @@ function PersonajesContainer() {
               versions from the 1914 translation by H. Rackham.
             </TextoPrincipal>
             <TituloHitstorias>Historias</TituloHitstorias>
-            <TextoPrincipal>
-              Origen personaje
-            </TextoPrincipal>
+            <TextoPrincipal>Origen personaje</TextoPrincipal>
             <AgregarHistoriaBoton>+ Agregar historias</AgregarHistoriaBoton>
             <TituloGaleria>Galeria</TituloGaleria>
             <ContenedorGaleria>

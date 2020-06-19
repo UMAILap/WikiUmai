@@ -123,7 +123,7 @@ export const ContenedorCaracteristicasPersonaje = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  margin-top:5%;
+  margin-top: 5%;
   @media (min-width: ${breakpoints.laptop}) {
     display: flex;
     justify-content: center;
@@ -228,7 +228,6 @@ export const TextoPrincipal = styled.p`
   font-size: 18px;
   line-height: 38px;
   padding-bottom: 10px;
-
 `;
 export const TextoSecundario = styled.p`
   font-family: 'Proxima Nova';
@@ -237,7 +236,6 @@ export const TextoSecundario = styled.p`
   line-height: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid ${leerColor(colores.violeta)};
-
 `;
 
 export const TituloHitstorias = styled.h2`
@@ -263,7 +261,7 @@ export const AgregarHistoriaBoton = styled.a`
   padding: 10px;
   width: 50%;
   text-align: center;
-  justify-self:center;
+  justify-self: center;
   @media (min-width: ${breakpoints.tablet}) {
     padding: 10px 40px;
     margin: 2%;
@@ -303,9 +301,9 @@ export const ContenedorPersonajeGaleria = styled.div`
 export const ContenedorRelacionados = styled.div`
   width: 100%;
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
   align-items: self-end;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 `;
 export const RelacionadosSubtitulos = styled.p`
   color: ${leerColor(colores.violeta)};
@@ -313,36 +311,34 @@ export const RelacionadosSubtitulos = styled.p`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  align-self:end;
-  padding-top:10px;
-  font-size:12px;
-
+  align-self: end;
+  padding-top: 10px;
+  font-size: 12px;
 `;
 export const RelacionadosTitulos = styled.p`
   color: ${leerColor(colores.violeta)};
-  font-size:16px;
-  font-weight:bolder;
+  font-size: 16px;
+  font-weight: bolder;
   width: inherit;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  align-self:end;
-  padding-top:10px;
+  align-self: end;
+  padding-top: 10px;
 `;
 export const Relacionados = styled.div`
- 
   background-color: ${leerColor(colores.gris)};
   margin: 10px 0;
   border-radius: 10px;
   display: grid;
-  grid-template-columns:20% max-content;
+  grid-template-columns: 20% max-content;
   width: unset;
   flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  height:60px;
-  padding:5px;
+  height: 60px;
+  padding: 5px;
   img {
     border-radius: 50%;
     height: 90%;

@@ -29,14 +29,17 @@ function PasoTres() {
   function handleInputChange(value) {
     console.log('valor ' + value);
 
+  
     usedValues.valuesArray.push(value);
+  
+    console.log("array"+usedValues.valuesArray);
 
-    console.log('value array despues: ' + usedValues.valuesArray);
-
-    setUsedValues();
+    //setUsedValues();
 
     if (usedValues.valuesArray.includes(value)) {
+      
     }
+    
   }
 
   return (
@@ -62,7 +65,7 @@ function PasoTres() {
               <input
                 type="number"
                 min="1"
-                max="4"
+                max="4"                
                 onChange={event => handleInputChange(event.target.value)}
               />
               <input
