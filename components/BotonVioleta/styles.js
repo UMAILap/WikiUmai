@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const VioletaBoton = styled.a`
-  font-family: 'Proxima Nova';
-  border-radius: 20px;
-  background-color: #4d1b84;
-  color: #fff;
-  font-size: 5px;
-  padding: 15px 25px;
-  display: none;
+    font-family: 'Proxima Nova';
+    border-radius: 20px;
+    background-color: #4d1b84;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: 10px 40px;
