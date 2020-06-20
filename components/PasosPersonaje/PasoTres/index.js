@@ -46,6 +46,7 @@ function PasoTres() {
         valuesArray: [...usedValues.valuesArray, value],
       });
     }
+    
   }
   const { inputErrors } = usedValues;
 

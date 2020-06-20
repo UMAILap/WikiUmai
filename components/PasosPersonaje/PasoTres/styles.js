@@ -78,7 +78,17 @@ export const CaracteristicasPuntos = styled.div`
     width: 70%;
     color: ${leerColor(colores.naranja)};
     font-size: 24px;
+    ::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    ::-webkit-outer-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    } 
+
   }
+  
 `;
 export const CaracteristicasNombres = styled.div`
   display: flex;
