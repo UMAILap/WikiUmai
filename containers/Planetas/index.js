@@ -14,7 +14,7 @@ import {
   ContenidoPlaneta,
   Personajes,
   Historias,
-  Objetos, 
+  Objetos,
   Articulos,
   ContenedorHitos,
   SeccionLinks,
@@ -27,22 +27,18 @@ import {
   FotoPersonaje,
   PersonajesRelacionados,
 } from './styles';
-import {
-  Wrapper,
-  Titulos,
-  HitosTimeLine,
-  BotonVioleta,
-} from 'components';
+import { Wrapper, Titulos, HitosTimeLine, BotonVioleta } from 'components';
 
 function PlanetasContainer() {
   return (
     <MainPlanetas>
       <BannerPlanetas>
         <Wrapper>
-
           <InfoPlanetasBanner>
             <NombrePlaneta>
-              <TituloPlaneta>Planeta <Negrita>Sol</Negrita></TituloPlaneta>
+              <TituloPlaneta>
+                Planeta <Negrita>Sol</Negrita>
+              </TituloPlaneta>
             </NombrePlaneta>
 
             <BajadaPlaneta>
@@ -58,7 +54,6 @@ function PlanetasContainer() {
             </BajadaPlaneta>
           </InfoPlanetasBanner>
 
-
           <ContenedorImagenPlaneta>
             <ContenedorPlanetaImg>
               <FotoPlaneta src="./images/slider/3.png"></FotoPlaneta>
@@ -67,28 +62,28 @@ function PlanetasContainer() {
         </Wrapper>
       </BannerPlanetas>
 
-
       <Wrapper>
         <ContenedorHitos>
           <Titulos>Hitos</Titulos>
-            <ContenidoPlaneta>
-              <HitosTimeLine />
-            </ContenidoPlaneta>
-          </ContenedorHitos> 
-        </Wrapper>
+          <ContenidoPlaneta>
+            <HitosTimeLine />
+          </ContenidoPlaneta>
+        </ContenedorHitos>
+      </Wrapper>
       <Wrapper>
         <AgregarNuevas>
           <Historias>
             <Titulos>Historias</Titulos>
             <SeccionLinks>
               <LinksHistorias>Origen del personaje</LinksHistorias>
-              <LinksHistorias>Pelea entre mundos: la guerra por el poder</LinksHistorias>
+              <LinksHistorias>
+                Pelea entre mundos: la guerra por el poder
+              </LinksHistorias>
               <LinksHistorias>Prisionero de guerra: el escape</LinksHistorias>
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta>+ Agregar historia</BotonVioleta>
             </ContenedorBoton>
-
           </Historias>
 
           <Personajes>
@@ -104,15 +99,19 @@ function PlanetasContainer() {
               <VerMas src="./images/planetas/5.png"></VerMas>
             </PersonajesRelacionados>
             <ContenedorBoton>
-            <BotonVioleta>+ Agregar personaje</BotonVioleta>
+              <BotonVioleta>+ Agregar personaje</BotonVioleta>
             </ContenedorBoton>
           </Personajes>
 
           <Articulos>
-          <Titulos>Articulos externos relacionados</Titulos>
-          <SeccionLinks>
-              <LinksHistorias>La historia del otro planeta que se relaciona con este</LinksHistorias>
-              <LinksHistorias>Este personaje que fue a este planeta</LinksHistorias>
+            <Titulos>Articulos externos relacionados</Titulos>
+            <SeccionLinks>
+              <LinksHistorias>
+                La historia del otro planeta que se relaciona con este
+              </LinksHistorias>
+              <LinksHistorias>
+                Este personaje que fue a este planeta
+              </LinksHistorias>
               <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
             </SeccionLinks>
           </Articulos>
@@ -128,10 +127,6 @@ function PlanetasContainer() {
               <BotonVioleta>+ Agregar objetos</BotonVioleta>
             </ContenedorBoton>
           </Objetos>
-
-         
-
-          
         </AgregarNuevas>
       </Wrapper>
     </MainPlanetas>

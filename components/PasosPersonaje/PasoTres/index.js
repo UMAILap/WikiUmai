@@ -16,29 +16,42 @@ import {
 } from './styles';
 
 function PasoTres() {
-  const [usedValues, setUsedValues] = useState({
+  const [usedValues, setUsedValues] = useState({ //variables que almacenamos útiles para la UI
     valuesArray: [],
     inputErrors: {
       fuerza: false,
       habilidad: false,
       inteligencia: false,
-      suerte: false,
+      suerte: false, 
     },
-  });
+  });  
 
-  function handleInputChange(value) {
-    console.log('valor ' + value);
+  function handleInputChange(value, inputKey) {
+    //console.log('valor ' + value);
+    //usedValues.valuesArray.push(value);
+    //console.log('value array despues: ' + usedValues.valuesArray);
 
-    usedValues.valuesArray.push(value);
 
-    console.log('value array despues: ' + usedValues.valuesArray);
-
-    setUsedValues();
-
-    if (usedValues.valuesArray.includes(value)) {
+    if (usedValues.valuesArray.includes(value)) 
+    {
+      setUsedValues({
+        ...usedValues,
+        inputErrors:{
+          ...usedValues.inputErrors,[inputKey]:true
+        } 
+      });
     }
-  }
 
+    else 
+    {
+      setUsedValues({
+        ...usedValues,
+        valuesArray:[...usedValues.valuesArray,value]
+      });
+    }     
+  }
+  const {inputErrors} = usedValues;
+  
   return (
     <PasoContainer>
       <PasoTitulo>Información básica y características</PasoTitulo>
@@ -63,25 +76,25 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
-                onChange={event => handleInputChange(event.target.value)}
+                onChange={event => handleInputChange(event.target.value,"fuerza")}
               />
               <input
                 type="number"
                 min="1"
                 max="4"
-                onChange={event => handleInputChange(event.target.value)}
+                onChange={event => handleInputChange(event.target.value,"inteligencia")}
               />
               <input
                 type="number"
                 min="1"
                 max="4"
-                onChange={event => handleInputChange(event.target.value)}
+                onChange={event => handleInputChange(event.target.value,"habilidad")}
               />
               <input
                 type="number"
                 min="1"
                 max="4"
-                onChange={event => handleInputChange(event.target.value)}
+                onChange={event => handleInputChange(event.target.value,"suerte")}
               />
             </CaracteristicasPuntos>
             <CaracteristicasNombres>

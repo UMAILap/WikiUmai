@@ -17,13 +17,13 @@ export const BannerPlanetas = styled.div`
   display: flex;
 
   @media (min-width: ${breakpoints.notebook}) {
-  background-image: none;
-  height: 450px;
-  width: 100%;
-  display: flex;
-  background-image: url(./banner_personajes.svg);
-  background-color: ${leerColor(colores.violetaOscuro)};
-  background-size: auto 100%;
+    background-image: none;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    background-image: url(./banner_personajes.svg);
+    background-color: ${leerColor(colores.violetaOscuro)};
+    background-size: auto 100%;
   }
 `;
 
@@ -33,16 +33,10 @@ export const NombrePlaneta = styled.div`
   padding-bottom: 20px;
 
   @media (min-width: ${breakpoints.notebook}) {
-  
   }
 `;
 
-
-
 export const InfoPlanetasBanner = styled.div`
-    
-
-
   @media (min-width: ${breakpoints.tablet}) {
     display: flex;
     flex-direction: column;
@@ -51,7 +45,7 @@ export const InfoPlanetasBanner = styled.div`
     align-items: center;
     padding: 20px 0;
     max-width: 80%;
-}
+  }
 `;
 
 export const TituloPlaneta = styled.h1`
@@ -59,7 +53,6 @@ export const TituloPlaneta = styled.h1`
   color: ${leerColor(colores.naranja)};
   width: 100%;
   font-size: 35px;
-  
 
   @media (min-width: ${breakpoints.laptop}) {
     font-size: 48px;
@@ -80,21 +73,19 @@ export const BajadaPlaneta = styled.p`
 `;
 
 export const ContenedorImagenPlaneta = styled.div`
-  display:none;
+  display: none;
   @media (min-width: ${breakpoints.laptop}) {
-    display:block;
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
   }
-  
 `;
 
 export const ContenedorPlanetaImg = styled.div`
   height: 200px;
   border-radius: 20px;
-  
 `;
 
 export const FotoPlaneta = styled.img`
@@ -105,18 +96,14 @@ export const FotoPlaneta = styled.img`
 
   @media (min-width: ${breakpoints.laptopL}) {
     width: 72%;
-
   }
 
   @media (min-width: ${breakpoints.notebook}) {
-  border-radius: 50%;
-  width: 65%;
-  height: 90%;
-  border: 4px solid ${leerColor(colores.naranja)};
-
-}
-
-
+    border-radius: 50%;
+    width: 65%;
+    height: 90%;
+    border: 4px solid ${leerColor(colores.naranja)};
+  }
 `;
 
 export const ContenidoPlaneta = styled.div`
@@ -130,19 +117,15 @@ export const ContenidoPlaneta = styled.div`
 export const ContenedorHitos = styled.div`
   width: 100%;
   margin-top: 3%;
- 
 `;
 
 export const SeccionLinks = styled.div`
-width: 100%;
-padding: 5% 0% 6% 0%;
-@media (min-width: ${breakpoints.laptop}) {
-  padding: 5% 0% 1% 0%;
-}
+  width: 100%;
+  padding: 5% 0% 6% 0%;
+  @media (min-width: ${breakpoints.laptop}) {
+    padding: 5% 0% 1% 0%;
+  }
 `;
-
-
-
 
 export const LinksHistorias = styled.address`
   font-family: 'Proxima Nova';
@@ -199,9 +182,8 @@ export const Objetos = styled.div`
 `;
 
 export const Articulos = styled.div`
-
   padding-bottom: 0px;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -210,7 +192,6 @@ export const Articulos = styled.div`
     align-items: center;
     padding-bottom: 100px;
   }
-  
 `;
 
 export const Personajes = styled.div`
@@ -225,39 +206,31 @@ export const Personajes = styled.div`
 
 export const FotoPersonaje = styled.img`
   border-radius: 80%;
-    border: 4px solid hsl(268.6,66%,31.2%);
-    margin: 0% 6% 2% 0%;
-
+  border: 4px solid hsl(268.6, 66%, 31.2%);
+  margin: 0% 6% 2% 0%;
 `;
 
 export const VerMas = styled.img`
   border-radius: 80%;
   margin-right: 4%;
-
 `;
-
 
 export const PersonajesRelacionados = styled.div`
   width: 100%;
-  margin-top:5%;
+  margin-top: 5%;
 `;
-
 
 export const Negrita = styled.span`
   font-weight: 600;
 `;
 
-
 export const ContenedorBoton = styled.div`
-    width: 100%;
-    padding: 7% 0%;
-
+  width: 100%;
+  padding: 7% 0%;
 
   @media (min-width: ${breakpoints.tablet}) {
     width: 48%;
-    text-align:center;
+    text-align: center;
     padding: 0% 0%;
   }
 `;
-
-
