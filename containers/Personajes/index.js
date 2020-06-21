@@ -2,22 +2,17 @@ import React from 'react';
 
 import {
   ContainerMain,
-  TituloPersonaje,
   BajadaPersonaje,
   ContainerBanner,
   IconoPersonaje,
   FotoPersonaje,
-  Fuerza,
-  Inteligencia,
-  Estrella,
-  Suerte,
+  HabilidadesImagenes,
   PuntosPersonaje,
   ContenedorPuntos,
-  ContainerInfoBanner,
+  SeccionInfoPersonaje,
   NombrePersonaje,
   PersonajeSeccion,
-  ContenedorPersonajeImg,
-  ContenedorPuntosImagenes,
+  SectorHabilidadesImagenes,
   ContenedorCaracteristicasPersonaje,
   ContenidoPrincipal,
   TextoPrincipal,
@@ -26,8 +21,7 @@ import {
   AgregarHistoriaBoton,
   TituloGaleria,
   ContenedorPersonajeGaleria,
-  ContenedorGaleria,
-  ContenedorRelacionados,
+  SectorGaleria,
   Relacionados,
   RelacionadosSubtitulos,
   ContenidoSecundario,
@@ -35,7 +29,7 @@ import {
   RectangulosNaranja,
   ObjetosPersonaje,
   ContainerMainContent,
-  Banner,
+  BannerPersonaje,
   RelacionadosTitulos,
 } from './styles';
 import { Wrapper, SubtitulosVioleta } from 'components';
@@ -45,37 +39,34 @@ function PersonajesContainer() {
     <ContainerMain>
       <ContainerBanner>
         <Wrapper>
-          <Banner>
-            <ContainerInfoBanner>
-              <IconoPersonaje>
-                <img src="./Robot_Personajes.svg" />
+          <BannerPersonaje>
+            <SeccionInfoPersonaje>
+              <IconoPersonaje src="./Robot_Personajes.svg" >                
               </IconoPersonaje>
               <PersonajeSeccion>Personaje</PersonajeSeccion>
-              <TituloPersonaje>Obi Kubu</TituloPersonaje>
-            </ContainerInfoBanner>
+              <NombrePersonaje>Obi Kubu</NombrePersonaje>
+            </SeccionInfoPersonaje>
             <ContenedorCaracteristicasPersonaje>
-              <ContenedorPuntos>
-                <ContenedorPuntosImagenes>
-                  <Fuerza src="./fuerza.svg"></Fuerza>
+             <ContenedorPuntos>
+                <SectorHabilidadesImagenes>
+                  <HabilidadesImagenes src="./fuerza.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>2</PuntosPersonaje>
-                </ContenedorPuntosImagenes>
-                <ContenedorPuntosImagenes>
-                  <Inteligencia src="./inteligencia.svg"></Inteligencia>
+                </SectorHabilidadesImagenes>
+                <SectorHabilidadesImagenes>
+                  <HabilidadesImagenes src="./inteligencia.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>3</PuntosPersonaje>
-                </ContenedorPuntosImagenes>
-                <ContenedorPuntosImagenes>
-                  <Estrella src="./habilidad.svg"></Estrella>
+                </SectorHabilidadesImagenes>
+                <SectorHabilidadesImagenes>
+                  <HabilidadesImagenes src="./habilidad.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>4</PuntosPersonaje>
-                </ContenedorPuntosImagenes>
-                <ContenedorPuntosImagenes>
-                  <Suerte src="./suerte.svg"></Suerte>
+                </SectorHabilidadesImagenes>
+                <SectorHabilidadesImagenes>
+                  <HabilidadesImagenes src="./suerte.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>1</PuntosPersonaje>
-                </ContenedorPuntosImagenes>
-              </ContenedorPuntos>
-              <ContenedorPersonajeImg>
+                </SectorHabilidadesImagenes>
+            </ContenedorPuntos>
                 <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-              </ContenedorPersonajeImg>
-            </ContenedorCaracteristicasPersonaje>
+           </ContenedorCaracteristicasPersonaje>
             <BajadaPersonaje>
               Nació en la capital del continente, recibió la mejor educación
               desde chico y acompañado de una familia de clase alta se formo
@@ -83,7 +74,7 @@ function PersonajesContainer() {
               se dedica solo al diseño pero esta listo para usar todas sus
               habilidades pero esta
             </BajadaPersonaje>
-          </Banner>
+          </BannerPersonaje>
         </Wrapper>
       </ContainerBanner>
       <Wrapper>
@@ -104,11 +95,11 @@ function PersonajesContainer() {
               <TextoSecundario>Diseñador de experiencias</TextoSecundario>
             </TablaPersonaje>
             <SubtitulosVioleta>Objetos de profesión:</SubtitulosVioleta>
-            <ObjetosPersonaje>
+            <ObjetosPersonaje> 
               <RectangulosNaranja>Pala</RectangulosNaranja>
               <RectangulosNaranja>Casco</RectangulosNaranja>
               <RectangulosNaranja>Pico</RectangulosNaranja>
-            </ObjetosPersonaje>
+            </ObjetosPersonaje> 
             <SubtitulosVioleta>Inventario</SubtitulosVioleta>
             <ObjetosPersonaje>
               <RectangulosNaranja>Cuchillo Ejercito Wereld</RectangulosNaranja>
@@ -141,7 +132,7 @@ function PersonajesContainer() {
             <TextoPrincipal>Origen personaje</TextoPrincipal>
             <AgregarHistoriaBoton>+ Agregar historias</AgregarHistoriaBoton>
             <TituloGaleria>Galeria</TituloGaleria>
-            <ContenedorGaleria>
+            <SectorGaleria>
               <ContenedorPersonajeGaleria>
                 <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
               </ContenedorPersonajeGaleria>
@@ -151,35 +142,35 @@ function PersonajesContainer() {
               <ContenedorPersonajeGaleria>
                 <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
               </ContenedorPersonajeGaleria>
-            </ContenedorGaleria>
+            </SectorGaleria>
             <TituloGaleria>Relacionados</TituloGaleria>
-            <ContenedorRelacionados>
+            <ObjetosPersonaje>
               <Relacionados>
-                <img src="./images/Wereld_img.png" />
+                <img src="./images/slider/2.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Nima</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/Wereld_img.png" />
+                <img src="./images/slider/3.png"/>
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Wereld</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/Wereld_img.png" />
+                <img src="./images/planetas/1.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Guardián Zoro</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/Wereld_img.png" />
+                <img src="./images/planetas/1.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Guardián Zoro Hermano</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/Wereld_img.png" />
+                <img src="./images/slider/3.png"/>
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Wereld Cuchillo</RelacionadosTitulos>
               </Relacionados>
-            </ContenedorRelacionados>
+            </ObjetosPersonaje>
             <TextoPrincipal>Ultima edicion por Facundo Brahim</TextoPrincipal>
           </ContenidoPrincipal>
         </ContainerMainContent>

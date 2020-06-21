@@ -7,27 +7,6 @@ export const ContainerMain = styled.div`
   @media (min-width: ${breakpoints.laptop}) {
   }
 `;
-export const ContainerMainContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  @media (min-width: ${breakpoints.laptop}) {
-    flex-direction: row-reverse;
-  }
-`;
-export const Banner = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: fit-content;
-  @media (min-width: ${breakpoints.laptop}) {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-    align-items: center;
-    padding: 10px 0;
-  }
-`;
 export const ContainerBanner = styled.div`
   background-image: none;
   height: 500px;
@@ -46,11 +25,20 @@ export const ContainerBanner = styled.div`
     background-size: auto 100%;
   }
 `;
-export const NombrePersonaje = styled.div`
-  display: inline-block;
-  width: 90%;
+export const BannerPersonaje = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: fit-content;
+  @media (min-width: ${breakpoints.laptop}) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 10px 0;
+  }
 `;
-export const ContainerInfoBanner = styled.div`
+export const SeccionInfoPersonaje = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,16 +53,16 @@ export const ContainerInfoBanner = styled.div`
     max-width: 100%;
   }
 `;
-
-export const TituloPersonaje = styled.h1`
-  font-family: 'Raleway';
-  color: ${leerColor(colores.naranja)};
-  font-weight: bolder;
-  width: 100%;
-  font-size: 32px;
-  align-items: center;
+export const IconoPersonaje = styled.img`
+  width: 10%;
+  display: inline-table;
+  padding: 10px 0;
+  
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 32px;
+    width: 10%;
+    display: inline-table;
+    padding: 20px 0;
+   
   }
 `;
 export const PersonajeSeccion = styled.p`
@@ -89,34 +77,18 @@ export const PersonajeSeccion = styled.p`
     font-size: 14px;
   }
 `;
-export const BajadaPersonaje = styled.p`
+
+export const NombrePersonaje = styled.h1`
   font-family: 'Raleway';
-  color: ${leerColor(colores.blanco)};
-  height: fit-content;
+  color: ${leerColor(colores.naranja)};
+  font-weight: bolder;
   width: 100%;
+  font-size: 32px;
+  align-items: center;
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 32px;
   }
 `;
-
-export const IconoPersonaje = styled.h1`
-  width: 10%;
-  display: inline-table;
-  padding: 10px 0;
-  img {
-    width: 60%;
-  }
-  @media (min-width: ${breakpoints.laptop}) {
-    width: 10%;
-    display: inline-table;
-    padding: 20px 0;
-    img {
-      width: 100%;
-    }
-  }
-`;
-
 export const ContenedorCaracteristicasPersonaje = styled.div`
   display: flex;
   flex-direction: column-reverse;
@@ -124,22 +96,17 @@ export const ContenedorCaracteristicasPersonaje = styled.div`
   align-items: center;
   max-width: 100%;
   margin-top: 5%;
+  
   @media (min-width: ${breakpoints.laptop}) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-
+    
     grid-column: 2;
     grid-row: 1 / 3;
   }
-`;
-
-export const ContenedorPersonajeImg = styled.div`
-  height: 200px;
-  border-radius: 20px;
-  background-color: ${leerColor(colores.gris)};
 `;
 export const ContenedorPuntos = styled.div`
   display: flex;
@@ -155,7 +122,7 @@ export const ContenedorPuntos = styled.div`
     justify-content: space-between;
   }
 `;
-export const ContenedorPuntosImagenes = styled.div`
+export const SectorHabilidadesImagenes = styled.div`
   width: auto;
   height: fit-content;
   display: flex;
@@ -164,33 +131,10 @@ export const ContenedorPuntosImagenes = styled.div`
     padding: 13px 40px 20px 0px;
   }
 `;
-export const FotoPersonaje = styled.img`
-  border-radius: 10px;
-  width: auto;
-  height: 100%;
-  @media (min-width: ${breakpoints.laptop}) {
-    border-radius: 10px;
-    width: auto;
-    height: 100%;
-  }
-`;
-export const Fuerza = styled.img`
+export const HabilidadesImagenes = styled.img`
   width: 20px;
   height: auto;
 `;
-export const Inteligencia = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-export const Estrella = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-export const Suerte = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-
 export const PuntosPersonaje = styled.p`
   font-family: 'Raleway';
   color: ${leerColor(colores.blanco)};
@@ -201,14 +145,33 @@ export const PuntosPersonaje = styled.p`
     font-weight: bolder;
   }
 `;
-
-export const ContenidoPrincipal = styled.div`
+export const FotoPersonaje = styled.img`
+  border-radius: 10px;
+  width: auto;
+  height: 200px;
+  border-radius: 20px;
+  background-color: ${leerColor(colores.gris)};
+  @media (min-width: ${breakpoints.laptop}) {
+    border-radius: 10px;
+    width: auto;
+  }
+`;
+export const BajadaPersonaje = styled.p`
+  font-family: 'Raleway';
+  color: ${leerColor(colores.blanco)};
+  height: fit-content;
   width: 100%;
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: 14px;
+    line-height: 30px;
+  }
+`;
+export const ContainerMainContent = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   @media (min-width: ${breakpoints.laptop}) {
-    width: 60%;
-    padding-top: 90px;
+    flex-direction: row-reverse;
   }
 `;
 export const ContenidoSecundario = styled.div`
@@ -222,12 +185,19 @@ export const ContenidoSecundario = styled.div`
     align-self: flex-start;
   }
 `;
-export const TextoPrincipal = styled.p`
-  font-family: 'Proxima Nova';
-  color: ${leerColor(colores.violeta)};
-  font-size: 18px;
-  line-height: 38px;
-  padding-bottom: 10px;
+export const TablaPersonaje = styled.div`
+  background-color: ${leerColor(colores.gris)};
+  width: 100%;
+  padding: 35px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  @media (min-width: ${breakpoints.laptop}) {
+    margin-top: 0;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 70%;
+  }
 `;
 export const TextoSecundario = styled.p`
   font-family: 'Proxima Nova';
@@ -237,7 +207,34 @@ export const TextoSecundario = styled.p`
   padding-bottom: 20px;
   border-bottom: 1px solid ${leerColor(colores.violeta)};
 `;
-
+export const ObjetosPersonaje = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: stretch;`;
+  export const RectangulosNaranja = styled.div`
+  background-color: ${leerColor(colores.naranja)};
+  color: ${leerColor(colores.blanco)};
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 15px 5px 0;
+`;
+export const ContenidoPrincipal = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 60%;
+    padding-top: 90px;
+  }
+`;
+export const TextoPrincipal = styled.p`
+  font-family: 'Proxima Nova';
+  color: ${leerColor(colores.violeta)};
+  font-size: 18px;
+  line-height: 38px;
+  padding-bottom: 10px;
+`;
 export const TituloHitstorias = styled.h2`
   font-family: 'Raleway';
   color: ${leerColor(colores.rosa)};
@@ -276,7 +273,7 @@ export const AgregarHistoriaBoton = styled.a`
     align-content: center;
   }
 `;
-export const ContenedorGaleria = styled.div`
+export const SectorGaleria = styled.div`
   display: flex;
   @media (min-width: ${breakpoints.laptop}) {
     width: 100%;
@@ -297,13 +294,25 @@ export const ContenedorPersonajeGaleria = styled.div`
     border-radius: 20px;
   }
 `;
-
-export const ContenedorRelacionados = styled.div`
-  width: 100%;
-  display: flex;
+export const Relacionados = styled.div`
+  background-color: ${leerColor(colores.gris)};
+  margin: 10px 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 20% max-content;
+  width: unset;
+  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: self-end;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 60px;
+  padding: 5px;
+  img {
+    border-radius: 50%;
+    height: 90%;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
 `;
 export const RelacionadosSubtitulos = styled.p`
   color: ${leerColor(colores.violeta)};
@@ -325,51 +334,4 @@ export const RelacionadosTitulos = styled.p`
   flex-wrap: wrap;
   align-self: end;
   padding-top: 10px;
-`;
-export const Relacionados = styled.div`
-  background-color: ${leerColor(colores.gris)};
-  margin: 10px 0;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: 20% max-content;
-  width: unset;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 5px;
-  img {
-    border-radius: 50%;
-    height: 90%;
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
-`;
-export const TablaPersonaje = styled.div`
-  background-color: ${leerColor(colores.gris)};
-  width: 100%;
-  padding: 35px;
-  border-radius: 30px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  @media (min-width: ${breakpoints.laptop}) {
-    margin-top: 0;
-  }
-  @media (min-width: ${breakpoints.laptopL}) {
-    width: 70%;
-  }
-`;
-
-export const ObjetosPersonaje = styled.div`
-  display: flex;
-`;
-
-export const RectangulosNaranja = styled.div`
-  background-color: ${leerColor(colores.naranja)};
-  color: ${leerColor(colores.blanco)};
-  width: fit-content;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px 15px 5px 0;
 `;
