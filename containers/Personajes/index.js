@@ -19,7 +19,6 @@ import {
   TituloHitstorias,
   TextoSecundario,
   AgregarHistoriaBoton,
-  TituloGaleria,
   ContenedorPersonajeGaleria,
   SectorGaleria,
   Relacionados,
@@ -32,7 +31,7 @@ import {
   BannerPersonaje,
   RelacionadosTitulos,
 } from './styles';
-import { Wrapper, SubtitulosVioleta } from 'components';
+import { Wrapper, SubtitulosVioleta,Titulos } from 'components';
 
 function PersonajesContainer() {
   return (
@@ -41,13 +40,12 @@ function PersonajesContainer() {
         <Wrapper>
           <BannerPersonaje>
             <SeccionInfoPersonaje>
-              <IconoPersonaje src="./Robot_Personajes.svg" >                
-              </IconoPersonaje>
+              <IconoPersonaje src="./Robot_Personajes.svg"></IconoPersonaje>
               <PersonajeSeccion>Personaje</PersonajeSeccion>
               <NombrePersonaje>Obi Kubu</NombrePersonaje>
             </SeccionInfoPersonaje>
             <ContenedorCaracteristicasPersonaje>
-             <ContenedorPuntos>
+              <ContenedorPuntos>
                 <SectorHabilidadesImagenes>
                   <HabilidadesImagenes src="./fuerza.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>2</PuntosPersonaje>
@@ -64,9 +62,9 @@ function PersonajesContainer() {
                   <HabilidadesImagenes src="./suerte.svg"></HabilidadesImagenes>
                   <PuntosPersonaje>1</PuntosPersonaje>
                 </SectorHabilidadesImagenes>
-            </ContenedorPuntos>
-                <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-           </ContenedorCaracteristicasPersonaje>
+              </ContenedorPuntos>
+              <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
+            </ContenedorCaracteristicasPersonaje>
             <BajadaPersonaje>
               Nació en la capital del continente, recibió la mejor educación
               desde chico y acompañado de una familia de clase alta se formo
@@ -95,11 +93,11 @@ function PersonajesContainer() {
               <TextoSecundario>Diseñador de experiencias</TextoSecundario>
             </TablaPersonaje>
             <SubtitulosVioleta>Objetos de profesión:</SubtitulosVioleta>
-            <ObjetosPersonaje> 
+            <ObjetosPersonaje>
               <RectangulosNaranja>Pala</RectangulosNaranja>
               <RectangulosNaranja>Casco</RectangulosNaranja>
               <RectangulosNaranja>Pico</RectangulosNaranja>
-            </ObjetosPersonaje> 
+            </ObjetosPersonaje>
             <SubtitulosVioleta>Inventario</SubtitulosVioleta>
             <ObjetosPersonaje>
               <RectangulosNaranja>Cuchillo Ejercito Wereld</RectangulosNaranja>
@@ -131,7 +129,7 @@ function PersonajesContainer() {
             <TituloHitstorias>Historias</TituloHitstorias>
             <TextoPrincipal>Origen personaje</TextoPrincipal>
             <AgregarHistoriaBoton>+ Agregar historias</AgregarHistoriaBoton>
-            <TituloGaleria>Galeria</TituloGaleria>
+            <Titulos>Galeria</Titulos>
             <SectorGaleria>
               <ContenedorPersonajeGaleria>
                 <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
@@ -143,7 +141,7 @@ function PersonajesContainer() {
                 <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
               </ContenedorPersonajeGaleria>
             </SectorGaleria>
-            <TituloGaleria>Relacionados</TituloGaleria>
+            <Titulos>Relacionados</Titulos>
             <ObjetosPersonaje>
               <Relacionados>
                 <img src="./images/slider/2.png" />
@@ -151,7 +149,7 @@ function PersonajesContainer() {
                 <RelacionadosTitulos>Nima</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/slider/3.png"/>
+                <img src="./images/slider/3.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Wereld</RelacionadosTitulos>
               </Relacionados>
@@ -166,7 +164,7 @@ function PersonajesContainer() {
                 <RelacionadosTitulos>Guardián Zoro Hermano</RelacionadosTitulos>
               </Relacionados>
               <Relacionados>
-                <img src="./images/slider/3.png"/>
+                <img src="./images/slider/3.png" />
                 <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
                 <RelacionadosTitulos>Wereld Cuchillo</RelacionadosTitulos>
               </Relacionados>

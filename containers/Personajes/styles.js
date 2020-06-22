@@ -57,12 +57,11 @@ export const IconoPersonaje = styled.img`
   width: 10%;
   display: inline-table;
   padding: 10px 0;
-  
+
   @media (min-width: ${breakpoints.laptop}) {
     width: 10%;
     display: inline-table;
     padding: 20px 0;
-   
   }
 `;
 export const PersonajeSeccion = styled.p`
@@ -96,14 +95,14 @@ export const ContenedorCaracteristicasPersonaje = styled.div`
   align-items: center;
   max-width: 100%;
   margin-top: 5%;
-  
+
   @media (min-width: ${breakpoints.laptop}) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    
+
     grid-column: 2;
     grid-row: 1 / 3;
   }
@@ -210,8 +209,11 @@ export const TextoSecundario = styled.p`
 export const ObjetosPersonaje = styled.div`
   width: 100%;
   display: flex;
-  justify-content: stretch;`;
-  export const RectangulosNaranja = styled.div`
+  justify-content: stretch;
+  margin-top:20px;
+
+`;
+export const RectangulosNaranja = styled.div`
   background-color: ${leerColor(colores.naranja)};
   color: ${leerColor(colores.blanco)};
   width: fit-content;
@@ -279,6 +281,7 @@ export const SectorGaleria = styled.div`
     width: 100%;
     justify-content: space-between;
     padding-bottom: 40px;
+    margin-top:20px;
   }
 `;
 export const ContenedorPersonajeGaleria = styled.div`
