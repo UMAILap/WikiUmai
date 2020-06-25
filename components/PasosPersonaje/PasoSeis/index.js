@@ -6,7 +6,7 @@ import { PasoContainer, PasoTitulo, Datos, Sinopsis } from './styles';
 function PasoSeis({ colorFondo }) {
   return (
     <PasoContainer>
-      <PasoTitulo>Historia *</PasoTitulo>
+      <PasoTitulo>Origen *</PasoTitulo>
       <Sinopsis>
         <textarea type="text" placeholder="Nació en Villa Maria..." />
       </Sinopsis>

@@ -31,7 +31,7 @@ import {
   BannerPersonaje,
   RelacionadosTitulos,
 } from './styles';
-import { Wrapper, SubtitulosVioleta,Titulos } from 'components';
+import { Wrapper, SubtitulosVioleta, Titulos } from 'components';
 
 function PersonajesContainer() {
   return (

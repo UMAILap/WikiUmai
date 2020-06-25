@@ -26,7 +26,7 @@ function PasoTres() {
       suerte: false,
     },
   });
-
+  
   function handleInputChange(value, inputKey) {
     //console.log('valor ' + value);
     //usedValues.valuesArray.push(value);
@@ -47,8 +47,13 @@ function PasoTres() {
       });
     }
     
-  }
+    
+  } 
+  
+  
   const { inputErrors } = usedValues;
+
+  
 
   return (
     <PasoContainer>
@@ -74,6 +79,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
+                className={usedValues.inputErrors.fuerza ? "error" : ""}             
                 onChange={event =>
                   handleInputChange(event.target.value, 'fuerza')
                 }
@@ -82,6 +88,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
+                className={usedValues.inputErrors.inteligencia ? "error" : ""} 
                 onChange={event =>
                   handleInputChange(event.target.value, 'inteligencia')
                 }
@@ -90,6 +97,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
+                className={usedValues.inputErrors.habilidad ? "error" : ""}  
                 onChange={event =>
                   handleInputChange(event.target.value, 'habilidad')
                 }
@@ -98,6 +106,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
+                className={usedValues.inputErrors.suerte ? "error" : ""}  
                 onChange={event =>
                   handleInputChange(event.target.value, 'suerte')
                 }
@@ -116,10 +125,14 @@ function PasoTres() {
             </p>
 
             <Puntos>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
+              <span 
+              style={{color: usedValues.valuesArray .includes('1')  ? "gray" : ""}}>1</span>
+              <span
+              style={{color: usedValues.valuesArray .includes('2')  ? "gray" : ""}}>2</span>
+              <span
+              style={{color: usedValues.valuesArray .includes('3')  ? "gray" : ""}}>3</span>
+              <span
+              style={{color: usedValues.valuesArray .includes('4')  ? "gray" : ""}}>4</span>
             </Puntos>
           </PuntosHabilidad>
         </CaracteristicasPersonaje>
