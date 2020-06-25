@@ -9,16 +9,12 @@ export const Articulos = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    
   }
   @media (min-width: ${breakpoints.tablet}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
-    
   }
   @media (min-width: ${breakpoints.laptopL}) {
-
   }
 `;
 export const MapaTitulo = styled.h3`
@@ -32,10 +28,10 @@ export const ArticulosSescciones = styled.ul`
   font-family: 'Proxima Nova';
   font-size: 18px;
   color: ${leerColor(colores.negro)};
-  li{
+  li {
     padding-top: 15px;
   }
-  &.seleccionado{
+  &.seleccionado {
     font-weight: bold;
   }
 `;

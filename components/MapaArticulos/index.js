@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Articulos, MapaTitulo, ArticulosSescciones} from './styles';
+import { Articulos, MapaTitulo, ArticulosSescciones } from './styles';
 
 function MapaArticulos({ children }) {
   return (
@@ -16,7 +16,7 @@ function MapaArticulos({ children }) {
         <li>Relacionados</li>
       </ArticulosSescciones>
     </Articulos>
-  )
+  );
 }
 
 // MapaArticulos.propTypes = {

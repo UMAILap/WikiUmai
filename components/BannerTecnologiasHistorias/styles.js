@@ -13,15 +13,11 @@ export const Banner = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    
   }
   @media (min-width: ${breakpoints.tablet}) {
-    
   }
   @media (min-width: ${breakpoints.laptop}) {
-    
   }
   @media (min-width: ${breakpoints.laptopL}) {
-
   }
 `;

@@ -22,7 +22,7 @@ export const TecnologiaNombre = styled.div`
 export const Nombres = styled.div`
   display: flex;
   flex-direction: column;
-  width: fit-content;  
+  width: fit-content;
   justify-content: space-around;
 `;
 export const Subtitulo = styled.h6`
@@ -45,7 +45,6 @@ export const TecnologiaInfo = styled.div`
 `;
 export const SeccionArticulos = styled.div`
   display: flex;
-  
 `;
 export const TecnologiaArticulos = styled.div`
   width: 55%;
@@ -53,14 +52,14 @@ export const TecnologiaArticulos = styled.div`
 `;
 export const ArticuloData = styled.div`
   padding-bottom: 30px;
-  p{
+  p {
     padding-top: 10px;
     font-family: 'Proxima Nova';
     font-size: 17px;
     color: ${leerColor(colores.negro)};
     line-height: 38px;
   }
-  img{
+  img {
     width: 100%;
   }
 `;

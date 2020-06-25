@@ -4,7 +4,7 @@ import { Layout, Tecnologias as TecnologiasContainer } from 'containers';
 
 function Tecnologias() {
   return (
-    <Layout> 
+    <Layout>
       <TecnologiasContainer />
     </Layout>
   );
