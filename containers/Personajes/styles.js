@@ -210,8 +210,7 @@ export const ObjetosPersonaje = styled.div`
   width: 100%;
   display: flex;
   justify-content: stretch;
-  margin-top:20px;
-
+  margin-top: 20px;
 `;
 export const RectangulosNaranja = styled.div`
   background-color: ${leerColor(colores.naranja)};
@@ -281,7 +280,7 @@ export const SectorGaleria = styled.div`
     width: 100%;
     justify-content: space-between;
     padding-bottom: 40px;
-    margin-top:20px;
+    margin-top: 20px;
   }
 `;
 export const ContenedorPersonajeGaleria = styled.div`

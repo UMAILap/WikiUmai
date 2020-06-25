@@ -86,7 +86,10 @@ export const CaracteristicasPuntos = styled.div`
         -webkit-appearance: none; 
         margin: 0; 
     } 
-
+    &.error{
+    color:red;
+    border: 1px solid red;
+  }
   }
   
 `;
@@ -117,4 +120,6 @@ export const Puntos = styled.div`
   color: ${leerColor(colores.naranja)};
   font-weight: bold;
   font-size: 24px;
+ 
+
 `;
