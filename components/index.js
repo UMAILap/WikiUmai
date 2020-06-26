@@ -1,5 +1,7 @@
 // Export de todos los componentes
 
+// import { format } from 'prettier';
+
 export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as HeaderLogin } from './HeaderLogin';
@@ -11,3 +13,6 @@ export { default as Titulos } from './Titulos';
 export { default as BotonVioleta } from './BotonVioleta';
 export { default as SubtitulosVioleta } from './SubtitulosVioleta';
 export { default as HitosTimeLine } from './HitosTimeLine';
+export { default as BannerTecnologiasHistorias } from './BannerTecnologiasHistorias';
+export { default as MapaArticulos } from './MapaArticulos';
+export { default as CardUniverso } from './CardUniverso';
