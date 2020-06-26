@@ -1,111 +1,120 @@
 import React from 'react';
 
 import {
-  ContainerMain,
-  BajadaPersonaje,
-  ContainerBanner,
-  IconoPersonaje,
-  FotoPersonaje,
-  HabilidadesImagenes,
-  PuntosPersonaje,
-  ContenedorPuntos,
-  SeccionInfoPersonaje,
-  NombrePersonaje,
-  PersonajeSeccion,
-  SectorHabilidadesImagenes,
-  ContenedorCaracteristicasPersonaje,
+  CaracteristicasPuntos,
+  PersonajeInfo,
+  PuntosPersonajes,
+  PersonajeCaracteristicas,
   ContenidoPrincipal,
-  TextoPrincipal,
-  TituloHitstorias,
-  TextoSecundario,
-  AgregarHistoriaBoton,
-  ContenedorPersonajeGaleria,
-  SectorGaleria,
+  Galeria,
   Relacionados,
-  RelacionadosSubtitulos,
-  ContenidoSecundario,
-  TablaPersonaje,
-  RectangulosNaranja,
+  PersonajeDatos,
+  PersonajeCard,
+  Objetos,
   ObjetosPersonaje,
-  ContainerMainContent,
+  PersonajeIntro,
   BannerPersonaje,
-  RelacionadosTitulos,
+  InventarioPersonaje,
+  PersonajeHistorias,
+  GaleriaImagenes,
+  RelacionadosCards,
+  Dato,
+  DatoFixed,
 } from './styles';
-import { Wrapper, SubtitulosVioleta, Titulos } from 'components';
+import { Wrapper, Titulos, BannerTecnologiasHistorias, BotonVioleta, CardUniverso } from 'components';
 
+//galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
 function PersonajesContainer() {
   return (
-    <ContainerMain>
-      <ContainerBanner>
+    <>
+      <BannerTecnologiasHistorias>
         <Wrapper>
           <BannerPersonaje>
-            <SeccionInfoPersonaje>
-              <IconoPersonaje src="./Robot_Personajes.svg"></IconoPersonaje>
-              <PersonajeSeccion>Personaje</PersonajeSeccion>
-              <NombrePersonaje>Obi Kubu</NombrePersonaje>
-            </SeccionInfoPersonaje>
-            <ContenedorCaracteristicasPersonaje>
-              <ContenedorPuntos>
-                <SectorHabilidadesImagenes>
-                  <HabilidadesImagenes src="./fuerza.svg"></HabilidadesImagenes>
-                  <PuntosPersonaje>2</PuntosPersonaje>
-                </SectorHabilidadesImagenes>
-                <SectorHabilidadesImagenes>
-                  <HabilidadesImagenes src="./inteligencia.svg"></HabilidadesImagenes>
-                  <PuntosPersonaje>3</PuntosPersonaje>
-                </SectorHabilidadesImagenes>
-                <SectorHabilidadesImagenes>
-                  <HabilidadesImagenes src="./habilidad.svg"></HabilidadesImagenes>
-                  <PuntosPersonaje>4</PuntosPersonaje>
-                </SectorHabilidadesImagenes>
-                <SectorHabilidadesImagenes>
-                  <HabilidadesImagenes src="./suerte.svg"></HabilidadesImagenes>
-                  <PuntosPersonaje>1</PuntosPersonaje>
-                </SectorHabilidadesImagenes>
-              </ContenedorPuntos>
-              <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-            </ContenedorCaracteristicasPersonaje>
-            <BajadaPersonaje>
+            <PersonajeIntro>
+              <img src="./Robot_Personajes.svg"></img>
+              <h6>Personaje</h6>
+              <h1>Obi Kubu</h1>
+              <p>
               Nació en la capital del continente, recibió la mejor educación
               desde chico y acompañado de una familia de clase alta se formo
               como diseñador. Tiene entranimiento militar avanzado, hoy en dia
               se dedica solo al diseño pero esta listo para usar todas sus
               habilidades pero esta
-            </BajadaPersonaje>
+            </p>
+            </PersonajeIntro>
+            <PersonajeCaracteristicas>
+              <CaracteristicasPuntos>
+                <PuntosPersonajes>
+                  <img src="./fuerza.svg"/>
+                  <span>2</span>
+                </PuntosPersonajes>
+                <PuntosPersonajes>
+                <img src="./inteligencia.svg"/>
+                  <span>3</span>
+                </PuntosPersonajes>
+                <PuntosPersonajes>
+                <img src="./habilidad.svg"/>
+                  <span>4</span>
+                </PuntosPersonajes>
+                <PuntosPersonajes>
+                <img src="./suerte.svg"/>
+                  <span>1</span>
+                </PuntosPersonajes>
+              </CaracteristicasPuntos>
+              <img src="./placeholder_personaje.png"></img>
+            </PersonajeCaracteristicas>            
           </BannerPersonaje>
         </Wrapper>
-      </ContainerBanner>
+      </BannerTecnologiasHistorias>
       <Wrapper>
-        <ContainerMainContent>
-          <ContenidoSecundario>
-            <TablaPersonaje>
-              <SubtitulosVioleta>Raza</SubtitulosVioleta>
-              <TextoSecundario>Humano con modificaciones</TextoSecundario>
-              <SubtitulosVioleta>Género</SubtitulosVioleta>
-              <TextoSecundario>Hombre</TextoSecundario>
-              <SubtitulosVioleta>Edad</SubtitulosVioleta>
-              <TextoSecundario>30</TextoSecundario>
-              <SubtitulosVioleta>Altura</SubtitulosVioleta>
-              <TextoSecundario>1,72 mt</TextoSecundario>
-              <SubtitulosVioleta>Planeta</SubtitulosVioleta>
-              <TextoSecundario>Iknagi</TextoSecundario>
-              <SubtitulosVioleta>Profesión</SubtitulosVioleta>
-              <TextoSecundario>Diseñador de experiencias</TextoSecundario>
-            </TablaPersonaje>
-            <SubtitulosVioleta>Objetos de profesión:</SubtitulosVioleta>
+        <PersonajeInfo>
+          <PersonajeDatos>
+            <PersonajeCard>
+              <Dato>
+              <h6>Raza</h6>
+              <p>Humano con modificaciones</p>
+              </Dato>
+              <Dato>
+              <h6>Género</h6>
+              <p>Hombre</p>
+              </Dato>
+              <Dato>
+              <DatoFixed>
+              <h6>Edad</h6>
+              <p>30</p>
+              </DatoFixed>
+              <DatoFixed>
+              <h6>Altura</h6>
+              <p>1,72 mt</p>
+              </DatoFixed>
+              </Dato>
+              <Dato>
+              <h6>Planeta</h6>
+              <p>Iknagi</p>
+              </Dato>
+              <Dato>
+              <h6>Profesión</h6>
+              <p>Diseñador de experiencias</p>
+              </Dato>
+            </PersonajeCard>          
             <ObjetosPersonaje>
-              <RectangulosNaranja>Pala</RectangulosNaranja>
-              <RectangulosNaranja>Casco</RectangulosNaranja>
-              <RectangulosNaranja>Pico</RectangulosNaranja>
+              <h5>Objetos de profesión:</h5>
+              <Objetos>
+                <span>Pala</span>
+                <span>Casco</span>
+                <span>Pico</span>
+              </Objetos>
             </ObjetosPersonaje>
-            <SubtitulosVioleta>Inventario</SubtitulosVioleta>
-            <ObjetosPersonaje>
-              <RectangulosNaranja>Cuchillo Ejercito Wereld</RectangulosNaranja>
-              <RectangulosNaranja>Reloj</RectangulosNaranja>
-            </ObjetosPersonaje>
-          </ContenidoSecundario>
+            <InventarioPersonaje>
+              <h5>Inventario</h5>
+              <Objetos>
+                <span>Cuchillo Ejercito Wereld</span>
+                <span>Reloj</span>
+              </Objetos>
+            </InventarioPersonaje>
+          </PersonajeDatos>
           <ContenidoPrincipal>
-            <TextoPrincipal>
+            <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock, a Latin
@@ -118,62 +127,79 @@ function PersonajesContainer() {
               BC. This book is a treatise on the theory of ethics, very popular
               during the Renaissance. The first line of Lorem Ipsum, "Lorem
               ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </TextoPrincipal>
-            <TextoPrincipal>
+            </p>
+            <p>
               The standard chunk of Lorem Ipsum used since the 1500s is
               reproduced below for those interested. Sections 1.10.32 and
               1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
               reproduced in their exact original form, accompanied by English
               versions from the 1914 translation by H. Rackham.
-            </TextoPrincipal>
-            <TituloHitstorias>Historias</TituloHitstorias>
-            <TextoPrincipal>Origen personaje</TextoPrincipal>
-            <AgregarHistoriaBoton>+ Agregar historias</AgregarHistoriaBoton>
-            <Titulos>Galeria</Titulos>
-            <SectorGaleria>
-              <ContenedorPersonajeGaleria>
-                <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-              </ContenedorPersonajeGaleria>
-              <ContenedorPersonajeGaleria>
-                <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-              </ContenedorPersonajeGaleria>
-              <ContenedorPersonajeGaleria>
-                <FotoPersonaje src="./placeholder_personaje.png"></FotoPersonaje>
-              </ContenedorPersonajeGaleria>
-            </SectorGaleria>
-            <Titulos>Relacionados</Titulos>
-            <ObjetosPersonaje>
-              <Relacionados>
-                <img src="./images/slider/2.png" />
-                <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <RelacionadosTitulos>Nima</RelacionadosTitulos>
-              </Relacionados>
-              <Relacionados>
-                <img src="./images/slider/3.png" />
-                <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <RelacionadosTitulos>Wereld</RelacionadosTitulos>
-              </Relacionados>
-              <Relacionados>
-                <img src="./images/planetas/1.png" />
-                <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <RelacionadosTitulos>Guardián Zoro</RelacionadosTitulos>
-              </Relacionados>
-              <Relacionados>
-                <img src="./images/planetas/1.png" />
-                <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <RelacionadosTitulos>Guardián Zoro Hermano</RelacionadosTitulos>
-              </Relacionados>
-              <Relacionados>
-                <img src="./images/slider/3.png" />
-                <RelacionadosSubtitulos>Planeta</RelacionadosSubtitulos>
-                <RelacionadosTitulos>Wereld Cuchillo</RelacionadosTitulos>
-              </Relacionados>
-            </ObjetosPersonaje>
-            <TextoPrincipal>Ultima edicion por Facundo Brahim</TextoPrincipal>
+            </p>
+            <PersonajeHistorias>
+            <Titulos>Historias</Titulos>
+            <ul>
+              <li><a href="#">Origen personaje</a></li>
+              <li><a href="#">Origen personaje</a></li>
+              <li><a href="#">Origen personaje</a></li>
+              <li><a href="#">Origen personaje</a></li>
+              <li><a href="#">Origen personaje</a></li>
+              <li><a href="#">Origen personaje</a></li>
+            </ul>
+            <BotonVioleta>+ Agregar historias</BotonVioleta>
+            </PersonajeHistorias>
+            <Galeria>
+            <Titulos>Galeria</Titulos> 
+              <GaleriaImagenes>    
+                  <img src="./placeholder_personaje.png"></img>          
+                  <img src="./placeholder_personaje.png"></img>           
+                  <img src="./placeholder_personaje.png"></img> 
+              </GaleriaImagenes>                
+            </Galeria>
+            <Relacionados>
+              <Titulos>Relacionados</Titulos>
+              <RelacionadosCards>
+              <CardUniverso>
+                  <img src="./images/slider/2.png" />
+                  <div>
+                    <h5>Tecnologia</h5>
+                    <span>Wereld Cuchillo</span>
+                  </div>
+                </CardUniverso>
+                <CardUniverso>
+                  <img src="./images/slider/2.png" />
+                  <div>
+                    <h5>Personaje</h5>
+                    <span>Guardian Zoro</span>
+                  </div>
+                </CardUniverso>
+                <CardUniverso>
+                  <img src="./images/slider/2.png" />
+                  <div>
+                    <h5>Planeta</h5>
+                    <span>Wereld </span>
+                  </div>
+                </CardUniverso>
+                <CardUniverso>
+                  <img src="./images/slider/2.png" />
+                  <div>
+                    <h5>Planeta</h5>
+                    <span>Nima</span>
+                  </div>
+                </CardUniverso>
+                <CardUniverso>
+                  <img src="./images/slider/2.png" />
+                  <div>
+                    <h5>Tecnologia</h5>
+                    <span>Wereld Cuchillo</span>
+                  </div>
+                </CardUniverso>
+                </RelacionadosCards>
+            </Relacionados>
+            <p>Ultima edicion por Facundo Brahim</p>
           </ContenidoPrincipal>
-        </ContainerMainContent>
+        </PersonajeInfo>
       </Wrapper>
-    </ContainerMain>
+    </>
   );
 }
 

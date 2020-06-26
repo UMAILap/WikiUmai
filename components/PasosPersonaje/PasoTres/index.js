@@ -29,7 +29,7 @@ function PasoTres() {
   });
 
   function handleInputChange(value, inputKey) {
-    const {valuesArray}=usedValues;
+    const { valuesArray } = usedValues;
     //console.log(value);
     //usedValues.valuesArray.push(value);
     //console.log('value array despues: ' + usedValues.valuesArray);
@@ -40,7 +40,8 @@ function PasoTres() {
         [inputKey]: false,
       },
     });*/
-    if (_.find(valuesArray, objeto=> objeto.value === value)) { //fin busca un objeto dentro de values array que tenga el valor value si encuentra lo marca como error sino no
+    if (_.find(valuesArray, objeto => objeto.value === value)) {
+      //fin busca un objeto dentro de values array que tenga el valor value si encuentra lo marca como error sino no
       setUsedValues({
         ...usedValues,
         inputErrors: {
@@ -48,32 +49,38 @@ function PasoTres() {
           [inputKey]: true,
         },
       });
-    } else if(_.isEmpty(value)){ //
-      const objetoABorrar = _.find(valuesArray, objeto => objeto.inputKey === inputKey); //se guarda en la const lops objetos encontrados por find
-      const copieValuesArray = valuesArray;//copiamos el array 
-      const newValuesArray =_.isEmpty(objetoABorrar) ? copieValuesArray : _.remove(copieValuesArray, objeto => _.isEqual(objetoABorrar, objeto)); //si objeto a borrar es empty guarda la copia del array, sino borra el objeto que es marcado
+    } else if (_.isEmpty(value)) {
+      //
+      const objetoABorrar = _.find(
+        valuesArray,
+        objeto => objeto.inputKey === inputKey,
+      ); //se guarda en la const lops objetos encontrados por find
+      const copieValuesArray = valuesArray; //copiamos el array
+      const newValuesArray = _.isEmpty(objetoABorrar)
+        ? copieValuesArray
+        : _.remove(copieValuesArray, objeto =>
+            _.isEqual(objetoABorrar, objeto),
+          ); //si objeto a borrar es empty guarda la copia del array, sino borra el objeto que es marcado
       setUsedValues({
         ...usedValues,
         valuesArray: newValuesArray,
         inputErrors: {
           ...usedValues.inputErrors,
           [inputKey]: false,
-        }
+        },
       });
-    }
-    else {
+    } else {
       setUsedValues({
         ...usedValues,
-        valuesArray: [...valuesArray, {value, inputKey}],
+        valuesArray: [...valuesArray, { value, inputKey }],
         inputErrors: {
           ...usedValues.inputErrors,
           [inputKey]: false,
-        }
+        },
       });
     }
     console.log(usedValues.valuesArray);
   }
-  
 
   const { inputErrors } = usedValues;
 
@@ -150,25 +157,45 @@ function PasoTres() {
               <span
                 style={{
                   //color: usedValues.valuesArray.includes('1') ? 'gray' : '',
-                  color: _.find(usedValues.valuesArray, objeto=> objeto.value === 1) ? 'gray' : '',
+                  color: _.find(
+                    usedValues.valuesArray,
+                    objeto => objeto.value === 1,
+                  )
+                    ? 'gray'
+                    : '',
                 }}>
                 1
               </span>
               <span
                 style={{
-                  color: _.find(usedValues.valuesArray, objeto=> objeto.value === 2) ? 'gray' : '',
+                  color: _.find(
+                    usedValues.valuesArray,
+                    objeto => objeto.value === 2,
+                  )
+                    ? 'gray'
+                    : '',
                 }}>
                 2
               </span>
               <span
                 style={{
-                  color: _.find(usedValues.valuesArray, objeto=> objeto.value === 3) ? 'gray' : '',
+                  color: _.find(
+                    usedValues.valuesArray,
+                    objeto => objeto.value === 3,
+                  )
+                    ? 'gray'
+                    : '',
                 }}>
                 3
               </span>
               <span
                 style={{
-                  color: _.find(usedValues.valuesArray, objeto=> objeto.value === 4) ? 'gray' : '',
+                  color: _.find(
+                    usedValues.valuesArray,
+                    objeto => objeto.value === 4,
+                  )
+                    ? 'gray'
+                    : '',
                 }}>
                 4
               </span>
