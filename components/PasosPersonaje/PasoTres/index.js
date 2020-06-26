@@ -26,7 +26,7 @@ function PasoTres() {
       suerte: false,
     },
   });
-  
+
   function handleInputChange(value, inputKey) {
     //console.log('valor ' + value);
     //usedValues.valuesArray.push(value);
@@ -46,14 +46,20 @@ function PasoTres() {
         valuesArray: [...usedValues.valuesArray, value],
       });
     }
-    
-    
-  } 
-  
-  
-  const { inputErrors } = usedValues;
+     
+  }
+  function handleDelete(value, inputKey){
+    setUsedValues({
+      ...usedValues,
+      valuesArray: [...usedValues.valuesArray, value.splice(value, 1)],
+      inputErrors: {
+        ...usedValues.inputErrors,
+        [inputKey]: false,
+      },
+    });
+  }
 
-  
+  const { inputErrors } = usedValues;
 
   return (
     <PasoContainer>
@@ -79,16 +85,20 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
-                className={usedValues.inputErrors.fuerza ? "error" : ""}             
+                className={usedValues.inputErrors.fuerza ? 'error' : ''}
                 onChange={event =>
                   handleInputChange(event.target.value, 'fuerza')
                 }
+                onDelete={event =>
+                  handleDelete(event.target.value, 'fuerza')
+                }
+                
               />
               <input
                 type="number"
                 min="1"
                 max="4"
-                className={usedValues.inputErrors.inteligencia ? "error" : ""} 
+                className={usedValues.inputErrors.inteligencia ? 'error' : ''}
                 onChange={event =>
                   handleInputChange(event.target.value, 'inteligencia')
                 }
@@ -97,7 +107,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
-                className={usedValues.inputErrors.habilidad ? "error" : ""}  
+                className={usedValues.inputErrors.habilidad ? 'error' : ''}
                 onChange={event =>
                   handleInputChange(event.target.value, 'habilidad')
                 }
@@ -106,7 +116,7 @@ function PasoTres() {
                 type="number"
                 min="1"
                 max="4"
-                className={usedValues.inputErrors.suerte ? "error" : ""}  
+                className={usedValues.inputErrors.suerte ? 'error' : ''}
                 onChange={event =>
                   handleInputChange(event.target.value, 'suerte')
                 }
@@ -125,14 +135,30 @@ function PasoTres() {
             </p>
 
             <Puntos>
-              <span 
-              style={{color: usedValues.valuesArray .includes('1')  ? "gray" : ""}}>1</span>
               <span
-              style={{color: usedValues.valuesArray .includes('2')  ? "gray" : ""}}>2</span>
+                style={{
+                  color: usedValues.valuesArray.includes('1') ? 'gray' : '',
+                }}>
+                1
+              </span>
               <span
-              style={{color: usedValues.valuesArray .includes('3')  ? "gray" : ""}}>3</span>
+                style={{
+                  color: usedValues.valuesArray.includes('2') ? 'gray' : '',
+                }}>
+                2
+              </span>
               <span
-              style={{color: usedValues.valuesArray .includes('4')  ? "gray" : ""}}>4</span>
+                style={{
+                  color: usedValues.valuesArray.includes('3') ? 'gray' : '',
+                }}>
+                3
+              </span>
+              <span
+                style={{
+                  color: usedValues.valuesArray.includes('4') ? 'gray' : '',
+                }}>
+                4
+              </span>
             </Puntos>
           </PuntosHabilidad>
         </CaracteristicasPersonaje>

@@ -78,20 +78,19 @@ export const CaracteristicasPuntos = styled.div`
     width: 70%;
     color: ${leerColor(colores.naranja)};
     font-size: 24px;
-    ::-webkit-inner-spin-button{
-        -webkit-appearance: none; 
-        margin: 0; 
+    ::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
-    ::-webkit-outer-spin-button{
-        -webkit-appearance: none; 
-        margin: 0; 
-    } 
-    &.error{
-    color:red;
-    border: 1px solid red;
+    ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &.error {
+      color: red;
+      border: 1px solid red;
+    }
   }
-  }
-  
 `;
 export const CaracteristicasNombres = styled.div`
   display: flex;
@@ -120,6 +119,4 @@ export const Puntos = styled.div`
   color: ${leerColor(colores.naranja)};
   font-weight: bold;
   font-size: 24px;
- 
-
 `;

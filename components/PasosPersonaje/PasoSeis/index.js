@@ -18,4 +18,3 @@ PasoSeis.propTypes = {
 };
 
 export default PasoSeis;
- 
