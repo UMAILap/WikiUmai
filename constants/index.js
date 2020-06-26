@@ -36,3 +36,5 @@ export const colores = {
   gris: Color.rgb(236, 236, 236),
   negro: Color.rgb(0, 0, 0),
 };
+
+export const pxToRem = value => `${value / 16}rem`;
