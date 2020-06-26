@@ -50,75 +50,62 @@ export const Personajes = styled.div`
 export const PersonajeFicha = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
-  display:flex;
+  display: flex;
   width: fit-content;
   padding-bottom: 50px;
-    border-bottom: 1px solid ${leerColor(colores.gris)};
-  img{
-    
-      width: 40%;
-}
-    
-  
+  border-bottom: 1px solid ${leerColor(colores.gris)};
+  img {
+    width: 40%;
+  }
 `;
-
 
 export const PersonajeInfo = styled.div`
   width: 70%;
   margin-left: 30px;
-  p{
-    font-family: "Proxima Nova";
+  p {
+    font-family: 'Proxima Nova';
     font-size: 14px;
     line-height: 26px;
     color: ${leerColor(colores.negro)};
     padding: 15px 0px;
   }
- 
 `;
 
 export const PersonajePlaneta = styled.div`
   background-color: ${leerColor(colores.gris)};
-  display:flex;
-  font-family: "Proxima Nova";
+  display: flex;
+  font-family: 'Proxima Nova';
   font-size: 13px;
   border-radius: 16px;
   width: fit-content;
   padding: 12px 35px;
-  img{
+  img {
     width: 100%;
   }
 
-  h6{
+  h6 {
     margin-left: 10px;
   }
-
- 
 `;
 
-
 export const Caracteristicas = styled.div`
-display:flex;
-align-items: center;
-margin-left: 30px;
-img{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  img {
+  }
 
-}
-
-span{
-  font-family: "Proxima Nova";
-  font-size: 25px;
-  font-weight: bold;
-  color: ${leerColor(colores.violeta)};
-  margin-left: 10px;
-  margin-right: 10px;
-}
- 
- 
+  span {
+    font-family: 'Proxima Nova';
+    font-size: 25px;
+    font-weight: bold;
+    color: ${leerColor(colores.violeta)};
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 
 export const PersonajeCaracteristica = styled.div`
-display:flex;
-flex-direction: row;
-
-
+  display: flex;
+  flex-direction: row;
 `;

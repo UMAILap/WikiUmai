@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Layout, PersonajesUniverso as PersonajesUniversoContainer } from 'containers';
+import {
+  Layout,
+  PersonajesUniverso as PersonajesUniversoContainer,
+} from 'containers';
 
 function PersonajesUniverso() {
   return (

@@ -15,12 +15,9 @@ import {
   AvatarPlanetaTitulo,
 } from './styles';
 
-import { PlanetasPills, } from '../../../components';
-
+import { PlanetasPills } from '../../../components';
 
 function PasoUno() {
-
-
   return (
     <PasoContainer>
       <PasoTitulo>¿Quién es tu personaje?</PasoTitulo>
@@ -40,8 +37,7 @@ function PasoUno() {
           </AvatarNombre>
           <AvatarPlaneta>
             <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
-            <PlanetasPills/>
-             
+            <PlanetasPills />
           </AvatarPlaneta>
         </AvataresInfo>
       </Avatares>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-
 export const Planetas = styled.div`
   display: grid;
   grid-template-columns: 30% 30% 30%;

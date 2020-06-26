@@ -25,7 +25,6 @@ export const Nombres = styled.div`
   width: fit-content;
   justify-content: space-around;
   margin-left: 30px;
-
 `;
 export const Subtitulo = styled.h6`
   font-size: 18px;
