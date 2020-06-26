@@ -16,3 +16,4 @@ export { default as HitosTimeLine } from './HitosTimeLine';
 export { default as BannerTecnologiasHistorias } from './BannerTecnologiasHistorias';
 export { default as MapaArticulos } from './MapaArticulos';
 export { default as CardUniverso } from './CardUniverso';
+export { default as PlanetasPills } from './PlanetasPills';

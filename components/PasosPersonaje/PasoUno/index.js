@@ -12,17 +12,14 @@ import {
   Imagen,
   AvatarNombre,
   AvatarPlaneta,
-  Planetas,
   AvatarPlanetaTitulo,
-  Planeta,
 } from './styles';
 
-function PasoUno() {
-  const [selectedPlanet, setSelectedPlanet] = useState(null);
+import { PlanetasPills, } from '../../../components';
 
-  function handleClickPlaneta(planet_name) {
-    setSelectedPlanet(planet_name);
-  }
+
+function PasoUno() {
+
 
   return (
     <PasoContainer>
@@ -43,38 +40,8 @@ function PasoUno() {
           </AvatarNombre>
           <AvatarPlaneta>
             <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
-            <Planetas>
-              <Planeta
-                colorFondo={selectedPlanet === 'wereld' ? true : false}
-                onClick={() => handleClickPlaneta('wereld')}>
-               Wereld
-              </Planeta>
-              <Planeta
-                colorFondo={selectedPlanet === 'zoro' ? true : false}
-                onClick={() => handleClickPlaneta('zoro')}>
-                Zoro
-              </Planeta>
-              <Planeta
-                colorFondo={selectedPlanet === 'sol' ? true : false}
-                onClick={() => handleClickPlaneta('sol')}>
-                Sol
-              </Planeta>
-              <Planeta
-                colorFondo={selectedPlanet === 'ikigai' ? true : false}
-                onClick={() => handleClickPlaneta('ikigai')}>
-                Ikigai
-              </Planeta>
-              <Planeta
-                colorFondo={selectedPlanet === 'nima' ? true : false}
-                onClick={() => handleClickPlaneta('nima')}>
-                Nima
-              </Planeta>
-              <Planeta
-                colorFondo={selectedPlanet === 'adhera' ? true : false}
-                onClick={() => handleClickPlaneta('adhera')}>
-                Adhera
-              </Planeta>
-            </Planetas>
+            <PlanetasPills/>
+             
           </AvatarPlaneta>
         </AvataresInfo>
       </Avatares>

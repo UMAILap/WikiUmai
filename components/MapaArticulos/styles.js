@@ -30,6 +30,7 @@ export const ArticulosSescciones = styled.ul`
   color: ${leerColor(colores.negro)};
   li {
     padding-top: 15px;
+    cursor: pointer;
   }
   &.seleccionado {
     font-weight: bold;

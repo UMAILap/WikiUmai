@@ -11,7 +11,7 @@ export const UniversoCard = styled.div`
   margin-bottom: 20px;
   img {
     border-radius: 50%;
-    width: 50px;
+    width: 50px!important;
     height: 50px;
   }
   div {
@@ -31,5 +31,6 @@ export const UniversoCard = styled.div`
     font-size: 18px;
     color: ${leerColor(colores.violetaOscuro)};
     font-weight: bold;
+  
   }
 `;

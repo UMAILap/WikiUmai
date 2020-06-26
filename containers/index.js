@@ -9,3 +9,6 @@ export { default as Personajes } from './Personajes';
 export { default as Planetas } from './Planetas';
 export { default as CrearPersonaje } from './CrearPersonaje';
 export { default as Tecnologias } from './Tecnologias';
+export { default as Historias } from './Historias';
+export { default as PersonajesUniverso } from './PersonajesUniverso';
+
