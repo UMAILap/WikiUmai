@@ -1,10 +1,9 @@
 import React from 'react';
 
 import {
-  ContainerMain,
   FormLogin,
-  Boton1,
-  Boton2,
+  IniciarSesion,
+  SolicitarCuenta,
   Text,
   Bienvenido,
   Intro,
@@ -15,7 +14,7 @@ import { Wrapper, ContainerBlanco } from 'components';
 
 function LoginContainer() {
   return (
-    <ContainerMain>
+    <>
       <Wrapper>
         <ContainerBlanco>
           <Text>
@@ -29,12 +28,12 @@ function LoginContainer() {
             <input className="input" type="text" placeholder="Usuario" />
             <input className="input" type="text" placeholder="Contraseña" />
             <Olvidaste>¿Olvidaste tu contraseña?</Olvidaste>
-            <Boton1 id="submit">Iniciar Sesión</Boton1>
-            <Boton2 id="submit">Solicitar cuenta</Boton2>
+            <IniciarSesion id="submit">Iniciar Sesión</IniciarSesion>
+            <SolicitarCuenta id="submit">Solicitar cuenta</SolicitarCuenta>
           </FormLogin>
         </ContainerBlanco>
       </Wrapper>
-    </ContainerMain>
+    </>
   );
 }
 

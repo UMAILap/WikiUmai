@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, leerColor, colores } from 'constants';
-
-export const ContainerMain = styled.div``;
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 export const ParteSuperior = styled.div`
   display: flex;
@@ -20,7 +18,6 @@ export const SectorTitulos = styled.div`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    align-items: center;
     justify-self: center;
     height: 15vh;
   }
@@ -31,7 +28,6 @@ export const SectorTitulos = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    width: 40%;
     height: 25vh;
   }
 `;
@@ -39,127 +35,104 @@ export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
   @media (min-width: ${breakpoints.mobile}) {
-    height: 16vh;
-    background-repeat: no-repeat;
-    background-position: right;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    max-width: 100%;
   }
   @media (min-width: ${breakpoints.tablet}) {
-    background-image: none;
-    max-height: 100%;
   }
-
   @media (min-width: ${breakpoints.laptop}) {
     background-image: url(./patternHome.svg);
-    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
     background-size: auto 100%;
     height: 170px;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    background-image: url(./patternHome.svg);
-    width: 100%;
-    background-size: auto 100%;
     height: 225px;
   }
   @media (min-width: ${breakpoints.notebook}) {
-    background-image: url(./patternHome.svg);
-    width: 100%;
-    background-size: auto 100%;
     height: 225px;
   }
 `;
-
-export const Banner = styled.img;
-
 export const Textos = styled.p`
   font-family: 'Proxima Nova';
-  font-size: 11px;
-  color: #381460;
+  font-size: ${pxToRem(11)};
+  color: ${leerColor(colores.negro)};
   margin: 3% 0%;
   line-height: 18px;
+  
   @media ${breakpoints.mobile} {
-  }
 
+  }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 20px;
+    font-size: ${pxToRem(20)};
   }
-
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 13px;
+    font-size: ${pxToRem(13)};
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    font-size: 17px;
+    font-size: ${pxToRem(17)};
     line-height: 25px;
   }
-
   @media (min-width: ${breakpoints.notebook}) {
-    font-size: 17px;
-    line-height: 33px;
+    line-height: 33px; 
   }
 `;
 
 export const TextosPlanetas = styled.p`
   font-family: 'Proxima Nova';
-  font-size: 11px;
-  color: #381460;
+  font-size: ${pxToRem(11)};
+  color: ${leerColor(colores.negro)};
   margin: 6% 0%;
   line-height: 18px;
   width: 70%;
   line-height: 32px;
   display: none;
+  span{
+    font-weight: 800;
+  }
   @media ${breakpoints.mobile} {
     width: 60%;
   }
-
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 15px;
+    font-size: ${pxToRem(15)};
   }
   @media (min-width: ${breakpoints.laptop}) {
     margin: 1% 0% 3% 0%;
-    font-size: 13px;
+    font-size: ${pxToRem(13)};
     display: block;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    font-size: 17px;
-    display: block;
+    font-size: ${pxToRem(17)};
   }
 
   @media (min-width: ${breakpoints.notebook}) {
     margin: 0% 0% 4% 0%;
-    display: block;
   }
 `;
 
 export const TextosPlanetasMobile = styled.p`
   font-family: 'Proxima Nova';
-  font-size: 11px;
-  color: #381460;
+  font-size: ${pxToRem(11)};
+  color: ${leerColor(colores.negro)};
   margin: 6% 0%;
   line-height: 18px;
   display: block;
   width: 89%;
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 15px;
+    font-size: ${pxToRem(15)};
   }
   @media (min-width: ${breakpoints.laptop}) {
     display: none;
   }
-
   @media (min-width: ${breakpoints.laptopL}) {
-    display: none;
-  }
 
+  }
   @media (min-width: ${breakpoints.notebook}) {
-    display: none;
-  }
-`;
 
-export const Negrita = styled.span`
-  font-weight: 800;
+  }
 `;
 
 export const Container = styled.div`
@@ -198,8 +171,8 @@ export const CardImg = styled.img`
 
 export const TituloCard = styled.h2`
   font-family: 'Raleway';
-  font-size: 15px;
-  color: #4d1b84;
+  font-size: ${pxToRem(15)};
+  color: ${leerColor(colores.violeta)};
   padding: 10% 0;
   border-radius: 10px;
   text-transform: uppercase;
@@ -207,7 +180,7 @@ export const TituloCard = styled.h2`
   font-weight: 800;
 
   @media (min-width: ${breakpoints.notebook}) {
-    font-size: 19px;
+    font-size: ${pxToRem(19)};
     letter-spacing: 4px;
     font-weight: 800;
   }
@@ -291,21 +264,21 @@ export const Contenidos = styled.div`
 
 export const EdicionActualizacionesTitulo = styled.h3`
   font-family: 'Proxima Nova';
-  color: #fff;
-  font-size: 14px;
+  color: ${leerColor(colores.blanco)};
+  font-size: ${pxToRem(14)};
 `;
 
 export const TextoOverlay = styled.h2`
   font-family: 'Proxima Nova';
-  color: #fff;
-  font-size: 17px;
+  color: ${leerColor(colores.blanco)};;
+  font-size: ${pxToRem(17)};
 `;
 
 export const TituloOverlay = styled.h3`
   font-family: 'Proxima Nova';
-  color: #fff;
+  color: ${leerColor(colores.blanco)};
   font-weight: 900;
-  font-size: 20px;
+  font-size: ${pxToRem(20)};
   margin: 5px 30px 30px;
   line-height: 26px;
 `;

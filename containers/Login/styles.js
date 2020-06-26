@@ -1,13 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, leerColor, colores } from 'constants';
-
-export const ContainerMain = styled.div`
-  display: flex;
-  @media (min-width: ${breakpoints.mobile}) {
-  }
-  @media (min-width: ${breakpoints.laptop}) {
-  }
-`;
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 export const Text = styled.div`
   display: flex;
@@ -23,13 +15,13 @@ export const Text = styled.div`
 export const Bienvenido = styled.h1`
   color: ${leerColor(colores.rosa)};
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: ${pxToRem(24)};;
   align-self: center;
   font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 2em;
+    font-size: ${pxToRem(30)};;
   }
 `;
 
@@ -43,7 +35,6 @@ export const ImagenLogin = styled.img`
     width: 10%;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    width: 10%;
   }
 `;
 
@@ -87,17 +78,17 @@ export const Olvidaste = styled.a`
   width: 100%;
   color: ${leerColor(colores.violeta)};
   padding: 20px 0px;
-  font-size: 12px;
+  font-size: ${pxToRem(12)};
   font-family: 'Proxima Nova';
   font-weight: bold;
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 14px;
+    font-size: ${pxToRem(14)};;
   }
 `;
 
-export const Boton1 = styled.button`
+export const IniciarSesion = styled.button`
   width: 100%;
   background-color: ${leerColor(colores.naranja)};
   color: ${leerColor(colores.violeta)};
@@ -107,12 +98,12 @@ export const Boton1 = styled.button`
   text-transform: uppercase;
   font-family: 'Proxima Nova';
   font-weight: bold;
-  font-size: 14px;
+  font-size: ${pxToRem(14)};
   margin: 20px 0px;
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 16px;
+    font-size: ${pxToRem(16)};
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 80%;
@@ -120,7 +111,7 @@ export const Boton1 = styled.button`
   }
 `;
 
-export const Boton2 = styled.button`
+export const SolicitarCuenta = styled.button`
   width: 100%;
   background-color: ${leerColor(colores.gris)};
   color: ${leerColor(colores.violeta)};
@@ -130,11 +121,11 @@ export const Boton2 = styled.button`
   text-transform: uppercase;
   font-family: 'Proxima Nova';
   font-weight: bold;
-  font-size: 14px;
+  font-size: ${pxToRem(14)};;
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 16px;
+    font-size: ${pxToRem(16)};;
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 80%;

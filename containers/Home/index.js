@@ -4,12 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import {
-  ContainerMain,
-  ContainerBanner,
-  SectorTitulos,
+  ContainerBanner, 
+  SectorTitulos, 
   Textos,
   TextosPlanetas,
-  Negrita,
   TextosPlanetasMobile,
   Container,
   ContainerUniversos,
@@ -59,7 +57,7 @@ function HomeContainer() {
   };
 
   return (
-    <ContainerMain>
+    <>
       <ContainerBanner>
         <Wrapper direction="row">
           <SectorTitulos>
@@ -83,7 +81,7 @@ function HomeContainer() {
             <TextosPlanetas>
               Compuesto por planetas independientes, que orbitan alrededor de
               una estrella de aspecto similar al sol, en el esquema gravitatorio
-              de una <Negrita>Roseta de Klemperer. </Negrita>
+              de una <span>Roseta de Klemperer.</span>
               Todos están habitados en su mayoría por seres humanos que
               recuerdan vagamente las características étnicas de nuestro mundo
               real, con religiones diferentes que veneran al Sol.
@@ -333,7 +331,7 @@ function HomeContainer() {
           </SeccionActualizaciones>
         </Wrapper>
       </FondoGris>
-    </ContainerMain>
+    </>
   );
 }
 
