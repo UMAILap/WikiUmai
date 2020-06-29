@@ -21,7 +21,13 @@ import {
   Dato,
   DatoFixed,
 } from './styles';
-import { Wrapper, Titulos, BannerTecnologiasHistorias, BotonVioleta, CardUniverso } from 'components';
+import {
+  Wrapper,
+  Titulos,
+  BannerTecnologiasHistorias,
+  BotonVioleta,
+  CardUniverso,
+} from 'components';
 
 //galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
 function PersonajesContainer() {
@@ -35,34 +41,34 @@ function PersonajesContainer() {
               <h6>Personaje</h6>
               <h1>Obi Kubu</h1>
               <p>
-              Nació en la capital del continente, recibió la mejor educación
-              desde chico y acompañado de una familia de clase alta se formo
-              como diseñador. Tiene entranimiento militar avanzado, hoy en dia
-              se dedica solo al diseño pero esta listo para usar todas sus
-              habilidades pero esta
-            </p>
+                Nació en la capital del continente, recibió la mejor educación
+                desde chico y acompañado de una familia de clase alta se formo
+                como diseñador. Tiene entranimiento militar avanzado, hoy en dia
+                se dedica solo al diseño pero esta listo para usar todas sus
+                habilidades pero esta
+              </p>
             </PersonajeIntro>
             <PersonajeCaracteristicas>
               <CaracteristicasPuntos>
                 <PuntosPersonajes>
-                  <img src="./fuerza.svg"/>
+                  <img src="./fuerza.svg" />
                   <span>2</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                <img src="./inteligencia.svg"/>
+                  <img src="./inteligencia.svg" />
                   <span>3</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                <img src="./habilidad.svg"/>
+                  <img src="./habilidad.svg" />
                   <span>4</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                <img src="./suerte.svg"/>
+                  <img src="./suerte.svg" />
                   <span>1</span>
                 </PuntosPersonajes>
               </CaracteristicasPuntos>
               <img src="./placeholder_personaje.png"></img>
-            </PersonajeCaracteristicas>            
+            </PersonajeCaracteristicas>
           </BannerPersonaje>
         </Wrapper>
       </BannerTecnologiasHistorias>
@@ -71,32 +77,32 @@ function PersonajesContainer() {
           <PersonajeDatos>
             <PersonajeCard>
               <Dato>
-              <h6>Raza</h6>
-              <p>Humano con modificaciones</p>
+                <h6>Raza</h6>
+                <p>Humano con modificaciones</p>
               </Dato>
               <Dato>
-              <h6>Género</h6>
-              <p>Hombre</p>
+                <h6>Género</h6>
+                <p>Hombre</p>
               </Dato>
               <Dato>
-              <DatoFixed>
-              <h6>Edad</h6>
-              <p>30</p>
-              </DatoFixed>
-              <DatoFixed>
-              <h6>Altura</h6>
-              <p>1,72 mt</p>
-              </DatoFixed>
+                <DatoFixed>
+                  <h6>Edad</h6>
+                  <p>30</p>
+                </DatoFixed>
+                <DatoFixed>
+                  <h6>Altura</h6>
+                  <p>1,72 mt</p>
+                </DatoFixed>
               </Dato>
               <Dato>
-              <h6>Planeta</h6>
-              <p>Iknagi</p>
+                <h6>Planeta</h6>
+                <p>Iknagi</p>
               </Dato>
               <Dato>
-              <h6>Profesión</h6>
-              <p>Diseñador de experiencias</p>
+                <h6>Profesión</h6>
+                <p>Diseñador de experiencias</p>
               </Dato>
-            </PersonajeCard>          
+            </PersonajeCard>
             <ObjetosPersonaje>
               <h5>Objetos de profesión:</h5>
               <Objetos>
@@ -136,29 +142,41 @@ function PersonajesContainer() {
               versions from the 1914 translation by H. Rackham.
             </p>
             <PersonajeHistorias>
-            <Titulos>Historias</Titulos>
-            <ul>
-              <li><a href="#">Origen personaje</a></li>
-              <li><a href="#">Origen personaje</a></li>
-              <li><a href="#">Origen personaje</a></li>
-              <li><a href="#">Origen personaje</a></li>
-              <li><a href="#">Origen personaje</a></li>
-              <li><a href="#">Origen personaje</a></li>
-            </ul>
-            <BotonVioleta>+ Agregar historias</BotonVioleta>
+              <Titulos>Historias</Titulos>
+              <ul>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+                <li>
+                  <a href="#">Origen personaje</a>
+                </li>
+              </ul>
+              <BotonVioleta>+ Agregar historias</BotonVioleta>
             </PersonajeHistorias>
             <Galeria>
-            <Titulos>Galeria</Titulos> 
-              <GaleriaImagenes>    
-                  <img src="./placeholder_personaje.png"></img>          
-                  <img src="./placeholder_personaje.png"></img>           
-                  <img src="./placeholder_personaje.png"></img> 
-              </GaleriaImagenes>                
+              <Titulos>Galeria</Titulos>
+              <GaleriaImagenes>
+                <img src="./placeholder_personaje.png"></img>
+                <img src="./placeholder_personaje.png"></img>
+                <img src="./placeholder_personaje.png"></img>
+              </GaleriaImagenes>
             </Galeria>
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-              <CardUniverso>
+                <CardUniverso>
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
@@ -193,7 +211,7 @@ function PersonajesContainer() {
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
-                </RelacionadosCards>
+              </RelacionadosCards>
             </Relacionados>
             <p>Ultima edicion por Facundo Brahim</p>
           </ContenidoPrincipal>

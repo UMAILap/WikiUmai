@@ -156,10 +156,9 @@ function PasoTres() {
             <Puntos>
               <span
                 style={{
-                  //color: usedValues.valuesArray.includes('1') ? 'gray' : '',
                   color: _.find(
                     usedValues.valuesArray,
-                    objeto => objeto.value === 1,
+                    objeto => objeto.value === "1",
                   )
                     ? 'gray'
                     : '',
@@ -170,7 +169,7 @@ function PasoTres() {
                 style={{
                   color: _.find(
                     usedValues.valuesArray,
-                    objeto => objeto.value === 2,
+                    objeto => objeto.value === "2",
                   )
                     ? 'gray'
                     : '',
@@ -181,7 +180,7 @@ function PasoTres() {
                 style={{
                   color: _.find(
                     usedValues.valuesArray,
-                    objeto => objeto.value === 3,
+                    objeto => objeto.value === "3",
                   )
                     ? 'gray'
                     : '',
@@ -192,7 +191,7 @@ function PasoTres() {
                 style={{
                   color: _.find(
                     usedValues.valuesArray,
-                    objeto => objeto.value === 4,
+                    objeto => objeto.value === "4",
                   )
                     ? 'gray'
                     : '',
