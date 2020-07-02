@@ -20,7 +20,8 @@ function PerfilContainer() {
             </ContainerBanner>
             <WrapperPersonajesPlanetas>
                 <MiPerfil />
-                <ListaPerfil type={true}/* true --> Historias, false --> Discusiones */ titulos={arrayTitulos} />
+                {/* type = 'historias' | 'discusiones'*/}
+                <ListaPerfil type={'historias'} titulos={arrayTitulos} />
             </WrapperPersonajesPlanetas>
         </ContainerMain>
     );
