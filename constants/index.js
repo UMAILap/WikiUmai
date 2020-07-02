@@ -38,4 +38,3 @@ export const colores = {
 };
 
 export const pxToRem = value => `${value / 16}rem`;
-

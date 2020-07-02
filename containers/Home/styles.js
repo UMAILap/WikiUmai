@@ -60,9 +60,8 @@ export const Textos = styled.p`
   color: ${leerColor(colores.negro)};
   margin: 3% 0%;
   line-height: 18px;
-  
-  @media ${breakpoints.mobile} {
 
+  @media ${breakpoints.mobile} {
   }
   @media (min-width: ${breakpoints.tablet}) {
     font-size: ${pxToRem(20)};
@@ -75,7 +74,7 @@ export const Textos = styled.p`
     line-height: 25px;
   }
   @media (min-width: ${breakpoints.notebook}) {
-    line-height: 33px; 
+    line-height: 33px;
   }
 `;
 
@@ -88,7 +87,7 @@ export const TextosPlanetas = styled.p`
   width: 70%;
   line-height: 32px;
   display: none;
-  span{
+  span {
     font-weight: 800;
   }
   @media ${breakpoints.mobile} {
@@ -128,10 +127,8 @@ export const TextosPlanetasMobile = styled.p`
     display: none;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-
   }
   @media (min-width: ${breakpoints.notebook}) {
-
   }
 `;
 
@@ -270,7 +267,7 @@ export const EdicionActualizacionesTitulo = styled.h3`
 
 export const TextoOverlay = styled.h2`
   font-family: 'Proxima Nova';
-  color: ${leerColor(colores.blanco)};;
+  color: ${leerColor(colores.blanco)};
   font-size: ${pxToRem(17)};
 `;
 
