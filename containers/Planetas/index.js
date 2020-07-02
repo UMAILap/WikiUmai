@@ -1,16 +1,12 @@
 import React from 'react';
 
 import {
-  MainPlanetas,
-  BannerPlanetas,
-  InfoPlanetasBanner,
-  TituloPlaneta,
-  BajadaPlaneta,
-  Negrita,
-  FotoPlaneta,
+  PlanetasBanner,
+  ContenedorBannerInfo,
+  BannerInfo,
   NombrePlaneta,
-  ContenedorPlanetaImg,
-  ContenedorImagenPlaneta,
+  BajadaPlaneta,
+  BannerImagen,
   ContenidoPlaneta,
   Personajes,
   Historias,
@@ -21,26 +17,22 @@ import {
   LinksHistorias,
   ContenedorBoton,
   AgregarNuevas,
-  VerMas,
-  PrimerColumna,
-  SegundaColumna,
-  FotoPersonaje,
   PersonajesRelacionados,
+  PersonajesImg,
+  VerMas,  
 } from './styles';
 import { Wrapper, Titulos, HitosTimeLine, BotonVioleta } from 'components';
 
 function PlanetasContainer() {
   return (
-    <MainPlanetas>
-      <BannerPlanetas>
+    <>
+      <PlanetasBanner>
         <Wrapper>
-          <InfoPlanetasBanner>
-            <NombrePlaneta>
-              <TituloPlaneta>
-                Planeta <Negrita>Sol</Negrita>
-              </TituloPlaneta>
-            </NombrePlaneta>
-
+          <ContenedorBannerInfo>
+          <BannerInfo>
+              <NombrePlaneta>
+                Planeta <span>Sol</span>
+              </NombrePlaneta>
             <BajadaPlaneta>
               Super planeta artificial de enorme tamaño con un escudo energético
               similar a un campo de fuerza que emite luz hacia el exterior,
@@ -52,15 +44,14 @@ function PlanetasContainer() {
               menores es imposible distinguir la superficie real del sol sin
               instrumentos telescopicos.
             </BajadaPlaneta>
-          </InfoPlanetasBanner>
+          </BannerInfo>
 
-          <ContenedorImagenPlaneta>
-            <ContenedorPlanetaImg>
-              <FotoPlaneta src="./images/slider/3.png"></FotoPlaneta>
-            </ContenedorPlanetaImg>
-          </ContenedorImagenPlaneta>
+          <BannerImagen>
+              <img src="./images/slider/3.png"/>
+          </BannerImagen>
+          </ContenedorBannerInfo>
         </Wrapper>
-      </BannerPlanetas>
+      </PlanetasBanner>
 
       <Wrapper>
         <ContenedorHitos>
@@ -89,13 +80,13 @@ function PlanetasContainer() {
           <Personajes>
             <Titulos>Personajes</Titulos>
             <PersonajesRelacionados>
-              <FotoPersonaje src="./images/planetas/1.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/2.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/3.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/1.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/2.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/3.png"></FotoPersonaje>
-              <FotoPersonaje src="./images/planetas/4.png"></FotoPersonaje>
+              <PersonajesImg src="./images/planetas/1.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/2.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/3.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/1.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/2.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/3.png"></PersonajesImg>
+              <PersonajesImg src="./images/planetas/4.png"></PersonajesImg>
               <VerMas src="./images/planetas/5.png"></VerMas>
             </PersonajesRelacionados>
             <ContenedorBoton>
@@ -129,7 +120,7 @@ function PlanetasContainer() {
           </Objetos>
         </AgregarNuevas>
       </Wrapper>
-    </MainPlanetas>
+    </>
   );
 }
 
