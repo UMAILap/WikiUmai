@@ -37,7 +37,7 @@ function PasoUno() {
           </AvatarNombre>
           <AvatarPlaneta>
             <AvatarPlanetaTitulo>Planeta del personaje</AvatarPlanetaTitulo>
-            <PlanetasPills />
+            <PlanetasPills/>
           </AvatarPlaneta>
         </AvataresInfo>
       </Avatares>

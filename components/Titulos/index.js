@@ -3,12 +3,8 @@ import PropTypes from 'prop-types';
 
 import { EstilosTitulos } from './styles';
 
-function Titulos({children, isColorPink}) {
-  /*const {
-    isColorPink,
-  } = props;
-  console.log(isColorPink);*/
-  //style={{color: isColorPink ? 'red' : '',}}
+function Titulos({ children, isColorPink }) {
+  
   return <EstilosTitulos isColorPink={isColorPink}>{children}</EstilosTitulos>;
 }
 

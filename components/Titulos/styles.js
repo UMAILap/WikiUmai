@@ -5,11 +5,10 @@ export const EstilosTitulos = styled.h1`
   font-size: 20px;
   font-style: bold;
   color: ${leerColor(colores.violeta)};
-  color: ${props => props.isColorPink ? "rgb(254, 52, 110)": ""};
+  color: ${props => (props.isColorPink ? 'rgb(254, 52, 110)' : '')};
   padding-top: 20px;
   font-weight: bolder;
   font-family: 'Raleway';
-  
 
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 20px;

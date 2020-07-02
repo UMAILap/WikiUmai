@@ -165,10 +165,10 @@ function PersonajesContainer() {
                   <a href="#">Origen personaje</a>
                 </li>
               </ul>
-              <BotonVioleta>+ Agregar historias</BotonVioleta>
+              <BotonVioleta isColorPink={isColorPink}>+ Agregar historias</BotonVioleta>
             </PersonajeHistorias>
             <Galeria>
-              <Titulos >Galeria</Titulos>
+              <Titulos>Galeria</Titulos>
               <GaleriaImagenes>
                 <img src="./placeholder_personaje.png"></img>
                 <img src="./placeholder_personaje.png"></img>
