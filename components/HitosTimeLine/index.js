@@ -26,7 +26,7 @@ function HitosTimeLine() {
           slidesToScroll: 1,
           infinite: false,
           dots: false,
-        }
+        },
       },
       {
         breakpoint: 1440,
@@ -35,7 +35,7 @@ function HitosTimeLine() {
           slidesToScroll: 3,
           infinite: false,
           dots: false,
-        }
+        },
       },
       {
         breakpoint: 1024,
@@ -44,7 +44,7 @@ function HitosTimeLine() {
           slidesToScroll: 1,
           dots: true,
           infinite: false,
-        }
+        },
       },
       {
         breakpoint: 768,

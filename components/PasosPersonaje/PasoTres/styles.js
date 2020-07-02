@@ -13,14 +13,14 @@ export const PasoTitulo = styled.h1`
   padding-bottom: 40px;
   line-height: 42px;
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: ${pxToRem(35)};    
+    font-size: ${pxToRem(35)};
   }
 `;
 export const Datos = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
   }
 `;
@@ -54,13 +54,13 @@ export const InformacionBasica = styled.div`
   input::placeholder {
     color: ${leerColor(colores.violeta)};
   }
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     width: 500px;
   }
 `;
 export const CaracteristicasPersonaje = styled.div`
   margin-top: 20px;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin-left: 5%;
   }
 `;
@@ -74,15 +74,15 @@ export const Caracteristicas = styled.div`
   height: 250px;
   padding: 20px 0;
   margin: 0 auto;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin: 0;
     width: 95%;
     height: 100%;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 70%;
   }
-  @media (min-width: ${breakpoints.tabletL}){
+  @media (min-width: ${breakpoints.tabletL}) {
     width: 60%;
   }
 `;
@@ -136,10 +136,10 @@ export const PuntosHabilidad = styled.div`
   width: 100%;
   text-align: center;
   font-size: ${pxToRem(18)};
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin: 20px 0;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 65%;
   }
 `;

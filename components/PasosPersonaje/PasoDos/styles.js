@@ -13,6 +13,6 @@ export const PasoTitulo = styled.h1`
   padding-bottom: 40px;
   line-height: 42px;
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: ${pxToRem(35)};    
+    font-size: ${pxToRem(35)};
   }
 `;

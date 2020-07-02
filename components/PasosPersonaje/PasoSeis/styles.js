@@ -30,7 +30,7 @@ export const Origen = styled.div`
     font-size: 14px;
     border-left: 5px solid ${leerColor(colores.violeta)};
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 800px;
   }
 `;

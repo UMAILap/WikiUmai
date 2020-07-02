@@ -13,7 +13,7 @@ export const PasoTitulo = styled.h1`
   padding-bottom: 40px;
   line-height: 42px;
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: ${pxToRem(35)};    
+    font-size: ${pxToRem(35)};
   }
 `;
 export const AvataresTitulo = styled.h3`
@@ -27,7 +27,7 @@ export const Avatares = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
   }
 `;
@@ -36,22 +36,22 @@ export const AvataresImagenes = styled.div`
   width: 100%;
   grid-template-columns: 200px 1fr;
   height: 100%;
-  @media (min-width: ${breakpoints.tablet}){
-    width: 350px;    
+  @media (min-width: ${breakpoints.tablet}) {
+    width: 350px;
     grid-template-columns: 200px 1fr;
   }
-  @media (min-width: ${breakpoints.laptop}){
-    width: 300px;    
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 300px;
     grid-template-columns: 200px 1fr;
   }
 `;
 export const ImagenPrincipal = styled.img`
   width: 100%;
   border-radius: 20px;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     width: 90%;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 100%;
   }
 `;
@@ -60,23 +60,23 @@ export const ImagenesSecundarias = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     align-items: flex-end;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     align-items: center;
   }
 `;
 export const Imagen = styled.img`
   width: 50%;
   border-radius: 5px;
-  @media (min-width: ${breakpoints.mobileGrande})  {
+  @media (min-width: ${breakpoints.mobileGrande}) {
     width: 25%;
   }
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     width: 90%;
   }
-  @media (min-width: ${breakpoints.laptop}){
+  @media (min-width: ${breakpoints.laptop}) {
     width: 50%;
   }
 `;
@@ -84,7 +84,7 @@ export const AvataresInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin-left: 5%;
     margin-top: 0;
   }
@@ -109,7 +109,7 @@ export const AvatarPlaneta = styled.div`
   height: 100%;
   justify-content: flex-end;
   margin-top: 40px;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin-top: 0;
   }
 `;

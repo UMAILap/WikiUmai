@@ -17,8 +17,9 @@ export const Planeta = styled.span`
   font-weight: bold;
   text-align: center;
   margin: auto;
-  background-color: ${props => props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
-  @media (min-width: ${breakpoints.tablet}){
+  background-color: ${props =>
+    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 10px 40px;
   }
 `;
