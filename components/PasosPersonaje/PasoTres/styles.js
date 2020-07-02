@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, leerColor, colores } from 'constants';
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 export const PasoContainer = styled.div`
   padding-top: 100px;
@@ -7,15 +7,22 @@ export const PasoContainer = styled.div`
 `;
 export const PasoTitulo = styled.h1`
   font-family: 'Raleway';
+  font-size: ${pxToRem(26)};
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
-  font-size: 35px;
   padding-bottom: 40px;
+  line-height: 42px;
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: ${pxToRem(35)};    
+  }
 `;
 export const Datos = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  @media (min-width: ${breakpoints.tablet}){
+    flex-direction: row;
+  }
 `;
 export const InformacionBasica = styled.div`
   display: flex;
@@ -23,7 +30,7 @@ export const InformacionBasica = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  width: 100%;
   input {
     border: none;
     border-bottom: 1px solid ${leerColor(colores.violeta)};
@@ -47,17 +54,37 @@ export const InformacionBasica = styled.div`
   input::placeholder {
     color: ${leerColor(colores.violeta)};
   }
+  @media (min-width: ${breakpoints.tablet}){
+    width: 500px;
+  }
 `;
 export const CaracteristicasPersonaje = styled.div`
-  margin-left: 5%;
+  margin-top: 20px;
+  @media (min-width: ${breakpoints.tablet}){
+    margin-left: 5%;
+  }
 `;
 export const Caracteristicas = styled.div`
   display: grid;
+  width: 100%;
   background-color: ${leerColor(colores.gris)};
   border-radius: 20px;
   grid-template-columns: 25% 25% 50%;
-  width: 60%;
-  height: 100%;
+  width: 70%;
+  height: 250px;
+  padding: 20px 0;
+  margin: 0 auto;
+  @media (min-width: ${breakpoints.tablet}){
+    margin: 0;
+    width: 95%;
+    height: 100%;
+  }
+  @media (min-width: ${breakpoints.laptop}){
+    width: 70%;
+  }
+  @media (min-width: ${breakpoints.tabletL}){
+    width: 60%;
+  }
 `;
 export const CaracteristicasIconos = styled.div`
   display: flex;
@@ -105,10 +132,16 @@ export const PuntosHabilidad = styled.div`
   flex-direction: column;
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.violeta)};
-  margin: 20px 0;
-  width: 60%;
+  margin: 20px auto;
+  width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: ${pxToRem(18)};
+  @media (min-width: ${breakpoints.tablet}){
+    margin: 20px 0;
+  }
+  @media (min-width: ${breakpoints.laptop}){
+    width: 65%;
+  }
 `;
 export const Puntos = styled.div`
   display: flex;

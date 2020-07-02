@@ -12,13 +12,13 @@ export const PasoTitulo = styled.h1`
   font-size: 35px;
   padding-bottom: 40px;
 `;
-export const Sinopsis = styled.div`
+export const Origen = styled.div`
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
+  width: 100%;
   textarea {
     background-color: ${leerColor(colores.gris)};
     border: none;
@@ -29,5 +29,8 @@ export const Sinopsis = styled.div`
     height: 300px;
     font-size: 14px;
     border-left: 5px solid ${leerColor(colores.violeta)};
+  }
+  @media (min-width: ${breakpoints.laptop}){
+    width: 800px;
   }
 `;

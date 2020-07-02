@@ -14,10 +14,38 @@ function HitosTimeLine() {
 
   var settings = {
     slidesToShow: 6,
-    infinite: true,
+    infinite: false,
+    slidesToScroll: 1,
+    infinite: false,
     dots: false,
-    arrows: true,
     responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: false,
+        }
+      },
       {
         breakpoint: 768,
         settings: {
@@ -25,6 +53,8 @@ function HitosTimeLine() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 0,
+          dots: true,
+          infinite: true,
         },
       },
       {
@@ -35,6 +65,7 @@ function HitosTimeLine() {
           centerPadding: '40px',
           slidesToScroll: 1,
           dots: true,
+          infinite: true,
         },
       },
     ],
