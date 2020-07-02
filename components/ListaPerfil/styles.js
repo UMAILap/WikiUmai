@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-export const MisHistoriasContainer = styled.div`
+export const ListaPerfilContainer = styled.div`
   padding-top: 50px;
   width: 40%;
+  margin-bottom: 150px;
 `;
 
-export const MisHistoriasTitulo = styled.h1`
+export const ListaPerfilTitulo = styled.h1`
   font-family: 'Raleway';
   font-weight: bold;
   color: ${leerColor(colores.violeta)};
@@ -14,7 +15,7 @@ export const MisHistoriasTitulo = styled.h1`
   padding-bottom: 40px;
 `;
 
-export const Historia = styled.div`
+export const ListaPerfilItem = styled.div`
     width: 100%;
     padding: 1em 1em 1em 1em;
     display: flex;

@@ -2,8 +2,15 @@ import React from 'react';
 
 import { ContainerMain, ContainerBanner, Titulo } from './styles';
 import { Wrapper, WrapperPersonajesPlanetas } from 'components';
-import { MiPerfil, MisHistorias } from 'components';
+import { MiPerfil, ListaPerfil } from 'components';
 function PerfilContainer() {
+    //HARDCODEADO
+    const arrayTitulos = [
+        "El duende del cuchillo comunista",
+        "El duende del cuchillo capitalista",
+        "El duende del cuchillo anarquista",
+        "El duende del cuchillo socialista"
+    ];
     return (
         <ContainerMain>
             <ContainerBanner>
@@ -12,12 +19,10 @@ function PerfilContainer() {
                 </WrapperPersonajesPlanetas>
             </ContainerBanner>
             <WrapperPersonajesPlanetas>
-
                 <MiPerfil />
-                <MisHistorias />
+                <ListaPerfil type={true}/* true --> Historias, false --> Discusiones */ titulos={arrayTitulos} />
             </WrapperPersonajesPlanetas>
         </ContainerMain>
     );
 }
-
 export default PerfilContainer;

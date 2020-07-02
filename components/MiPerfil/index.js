@@ -10,8 +10,11 @@ import {
     MiPerfilInputs,
     MiPerfilNombre,
     MiPerfilUsuario,
-    MiPerfilEmail
+    MiPerfilEmail,
+    DivInput
 } from './styles';
+
+import { BotonVioleta } from 'components';
 
 function MiPerfil() {
     return (
@@ -19,20 +22,31 @@ function MiPerfil() {
             <MiPerfilTitulo>Mi perfil</MiPerfilTitulo>
             <MiPerfilFlexContainer>
                 <MiPerfilImagen>
-                    <Foto src="./cara.png" />
+                    <Foto><img src="./cara.png"></img></Foto>
                     <BtnEditarFoto>Editar Foto</BtnEditarFoto>
                 </MiPerfilImagen>
                 <MiPerfilInputs>
-                    <input type="text" placeholder="Nombre real" />
-                    <input type="text" placeholder="Usuario" />
+                    {Input("Nombre real")}
+                    {/* <input type="text" placeholder="Nombre real" /> */}
+                    {Input("Usuario")}
+                    {/* <input type="text" placeholder="Usuario" /> */}
                 </MiPerfilInputs>
             </MiPerfilFlexContainer>
             <MiPerfilEmail>
-                <input type="email" placeholder="Email" />
+                {Input("Email")}
+                {/* <input type="email" placeholder="Email" /> */}
             </MiPerfilEmail>
             {/* IMG E INPUTS */}
         </MiPerfilContainer >
     );
 }
 
+function Input(placeholder) {
+    return (
+        <DivInput>
+            <input type="text" placeholder={placeholder} />
+            <BotonVioleta>Editar</BotonVioleta>
+        </ DivInput>
+    )
+}
 export default MiPerfil;

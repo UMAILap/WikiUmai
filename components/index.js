@@ -18,4 +18,4 @@ export { default as MapaArticulos } from './MapaArticulos';
 export { default as CardUniverso } from './CardUniverso';
 export { default as PlanetasPills } from './PlanetasPills';
 export { default as MiPerfil } from './MiPerfil';
-export { default as MisHistorias } from './MisHistorias';
+export { default as ListaPerfil } from './ListaPerfil';

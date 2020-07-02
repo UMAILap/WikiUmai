@@ -30,12 +30,17 @@ export const MiPerfilImagen = styled.div`
   align-self: center;
   margin-right: 2em;
 `;
-export const Foto = styled.img`
+export const Foto = styled.figure`
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 5px solid ${leerColor(colores.rosa)};
   margin-bottom: 1em;
+  overflow:hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const BtnEditarFoto = styled.button`
@@ -58,17 +63,27 @@ width: 100%;
 input {
   color: ${leerColor(colores.violeta)};
   border: none;
-  border-bottom: 2px solid ${leerColor(colores.violeta)};
+  /* border-bottom: 2px solid ${leerColor(colores.violeta)}; */
   background-color: none;
-  padding: 15px 0;
   font-family: 'Proxima Nova';
   width: 100%;
   font-size: 17px;
   ::placeholder {
     color: ${leerColor(colores.violeta)};
   }
-  margin-bottom: 1em;
 }
+`;
+
+export const DivInput = styled.div`
+  display: flex;
+  border: none;
+  border-bottom: 2px solid ${leerColor(colores.violeta)};
+  background-color: none;
+  margin-bottom: 1em;
+  font-family: 'Proxima Nova';
+  width: 100%;
+  font-size: 17px;
+
 `;
 
 /* export const MiPerfilNombre = styled.div`
@@ -106,7 +121,7 @@ export const MiPerfilEmail = styled.div`
 input {
   color: ${leerColor(colores.violeta)};
   border: none;
-  border-bottom: 2px solid ${leerColor(colores.violeta)};
+
   background-color: none;
   padding: 15px 0;
   font-family: 'Proxima Nova';
