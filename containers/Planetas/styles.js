@@ -1,20 +1,16 @@
 import styled from 'styled-components';
-import { breakpoints, leerColor, colores } from 'constants';
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
-export const MainPlanetas = styled.div`
-  @media (min-width: ${breakpoints.mobile}) {
-  }
-  @media (min-width: ${breakpoints.laptop}) {
-  }
-`;
 
-export const BannerPlanetas = styled.div`
+export const PlanetasBanner = styled.div`
   background-image: url(./banner_personajes.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
-  height: 600px;
+  height: 700px;
   width: 100%;
   display: flex;
+  flex-direction:row-reverse;
+  
 
   @media (min-width: ${breakpoints.notebook}) {
     background-image: none;
@@ -27,16 +23,18 @@ export const BannerPlanetas = styled.div`
   }
 `;
 
-export const NombrePlaneta = styled.div`
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 20px;
-
-  @media (min-width: ${breakpoints.notebook}) {
+export const ContenedorBannerInfo = styled.div`
+    display:flex;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    
+  @media (min-width: ${breakpoints.laptop}) {
+    flex-direction: row;
   }
+
 `;
 
-export const InfoPlanetasBanner = styled.div`
+export const BannerInfo = styled.div`
   @media (min-width: ${breakpoints.tablet}) {
     display: flex;
     flex-direction: column;
@@ -48,14 +46,20 @@ export const InfoPlanetasBanner = styled.div`
   }
 `;
 
-export const TituloPlaneta = styled.h1`
+export const NombrePlaneta = styled.h1`
   font-family: 'Raleway';
   color: ${leerColor(colores.naranja)};
   width: 100%;
-  font-size: 35px;
+  font-size: ${pxToRem(35)};
+  margin-top: 30px;
+  span{
+    font-weight: 600;
+  }
+  margin-bottom: 30px;
 
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 48px;
+    font-size: ${pxToRem(48)};
+    margin-top: 0px;
   }
 `;
 
@@ -63,46 +67,32 @@ export const BajadaPlaneta = styled.p`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.blanco)};
   height: fit-content;
-  font-size: 14px;
+  font-size: ${pxToRem(14)};
   line-height: 30px;
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 17px;
+    font-size: ${pxToRem(17)};
     line-height: 30px;
     width: 80%;
   }
 `;
 
-export const ContenedorImagenPlaneta = styled.div`
-  display: none;
+export const BannerImagen = styled.div`
+    text-align:center;
+
+  img{
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border: 4px solid ${leerColor(colores.naranja)};
+    
+  }
+
   @media (min-width: ${breakpoints.laptop}) {
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-  }
-`;
-
-export const ContenedorPlanetaImg = styled.div`
-  height: 200px;
-  border-radius: 20px;
-`;
-
-export const FotoPlaneta = styled.img`
-  border-radius: 50%;
-  width: 100%;
-  height: 90%;
-  border: 4px solid ${leerColor(colores.naranja)};
-
-  @media (min-width: ${breakpoints.laptopL}) {
-    width: 72%;
-  }
-
-  @media (min-width: ${breakpoints.notebook}) {
-    border-radius: 50%;
-    width: 65%;
-    height: 90%;
-    border: 4px solid ${leerColor(colores.naranja)};
+ 
   }
 `;
 
@@ -110,7 +100,7 @@ export const ContenidoPlaneta = styled.div`
   width: 100%;
 
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 32px;
+    font-size: ${pxToRem(32)};
   }
 `;
 
@@ -130,32 +120,13 @@ export const SeccionLinks = styled.div`
 export const LinksHistorias = styled.address`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.violeta)};
-  font-size: 16px;
+  font-size: ${pxToRem(16)};
   line-height: 40px;
   padding: 0% 0% 1%;
   cursor: pointer;
   text-decoration-line: underline;
 `;
 
-// export const AgregarHistoriaBoton = styled.a`
-//   font-family: 'Proxima Nova';
-//   border-radius: 20px;
-//   background-color: ${leerColor(colores.violeta)};
-//   color: ${leerColor(colores.blanco)};
-//   font-size: 5px;
-//   text-align: center;
-//   @media (min-width: ${breakpoints.tablet}) {
-//     padding: 10px 40px;
-//     font-size: 10px;
-//     display: block;
-//   }
-//   @media (min-width: ${breakpoints.laptop}) {
-//     padding: 10px 10px;
-//     font-size: 14px;
-//     display: block;
-//     width: 35%;
-//   }
-// `;
 
 export const AgregarNuevas = styled.div`
   grid-template-columns: 0%;
@@ -204,7 +175,7 @@ export const Personajes = styled.div`
   padding-bottom: 40px;
 `;
 
-export const FotoPersonaje = styled.img`
+export const PersonajesImg = styled.img`
   border-radius: 80%;
   border: 4px solid hsl(268.6, 66%, 31.2%);
   margin: 0% 6% 2% 0%;
@@ -220,9 +191,7 @@ export const PersonajesRelacionados = styled.div`
   margin-top: 5%;
 `;
 
-export const Negrita = styled.span`
-  font-weight: 600;
-`;
+
 
 export const ContenedorBoton = styled.div`
   width: 100%;

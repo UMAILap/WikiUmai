@@ -5,6 +5,9 @@ export const ListaPerfilContainer = styled.div`
   padding-top: 50px;
   width: 40%;
   margin-bottom: 150px;
+  @media(max-width: ${breakpoints.laptop}){
+    width: 100%;
+  }
 `;
 
 export const ListaPerfilTitulo = styled.h1`
@@ -13,6 +16,9 @@ export const ListaPerfilTitulo = styled.h1`
   color: ${leerColor(colores.violeta)};
   font-size: 35px;
   padding-bottom: 40px;
+  @media(max-width: ${breakpoints.laptop}){
+    font-size: 24px;
+  }
 `;
 
 export const ListaPerfilItem = styled.div`
@@ -33,5 +39,8 @@ export const ListaPerfilItem = styled.div`
         color: ${leerColor(colores.violeta)};
         font-weight: bold;
         margin-left: 2em;
+    }
+    @media(max-width: ${breakpoints.laptop}){
+      font-size: 13px;
     }
 `;

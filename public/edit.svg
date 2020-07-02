@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.826" height="22.715" viewBox="0 0 22.826 22.715">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #4d1b84;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_212" data-name="Grupo 212" class="cls-1">
+    <g id="Grupo_10" data-name="Grupo 10" transform="translate(0 0)">
+      <path id="Trazado_29" data-name="Trazado 29" class="cls-2" d="M973.49,163.072l4.643,4.643-11.753,11.754-4.641-4.644Zm8.167-1.12-2.071-2.071a2.055,2.055,0,0,0-2.9,0l-1.984,1.984,4.643,4.643,2.314-2.314a1.583,1.583,0,0,0,0-2.242Zm-22.348,19.4a.528.528,0,0,0,.639.628l5.175-1.254-4.64-4.643Zm0,0" transform="translate(-959.295 -159.281)"/>
+    </g>
+  </g>
+</svg>

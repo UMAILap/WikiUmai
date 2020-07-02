@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { PasoContainer, PasoTitulo, Datos, Sinopsis } from './styles';
+import { PasoContainer, PasoTitulo, Datos, Origen } from './styles';
 
 function PasoSeis({ colorFondo }) {
   return (
     <PasoContainer>
       <PasoTitulo>Origen *</PasoTitulo>
-      <Sinopsis>
+      <Origen>
         <textarea type="text" placeholder="Nació en Villa Maria..." />
-      </Sinopsis>
+      </Origen>
     </PasoContainer>
   );
 }

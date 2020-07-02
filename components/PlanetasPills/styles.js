@@ -11,7 +11,7 @@ export const Planeta = styled.span`
   cursor: pointer;
   color: ${leerColor(colores.violeta)};
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px;
   border-radius: 7px;
   font-family: 'Raleway';
   font-weight: bold;
@@ -19,4 +19,7 @@ export const Planeta = styled.span`
   margin: auto;
   background-color: ${props =>
     props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+  @media (min-width: ${breakpoints.tablet}) {
+    padding: 10px 40px;
+  }
 `;

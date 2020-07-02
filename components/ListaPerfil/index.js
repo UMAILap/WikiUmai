@@ -12,10 +12,10 @@ function ListaPerfil(props) {
         titulos
     } = props;
 
-    const ListItem = titulos.map(titulo => <ListaPerfilItem><img src={type ? './historias.png' : './discusiones.png'}></img><p>{titulo}</p></ListaPerfilItem >);
+    const ListItem = titulos.map(titulo => <ListaPerfilItem><img src={type === 'historias' ? './historias.svg' : './discusiones.svg'}></img><p>{titulo}</p></ListaPerfilItem >);
     return (
         <ListaPerfilContainer>
-            <ListaPerfilTitulo>{type ? 'Mis historias' : 'Mis discusiones'}</ListaPerfilTitulo>
+            <ListaPerfilTitulo>{type === 'historias' ? 'Mis historias' : 'Mis discusiones'}</ListaPerfilTitulo>
             {/* RECORRO ARRAYTITULOS Y CREO UN <ListaPerfilItem> POR CADA UNO */}
             {ListItem}
         </ListaPerfilContainer >

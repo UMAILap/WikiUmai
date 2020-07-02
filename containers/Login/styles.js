@@ -15,13 +15,13 @@ export const Text = styled.div`
 export const Bienvenido = styled.h1`
   color: ${leerColor(colores.rosa)};
   font-weight: bolder;
-  font-size: ${pxToRem(24)};;
+  font-size: ${pxToRem(24)};
   align-self: center;
   font-family: 'Proxima Nova';
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: ${pxToRem(30)};;
+    font-size: ${pxToRem(30)};
   }
 `;
 
@@ -84,7 +84,7 @@ export const Olvidaste = styled.a`
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: ${pxToRem(14)};;
+    font-size: ${pxToRem(14)};
   }
 `;
 
@@ -121,11 +121,11 @@ export const SolicitarCuenta = styled.button`
   text-transform: uppercase;
   font-family: 'Proxima Nova';
   font-weight: bold;
-  font-size: ${pxToRem(14)};;
+  font-size: ${pxToRem(14)};
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: ${pxToRem(16)};;
+    font-size: ${pxToRem(16)};
   }
   @media (min-width: ${breakpoints.laptop}) {
     width: 80%;
