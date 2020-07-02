@@ -31,6 +31,8 @@ import {
 
 //galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
 function PersonajesContainer() {
+  const isColorPink = true;
+
   return (
     <>
       <BannerTecnologiasHistorias>
@@ -142,7 +144,7 @@ function PersonajesContainer() {
               versions from the 1914 translation by H. Rackham.
             </p>
             <PersonajeHistorias>
-              <Titulos>Historias</Titulos>
+              <Titulos isColorPink={isColorPink}>Historias</Titulos>
               <ul>
                 <li>
                   <a href="#">Origen personaje</a>
@@ -166,7 +168,7 @@ function PersonajesContainer() {
               <BotonVioleta>+ Agregar historias</BotonVioleta>
             </PersonajeHistorias>
             <Galeria>
-              <Titulos>Galeria</Titulos>
+              <Titulos >Galeria</Titulos>
               <GaleriaImagenes>
                 <img src="./placeholder_personaje.png"></img>
                 <img src="./placeholder_personaje.png"></img>
