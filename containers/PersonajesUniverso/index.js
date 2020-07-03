@@ -16,6 +16,8 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function PersonajesUniversoContainer() {
+  const isFlex = true;
+
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -27,7 +29,7 @@ function PersonajesUniversoContainer() {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills />
+            <PlanetasPills isFlex={isFlex} multiple/>
           </PlanetasNav>
 
           <Personajes>
