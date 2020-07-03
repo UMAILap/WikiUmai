@@ -19,7 +19,7 @@ import {
   AgregarNuevas,
   PersonajesRelacionados,
   PersonajesImg,
-  VerMas,  
+  VerMas,
 } from './styles';
 import { Wrapper, Titulos, HitosTimeLine, BotonVioleta } from 'components';
 
@@ -29,26 +29,26 @@ function PlanetasContainer() {
       <PlanetasBanner>
         <Wrapper>
           <ContenedorBannerInfo>
-          <BannerInfo>
+            <BannerInfo>
               <NombrePlaneta>
                 Planeta <span>Sol</span>
               </NombrePlaneta>
-            <BajadaPlaneta>
-              Super planeta artificial de enorme tamaño con un escudo energético
-              similar a un campo de fuerza que emite luz hacia el exterior,
-              dandole la apariencia de un sol. En el habita una raza de titanes
-              con alta tecnologia que crea el campo de fuerza y tiene la
-              capacidad de hacer viajes intergalacticos. En general, la mayoria
-              de los habitantes de los mundosorbitales ignora la existencia de
-              los titanes, o piensa que es una leyenda. Desde los planetas
-              menores es imposible distinguir la superficie real del sol sin
-              instrumentos telescopicos.
-            </BajadaPlaneta>
-          </BannerInfo>
+              <BajadaPlaneta>
+                Super planeta artificial de enorme tamaño con un escudo
+                energético similar a un campo de fuerza que emite luz hacia el
+                exterior, dandole la apariencia de un sol. En el habita una raza
+                de titanes con alta tecnologia que crea el campo de fuerza y
+                tiene la capacidad de hacer viajes intergalacticos. En general,
+                la mayoria de los habitantes de los mundosorbitales ignora la
+                existencia de los titanes, o piensa que es una leyenda. Desde
+                los planetas menores es imposible distinguir la superficie real
+                del sol sin instrumentos telescopicos.
+              </BajadaPlaneta>
+            </BannerInfo>
 
-          <BannerImagen>
-              <img src="./images/slider/3.png"/>
-          </BannerImagen>
+            <BannerImagen>
+              <img src="./images/slider/3.png" />
+            </BannerImagen>
           </ContenedorBannerInfo>
         </Wrapper>
       </PlanetasBanner>

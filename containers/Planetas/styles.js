@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
-
 export const PlanetasBanner = styled.div`
   background-image: url(./banner_personajes.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
@@ -9,8 +8,7 @@ export const PlanetasBanner = styled.div`
   height: 700px;
   width: 100%;
   display: flex;
-  flex-direction:row-reverse;
-  
+  flex-direction: row-reverse;
 
   @media (min-width: ${breakpoints.notebook}) {
     background-image: none;
@@ -24,14 +22,13 @@ export const PlanetasBanner = styled.div`
 `;
 
 export const ContenedorBannerInfo = styled.div`
-    display:flex;
-    flex-direction: row-reverse;
-    flex-direction: column-reverse;
-    
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
   @media (min-width: ${breakpoints.laptop}) {
     flex-direction: row;
   }
-
 `;
 
 export const BannerInfo = styled.div`
@@ -52,7 +49,7 @@ export const NombrePlaneta = styled.h1`
   width: 100%;
   font-size: ${pxToRem(35)};
   margin-top: 30px;
-  span{
+  span {
     font-weight: 600;
   }
   margin-bottom: 30px;
@@ -77,14 +74,13 @@ export const BajadaPlaneta = styled.p`
 `;
 
 export const BannerImagen = styled.div`
-    text-align:center;
+  text-align: center;
 
-  img{
+  img {
     border-radius: 50%;
     width: 220px;
     height: 220px;
     border: 4px solid ${leerColor(colores.naranja)};
-    
   }
 
   @media (min-width: ${breakpoints.laptop}) {
@@ -92,7 +88,6 @@ export const BannerImagen = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
- 
   }
 `;
 
@@ -126,7 +121,6 @@ export const LinksHistorias = styled.address`
   cursor: pointer;
   text-decoration-line: underline;
 `;
-
 
 export const AgregarNuevas = styled.div`
   grid-template-columns: 0%;
@@ -190,8 +184,6 @@ export const PersonajesRelacionados = styled.div`
   width: 100%;
   margin-top: 5%;
 `;
-
-
 
 export const ContenedorBoton = styled.div`
   width: 100%;
