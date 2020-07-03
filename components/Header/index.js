@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 
-import { Container, ContainerHeader, ContainerSearch, Search, MenuHamburguesa, Logo, ContainerUser, Notification, User, ContainerBotones, Link } from './styles';
+import { Container, ContainerHeader, ContainerSearch, Search, MenuHamburguesa, Logo, ContainerUser, Notification, User, ContainerBotones, StyledLink } from './styles';
 import { Wrapper } from 'components';
 
 function Header() {
@@ -9,10 +10,12 @@ function Header() {
       <Wrapper>
         <ContainerHeader>
           <MenuHamburguesa>
-            <img src="./menu.svg"/>
+            <img src="/menu.svg" />
           </MenuHamburguesa>
           <Logo>
-            <img src="./logo.png" />
+            <Link href="/index">
+              <a><img src="/logo.png" /></a>
+            </Link>
           </Logo>
           <ContainerSearch>
             <input
@@ -22,16 +25,20 @@ function Header() {
             <i className="fas fa-search"></i>
           </ContainerSearch>
           <ContainerBotones>
-            <Link>Universo</Link>
-            <Link>Foro</Link>
-            <Link>Ayudas y reglas</Link>
+            <StyledLink>Universo</StyledLink>
+            <StyledLink>Foro</StyledLink>
+            <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
           <ContainerUser>
             <Search>
-              <img src="./search.png" />
+              <img src="/search.png" />
             </Search>
-            <Notification src="./notificacion-header.svg" />
-            <User src="./perfil-header.png" />
+            <Notification src="/notificacion-header.svg" />
+            <Link href="/perfil" passHref>
+              <User>
+                <img src="/perfil-header.png" />
+              </User>
+            </Link>
           </ContainerUser>
         </ContainerHeader>
       </Wrapper>

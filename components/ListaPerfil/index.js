@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import {
     ListaPerfilContainer,
@@ -6,20 +7,24 @@ import {
     ListaPerfilItem
 } from './styles';
 
-function ListaPerfil(props) {
-    const {
-        type,
-        titulos
-    } = props;
-
-    const ListItem = titulos.map(titulo => <ListaPerfilItem><img src={type === 'historias' ? './historias.svg' : './discusiones.svg'}></img><p>{titulo}</p></ListaPerfilItem >);
+function ListaPerfil({ type, titulos }) {
+    const ListItem = titulos.map(titulo => <ListaPerfilItem><img src={type === 'historias' ? '/historias.svg' : '/discusiones.svg'}></img><p>{titulo}</p></ListaPerfilItem >);
     return (
         <ListaPerfilContainer>
-            <ListaPerfilTitulo>{type === 'historias' ? 'Mis historias' : 'Mis discusiones'}</ListaPerfilTitulo>
+            <ListaPerfilTitulo>{`Mis ${type}`}</ListaPerfilTitulo>
             {/* RECORRO ARRAYTITULOS Y CREO UN <ListaPerfilItem> POR CADA UNO */}
             {ListItem}
         </ListaPerfilContainer >
     );
+}
+
+ListaPerfil.propTypes = {
+    type: PropTypes.string.isRequired,
+    titulos: PropTypes.array
+}
+
+ListaPerfil.defaultProps = {
+    titulos: []
 }
 
 export default ListaPerfil;

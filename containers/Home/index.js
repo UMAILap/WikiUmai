@@ -28,7 +28,7 @@ import {
 } from './styles';
 
 import { Wrapper, Titulos, BotonVioleta } from 'components';
-import { Link } from '../../components/Header/styles';
+/* import { Link } from '../../components/Header/styles'; */
 
 function HomeContainer() {
   var settings = {

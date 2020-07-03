@@ -84,7 +84,7 @@ export const ContainerUser = styled.div`
   }
 `;
 
-export const User = styled.img`
+export const User = styled.a`
   display: none;
   @media (min-width: ${breakpoints.mobile}) {
   }
@@ -209,7 +209,7 @@ export const ContainerBotones = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const StyledLink = styled.a`
   @media (min-width: ${breakpoints.laptop}) {
     border-radius: 20px;
     background-color: #4d1b84;
