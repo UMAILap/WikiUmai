@@ -19,3 +19,4 @@ export { default as CardUniverso } from './CardUniverso';
 export { default as PlanetasPills } from './PlanetasPills';
 export { default as MiPerfil } from './MiPerfil';
 export { default as ListaPerfil } from './ListaPerfil';
+export { default as Personajes } from './Personajes';

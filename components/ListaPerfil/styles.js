@@ -2,22 +2,16 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const ListaPerfilContainer = styled.div`
-  padding-top: 50px;
-  width: 40%;
-  margin-bottom: 150px;
+  padding: 1em 1em 0 0;
+  width: 50%;
+
   @media(max-width: ${breakpoints.laptop}){
     width: 100%;
+    padding-top: 20px;
   }
-`;
-
-export const ListaPerfilTitulo = styled.h1`
-  font-family: 'Raleway';
-  font-weight: bold;
-  color: ${leerColor(colores.violeta)};
-  font-size: 35px;
-  padding-bottom: 40px;
-  @media(max-width: ${breakpoints.laptop}){
-    font-size: 24px;
+  h1{
+    margin-bottom: 1em;
+    padding: 0;
   }
 `;
 

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import {
     MiPerfilContainer,
-    MiPerfilTitulo,
     MiPerfilFlexContainer,
     MiPerfilImagen,
     Foto,
@@ -11,30 +10,41 @@ import {
     MiPerfilNombre,
     MiPerfilUsuario,
     MiPerfilEmail,
+    MiPerfilInputBoton,
     DivInput,
-    Edit
+    Edit,
+    MiPerfilCuentaBotones
 } from './styles';
 
-import { BotonVioleta } from 'components';
+import { BotonVioleta, Titulos } from 'components';
 
 function MiPerfil() {
     return (
         <MiPerfilContainer>
-            <MiPerfilTitulo>Mi perfil</MiPerfilTitulo>
+            <Titulos>Mi perfil</Titulos>
             <MiPerfilFlexContainer>
                 <MiPerfilImagen>
                     <Foto><img src="./cara.png"></img></Foto>
-                    <BtnEditarFoto>Editar Foto</BtnEditarFoto>
+                    <BotonVioleta>Editar Foto</BotonVioleta>
+                    {/* <BtnEditarFoto>Editar Foto</BtnEditarFoto> */}
                 </MiPerfilImagen>
                 <MiPerfilInputs>
                     {Input("Nombre real")}
                     {/* <input type="text" placeholder="Nombre real" /> */}
                     {Input("Usuario")}
                     {/* <input type="text" placeholder="Usuario" /> */}
+
                 </MiPerfilInputs>
+                <MiPerfilInputBoton>
+                    {Input("Email")}
+                    <MiPerfilCuentaBotones>
+                        <BotonVioleta>Cambiar contraseña</BotonVioleta>
+                        <BotonVioleta>Eliminar cuenta</BotonVioleta>
+                    </MiPerfilCuentaBotones>
+                </MiPerfilInputBoton>
             </MiPerfilFlexContainer>
 
-            {Input("Email")}
+
             {/* <input type="email" placeholder="Email" /> */}
 
             {/* IMG E INPUTS */}

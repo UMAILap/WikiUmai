@@ -1,30 +1,29 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import { Titulos } from 'components';
 import {
     ListaPerfilContainer,
-    ListaPerfilTitulo,
     ListaPerfilItem
 } from './styles';
 
-function ListaPerfil({ type, titulos }) {
-    const ListItem = titulos.map(titulo => <ListaPerfilItem><img src={type === 'historias' ? '/historias.svg' : '/discusiones.svg'}></img><p>{titulo}</p></ListaPerfilItem >);
+function ListaPerfil({ contribuciones }) {
+    //Contribuciones es un array con objetos que guardan tipo y titulo de cada contribución
+    const ListItem = contribuciones.map(contribucion => <ListaPerfilItem><img src={contribucion.tipo === 'historia' ? '/historias.svg' : '/discusiones.svg'}></img><p>{contribucion.titulo}</p></ListaPerfilItem >);
     return (
         <ListaPerfilContainer>
-            <ListaPerfilTitulo>{`Mis ${type}`}</ListaPerfilTitulo>
-            {/* RECORRO ARRAYTITULOS Y CREO UN <ListaPerfilItem> POR CADA UNO */}
+            <Titulos>Mis contribuciones</Titulos>
+            {/* RECORRO ARRAYCONTRIBUCIONES Y CREO UN <ListaPerfilItem> POR CADA UNA */}
             {ListItem}
         </ListaPerfilContainer >
     );
 }
 
 ListaPerfil.propTypes = {
-    type: PropTypes.string.isRequired,
-    titulos: PropTypes.array
+    contribuciones: PropTypes.array
 }
 
 ListaPerfil.defaultProps = {
-    titulos: []
+    contribuciones: []
 }
 
 export default ListaPerfil;
