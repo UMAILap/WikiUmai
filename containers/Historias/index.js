@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   ContainerMain,
@@ -53,27 +54,33 @@ function HistoriasContainer() {
             <ArticuloData>
               <Titulos>Aparecen en esta historia</Titulos>
               <Relacionados>
-                <CardUniverso>
-                  <img src="./images/slider/2.png" />
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>Nima</span>
-                  </div>
-                </CardUniverso>
-                <CardUniverso>
-                  <img src="./images/slider/2.png" />
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>Wereld</span>
-                  </div>
-                </CardUniverso>
-                <CardUniverso>
-                  <img src="./images/slider/2.png" />
-                  <div>
-                    <h5>Personaje</h5>
-                    <span>Guardián Zoro</span>
-                  </div>
-                </CardUniverso>
+                <Link href='/planeta/nima' passHref>
+                  <CardUniverso>
+                    <img src="./images/slider/2.png" />
+                    <div>
+                      <h5>Planeta</h5>
+                      <span>Nima</span>
+                    </div>
+                  </CardUniverso>
+                </Link>
+                <Link href='/planeta/wereld' passHref>
+                  <CardUniverso>
+                    <img src="./images/slider/2.png" />
+                    <div>
+                      <h5>Planeta</h5>
+                      <span>Wereld</span>
+                    </div>
+                  </CardUniverso>
+                </Link>
+                <Link href='/personaje' passHref>
+                  <CardUniverso>
+                    <img src="./images/slider/2.png" />
+                    <div>
+                      <h5>Personaje</h5>
+                      <span>Guardián Zoro</span>
+                    </div>
+                  </CardUniverso>
+                </Link>
               </Relacionados>
             </ArticuloData>
 

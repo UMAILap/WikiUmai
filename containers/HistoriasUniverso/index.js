@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   ContainerMain,
@@ -30,119 +31,126 @@ function HistoriasUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
-
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
-
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
-
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
-
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
-
-            <PersonajeFicha>
-              <PersonajeInfo>
-                <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin...
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
+            <Link href='/historias' passHref>
+              <PersonajeFicha>
+                <PersonajeInfo>
+                  <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin...
                 </p>
 
-                <PersonajeCaracteristica>
-                  <PersonajePlaneta>
-                    <img src="./images/icons/planet.svg" />
-                    <h6>Ikigai</h6>
-                  </PersonajePlaneta>
-                </PersonajeCaracteristica>
-              </PersonajeInfo>
-            </PersonajeFicha>
+                  <PersonajeCaracteristica>
+                    <PersonajePlaneta>
+                      <img src="./images/icons/planet.svg" />
+                      <h6>Ikigai</h6>
+                    </PersonajePlaneta>
+                  </PersonajeCaracteristica>
+                </PersonajeInfo>
+              </PersonajeFicha>
+            </Link>
           </Personajes>
         </Container>
       </Wrapper>

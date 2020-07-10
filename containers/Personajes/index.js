@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   CaracteristicasPuntos,
@@ -116,7 +117,7 @@ function PersonajesContainer() {
             <InventarioPersonaje>
               <h5>Inventario</h5>
               <Objetos>
-                <span>Cuchillo Ejercito Wereld</span>
+                <Link href='/tecnologias' passHref><span>Cuchillo Ejercito Wereld</span></Link>
                 <span>Reloj</span>
               </Objetos>
             </InventarioPersonaje>
@@ -147,27 +148,29 @@ function PersonajesContainer() {
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
               <ul>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
                 <li>
-                  <a href="#">Origen personaje</a>
+                  <Link href="/historias" passHref>Origen personaje</Link>
                 </li>
               </ul>
-              <BotonVioleta isColorPink={isColorPink}>
-                + Agregar historias
+              <Link href='/crear-historia' passHref>
+                <BotonVioleta isColorPink={isColorPink}>
+                  + Agregar historias
               </BotonVioleta>
+              </Link>
             </PersonajeHistorias>
             <Galeria>
               <Titulos>Galeria</Titulos>

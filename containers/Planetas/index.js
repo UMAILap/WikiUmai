@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   PlanetasBanner,
@@ -47,7 +48,7 @@ function PlanetasContainer() {
             </BannerInfo>
 
             <BannerImagen>
-              <img src="./images/slider/3.png" />
+              <img src="/images/slider/3.png" />
             </BannerImagen>
           </ContenedorBannerInfo>
         </Wrapper>
@@ -66,28 +67,36 @@ function PlanetasContainer() {
           <Historias>
             <Titulos>Historias</Titulos>
             <SeccionLinks>
-              <LinksHistorias>Origen del personaje</LinksHistorias>
-              <LinksHistorias>
-                Pelea entre mundos: la guerra por el poder
+              <Link href='/historias' passHref>
+                <LinksHistorias>Origen del personaje</LinksHistorias>
+              </Link>
+              <Link href='/historias' passHref>
+                <LinksHistorias>
+                  Pelea entre mundos: la guerra por el poder
               </LinksHistorias>
-              <LinksHistorias>Prisionero de guerra: el escape</LinksHistorias>
+              </Link>
+              <Link href='/historias' passHref>
+                <LinksHistorias>Prisionero de guerra: el escape</LinksHistorias>
+              </Link>
             </SeccionLinks>
             <ContenedorBoton>
-              <BotonVioleta>+ Agregar historia</BotonVioleta>
+              <Link href='historias-universo' passHref>
+                <BotonVioleta>+ Agregar historia</BotonVioleta>
+              </Link>
             </ContenedorBoton>
           </Historias>
 
           <Personajes>
             <Titulos>Personajes</Titulos>
             <PersonajesRelacionados>
-              <PersonajesImg src="./images/planetas/1.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/2.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/3.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/1.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/2.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/3.png"></PersonajesImg>
-              <PersonajesImg src="./images/planetas/4.png"></PersonajesImg>
-              <VerMas src="./images/planetas/5.png"></VerMas>
+              <PersonajesImg src="/images/planetas/1.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/2.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/3.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/1.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/2.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/3.png"></PersonajesImg>
+              <PersonajesImg src="/images/planetas/4.png"></PersonajesImg>
+              <VerMas src="/images/planetas/5.png"></VerMas>
             </PersonajesRelacionados>
             <ContenedorBoton>
               <BotonVioleta>+ Agregar personaje</BotonVioleta>
@@ -97,22 +106,34 @@ function PlanetasContainer() {
           <Articulos>
             <Titulos>Articulos externos relacionados</Titulos>
             <SeccionLinks>
-              <LinksHistorias>
-                La historia del otro planeta que se relaciona con este
-              </LinksHistorias>
-              <LinksHistorias>
-                Este personaje que fue a este planeta
-              </LinksHistorias>
-              <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
+              <Link href='/historias' passHref>
+                <LinksHistorias>
+                  La historia del otro planeta que se relaciona con este
+                </LinksHistorias>
+              </Link>
+              <Link href='/personaje' passHref>
+                <LinksHistorias>
+                  Este personaje que fue a este planeta
+                </LinksHistorias>
+              </Link>
+              <Link href='/tecnologias' passHref>
+                <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
+              </Link>
             </SeccionLinks>
           </Articulos>
 
           <Objetos>
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
-              <LinksHistorias>Ajayu</LinksHistorias>
-              <LinksHistorias>Kakuru</LinksHistorias>
-              <LinksHistorias>Pepiru</LinksHistorias>
+              <Link href='/tecnologias' passHref>
+                <LinksHistorias>Ajayu</LinksHistorias>
+              </Link>
+              <Link href='/tecnologias' passHref>
+                <LinksHistorias>Kakuru</LinksHistorias>
+              </Link>
+              <Link href='/tecnologias' passHref>
+                <LinksHistorias>Pepiru</LinksHistorias>
+              </Link>
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta>+ Agregar objetos</BotonVioleta>
