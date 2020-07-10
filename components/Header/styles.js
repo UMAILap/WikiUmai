@@ -222,4 +222,13 @@ export const StyledLink = styled.a`
     padding: 12px 30px;
     margin: 2%;
   }
+  .dropdown ul li{
+    display:block;
+    padding: 40px 15px;
+
+  } 
+  
+  .dropup{
+    display:none;
+  }
 `;

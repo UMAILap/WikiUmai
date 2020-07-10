@@ -41,7 +41,7 @@ function PasoTres() {
       },
     });*/
     if (_.find(valuesArray, objeto => objeto.value === value)) {
-      //fin busca un objeto dentro de values array que tenga el valor value si encuentra lo marca como error sino no
+      //find busca un objeto dentro de values array que tenga el valor value si encuentra lo marca como error sino no
       setUsedValues({
         ...usedValues,
         inputErrors: {

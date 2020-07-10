@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Container, ContainerHeader, ContainerSearch, Search, MenuHamburguesa, Logo, ContainerUser, Notification, User, ContainerBotones, StyledLink } from './styles';
 import { Wrapper } from 'components';
 
 function Header() {
+  // var down = false;
+
+  // function handleClickMenu() {
+    
+  //   console.log("universo");
+  //   if(down = true){       
+  //      console.log(down);
+  //      down = false;
+  //   }
+  //}
+  const [open, setOpen] = useState(false);
+
+  
   return (
     <Container>
       <Wrapper>
@@ -25,7 +38,17 @@ function Header() {
             <i className="fas fa-search"></i>
           </ContainerSearch>
           <ContainerBotones>
-            <StyledLink>Universo</StyledLink>
+            <StyledLink                        
+              onClick={() => setOpen(!open)}>                    
+              Universo
+              <ul 
+              className={open? 'dropdown' : 'dropup'}>
+                <li>Personajes</li>
+                <li>Tecnologias</li>
+                <li>Historias</li>
+              </ul>
+            </StyledLink>
+              
             <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
