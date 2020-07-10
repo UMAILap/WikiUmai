@@ -147,11 +147,12 @@ export const ContainerSlider = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled.a`
   background-color: ${leerColor(colores.gris)};
   border-radius: 10px;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 3%;
 
@@ -228,7 +229,7 @@ export const GrillaSeccionActualizaciones = styled.div`
   }
 `;
 
-export const ActualizacionesAlumnos = styled.div`
+export const ActualizacionesAlumnos = styled.a`
   flex-direction: column;
   display: flex;
   border-radius: 15px;

@@ -27,12 +27,12 @@ export const Titulo = styled.h1`
 `;
 
 export const WrapperCreaciones = styled.div`
-width: 100%;
-display: flex;
-justify-content: flex-start;
-@media(max-width: ${breakpoints.laptop}){
   width: 100%;
-  padding-top: 20px;
-  flex-direction: column;
-}
+  display: flex;
+  justify-content: flex-start;
+  @media (max-width: ${breakpoints.laptop}) {
+    width: 100%;
+    padding-top: 20px;
+    flex-direction: column;
+  }
 `;

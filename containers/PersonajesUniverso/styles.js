@@ -47,7 +47,7 @@ export const Personajes = styled.div`
   grid-row-gap: 80px;
 `;
 
-export const PersonajeFicha = styled.div`
+export const PersonajeFicha = styled.a`
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;

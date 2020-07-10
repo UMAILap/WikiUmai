@@ -5,26 +5,22 @@ export const MiPerfilContainer = styled.div`
   padding-top: 50px;
   width: 100%;
   padding-bottom: 40px;
-  @media(max-width: ${breakpoints.laptop}){
+  @media (max-width: ${breakpoints.laptop}) {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 0;
   }
-  h1{
+  h1 {
     margin-bottom: 1em;
   }
-
 `;
-
-
 
 export const MiPerfilFlexContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  @media(max-width: ${breakpoints.laptop}){
+  @media (max-width: ${breakpoints.laptop}) {
     flex-direction: column;
-
   }
 `;
 
@@ -36,30 +32,28 @@ export const MiPerfilImagen = styled.div`
   align-self: center;
   margin-right: 2em;
   margin-bottom: 1em;
-  @media(max-width: ${breakpoints.laptop}){
+  @media (max-width: ${breakpoints.laptop}) {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
     align-items: center;
     margin-bottom: 0;
     margin-right: 0;
-
   }
   /* BotonEditarFoto */
-  a{
-  width: fit-content;
-  margin: 0 auto;
-  border: 1px solid ${leerColor(colores.rosa)};
-  background-color: ${leerColor(colores.blanco)};
-  color: ${leerColor(colores.rosa)};
-  font-size: 0.6em;
-  font-weight: 600;
-  padding: 0.7em 1em 0.7em 1em;
-  @media(max-width: ${breakpoints.laptop}){
-    height: fit-content;
-    margin: 0;
-
-  }
+  a {
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid ${leerColor(colores.rosa)};
+    background-color: ${leerColor(colores.blanco)};
+    color: ${leerColor(colores.rosa)};
+    font-size: 0.6em;
+    font-weight: 600;
+    padding: 0.7em 1em 0.7em 1em;
+    @media (max-width: ${breakpoints.laptop}) {
+      height: fit-content;
+      margin: 0;
+    }
   }
 `;
 export const Foto = styled.figure`
@@ -67,20 +61,19 @@ export const Foto = styled.figure`
   height: 100px;
   border-radius: 50%;
   border: 2px solid ${leerColor(colores.rosa)};
-  overflow:hidden;
+  overflow: hidden;
   margin: 0 auto 1em auto;
-  img{
+  img {
     width: 100%;
     height: 100%;
   }
-  @media(max-width: ${breakpoints.laptop}){
-    display:flex;
+  @media (max-width: ${breakpoints.laptop}) {
+    display: flex;
     width: 20%;
     height: auto;
     border: 2px solid ${leerColor(colores.rosa)};
     margin: 0 1em 0 0;
-    img{
-
+    img {
       width: 100%;
       height: 100%;
     }
@@ -97,24 +90,24 @@ export const BtnEditarFoto = styled.button`
   font-size: 0.6em;
   font-weight: 600;
   padding: 0.7em 1em 0.7em 1em;
-  @media(max-width: ${breakpoints.laptop}){
+  @media (max-width: ${breakpoints.laptop}) {
     height: fit-content;
   }
 `;
 
 export const MiPerfilInputs = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between !important;
-width: 35%;
-height: 150px;
-margin: 1em 0 0 2em;
-@media(max-width: ${breakpoints.laptop}){
-  justify-content: flex-start;
-  width: 100%;
-  margin: 2em 0 0 0;
-  height: auto;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  width: 35%;
+  height: 150px;
+  margin: 1em 0 0 2em;
+  @media (max-width: ${breakpoints.laptop}) {
+    justify-content: flex-start;
+    width: 100%;
+    margin: 2em 0 0 0;
+    height: auto;
+  }
 `;
 
 export const DivInput = styled.div`
@@ -148,35 +141,35 @@ export const MiPerfilInputBoton = styled.div`
   width: 40%;
   margin-left: 5em;
   display: flex;
-flex-direction: column;
-justify-content: space-between !important;
-height: 150px;
-margin-top: 1em;
-a{
-  width: fit-content;
-}
-@media(max-width: ${breakpoints.laptop}){
-  width: 100%;
-  margin: 0;
-  height: auto;
-}
+  flex-direction: column;
+  justify-content: space-between !important;
+  height: 150px;
+  margin-top: 1em;
+  a {
+    width: fit-content;
+  }
+  @media (max-width: ${breakpoints.laptop}) {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
 `;
 
 export const MiPerfilCuentaBotones = styled.div`
-display: flex;
-justify-content: flex-start;
-a{
-  font-size: 12px !important;
-}
-a:last-child{
-  background-color: ${leerColor(colores.blanco)};
-  color: ${leerColor(colores.violeta)};
-}
+  display: flex;
+  justify-content: flex-start;
+  a {
+    font-size: 12px !important;
+  }
+  a:last-child {
+    background-color: ${leerColor(colores.blanco)};
+    color: ${leerColor(colores.violeta)};
+  }
 `;
 
 export const Edit = styled.img`
-width: 1em;
-margin-bottom: 1em;
+  width: 1em;
+  margin-bottom: 1em;
 `;
 
 /* export const MiPerfilEmail = styled.div`
