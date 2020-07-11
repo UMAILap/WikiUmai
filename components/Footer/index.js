@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
-import {Container, Texto, ContainerFooter, Imagenes} from './styles';
+import { Container, Texto, ContainerFooter, Imagenes } from './styles';
 import { Wrapper } from 'components';
 
 function Footer(isHome) {

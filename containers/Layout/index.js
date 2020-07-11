@@ -8,8 +8,8 @@ function Layout({ children, isHome }) {
   return (
     <ContainerBody>
       <Header />
-        {children}
-      <Footer isHome={isHome}/>
+      {children}
+      <Footer isHome={isHome} />
     </ContainerBody>
   );
 }

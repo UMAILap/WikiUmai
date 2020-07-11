@@ -49,14 +49,14 @@ function Header() {
               name="search"
               placeholder="Buscar contenido"></input>
             <i className="fas fa-search"></i>
-          </ContainerSearch>          
-            <ContainerBotones >
-            <ul onClick={() => setOpen(!open)} >
-              Universo   
-                <li className={open ? 'dropdown' : 'dropup'}>Personajes</li>
-                <li className={open ? 'dropdown' : 'dropup'}>Tecnologias</li>
-                <li className={open ? 'dropdown' : 'dropup'}>Historias</li>
-            </ul>            
+          </ContainerSearch>
+          <ContainerBotones>
+            <ul onClick={() => setOpen(!open)}>
+              Universo
+              <li className={open ? 'dropdown' : 'dropup'}>Personajes</li>
+              <li className={open ? 'dropdown' : 'dropup'}>Tecnologias</li>
+              <li className={open ? 'dropdown' : 'dropup'}>Historias</li>
+            </ul>
             <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>

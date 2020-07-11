@@ -28,17 +28,17 @@ export const VioletaBoton = styled.a`
   ${props =>
     props.isBotonRosa &&
     css`
-    width: fit-content;
-    margin: 0 auto;
-    border: 1px solid ${leerColor(colores.rosa)};
-    background-color: ${leerColor(colores.blanco)};
-    color: ${leerColor(colores.rosa)};
-    font-size: 0.6em;
-    font-weight: 600;
-    padding: 0.7em 1em 0.7em 1em;
-    @media (max-width: ${breakpoints.laptop}) {
-      height: fit-content;
-      margin: 0;
-    }
+      width: fit-content;
+      margin: 0 auto;
+      border: 1px solid ${leerColor(colores.rosa)};
+      background-color: ${leerColor(colores.blanco)};
+      color: ${leerColor(colores.rosa)};
+      font-size: 0.6em;
+      font-weight: 600;
+      padding: 0.7em 1em 0.7em 1em;
+      @media (max-width: ${breakpoints.laptop}) {
+        height: fit-content;
+        margin: 0;
+      }
     `}
 `;

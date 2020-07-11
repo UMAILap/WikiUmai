@@ -97,37 +97,37 @@ function HomeContainer() {
 
           <ContainerSlider>
             <Slider {...settings}>
-              <Link href='/planeta/sol' passHref>
+              <Link href="/planeta/sol" passHref>
                 <Card>
                   <CardImg src="./images/slider/1.png"></CardImg>
                   <TituloCard>Sol</TituloCard>
                 </Card>
               </Link>
-              <Link href='/planeta/nima' passHref>
+              <Link href="/planeta/nima" passHref>
                 <Card>
                   <CardImg src="./images/slider/2.png"></CardImg>
                   <TituloCard>Nima</TituloCard>
                 </Card>
               </Link>
-              <Link href='/planeta/wereld' passHref>
+              <Link href="/planeta/wereld" passHref>
                 <Card>
                   <CardImg src="./images/slider/3.png"></CardImg>
                   <TituloCard>Wereld</TituloCard>
                 </Card>
               </Link>
-              <Link href='/planeta/adhera' passHref>
+              <Link href="/planeta/adhera" passHref>
                 <Card>
                   <CardImg src="./images/slider/4.png"></CardImg>
                   <TituloCard>Adhera</TituloCard>
                 </Card>
               </Link>
-              <Link href='/planeta/ikigai' passHref>
+              <Link href="/planeta/ikigai" passHref>
                 <Card>
                   <CardImg src="./images/slider/5.png"></CardImg>
                   <TituloCard>Ikigai</TituloCard>
                 </Card>
               </Link>
-              <Link href='/planeta/zoro' passHref>
+              <Link href="/planeta/zoro" passHref>
                 <Card>
                   <CardImg src="./images/slider/6.png"></CardImg>
                   <TituloCard>Zoro</TituloCard>
@@ -147,7 +147,7 @@ function HomeContainer() {
             </ParteSuperior>
 
             <GrillaSeccionActualizaciones>
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -156,7 +156,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -169,11 +169,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -182,7 +182,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -195,11 +195,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -208,7 +208,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -221,11 +221,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -234,7 +234,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -247,11 +247,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -260,7 +260,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -273,11 +273,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -286,7 +286,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -299,11 +299,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -312,7 +312,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -325,11 +325,11 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -338,7 +338,7 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
-                  </EdicionActualizacionesTitulo>
+                    </EdicionActualizacionesTitulo>
                   </Contenidos>
 
                   <Contenidos>
@@ -351,7 +351,7 @@ function HomeContainer() {
 
                   <TituloOverlay>
                     Título de encabezado de lo que sea
-                </TituloOverlay>
+                  </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
             </GrillaSeccionActualizaciones>

@@ -27,12 +27,18 @@ Recordá importarlo en la página que lo utilices.
 **MiPerfil:** Son los datos de la cuenta, foto, nombre, usuario, mail y botones de acción para cambiarlos.
 **PasosPersonaje**: Carpeta con subcarpetas de los distintos pasos de creación de personaje.
 **PlanetasPills:** Listado de planetas con PROPS. Está en la página 'CrearPersonaje', 'Personajes del Universo', 'Historias del Universo', 'Tecnologías del
-Universo'. Puede ser grid o flex. **PONER PROPS**
+Universo'. Puede ser grid o flex. 
+**PONER PROPS** los componentes que pasan el valor isFlex luego por estilos se les asigna ese valor, si no le llega el valor isFlex entonces por defecto quedara grid. esto se aplican en el componente especifico, por ejemplo en el container PersonajesUniverso se declara al principio   const isFlex = true;
+y luego se le pasa isFlex={isFlex} al componente PlanetasPills.
 
 
-**BotonVioleta:** Botón que se usa en el 90% de la plataforma. PONER PROPS
+**BotonVioleta:** Botón que se usa en el 90% de la plataforma. **PONER PROPS** el boton funciona exatamente como las pils y  recibe dos props dinstintas:
+isColorPink es para los botones que llevan el relleno rosa.
+isBotonRosa: es para los que llevar borde rosa pero no relleno.
+se encuentra en el container personaje.
 **SubtitulosVioleta:**
-**Titulos:** Titulos violetas genéricos que se repiten en todas las páginas. PONER PROPS
+**Titulos:** Titulos violetas genéricos que se repiten en todas las páginas. funciona exatamente como las pils y  recibe las props isColorPink, la cual cambia el color del texto, se ve aplicado en el container personajes.
+**paso 3 inputs** en este paso se utilizan las props, donde las guardamos en un array llamado valuas array, para los numeros e inputErrors para poder aplicar los estilos de los errores. luego usamos la extension lodash para manejar el borrado y la busqueda de elementos.
 
 **index.js: En este archivo, siempre se deben exportar los componentes creados.**
 

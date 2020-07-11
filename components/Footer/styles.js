@@ -8,7 +8,8 @@ export const Container = styled.footer`
   font-family: 'Proxima Nova';
   align-self: flex-end;
   /*background-color: ${leerColor(colores.blanco)};*/
-  background-color: ${props => (props.isHome ? 'rgb(255,255,255)' : 'rgb(236, 236, 236)')};
+  background-color: ${props =>
+    props.isHome ? 'rgb(255,255,255)' : 'rgb(236, 236, 236)'};
 
 
   @media (min-width: ${breakpoints.tablet}) {
