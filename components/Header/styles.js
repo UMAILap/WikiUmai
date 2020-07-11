@@ -207,6 +207,46 @@ export const ContainerBotones = styled.div`
     display: flex;
     justify-content: start;
   }
+  ul{
+    @media (min-width: ${breakpoints.laptop}) {
+    max-height:35px;
+    border-radius: 20px;
+    background-color: #4d1b84;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 12px;
+    margin: 2%;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    padding: 12px 30px;
+    margin: 2%;
+  }
+  }
+  ul li {
+    padding: 0;
+    margin:22% 0;
+    background-color: ${leerColor(colores.violeta)};
+
+  }
+  .dropdown  {
+    display: block;
+    border-radius: 20px;
+    background-color: ${leerColor(colores.violeta)};
+    color: #fff;
+    font-size: 12px;
+  }
+  .dropdown ul  {
+    padding: 40px 15px;
+    margin:20px;
+  }
+  .dropdown ul li {
+    padding: 40px 15px;
+    margin:20px;
+  }
+
+  .dropup {
+    display: none;
+  }
 `;
 
 export const StyledLink = styled.a`
@@ -222,13 +262,5 @@ export const StyledLink = styled.a`
     padding: 12px 30px;
     margin: 2%;
   }
-  .dropdown ul li{
-    display:block;
-    padding: 40px 15px;
-
-  } 
   
-  .dropup{
-    display:none;
-  }
 `;

@@ -7,7 +7,9 @@ export const Container = styled.footer`
   max-height: 100px;
   font-family: 'Proxima Nova';
   align-self: flex-end;
-  background-color: ${leerColor(colores.blanco)};
+  /*background-color: ${leerColor(colores.blanco)};*/
+  background-color: ${props => (props.isHome ? 'rgb(255,255,255)' : 'rgb(236, 236, 236)')};
+
 
   @media (min-width: ${breakpoints.tablet}) {
     padding-top: 10px;

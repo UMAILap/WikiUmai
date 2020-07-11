@@ -7,24 +7,21 @@ function PlanetasPills({ isFlex, multiple }) {
 
   function handleClickPlaneta(planet_name) {
     const CopieSelectedPlanet = selectedPlanet;
-    if (multiple ) {            
+    if (multiple) {
       setSelectedPlanet([...selectedPlanet, planet_name]);
       return;
-    }   
+    }
     setSelectedPlanet(planet_name);
-    
   }
   function handleColorPlaneta(nombrePlaneta) {
-    
     if (multiple) {
       return _.includes(selectedPlanet, nombrePlaneta);
     }
-    return selectedPlanet === nombrePlaneta; 
-   
+    return selectedPlanet === nombrePlaneta;
   }
-  
+
   if (_.find(multiple, objeto => objeto.nombrePlaneta === nombrePlaneta)) {
-    console.log("borrar");
+    console.log('borrar');
   }
   return (
     <Planetas isFlex={isFlex}>

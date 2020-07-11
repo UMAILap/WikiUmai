@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 import {Container, Texto, ContainerFooter, Imagenes} from './styles';
 import { Wrapper } from 'components';
 
-function Footer() {
+function Footer(isHome) {
   return (
-    <Container>
+    <Container isHome={isHome}>
       <Wrapper>
         <ContainerFooter>
           <Texto>

@@ -19,6 +19,8 @@ import {
 import { BotonVioleta, Titulos } from 'components';
 
 function MiPerfil() {
+  const isBotonRosa = true;
+
   return (
     <MiPerfilContainer>
       <Titulos>Mi perfil</Titulos>
@@ -27,7 +29,7 @@ function MiPerfil() {
           <Foto>
             <img src="./cara.png"></img>
           </Foto>
-          <BotonVioleta>Editar Foto</BotonVioleta>
+          <BotonVioleta isBotonRosa={isBotonRosa}>Editar Foto</BotonVioleta>
           {/* <BtnEditarFoto>Editar Foto</BtnEditarFoto> */}
         </MiPerfilImagen>
         <MiPerfilInputs>

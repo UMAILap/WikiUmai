@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import { Header, Footer } from 'components';
 import { ContainerBody } from './styles';
 
-function Layout({ children }) {
+function Layout({ children, isHome }) {
   return (
     <ContainerBody>
       <Header />
         {children}
-      <Footer />
+      <Footer isHome={isHome}/>
     </ContainerBody>
   );
 }
