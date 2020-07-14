@@ -30,8 +30,13 @@ export const MiPerfilImagen = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-self: center;
-  margin-right: 2em;
+  /* margin-right: 2em; */
   margin-bottom: 1em;
+  a{
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    font-size: 14px !important;
+  }
   @media (max-width: ${breakpoints.laptop}) {
     flex-direction: row;
     justify-content: flex-start;
@@ -39,11 +44,14 @@ export const MiPerfilImagen = styled.div`
     align-items: center;
     margin-bottom: 0;
     margin-right: 0;
+    a{
+      margin: 0;
+    }
   }
 `;
 export const Foto = styled.figure`
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   border: 2px solid ${leerColor(colores.rosa)};
   overflow: hidden;
