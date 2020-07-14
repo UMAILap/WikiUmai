@@ -18,7 +18,7 @@ export const Planeta = styled.span`
   cursor: pointer;
   color: ${leerColor(colores.violeta)};
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 0;
   border-radius: 7px;
   font-family: 'Raleway';
   font-weight: bold;
@@ -32,4 +32,7 @@ export const Planeta = styled.span`
       padding: 10px 20px;
       width: auto;
     `}
+  @media (min-width: ${breakpoints.tablet}){
+    padding: 10px 40px;
+  }
 `;

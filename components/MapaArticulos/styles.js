@@ -6,6 +6,7 @@ export const Articulos = styled.div`
   padding-left: 10px;
   margin-top: 60px;
   height: fit-content;
+  display: none;
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
@@ -15,6 +16,7 @@ export const Articulos = styled.div`
   @media (min-width: ${breakpoints.laptop}) {
   }
   @media (min-width: ${breakpoints.laptopL}) {
+    display: block;
   }
 `;
 export const MapaTitulo = styled.h3`

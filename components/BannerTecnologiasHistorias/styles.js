@@ -6,7 +6,7 @@ export const Banner = styled.div`
   width: 100%;
   background-image: url(./images/bannerTecnologias.svg);
   background-repeat: no-repeat;
-  height: 415px;
+  height: 500px;
   background-position: center;
   background-size: auto 100%;
   background-color: ${leerColor(colores.violetaOscuro)};
@@ -15,6 +15,7 @@ export const Banner = styled.div`
   @media (min-width: ${breakpoints.mobileGrande}) {
   }
   @media (min-width: ${breakpoints.tablet}) {
+    height: 415px;
   }
   @media (min-width: ${breakpoints.laptop}) {
   }

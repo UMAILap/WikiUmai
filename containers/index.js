@@ -13,3 +13,4 @@ export { default as Historias } from './Historias';
 export { default as PersonajesUniverso } from './PersonajesUniverso';
 export { default as Perfil } from './Perfil';
 export { default as HistoriasUniverso } from './HistoriasUniverso';
+export { default as CrearHistoria } from './CrearHistoria'; 
