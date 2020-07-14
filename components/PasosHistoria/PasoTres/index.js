@@ -8,7 +8,10 @@ function PasoTres({ colorFondo }) {
     <PasoContainer>
       <PasoTitulo>Sinopsis *</PasoTitulo>
       <Sinopsis>
-        <textarea type="text" placeholder="Escribí una pequeña descripción de tu historia" />
+        <textarea
+          type="text"
+          placeholder="Escribí una pequeña descripción de tu historia"
+        />
       </Sinopsis>
     </PasoContainer>
   );

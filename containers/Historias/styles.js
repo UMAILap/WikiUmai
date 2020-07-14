@@ -24,7 +24,7 @@ export const Historia = styled.div`
   @media (min-width: ${breakpoints.laptopL}) {
     width: 50%;
   }
-  @media (min-width: ${breakpoints.notebook}){
+  @media (min-width: ${breakpoints.notebook}) {
     width: 40%;
   }
 `;
@@ -37,7 +37,7 @@ export const HistoriaNombre = styled.div`
   }
   @media (min-width: ${breakpoints.mobile}) {
   }
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     display: flex;
   }
   @media (min-width: ${breakpoints.laptop}) {
@@ -50,7 +50,7 @@ export const Nombres = styled.div`
   flex-direction: column;
   width: fit-content;
   justify-content: space-around;
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     margin-left: 30px;
   }
 `;
@@ -66,7 +66,7 @@ export const Titulo = styled.h1`
   font-family: 'Raleway';
   font-weight: bold;
   color: ${leerColor(colores.naranja)};
-  @media (min-width: ${breakpoints.tablet}){
+  @media (min-width: ${breakpoints.tablet}) {
     font-size: ${pxToRem(38)};
   }
 `;
