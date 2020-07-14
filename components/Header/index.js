@@ -51,12 +51,24 @@ function Header() {
             <i className="fas fa-search"></i>
           </ContainerSearch>
           <ContainerBotones>
-            <ul onClick={() => setOpen(!open)}>
-              Universo
-              <li className={open ? 'dropdown' : 'dropup'}>Personajes</li>
-              <li className={open ? 'dropdown' : 'dropup'}>Tecnologias</li>
-              <li className={open ? 'dropdown' : 'dropup'}>Historias</li>
+          <ul>
+            <li  onClick={() => setOpen(!open)}>
+              <StyledLink>Dropdown</StyledLink>
+              <div className={open ? 'dropdown' : 'dropup'}>
+                <StyledLink href="#">Personajes</StyledLink>
+                <StyledLink href="#">Tecnologias</StyledLink>
+                <StyledLink href="#">Historias</StyledLink>
+              </div>
+            </li>
+          </ul>
+            {/* <div>
+            <StyledLink onClick={() => setOpen(!open)}>Universo</StyledLink>
+            <ul className={open ? 'dropdown' : 'dropup'}>
+              <StyledLink className={open ? 'dropdown' : 'dropup'}>Personajes</StyledLink>
+              <StyledLink className={open ? 'dropdown' : 'dropup'}>Tecnologias</StyledLink>
+              <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>          
             </ul>
+            </div> */}
             <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>

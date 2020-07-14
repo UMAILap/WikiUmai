@@ -207,41 +207,50 @@ export const ContainerBotones = styled.div`
     display: flex;
     justify-content: start;
   }
+  div{
+    display:flex;
+    align-items:center;
+    background-color: ${leerColor(colores.violeta)};
+    border-radius: 20px;
+    margin-top:20px;
+  }
   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
     @media (min-width: ${breakpoints.laptop}) {
-      max-height: 35px;
-      border-radius: 20px;
-      background-color: #4d1b84;
-      padding: 12px 15px;
-      color: #fff;
-      font-size: 12px;
-      margin: 2%;
+    border-radius: 20px;
+    background-color: #4d1b84;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 12px;
+    margin: 2%;
     }
     @media (min-width: ${breakpoints.laptopL}) {
       padding: 12px 30px;
       margin: 2%;
     }
-  }
+  } 
   ul li {
-    padding: 0;
-    margin: 22% 0;
+    max-height: 35px;    
     background-color: ${leerColor(colores.violeta)};
+    font-size: 12px;
+    border-radius: 20px;
+    list-style:none;
   }
   .dropdown {
-    display: block;
-    border-radius: 20px;
-    background-color: ${leerColor(colores.violeta)};
-    color: #fff;
-    font-size: 12px;
+  display: grid;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+  margin-bottom:2%;
+
   }
-  .dropdown ul {
-    padding: 40px 15px;
-    margin: 20px;
+  .dropdown a{
+ margin:0;
   }
-  .dropdown ul li {
-    padding: 40px 15px;
-    margin: 20px;
-  }
+  
 
   .dropup {
     display: none;
@@ -258,7 +267,7 @@ export const StyledLink = styled.a`
     margin: 2%;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    padding: 12px 30px;
+    /* padding: 12px 30px; */
     margin: 2%;
   }
 `;
