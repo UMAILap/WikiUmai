@@ -18,13 +18,40 @@ import {
   LinksHistorias,
   ContenedorBoton,
   AgregarNuevas,
-  PersonajesRelacionados,
-  PersonajesImg,
-  VerMas,
 } from './styles';
-import { Wrapper, Titulos, HitosTimeLine, BotonVioleta } from 'components';
+import { Wrapper, Titulos, HitosTimeLine, BotonVioleta, IconosPersonajes } from 'components';
 
 function PlanetasContainer() {
+  const arrayPersonajes = [
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+    {
+      nombre: 'Guardían Zoro',
+      img: '/personaje.png',
+    },
+  ];
   return (
     <>
       <PlanetasBanner>
@@ -87,17 +114,7 @@ function PlanetasContainer() {
           </Historias>
 
           <Personajes>
-            <Titulos>Personajes</Titulos>
-            <PersonajesRelacionados>
-              <PersonajesImg src="/images/planetas/1.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/2.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/3.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/1.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/2.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/3.png"></PersonajesImg>
-              <PersonajesImg src="/images/planetas/4.png"></PersonajesImg>
-              <VerMas src="/images/planetas/5.png"></VerMas>
-            </PersonajesRelacionados>
+            <IconosPersonajes personajes={arrayPersonajes}></IconosPersonajes>
             <ContenedorBoton>
               <BotonVioleta>+ Agregar personaje</BotonVioleta>
             </ContenedorBoton>

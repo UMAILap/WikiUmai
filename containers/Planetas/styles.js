@@ -52,7 +52,7 @@ export const NombrePlaneta = styled.h1`
   span {
     font-weight: 600;
   }
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 
   @media (min-width: ${breakpoints.laptop}) {
     font-size: ${pxToRem(48)};
@@ -134,14 +134,12 @@ export const AgregarNuevas = styled.div`
 `;
 export const Historias = styled.div`
   display: flex;
-  justify-content: space-between;
   padding-bottom: 40px;
   flex-direction: column;
 `;
 
 export const Objetos = styled.div`
   display: flex;
-  justify-content: space-between;
   padding-bottom: 40px;
   flex-direction: column;
 `;
@@ -164,26 +162,9 @@ export const Personajes = styled.div`
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 40px;
 `;
 
-export const PersonajesImg = styled.img`
-  border-radius: 80%;
-  border: 4px solid hsl(268.6, 66%, 31.2%);
-  margin: 0% 6% 2% 0%;
-`;
-
-export const VerMas = styled.img`
-  border-radius: 80%;
-  margin-right: 4%;
-`;
-
-export const PersonajesRelacionados = styled.div`
-  width: 100%;
-  margin-top: 5%;
-`;
 
 export const ContenedorBoton = styled.div`
   width: 100%;
