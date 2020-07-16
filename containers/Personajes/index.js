@@ -117,7 +117,9 @@ function PersonajesContainer() {
             <InventarioPersonaje>
               <h5>Inventario</h5>
               <Objetos>
-                <Link href='/tecnologias' passHref><span>Cuchillo Ejercito Wereld</span></Link>
+                <Link href="/tecnologias" passHref>
+                  <span>Cuchillo Ejercito Wereld</span>
+                </Link>
                 <span>Reloj</span>
               </Objetos>
             </InventarioPersonaje>
@@ -148,29 +150,41 @@ function PersonajesContainer() {
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
               <ul>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>Origen personaje</Link>
+                  <Link href="/historias" passHref>
+                    Origen personaje
+                  </Link>
                 </li>
               </ul>
-              <Link href='/crear-historia' passHref>
-                <BotonVioleta isColorPink={isColorPink}>
-                  + Agregar historias
+              {/* <Link href='/crear-historia' passHref> */}
+              <BotonVioleta isColorPink={isColorPink} href={'/crear-historia'}>
+                + Agregar historias
               </BotonVioleta>
-              </Link>
+              {/* </Link> */}
             </PersonajeHistorias>
             <Galeria>
               <Titulos>Galeria</Titulos>
@@ -183,35 +197,35 @@ function PersonajesContainer() {
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-                <CardUniverso>
+                <CardUniverso href="/tecnologias">
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href="/personaje">
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardian Zoro</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href="/planeta/wereld">
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Wereld </span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href="/planeta/nima">
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href="/tecnologias">
                   <img src="./images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>

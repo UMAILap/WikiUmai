@@ -38,10 +38,10 @@ export const PlanetasNav = styled.div`
 `;
 
 export const Personajes = styled.div`
-    display: flex;
-    flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
 
-    @media (min-width: ${breakpoints.laptop}) {
+  @media (min-width: ${breakpoints.laptop}) {
     margin-top: 80px;
     margin-bottom: 80px;
     width: 100%;

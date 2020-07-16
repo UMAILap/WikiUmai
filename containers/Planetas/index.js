@@ -19,7 +19,13 @@ import {
   ContenedorBoton,
   AgregarNuevas,
 } from './styles';
-import { Wrapper, Titulos, HitosTimeLine, BotonVioleta, IconosPersonajes } from 'components';
+import {
+  Wrapper,
+  Titulos,
+  HitosTimeLine,
+  BotonVioleta,
+  IconosPersonajes,
+} from 'components';
 
 function PlanetasContainer() {
   const arrayPersonajes = [
@@ -94,20 +100,20 @@ function PlanetasContainer() {
           <Historias>
             <Titulos>Historias</Titulos>
             <SeccionLinks>
-              <Link href='/historias' passHref>
+              <Link href="/historias" passHref>
                 <LinksHistorias>Origen del personaje</LinksHistorias>
               </Link>
-              <Link href='/historias' passHref>
+              <Link href="/historias" passHref>
                 <LinksHistorias>
                   Pelea entre mundos: la guerra por el poder
-              </LinksHistorias>
+                </LinksHistorias>
               </Link>
-              <Link href='/historias' passHref>
+              <Link href="/historias" passHref>
                 <LinksHistorias>Prisionero de guerra: el escape</LinksHistorias>
               </Link>
             </SeccionLinks>
             <ContenedorBoton>
-              <Link href='historias-universo' passHref>
+              <Link href="historias-universo" passHref>
                 <BotonVioleta>+ Agregar historia</BotonVioleta>
               </Link>
             </ContenedorBoton>
@@ -123,17 +129,17 @@ function PlanetasContainer() {
           <Articulos>
             <Titulos>Articulos externos relacionados</Titulos>
             <SeccionLinks>
-              <Link href='/historias' passHref>
+              <Link href="/historias" passHref>
                 <LinksHistorias>
                   La historia del otro planeta que se relaciona con este
                 </LinksHistorias>
               </Link>
-              <Link href='/personaje' passHref>
+              <Link href="/personaje" passHref>
                 <LinksHistorias>
                   Este personaje que fue a este planeta
                 </LinksHistorias>
               </Link>
-              <Link href='/tecnologias' passHref>
+              <Link href="/tecnologias" passHref>
                 <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
               </Link>
             </SeccionLinks>
@@ -142,13 +148,13 @@ function PlanetasContainer() {
           <Objetos>
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
-              <Link href='/tecnologias' passHref>
+              <Link href="/tecnologias" passHref>
                 <LinksHistorias>Ajayu</LinksHistorias>
               </Link>
-              <Link href='/tecnologias' passHref>
+              <Link href="/tecnologias" passHref>
                 <LinksHistorias>Kakuru</LinksHistorias>
               </Link>
-              <Link href='/tecnologias' passHref>
+              <Link href="/tecnologias" passHref>
                 <LinksHistorias>Pepiru</LinksHistorias>
               </Link>
             </SeccionLinks>

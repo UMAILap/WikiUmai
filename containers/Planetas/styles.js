@@ -52,7 +52,7 @@ export const NombrePlaneta = styled.h1`
   span {
     font-weight: 600;
   }
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
   @media (min-width: ${breakpoints.laptop}) {
     font-size: ${pxToRem(48)};
@@ -106,9 +106,9 @@ export const ContenedorHitos = styled.div`
 
 export const SeccionLinks = styled.div`
   width: 100%;
-  padding: 5% 0% 6% 0%;
+
   @media (min-width: ${breakpoints.laptop}) {
-    padding: 5% 0% 1% 0%;
+    
   }
 `;
 
@@ -150,10 +150,6 @@ export const Articulos = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 100px;
   }
 `;
 
@@ -163,15 +159,20 @@ export const Personajes = styled.div`
   flex-direction: column;
   flex-flow: row wrap;
   padding-bottom: 40px;
+
+  div{
+    width:100%;
+    padding: 0 0 0 0;
+  }
 `;
 
-
 export const ContenedorBoton = styled.div`
-  width: 100%;
-  padding: 7% 0%;
+  
+  width: 100%!important;
+  padding: 7% 0%!important;
 
   @media (min-width: ${breakpoints.tablet}) {
-    width: 48%;
+    width: 50%!important;
     text-align: center;
     padding: 0% 0%;
   }

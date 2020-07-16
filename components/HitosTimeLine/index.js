@@ -6,6 +6,30 @@ import 'slick-carousel/slick/slick-theme.css';
 import { ContainerSlider, Hito, HitoTitulo, HitoAnio } from './styles';
 
 function HitosTimeLine() {
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block' }}
+        onClick={onClick}>
+        <img src="/images/icons/arrowRight.svg" alt="Right" />
+      </div>
+    );
+  }
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block' }}
+        onClick={onClick}>
+        <img src="/images/icons/arrowLeft.svg" alt="Left" />
+      </div>
+    );
+  }
+
   const [selectedHito, setSelectedHito] = useState(null);
 
   function handleClickHito(hito) {
@@ -18,6 +42,8 @@ function HitosTimeLine() {
     slidesToScroll: 1,
     infinite: false,
     dots: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1920,
