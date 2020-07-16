@@ -5,7 +5,8 @@ export const ContainerSlider = styled.div`
   & .slick-slide > div {
     margin: auto 10px;
   }
-  & .slick-slider .slick-prev::before, & .slick-slider .slick-next::before {
+  & .slick-slider .slick-prev::before,
+  & .slick-slider .slick-next::before {
     content: none;
   }
   flex: auto;

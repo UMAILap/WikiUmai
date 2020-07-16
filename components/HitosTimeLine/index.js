@@ -11,31 +11,21 @@ function HitosTimeLine() {
     return (
       <div
         className={className}
-        style={
-          { ...style, 
-            display: "block"
-          }
-        }
-        onClick={onClick}
-      >
-        <img src="/images/icons/arrowRight.svg" alt="Right"/>
+        style={{ ...style, display: 'block' }}
+        onClick={onClick}>
+        <img src="/images/icons/arrowRight.svg" alt="Right" />
       </div>
     );
   }
-  
+
   function PrevArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={
-          { ...style, 
-            display: "block"
-          }
-        }
-        onClick={onClick}
-      >
-        <img src="/images/icons/arrowLeft.svg" alt="Left"/>
+        style={{ ...style, display: 'block' }}
+        onClick={onClick}>
+        <img src="/images/icons/arrowLeft.svg" alt="Left" />
       </div>
     );
   }
