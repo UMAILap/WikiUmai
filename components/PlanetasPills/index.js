@@ -8,12 +8,9 @@ function PlanetasPills({ isFlex, multiple }) {
   function handleClickPlaneta(planet_name) {
     if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
       const copieValuesArray = selectedPlanet; //copiamos el array
-      const objetoABorrar = planet_name;
-      const newValuesArray = _.isEmpty(objetoABorrar)
-        ? copieValuesArray
-        : _.remove(copieValuesArray, objeto =>
-            _.isEqual(objetoABorrar, objeto),
-          ); //si objeto a borrar es empty guarda la copia del array, sino borra el objeto que es marcado
+      const newValuesArray = _.remove(copieValuesArray, objeto =>
+            _.isEqual(planet_name, objeto),
+          ); 
       setSelectedPlanet({
         selectedPlanet: newValuesArray,
       });

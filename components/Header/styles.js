@@ -207,50 +207,48 @@ export const ContainerBotones = styled.div`
     display: flex;
     justify-content: start;
   }
-  div{
-    display:flex;
-    align-items:center;
+  div {
+    display: flex;
+    align-items: center;
     background-color: ${leerColor(colores.violeta)};
     border-radius: 20px;
-    margin-top:20px;
+    margin-top: 20px;
   }
   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     @media (min-width: ${breakpoints.laptop}) {
-    border-radius: 20px;
-    background-color: #4d1b84;
-    padding: 12px 15px;
-    color: #fff;
-    font-size: 12px;
-    margin: 2%;
+      border-radius: 20px;
+      background-color: #4d1b84;
+      padding: 12px 15px;
+      color: #fff;
+      font-size: 12px;
+      margin: 2%;
     }
     @media (min-width: ${breakpoints.laptopL}) {
       padding: 12px 30px;
       margin: 2%;
     }
-  } 
+  }
   ul li {
-    max-height: 35px;    
+    max-height: 35px;
     background-color: ${leerColor(colores.violeta)};
     font-size: 12px;
     border-radius: 20px;
-    list-style:none;
+    list-style: none;
   }
   .dropdown {
-  display: grid;
-  position: absolute;
-  min-width: 100px;
-  z-index: 1;
-  margin-bottom:2%;
-
+    display: grid;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+    margin-bottom: 2%;
   }
-  .dropdown a{
- margin:0;
+  .dropdown a {
+    margin: 0;
   }
-  
 
   .dropup {
     display: none;

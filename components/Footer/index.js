@@ -1,12 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router'
+
 
 import { Container, Texto, ContainerFooter, Imagenes } from './styles';
 import { Wrapper } from 'components';
 
-function Footer(isHome) {
+function Footer({href}) {
+  const router = useRouter()
+  const linkPagina = router.pathname;
+  console.log(linkPagina);
+ 
+  const home = linkPagina == "/" || linkPagina == "/index"
+  ? true
+  : false;
+  console.log(home);
+        /*
+function HandleLinkHome(){
+    if(linkPagina = "/"){
+      home =true;
+    }
+    else{
+     home = false;
+    }
+  } */
   return (
-    <Container isHome={isHome}>
+    <Container home={home}>
       <Wrapper>
         <ContainerFooter>
           <Texto>

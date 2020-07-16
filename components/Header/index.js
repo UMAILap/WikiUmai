@@ -51,16 +51,16 @@ function Header() {
             <i className="fas fa-search"></i>
           </ContainerSearch>
           <ContainerBotones>
-          <ul>
-            <li  onClick={() => setOpen(!open)}>
-              <StyledLink>Dropdown</StyledLink>
-              <div className={open ? 'dropdown' : 'dropup'}>
-                <StyledLink href="#">Personajes</StyledLink>
-                <StyledLink href="#">Tecnologias</StyledLink>
-                <StyledLink href="#">Historias</StyledLink>
-              </div>
-            </li>
-          </ul>
+            <ul>
+              <li onClick={() => setOpen(!open)}>
+                <StyledLink>Universo</StyledLink>
+                <div className={open ? 'dropdown' : 'dropup'}>
+                  <StyledLink href="#">Personajes</StyledLink>
+                  <StyledLink href="#">Tecnologias</StyledLink>
+                  <StyledLink href="#">Historias</StyledLink>
+                </div>
+              </li>
+            </ul>
             {/* <div>
             <StyledLink onClick={() => setOpen(!open)}>Universo</StyledLink>
             <ul className={open ? 'dropdown' : 'dropup'}>
