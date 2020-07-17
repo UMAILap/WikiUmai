@@ -9,7 +9,7 @@ export const Container = styled.footer`
   align-self: flex-end;
   /*background-color: ${leerColor(colores.blanco)};*/
     background-color: ${props =>
-    props.home == true ? 'rgb(236, 236, 236)' : 'rgb(255,255,255)'};  
+      props.home == true ? 'rgb(236, 236, 236)' : 'rgb(255,255,255)'};  
 
 
   @media (min-width: ${breakpoints.tablet}) {

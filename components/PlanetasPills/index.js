@@ -6,13 +6,16 @@ function PlanetasPills({ isFlex, multiple }) {
   const [selectedPlanet, setSelectedPlanet] = useState(multiple ? [] : null);
 
   function handleClickPlaneta(planet_name) {
-    if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
+    if ((multiple = true && _.includes(selectedPlanet, planet_name))) {     
       const copieValuesArray = selectedPlanet; //copiamos el array
-      const newValuesArray = _.remove(copieValuesArray, objeto =>
-            _.isEqual(planet_name, objeto),
-          ); 
+      // const newValuesArray =  _.remove(copieValuesArray, objeto =>
+      //       _.isEqual(planet_name, objeto),
+      //     ); 
+      const newValuesArray =  _.pull(copieValuesArray, planet_name );
+      console.log(newValuesArray);
       setSelectedPlanet({
-        selectedPlanet: newValuesArray,
+        ...selectedPlanet,
+         selectedPlanet: newValuesArray,
       });
     } else {
       setSelectedPlanet([...selectedPlanet, planet_name]);
