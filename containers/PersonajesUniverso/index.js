@@ -34,7 +34,7 @@ function PersonajesUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -42,9 +42,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -70,7 +70,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -78,9 +78,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -106,7 +106,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -114,9 +114,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -142,7 +142,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -150,9 +150,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -178,7 +178,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -186,9 +186,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -214,7 +214,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href='/personaje' passHref>
+            <Link href="/personaje" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -222,9 +222,9 @@ function PersonajesUniversoContainer() {
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>

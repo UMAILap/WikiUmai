@@ -31,16 +31,16 @@ function HistoriasUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -51,16 +51,16 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -71,16 +71,16 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -91,16 +91,16 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -111,16 +111,16 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
@@ -131,16 +131,16 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href='/historias' passHref>
+            <Link href="/historias" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard McClintock,
-                    a Latin...
-                </p>
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin...
+                  </p>
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
