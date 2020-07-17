@@ -5,12 +5,18 @@ import {
   TecnologiasUniverso as TecnologiasUniversoContainer,
 } from 'containers';
 
-function TecnologiasUniverso() {
+function TecnologiasUniverso({ params }) {
   return (
     <Layout>
       <TecnologiasUniversoContainer />
     </Layout>
   );
 }
-
+TecnologiasUniverso.getInitialProps = ctx => {
+  const { params } = ctx.query;
+  //FETCH
+  return {
+    params
+  };
+};
 export default TecnologiasUniverso;

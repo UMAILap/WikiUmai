@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Layout, Historias as HistoriasContainer } from 'containers';
 
-function Historias() {
+function Historias({ slug }) {
   return (
     <Layout>
       <HistoriasContainer />
@@ -10,4 +10,11 @@ function Historias() {
   );
 }
 
+Historias.getInitialProps = ctx => {
+  const { slug } = ctx.query;
+  //FETCH
+  return {
+    slug
+  };
+};
 export default Historias;

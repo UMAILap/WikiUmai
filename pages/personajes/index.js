@@ -5,12 +5,18 @@ import {
   PersonajesUniverso as PersonajesUniversoContainer,
 } from 'containers';
 
-function PersonajesUniverso() {
+function PersonajesUniverso({ params }) {
   return (
     <Layout>
       <PersonajesUniversoContainer />
     </Layout>
   );
 }
-
+PersonajesUniverso.getInitialProps = ctx => {
+  const { params } = ctx.query;
+  //FETCH
+  return {
+    params
+  };
+};
 export default PersonajesUniverso;
