@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="/reset.css" />
 
         <title>Wiki Umai</title>
       </Head>
