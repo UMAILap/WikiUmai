@@ -11,7 +11,7 @@ import {
 
 function IconosPersonajes({ personajes }) {
   const getPersonajesItem = personajes.map(personaje => (
-    <Link href='/personaje' passHref>
+    <Link href={'/personajes/' + personaje.nombre} passHref>
       <PersonajesItem src={personaje.img}></PersonajesItem>
     </Link>
   ));

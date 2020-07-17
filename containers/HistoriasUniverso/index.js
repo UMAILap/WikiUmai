@@ -31,7 +31,7 @@ function HistoriasUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -51,7 +51,7 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -71,7 +71,7 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -91,7 +91,7 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -111,7 +111,7 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -131,7 +131,7 @@ function HistoriasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>

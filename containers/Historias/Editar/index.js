@@ -72,7 +72,7 @@ function HistoriasContainer() {
                     </div>
                   </CardUniverso>
                 </Link>
-                <Link href="/personaje" passHref>
+                <Link href="/personajes/guardian-zoro" passHref>
                   <CardUniverso>
                     <img src="/images/slider/2.png" />
                     <div>

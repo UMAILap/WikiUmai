@@ -134,35 +134,35 @@ function TecnologiasContainer() {
             <ArticuloData>
               <Titulos>Relacionados</Titulos>
               <Relacionados>
-                <CardUniverso>
+                <CardUniverso href='/planeta/nima'>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href='planeta/wereld'>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Wereld</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href='personajes/guardian-zoro'>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardián Zoro</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href='personajes/guardian-zoro'>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardián Zoro</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso>
+                <CardUniverso href='tecnologias/cuchillo-ejercito-wereld'>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>

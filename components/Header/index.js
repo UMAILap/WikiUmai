@@ -55,9 +55,9 @@ function Header() {
               <li onClick={() => setOpen(!open)}>
                 <StyledLink>Universo</StyledLink>
                 <div className={open ? 'dropdown' : 'dropup'}>
-                  <StyledLink href="#">Personajes</StyledLink>
-                  <StyledLink href="#">Tecnologias</StyledLink>
-                  <StyledLink href="#">Historias</StyledLink>
+                  <StyledLink href="/personajes">Personajes</StyledLink>
+                  <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+                  <StyledLink href="/historias">Historias</StyledLink>
                 </div>
               </li>
             </ul>
@@ -66,7 +66,7 @@ function Header() {
             <ul className={open ? 'dropdown' : 'dropup'}>
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Personajes</StyledLink>
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Tecnologias</StyledLink>
-              <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>          
+              <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>
             </ul>
             </div> */}
             <StyledLink>Foro</StyledLink>

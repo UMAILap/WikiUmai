@@ -149,7 +149,7 @@ function HomeContainer() {
             </ParteSuperior>
 
             <GrillaSeccionActualizaciones>
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -175,7 +175,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -201,7 +201,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -227,7 +227,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -253,7 +253,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -279,7 +279,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -305,7 +305,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>
@@ -331,7 +331,7 @@ function HomeContainer() {
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personaje" passHref>
+              <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
                     <ImagenesContenidos>

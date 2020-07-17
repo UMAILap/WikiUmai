@@ -31,7 +31,7 @@ function TecnologiasUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>
@@ -51,7 +51,7 @@ function TecnologiasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>
@@ -71,7 +71,7 @@ function TecnologiasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>
@@ -91,7 +91,7 @@ function TecnologiasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>
@@ -111,7 +111,7 @@ function TecnologiasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>
@@ -131,7 +131,7 @@ function TecnologiasUniversoContainer() {
                 </PersonajeInfo>
               </PersonajeFicha>
             </Link>
-            <Link href="/historias" passHref>
+            <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Ajayu</Titulos>

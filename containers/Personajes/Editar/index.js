@@ -117,7 +117,7 @@ function PersonajesContainer() {
             <InventarioPersonaje>
               <h5>Inventario</h5>
               <Objetos>
-                <Link href="/tecnologias" passHref>
+                <Link href="/tecnologias/cuchillo-ejercito-wereld" passHref>
                   <span>Cuchillo Ejercito Wereld</span>
                 </Link>
                 <span>Reloj</span>
@@ -150,38 +150,38 @@ function PersonajesContainer() {
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
               <ul>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
                 <li>
-                  <Link href="/historias" passHref>
+                  <Link href="/historias/nombre" passHref>
                     Origen personaje
                   </Link>
                 </li>
               </ul>
               {/* <Link href='/crear-historia' passHref> */}
-              <BotonVioleta isColorPink={isColorPink} href={'/crear-historia'}>
+              <BotonVioleta isColorPink={isColorPink} href={'/historias/crear/'}>
                 + Agregar historias
               </BotonVioleta>
               {/* </Link> */}
@@ -197,14 +197,14 @@ function PersonajesContainer() {
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-                <CardUniverso href="/tecnologias">
+                <CardUniverso href="/tecnologias/cuchillo-ejercito-wereld">
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/personaje">
+                <CardUniverso href="/personajes/guardian-zoro">
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
@@ -225,7 +225,7 @@ function PersonajesContainer() {
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/tecnologias">
+                <CardUniverso href="/tecnologias/cuchillo-ejercito-wereld">
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout, Planetas as PlanetasContainer } from '../historias/node_modules/containers';
+import { Layout, Planetas as PlanetasContainer } from 'containers';
 
 function Planetas({ nombre_planeta }) {
   console.log(nombre_planeta);
@@ -15,7 +15,7 @@ Planetas.getInitialProps = ctx => {
   console.log(ctx);
   const { nombre_planeta } = ctx.query;
   return {
-    nombre_planeta,
+    nombre_planeta
   };
 };
 

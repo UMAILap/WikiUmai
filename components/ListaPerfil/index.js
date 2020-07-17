@@ -8,7 +8,7 @@ import { ListaPerfilContainer, ListaPerfilItem } from './styles';
 function ListaPerfil({ contribuciones }) {
   //Contribuciones es un array con objetos que guardan tipo y titulo de cada contribución
   const ListItem = contribuciones.map(contribucion => (
-    <Link href={contribucion.tipo === 'historia' ? '/historias' : '/tecnologias'} passHref>
+    <Link href={contribucion.tipo === 'historia' ? '/historias/nombre' : '/tecnologias/nombre'} passHref>
       <ListaPerfilItem>
         <img
           src={

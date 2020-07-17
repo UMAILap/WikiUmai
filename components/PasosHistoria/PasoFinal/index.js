@@ -7,7 +7,7 @@ import { PasoContainer, Datos, BotonRosa } from './styles';
 function PasoFinal({ colorFondo }) {
   return (
     <PasoContainer>
-      <Link href="/historias" passHref>
+      <Link href="/historias/nombre" passHref>
         <BotonRosa>Crear historia</BotonRosa>
       </Link>
     </PasoContainer>

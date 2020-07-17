@@ -41,31 +41,31 @@ function PerfilContainer() {
   ];
   const arrayPersonajes = [
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
     {
-      nombre: 'Guardían Zoro',
+      nombre: 'guardian-zoro',
       img: '/personaje.png',
     },
   ];

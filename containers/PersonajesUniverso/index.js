@@ -34,7 +34,7 @@ function PersonajesUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -70,7 +70,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -106,7 +106,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -142,7 +142,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -178,7 +178,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
@@ -214,7 +214,7 @@ function PersonajesUniversoContainer() {
               </PersonajeFicha>
             </Link>
 
-            <Link href="/personaje" passHref>
+            <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
