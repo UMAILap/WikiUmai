@@ -101,37 +101,37 @@ function HomeContainer() {
             <Slider {...settings}>
               <Link href="/planeta/sol" passHref>
                 <Card>
-                  <CardImg src="./images/slider/1.png"></CardImg>
+                  <CardImg src="/images/slider/1.png"></CardImg>
                   <TituloCard>Sol</TituloCard>
                 </Card>
               </Link>
               <Link href="/planeta/nima" passHref>
                 <Card>
-                  <CardImg src="./images/slider/2.png"></CardImg>
+                  <CardImg src="/images/slider/2.png"></CardImg>
                   <TituloCard>Nima</TituloCard>
                 </Card>
               </Link>
               <Link href="/planeta/wereld" passHref>
                 <Card>
-                  <CardImg src="./images/slider/3.png"></CardImg>
+                  <CardImg src="/images/slider/3.png"></CardImg>
                   <TituloCard>Wereld</TituloCard>
                 </Card>
               </Link>
               <Link href="/planeta/adhera" passHref>
                 <Card>
-                  <CardImg src="./images/slider/4.png"></CardImg>
+                  <CardImg src="/images/slider/4.png"></CardImg>
                   <TituloCard>Adhera</TituloCard>
                 </Card>
               </Link>
               <Link href="/planeta/ikigai" passHref>
                 <Card>
-                  <CardImg src="./images/slider/5.png"></CardImg>
+                  <CardImg src="/images/slider/5.png"></CardImg>
                   <TituloCard>Ikigai</TituloCard>
                 </Card>
               </Link>
               <Link href="/planeta/zoro" passHref>
                 <Card>
-                  <CardImg src="./images/slider/6.png"></CardImg>
+                  <CardImg src="/images/slider/6.png"></CardImg>
                   <TituloCard>Zoro</TituloCard>
                 </Card>
               </Link>
@@ -154,7 +154,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -164,7 +164,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -180,7 +180,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -190,7 +190,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -206,7 +206,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -216,7 +216,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -232,7 +232,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -242,7 +242,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -258,7 +258,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -268,7 +268,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -284,7 +284,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -294,7 +294,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -310,7 +310,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -320,7 +320,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
@@ -336,7 +336,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./SOFI.png" />
+                      <img src="/SOFI.png" />
                     </ImagenesContenidos>
                     <EdicionActualizacionesTitulo>
                       sofi.hadjilias
@@ -346,7 +346,7 @@ function HomeContainer() {
                   <Contenidos>
                     <ImagenesContenidos>
                       {' '}
-                      <img src="./historias.png" />
+                      <img src="/historias.png" />
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>

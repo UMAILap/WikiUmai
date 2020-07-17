@@ -36,7 +36,7 @@ function PersonajesUniversoContainer() {
           <Personajes>
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -48,21 +48,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>
@@ -72,7 +72,7 @@ function PersonajesUniversoContainer() {
 
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -84,21 +84,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>
@@ -108,7 +108,7 @@ function PersonajesUniversoContainer() {
 
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -120,21 +120,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>
@@ -144,7 +144,7 @@ function PersonajesUniversoContainer() {
 
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -156,21 +156,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>
@@ -180,7 +180,7 @@ function PersonajesUniversoContainer() {
 
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -192,21 +192,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>
@@ -216,7 +216,7 @@ function PersonajesUniversoContainer() {
 
             <Link href='/personaje' passHref>
               <PersonajeFicha>
-                <img src="./images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
@@ -228,21 +228,21 @@ function PersonajesUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
 
                     <Caracteristicas>
-                      <img src="./fuerza.svg" />
+                      <img src="/fuerza.svg" />
                       <span>2</span>
 
-                      <img src="./inteligencia.svg" />
+                      <img src="/inteligencia.svg" />
                       <span>4</span>
 
-                      <img src="./habilidad.svg" />
+                      <img src="/habilidad.svg" />
                       <span>3</span>
 
-                      <img src="./suerte.svg" />
+                      <img src="/suerte.svg" />
                       <span>1</span>
                     </Caracteristicas>
                   </PersonajeCaracteristica>

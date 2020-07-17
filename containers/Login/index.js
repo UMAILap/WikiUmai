@@ -19,7 +19,7 @@ function LoginContainer() {
         <ContainerBlanco>
           <Text>
             <Bienvenido>¡Bienvenido!</Bienvenido>
-            <ImagenLogin src="./logo_colores.svg" />
+            <ImagenLogin src="/logo_colores.svg" />
           </Text>
           <Intro>
             No se que poner aca pero va un texto sobre el Universo Narrativo

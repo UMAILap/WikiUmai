@@ -40,7 +40,7 @@ function PersonajesContainer() {
         <Wrapper>
           <BannerPersonaje>
             <PersonajeIntro>
-              <img src="./Robot_Personajes.svg"></img>
+              <img src="/Robot_Personajes.svg"></img>
               <h6>Personaje</h6>
               <h1>Obi Kubu</h1>
               <p>
@@ -54,23 +54,23 @@ function PersonajesContainer() {
             <PersonajeCaracteristicas>
               <CaracteristicasPuntos>
                 <PuntosPersonajes>
-                  <img src="./fuerza.svg" />
+                  <img src="/fuerza.svg" />
                   <span>2</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                  <img src="./inteligencia.svg" />
+                  <img src="/inteligencia.svg" />
                   <span>3</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                  <img src="./habilidad.svg" />
+                  <img src="/habilidad.svg" />
                   <span>4</span>
                 </PuntosPersonajes>
                 <PuntosPersonajes>
-                  <img src="./suerte.svg" />
+                  <img src="/suerte.svg" />
                   <span>1</span>
                 </PuntosPersonajes>
               </CaracteristicasPuntos>
-              <img src="./placeholder_personaje.png"></img>
+              <img src="/placeholder_personaje.png"></img>
             </PersonajeCaracteristicas>
           </BannerPersonaje>
         </Wrapper>
@@ -189,44 +189,44 @@ function PersonajesContainer() {
             <Galeria>
               <Titulos>Galeria</Titulos>
               <GaleriaImagenes>
-                <img src="./placeholder_personaje.png"></img>
-                <img src="./placeholder_personaje.png"></img>
-                <img src="./placeholder_personaje.png"></img>
+                <img src="/placeholder_personaje.png"></img>
+                <img src="/placeholder_personaje.png"></img>
+                <img src="/placeholder_personaje.png"></img>
               </GaleriaImagenes>
             </Galeria>
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
                 <CardUniverso href="/tecnologias">
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso href="/personaje">
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardian Zoro</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso href="/planeta/wereld">
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Wereld </span>
                   </div>
                 </CardUniverso>
                 <CardUniverso href="/planeta/nima">
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso href="/tecnologias">
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>

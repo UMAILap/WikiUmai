@@ -44,7 +44,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>
@@ -64,7 +64,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>
@@ -84,7 +84,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>
@@ -104,7 +104,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>
@@ -124,7 +124,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>
@@ -144,7 +144,7 @@ function TecnologiasUniversoContainer() {
 
                   <PersonajeCaracteristica>
                     <PersonajePlaneta>
-                      <img src="./images/icons/planet.svg" />
+                      <img src="/images/icons/planet.svg" />
                       <h6>Ikigai</h6>
                     </PersonajePlaneta>
                   </PersonajeCaracteristica>

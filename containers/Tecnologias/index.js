@@ -28,7 +28,7 @@ function TecnologiasContainer() {
         <Wrapper>
           <Tecnologia>
             <TecnologiaNombre>
-              <img src="./images/icons/cohete.svg" />
+              <img src="/images/icons/cohete.svg" />
               <Nombres>
                 <Subtitulo>Tecnología</Subtitulo>
                 <Titulo>Ajayu</Titulo>
@@ -107,7 +107,7 @@ function TecnologiasContainer() {
               </p>
             </ArticuloData>
             <ArticuloData>
-              <img src="./images/imgArticulos.png" />
+              <img src="/images/imgArticulos.png" />
             </ArticuloData>
             <ArticuloData>
               <Titulos>Impacto social</Titulos>
@@ -135,35 +135,35 @@ function TecnologiasContainer() {
               <Titulos>Relacionados</Titulos>
               <Relacionados>
                 <CardUniverso>
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso>
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Wereld</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso>
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardián Zoro</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso>
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardián Zoro</span>
                   </div>
                 </CardUniverso>
                 <CardUniverso>
-                  <img src="./images/slider/2.png" />
+                  <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>

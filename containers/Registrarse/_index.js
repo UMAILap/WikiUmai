@@ -21,7 +21,7 @@ function RegistroContainer() {
         <ContainerBlanco>
           <Text>
             <Cuenta>Solicitar cuenta</Cuenta>
-            <ImagenLogin src="./logo_colores.svg" />
+            <ImagenLogin src="/logo_colores.svg" />
           </Text>
           <Intro>
             Para la otorgación de una cuenta del Universo Narrativo, debes ser

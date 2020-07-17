@@ -29,7 +29,7 @@ function HistoriasContainer() {
         <Wrapper>
           <Historia>
             <HistoriaNombre>
-              <img src="./images/icons/historias.svg" />
+              <img src="/images/icons/historias.svg" />
               <Nombres>
                 <Subtitulo>Historia</Subtitulo>
                 <Titulo>Cuando las emociones opuestas se cruzan.</Titulo>
@@ -56,7 +56,7 @@ function HistoriasContainer() {
               <Relacionados>
                 <Link href="/planeta/nima" passHref>
                   <CardUniverso>
-                    <img src="./images/slider/2.png" />
+                    <img src="/images/slider/2.png" />
                     <div>
                       <h5>Planeta</h5>
                       <span>Nima</span>
@@ -65,7 +65,7 @@ function HistoriasContainer() {
                 </Link>
                 <Link href="/planeta/wereld" passHref>
                   <CardUniverso>
-                    <img src="./images/slider/2.png" />
+                    <img src="/images/slider/2.png" />
                     <div>
                       <h5>Planeta</h5>
                       <span>Wereld</span>
@@ -74,7 +74,7 @@ function HistoriasContainer() {
                 </Link>
                 <Link href="/personaje" passHref>
                   <CardUniverso>
-                    <img src="./images/slider/2.png" />
+                    <img src="/images/slider/2.png" />
                     <div>
                       <h5>Personaje</h5>
                       <span>Guardián Zoro</span>
@@ -117,7 +117,7 @@ function HistoriasContainer() {
             </ArticuloData>
 
             <ArticuloData>
-              <img src="./images/imgArticulos.png" />
+              <img src="/images/imgArticulos.png" />
             </ArticuloData>
             <ArticuloData>
               <p>
