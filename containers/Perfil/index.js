@@ -6,8 +6,7 @@ import {
   Titulo,
   WrapperCreaciones,
 } from './styles';
-import { Wrapper, WrapperPersonajesPlanetas } from 'components';
-import { MiPerfil, ListaPerfil, IconosPersonajes } from 'components';
+import { WrapperPersonajesPlanetas, MiPerfil, ListaPerfil, IconosPersonajes } from 'components';
 function PerfilContainer() {
   //HARDCODEADO
   const arrayContribuciones = [
