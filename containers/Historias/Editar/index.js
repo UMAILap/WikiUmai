@@ -54,7 +54,7 @@ function HistoriasContainer() {
             <ArticuloData>
               <Titulos>Aparecen en esta historia</Titulos>
               <Relacionados>
-                <Link href='/planeta/nima' passHref>
+                <Link href="/planeta/nima" passHref>
                   <CardUniverso>
                     <img src="./images/slider/2.png" />
                     <div>
@@ -63,7 +63,7 @@ function HistoriasContainer() {
                     </div>
                   </CardUniverso>
                 </Link>
-                <Link href='/planeta/wereld' passHref>
+                <Link href="/planeta/wereld" passHref>
                   <CardUniverso>
                     <img src="./images/slider/2.png" />
                     <div>
@@ -72,7 +72,7 @@ function HistoriasContainer() {
                     </div>
                   </CardUniverso>
                 </Link>
-                <Link href='/personaje' passHref>
+                <Link href="/personaje" passHref>
                   <CardUniverso>
                     <img src="./images/slider/2.png" />
                     <div>
