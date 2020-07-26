@@ -16,4 +16,8 @@ Wrapper.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
+Wrapper.defaultProps = {
+    direction:'row'
+  };
+
 export default Wrapper;

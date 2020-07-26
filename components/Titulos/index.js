@@ -8,7 +8,7 @@ function Titulos({ children, isColorPink }) {
 }
 
 Titulos.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string,
 };
 
 export default Titulos;

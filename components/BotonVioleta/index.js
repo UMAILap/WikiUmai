@@ -20,7 +20,7 @@ function BotonVioleta({ children, isColorPink, isBotonRosa, href }) {
   );
 }
 BotonVioleta.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string,
 };
 
 export default BotonVioleta;
