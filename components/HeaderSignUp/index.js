@@ -15,10 +15,11 @@ import {
   User,
   ContainerBotones,
   StyledLink,
+  MenuSlide,
 } from './styles';
 import { Wrapper } from 'components';
 
-function Header() {
+function HeaderSignUp() {
   // var down = false;
 
   // function handleClickMenu() {
@@ -30,14 +31,43 @@ function Header() {
   //   }
   //}
   const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenuUniverso, setOpenMenuUniverso] = useState(false);
 
+  const IniciarSesion = true;
+  const displayBotton =true;
   return (
-    <Container>
+    <Container >
       <Wrapper>
+      {/* <MenuSlide>
+        <div onClick={() => setOpenMenu(!openMenu)}>
+              <img src="/menu.svg" />           
+        </div>
+          <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
+                      <StyledLink href="#">Personajes</StyledLink>
+                      <StyledLink href="#">Tecnologias</StyledLink>
+                      <StyledLink href="#">Historias</StyledLink>
+          </div>
+      </MenuSlide> */}
         <ContainerHeader>
-          <MenuHamburguesa>
-            <img src="/menu.svg" />
-          </MenuHamburguesa>
+          <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
+            <img src="/menu.svg" />   
+            <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
+            <ul>
+              <li onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
+                <StyledLink className="universo">Universo</StyledLink>
+                <div className={openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'}>
+                  <StyledLink href="/personajes">Personajes</StyledLink>
+                  <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+                  <StyledLink href="/historias">Historias</StyledLink>
+                </div>
+              </li>
+            </ul>
+             <StyledLink>Foro</StyledLink> 
+            <StyledLink>Ayudas y reglas</StyledLink>
+            <StyledLink href="/login" IniciarSesion={IniciarSesion} displayBotton={displayBotton} >Iniciar Sesion</StyledLink>
+          </div>        
+          </MenuHamburguesa>         
           <Logo>
             <Link href="/index">
               <a>
@@ -71,19 +101,20 @@ function Header() {
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>
             </ul>
             </div> */}
-            <StyledLink>Foro</StyledLink>
+            <StyledLink>Foro</StyledLink> 
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
           <ContainerUser>
             <Search>
               <img src="/search.png" />
             </Search>
-            <Notification src="/notificacion-header.svg" />
+            {/* <Notification src="/notificacion-header.svg" />
             <Link href="/perfil" passHref>
               <User>
                 <img src="/perfil-header.png" />
               </User>
-            </Link>
+            </Link> */}
+                <StyledLink href="/login" IniciarSesion={IniciarSesion}>Iniciar Sesion</StyledLink>
           </ContainerUser>
         </ContainerHeader>
       </Wrapper>
@@ -91,4 +122,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderSignUp;
