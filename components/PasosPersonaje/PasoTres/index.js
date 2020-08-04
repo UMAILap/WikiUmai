@@ -98,10 +98,10 @@ function PasoTres() {
         <CaracteristicasPersonaje>
           <Caracteristicas>
             <CaracteristicasIconos>
-              <img src="./fuerza.svg" />
-              <img src="./inteligencia.svg" />
-              <img src="./habilidad.svg" />
-              <img src="./suerte.svg" />
+              <img src="/fuerza.svg" />
+              <img src="/inteligencia.svg" />
+              <img src="/habilidad.svg" />
+              <img src="/suerte.svg" />
             </CaracteristicasIconos>
             <CaracteristicasPuntos>
               <input

@@ -24,11 +24,11 @@ function PasoUno() {
       <AvataresTitulo>Avatares</AvataresTitulo>
       <Avatares>
         <AvataresImagenes>
-          <ImagenPrincipal src="./placeholderAvatar.png" />
+          <ImagenPrincipal src="/placeholderAvatar.png" />
           <ImagenesSecundarias>
-            <Imagen src="./placeholderAvatar.png" />
-            <Imagen src="./placeholderAvatar.png" />
-            <Imagen src="./placeholderAvatar.png" />
+            <Imagen src="/placeholderAvatar.png" />
+            <Imagen src="/placeholderAvatar.png" />
+            <Imagen src="/placeholderAvatar.png" />
           </ImagenesSecundarias>
         </AvataresImagenes>
         <AvataresInfo>

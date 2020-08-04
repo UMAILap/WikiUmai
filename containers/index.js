@@ -28,6 +28,7 @@ export { default as HistoriasUniverso } from './HistoriasUniverso';
 
 // ---------- TECNOLOGIAS ------------- //
 export { default as Tecnologias } from './Tecnologias';
+export { default as CrearTecnologia } from './Tecnologias/Crear';
 export { default as TecnologiasUniverso } from './TecnologiasUniverso';
 
 // ---------- PLANETAS ------------- //
