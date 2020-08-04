@@ -8,7 +8,7 @@ function Layout({ children, isHome }) {
   return (
     <ContainerBody>
       {/* <Header /> */}
-      <HeaderSignUp/>
+      <HeaderSignUp />
       {children}
       <Footer isHome={isHome} />
     </ContainerBody>

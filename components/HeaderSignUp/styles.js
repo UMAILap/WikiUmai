@@ -9,20 +9,20 @@ export const Container = styled.header`
   align-items: center;
 `;
 export const MenuSlide = styled.div`
- .MenuDown {
+  .MenuDown {
     display: grid;
     position: absolute;
-    max-width:45%;
+    max-width: 45%;
     z-index: 1;
     margin-bottom: 2%;
-    height:90%;
-    margin-left:-1%;
+    height: 90%;
+    margin-left: -1%;
   }
   .MenuDown a {
     background-color: ${leerColor(colores.violetaOscuro)};
-    background-color: ${props => (props.displayBotton ? 'rgb(255, 189, 105)' : '')}; 
-    padding-left: ${props => (props.displayBotton ? '10px' : '40px')}; 
-
+    background-color: ${props =>
+      props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+    padding-left: ${props => (props.displayBotton ? '10px' : '40px')};
   }
 
   .MenuUp {
@@ -143,7 +143,7 @@ export const MenuHamburguesa = styled.h1`
   @media (min-width: ${breakpoints.laptop}) {
     display: none;
   }
- 
+
   div {
     display: flex;
     align-items: center;
@@ -154,11 +154,11 @@ export const MenuHamburguesa = styled.h1`
     display: grid;
     grid-template-rows: 10% 10% 10% auto;
     position: absolute;
-    width:60%;
+    width: 60%;
     z-index: 1;
     margin-bottom: 2%;
-    height:95%;
-    margin-left:-3%;
+    height: 95%;
+    margin-left: -3%;
   }
   .MenuDown a {
   }
@@ -169,23 +169,22 @@ export const MenuHamburguesa = styled.h1`
   .MenuDownUniverso {
     display: flex;
     position: absolute;
-    width:60%;
+    width: 60%;
     z-index: 1;
     margin-bottom: 2%;
-    height:95%;
-    margin-left:3%;
+    height: 95%;
+    margin-left: 3%;
   }
   .MenuDownUniverso a {
-    width:60%;
+    width: 60%;
   }
 
   .MenuUpUniverso {
     display: none;
   }
-  .universo{
-      display: flex;
-
-    }
+  .universo {
+    display: flex;
+  }
 `;
 export const ContainerSearch = styled.div`
   display: none;
@@ -328,12 +327,14 @@ export const StyledLink = styled.a`
     display: ${props => (props.IniciarSesion ? 'none' : '')};
     display: ${props => (props.displayBotton ? 'flex' : '')};   
     /* background-color: ${leerColor(colores.violeta)}; */
-    background-color: ${props => (props.displayBotton ? 'rgb(255, 189, 105)' : '')}; 
+    background-color: ${props =>
+      props.displayBotton ? 'rgb(255, 189, 105)' : ''}; 
     font-size: 18px;
     font-family: 'Proxima Nova';
     width: ${props => (props.displayBotton ? '80%' : '100%')};
     height: ${props => (props.displayBotton ? '35px' : '')};
-    color: ${props => (props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255')}; 
+    color: ${props =>
+      props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'}; 
     align-self: ${props => (props.displayBotton ? 'end' : '')}; 
     justify-self: ${props => (props.displayBotton ? 'center' : '')}; 
     margin-bottom: ${props => (props.displayBotton ? '50%' : '')}; 
@@ -350,7 +351,8 @@ export const StyledLink = styled.a`
   @media (min-width: ${breakpoints.laptop}) {
     background-color: #4d1b84;
     display: ${props => (props.IniciarSesion ? 'block' : '')};     
-    background-color: ${props => (props.IniciarSesion ? 'rgb(255, 189, 105)' : '')}; 
+    background-color: ${props =>
+      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''}; 
     padding: 12px 15px;
     font-size: ${props => (props.IniciarSesion ? '17px' : '14px')}; 
     margin: 2%;

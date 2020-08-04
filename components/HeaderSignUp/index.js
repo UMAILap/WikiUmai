@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-
 import {
   Container,
   ContainerHeader,
@@ -35,11 +34,11 @@ function HeaderSignUp() {
   const [openMenuUniverso, setOpenMenuUniverso] = useState(false);
 
   const IniciarSesion = true;
-  const displayBotton =true;
+  const displayBotton = true;
   return (
-    <Container >
+    <Container>
       <Wrapper>
-      {/* <MenuSlide>
+        {/* <MenuSlide>
         <div onClick={() => setOpenMenu(!openMenu)}>
               <img src="/menu.svg" />           
         </div>
@@ -51,23 +50,31 @@ function HeaderSignUp() {
       </MenuSlide> */}
         <ContainerHeader>
           <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
-            <img src="/menu.svg" />   
+            <img src="/menu.svg" />
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
-            <ul>
-              <li onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
-                <StyledLink className="universo">Universo</StyledLink>
-                <div className={openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'}>
-                  <StyledLink href="/personajes">Personajes</StyledLink>
-                  <StyledLink href="/tecnologias">Tecnologias</StyledLink>
-                  <StyledLink href="/historias">Historias</StyledLink>
-                </div>
-              </li>
-            </ul>
-             <StyledLink>Foro</StyledLink> 
-            <StyledLink>Ayudas y reglas</StyledLink>
-            <StyledLink href="/login" IniciarSesion={IniciarSesion} displayBotton={displayBotton} >Iniciar Sesion</StyledLink>
-          </div>        
-          </MenuHamburguesa>         
+              <ul>
+                <li onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
+                  <StyledLink className="universo">Universo</StyledLink>
+                  <div
+                    className={
+                      openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'
+                    }>
+                    <StyledLink href="/personajes">Personajes</StyledLink>
+                    <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+                    <StyledLink href="/historias">Historias</StyledLink>
+                  </div>
+                </li>
+              </ul>
+              <StyledLink>Foro</StyledLink>
+              <StyledLink>Ayudas y reglas</StyledLink>
+              <StyledLink
+                href="/login"
+                IniciarSesion={IniciarSesion}
+                displayBotton={displayBotton}>
+                Iniciar Sesion
+              </StyledLink>
+            </div>
+          </MenuHamburguesa>
           <Logo>
             <Link href="/index">
               <a>
@@ -101,7 +108,7 @@ function HeaderSignUp() {
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>
             </ul>
             </div> */}
-            <StyledLink>Foro</StyledLink> 
+            <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
           <ContainerUser>
@@ -114,7 +121,9 @@ function HeaderSignUp() {
                 <img src="/perfil-header.png" />
               </User>
             </Link> */}
-                <StyledLink href="/login" IniciarSesion={IniciarSesion}>Iniciar Sesion</StyledLink>
+            <StyledLink href="/login" IniciarSesion={IniciarSesion}>
+              Iniciar Sesion
+            </StyledLink>
           </ContainerUser>
         </ContainerHeader>
       </Wrapper>
