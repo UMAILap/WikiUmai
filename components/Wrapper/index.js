@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 import { WrapperContainer } from './styles';
 
 function Wrapper({ direction, children }) {
-  return (
-    <WrapperContainer direction = {direction}>
-      {children}
-    </WrapperContainer>
-  );
+  return <WrapperContainer direction={direction}>{children}</WrapperContainer>;
 }
 
 Wrapper.propTypes = {
@@ -17,7 +13,7 @@ Wrapper.propTypes = {
 };
 
 Wrapper.defaultProps = {
-    direction:'row'
-  };
+  direction: 'row',
+};
 
 export default Wrapper;

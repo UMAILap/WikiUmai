@@ -4,11 +4,17 @@ import PropTypes from 'prop-types';
 import { Titulos } from 'components';
 import { ListaPerfilContainer, ListaPerfilItem } from './styles';
 
-
 function ListaPerfil({ contribuciones }) {
   //Contribuciones es un array con objetos que guardan tipo y titulo de cada contribución
   const ListItem = contribuciones.map(contribucion => (
-    <Link href={contribucion.tipo === 'historia' ? '/historias/nombre' : '/tecnologias/nombre'} passHref key={Math.random()}>
+    <Link
+      href={
+        contribucion.tipo === 'historia'
+          ? '/historias/nombre'
+          : '/tecnologias/nombre'
+      }
+      passHref
+      key={Math.random()}>
       <ListaPerfilItem>
         <img
           src={
