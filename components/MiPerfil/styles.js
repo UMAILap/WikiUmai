@@ -158,6 +158,21 @@ export const MiPerfilCuentaBotones = styled.div`
     background-color: ${leerColor(colores.blanco)};
     color: ${leerColor(colores.violeta)};
   }
+  @media (max-width: ${breakpoints.laptop}){
+    a{
+      font-size: 14px !important;
+      padding: 0.5em 1em;
+      width: fit-content !important;
+    }
+  }
+  @media (max-width: ${breakpoints.tablet}){
+    a{
+      font-size: 12px !important;
+    }
+    a:last-child {
+      margin-left: 2em;
+    }
+  }
 `;
 
 export const Edit = styled.img`
