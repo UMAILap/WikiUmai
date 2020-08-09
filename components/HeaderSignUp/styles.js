@@ -149,6 +149,9 @@ export const MenuHamburguesa = styled.h1`
     align-items: center;
     background-color: ${leerColor(colores.violetaOscuro)};
     margin-top: 20px;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-top: 0;
+    }
   }
   .MenuDown {
     display: grid;
@@ -159,6 +162,12 @@ export const MenuHamburguesa = styled.h1`
     margin-bottom: 2%;
     height: 95%;
     margin-left: -3%;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-left: -10%;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+      margin-left: -5%;
+    }
   }
   .MenuDown a {
   }
@@ -168,15 +177,43 @@ export const MenuHamburguesa = styled.h1`
   }
   .MenuDownUniverso {
     display: flex;
+    flex-direction: column;
+    margin-left: 89%;
     position: absolute;
-    width: 60%;
-    z-index: 1;
-    margin-bottom: 2%;
-    height: 95%;
-    margin-left: 3%;
+    width: 68%;
+    background-color: ${leerColor(colores.violeta)};
+    height: 187px;
+    margin-top: -24px;
+    justify-content: space-around;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-left: 90%;
+      margin-top: 0;
+    }
+    @media (min-width: ${breakpoints.mobileGrande}) {
+      margin-left: 92%;
+      width: 72%;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+      margin-left: 95%;
+      height: 248px;
+      margin-top: -10px;
+    }
+    @media (min-width: ${breakpoints.laptop}) {
+      display: flex;
+      position: absolute;
+      width: 60%;
+      z-index: 1;
+      margin-bottom: 2%;
+      height: 95%;
+      margin-left: 3%;
+    }
   }
   .MenuDownUniverso a {
-    width: 60%;
+    width: 100%;
+    border-bottom: none;
+    @media (min-width: ${breakpoints.laptop}) {
+      width: 60%;
+    }
   }
 
   .MenuUpUniverso {
@@ -284,13 +321,13 @@ export const ContainerBotones = styled.div`
     @media (min-width: ${breakpoints.laptop}) {
       border-radius: 20px;
       /* background-color: #4d1b84; */
-      padding: 12px 15px;
+      /* padding: 12px 15px; */
       color: #fff;
       font-size: 12px;
       margin: 2%;
     }
     @media (min-width: ${breakpoints.laptopL}) {
-      padding: 12px 30px;
+      padding: 12px 0;
       margin: 2%;
     }
   }
@@ -304,7 +341,7 @@ export const ContainerBotones = styled.div`
   .dropdown {
     display: grid;
     position: absolute;
-    min-width: 100px;
+    width: auto;
     z-index: 1;
     margin-bottom: 2%;
   }
@@ -312,6 +349,10 @@ export const ContainerBotones = styled.div`
     margin: 0;
     background-color: ${leerColor(colores.violetaOscuro)};
 
+    @media (min-width: ${breakpoints.laptop}) {
+      background-color: ${leerColor(colores.violeta)};
+
+    }
   }
   .dropdown a {
     margin: 0;

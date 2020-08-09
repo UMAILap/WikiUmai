@@ -5,30 +5,32 @@ import { Titulos } from 'components';
 import { BASE_URL } from 'utils';
 
 import {
-    PersonajesContainer,
-    PersonajesRelacionados,
-    PersonajesItem,
+  PersonajesContainer,
+  PersonajesRelacionados,
+  PersonajesItem,
 } from './styles';
 
 function IconosPersonajes({ personajes }) {
-    const getPersonajesItem = personajes.map(({ nombre, avatares, slug }) => {
-        return (
-            <Link
-                href={'/personajes/' + slug}
-                passHref
-                key={nombre}>
-                <a>
-                    <PersonajesItem src={`${avatares.length ? BASE_URL + avatares[0].url : '/placeholderAvatar.png'}`}></PersonajesItem>
-                </a>
-            </Link>
-        )
-    });
+  const getPersonajesItem = personajes.map(({ nombre, avatares, slug }) => {
     return (
-        <PersonajesContainer>
-            <Titulos>Personajes</Titulos>
-            <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados>
-        </PersonajesContainer>
+      <Link href={'/personajes/' + slug} passHref key={nombre}>
+        <a>
+          <PersonajesItem
+            src={`${
+              avatares.length
+                ? BASE_URL + avatares[0].url
+                : '/placeholderAvatar.png'
+            }`}></PersonajesItem>
+        </a>
+      </Link>
     );
+  });
+  return (
+    <PersonajesContainer>
+      <Titulos>Personajes</Titulos>
+      <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados>
+    </PersonajesContainer>
+  );
 }
 
 export default IconosPersonajes;

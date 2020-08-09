@@ -124,7 +124,12 @@ function HomeContainer() {
                       href={`/planeta/${slug}`}
                       passHref>
                       <Card>
-                        <CardImg src={`${avatar ? BASE_URL + avatar.url : '/placeholderAvatar.png'}`}></CardImg>
+                        <CardImg
+                          src={`${
+                            avatar
+                              ? BASE_URL + avatar.url
+                              : '/placeholderAvatar.png'
+                          }`}></CardImg>
                         <TituloCard>{nombre}</TituloCard>
                       </Card>
                     </Link>
