@@ -29,7 +29,7 @@ function HistoriasUniversoContainer() {
       <Wrapper>
         <Container>
           <PlanetasNav>
-          <PlanetasPills isFlex={isFlex} multiple />
+            <PlanetasPills isFlex={isFlex} multiple />
           </PlanetasNav>
 
           <Personajes>
