@@ -10,7 +10,7 @@ function Header() {
         <ContainerHeader>
           
           <Logo>
-            <img src="./logo.png" />
+            <img src="/logo.png" />
           </Logo>
         
         </ContainerHeader>

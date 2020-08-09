@@ -27,7 +27,8 @@ import {
   IconosPersonajes,
 } from 'components';
 
-function PlanetasContainer() {
+function PlanetasContainer(props) {
+    const {data} = props
   const arrayPersonajes = [
     {
       nombre: 'Guardían Zoro',
@@ -65,7 +66,7 @@ function PlanetasContainer() {
           <ContenedorBannerInfo>
             <BannerInfo>
               <NombrePlaneta>
-                Planeta <span>Sol</span>
+  Planeta <span>{data.nombre}</span>
               </NombrePlaneta>
               <BajadaPlaneta>
                 Super planeta artificial de enorme tamaño con un escudo
