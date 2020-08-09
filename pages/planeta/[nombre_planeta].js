@@ -1,6 +1,6 @@
 import React from 'react';
 import { api } from 'utils';
-import { BASE_URL, routes } from 'utils';
+import { BASE_URL } from 'utils';
 import { Layout, Planetas as PlanetasContainer } from 'containers';
 
 function Planetas(props) {
@@ -11,27 +11,28 @@ function Planetas(props) {
     );
 }
 
-//Agregado Lean WIP.
-export async function getServerSideProps(ctx) {
-    const { nombre_planeta } = ctx.query;
-
-    //console.log('PARAMETRO',ctx.params)
-    //try {
+export async function getServerSideProps({ res, params }) {
+    const { nombre_planeta } = params;
+    try {
         const response = await api.get(`${BASE_URL}/planetas?slug=${nombre_planeta}`)
-        console.log(`${BASE_URL}/planetas?slug=${nombre_planeta}`)
         const responseData = response.data
-       const dataObject = responseData[0]
-        console.log('daob',responseData[0]) 
-       return { props: {...dataObject} }
-
-       //TO BE CONTINUED... Redirigir a 404 si no devuelve data.
-        
-//} catch (error) {
-        //console.log('Error al obtener los planetas', errror)
-    //    return { props:{}} 
-  //  }  
-    
-  }
+        if (responseData.length) {
+            const dataObject = responseData[0]
+            return { props: { ...dataObject } }
+        } else {
+            res.setHeader("location", "/404");
+            res.statusCode = 302;
+            res.end();
+            return { props: {} }
+        }
+    } catch (error) {
+        //console.log('Error al obtener los planetas', error)
+        res.setHeader("location", "/404");
+        res.statusCode = 302;
+        res.end();
+        return { props: {} }
+    }
+}
 
 
 
