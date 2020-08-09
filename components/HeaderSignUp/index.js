@@ -52,9 +52,9 @@ function HeaderSignUp() {
           <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
             <img src="/menu.svg" />
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
-               
-                <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
-                  <StyledLink className="universo">Universo
+              <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
+                <StyledLink className="universo">
+                  Universo
                   <div
                     className={
                       openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'
@@ -63,8 +63,8 @@ function HeaderSignUp() {
                     <StyledLink href="/tecnologias">Tecnologias</StyledLink>
                     <StyledLink href="/historias">Historias</StyledLink>
                   </div>
-                  </StyledLink>                  
-                </div>                          
+                </StyledLink>
+              </div>
               <StyledLink>Foro</StyledLink>
               <StyledLink>Ayudas y reglas</StyledLink>
               <StyledLink

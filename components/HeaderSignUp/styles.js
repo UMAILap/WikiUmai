@@ -177,47 +177,42 @@ export const MenuHamburguesa = styled.h1`
   }
   .MenuDownUniverso {
     display: flex;
-    flex-direction:column;
-    margin-left:89%;
+    flex-direction: column;
+    margin-left: 89%;
     position: absolute;
     width: 68%;
     background-color: ${leerColor(colores.violeta)};
-    height:187px;
-    margin-top:-24px;
-    justify-content:space-around;
+    height: 187px;
+    margin-top: -24px;
+    justify-content: space-around;
     @media (min-width: ${breakpoints.mobile}) {
-    
-    margin-left:90%;
-    margin-top:0;
-
+      margin-left: 90%;
+      margin-top: 0;
     }
     @media (min-width: ${breakpoints.mobileGrande}) {
-      margin-left:92%;
+      margin-left: 92%;
       width: 72%;
-
     }
     @media (min-width: ${breakpoints.tablet}) {
-      margin-left:95%;
-      height:248px;
-      margin-top:-10px;
-
-
+      margin-left: 95%;
+      height: 248px;
+      margin-top: -10px;
     }
     @media (min-width: ${breakpoints.laptop}) {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    z-index: 1;
-    margin-bottom: 2%;
-    height: 95%;
-    margin-left: 3%;
+      display: flex;
+      position: absolute;
+      width: 60%;
+      z-index: 1;
+      margin-bottom: 2%;
+      height: 95%;
+      margin-left: 3%;
     }
   }
   .MenuDownUniverso a {
     width: 100%;
-    border-bottom:none;
+    border-bottom: none;
     @media (min-width: ${breakpoints.laptop}) {
-    width: 60%;
+      width: 60%;
     }
   }
 
@@ -398,7 +393,7 @@ export const StyledLink = styled.a`
     background-color: #4d1b84;
     display: ${props => (props.IniciarSesion ? 'block' : '')};     
     background-color: ${props =>
-    props.IniciarSesion ? 'rgb(255, 189, 105)' : ''}; 
+      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''}; 
     padding: 12px 15px;
     font-size: ${props => (props.IniciarSesion ? '17px' : '14px')}; 
     margin: 2%;
