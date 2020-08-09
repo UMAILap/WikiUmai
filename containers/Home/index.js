@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useRouter } from 'next/router';
+import { api } from 'utils';
+import { BASE_URL, routes } from 'utils';
 
 import {
   ContainerBanner,
@@ -30,9 +32,23 @@ import {
 
 import { Wrapper, Titulos, BotonVioleta } from 'components';
 import Link from 'next/link';
-/* import { Link } from '../../components/Header/styles'; */
 
 function HomeContainer() {
+  //Trae los planetas para el slider cuando carga la pag. (Lean)
+  const [planetas, setPlanetas] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get(`${BASE_URL}/planetas`);
+        const responseData = response.data;
+        setPlanetas(responseData);
+      } catch (error) {
+        console.log('Error al obtener los planetas', errror);
+      }
+    };
+    fetchData();
+  }, []);
+
   var settings = {
     slidesToShow: 6,
     responsive: [
@@ -99,42 +115,21 @@ function HomeContainer() {
 
           <ContainerSlider>
             <Slider {...settings}>
-              <Link href="/planeta/sol" passHref>
-                <Card>
-                  <CardImg src="/images/slider/1.png"></CardImg>
-                  <TituloCard>Sol</TituloCard>
-                </Card>
-              </Link>
-              <Link href="/planeta/nima" passHref>
-                <Card>
-                  <CardImg src="/images/slider/2.png"></CardImg>
-                  <TituloCard>Nima</TituloCard>
-                </Card>
-              </Link>
-              <Link href="/planeta/wereld" passHref>
-                <Card>
-                  <CardImg src="/images/slider/3.png"></CardImg>
-                  <TituloCard>Wereld</TituloCard>
-                </Card>
-              </Link>
-              <Link href="/planeta/adhera" passHref>
-                <Card>
-                  <CardImg src="/images/slider/4.png"></CardImg>
-                  <TituloCard>Adhera</TituloCard>
-                </Card>
-              </Link>
-              <Link href="/planeta/ikigai" passHref>
-                <Card>
-                  <CardImg src="/images/slider/5.png"></CardImg>
-                  <TituloCard>Ikigai</TituloCard>
-                </Card>
-              </Link>
-              <Link href="/planeta/zoro" passHref>
-                <Card>
-                  <CardImg src="/images/slider/6.png"></CardImg>
-                  <TituloCard>Zoro</TituloCard>
-                </Card>
-              </Link>
+              {planetas !== [] &&
+                planetas.map(planeta => {
+                  const { id, nombre, avatar, slug } = planeta;
+                  return (
+                    <Link
+                      key={`${id}-${nombre}`}
+                      href={`/planeta/${slug}`}
+                      passHref>
+                      <Card>
+                        <CardImg src={`${BASE_URL}${avatar.url}`}></CardImg>
+                        <TituloCard>{nombre}</TituloCard>
+                      </Card>
+                    </Link>
+                  );
+                })}
             </Slider>
           </ContainerSlider>
         </Container>
@@ -350,7 +345,6 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
-
                   <TituloOverlay>
                     Título de encabezado de lo que sea
                   </TituloOverlay>

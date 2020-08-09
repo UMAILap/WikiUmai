@@ -28,8 +28,8 @@ function Footer({ href }) {
             Universidad Maimónides.
           </Texto>
           <Imagenes>
-            <img src="./creative_commons.png" />
-            <img src="./logo_footer.png" />
+            <img src="/creative_commons.png" />
+            <img src="/logo_footer.png" />
           </Imagenes>
         </ContainerFooter>
       </Wrapper>

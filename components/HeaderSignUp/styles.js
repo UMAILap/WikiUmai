@@ -241,7 +241,7 @@ export const ContainerSearch = styled.div`
       width: 90%;
       border-radius: 20px;
       height: fit-content;
-      background-image: url(./search.png);
+      background-image: url(/search.png);
     }
   }
   @media (min-width: ${breakpoints.notebook}) {

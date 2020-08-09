@@ -2,11 +2,10 @@ import React from 'react';
 import { api, addBearerToken, routes } from 'utils';
 import Cookies from 'js-cookie';
 
-
 import { Layout, Perfil as PerfilContainer } from 'containers';
 
 function Perfil() {
-// { perfilData }
+  // { perfilData }
   //console.log('user data', perfilData)
   return (
     <Layout>
