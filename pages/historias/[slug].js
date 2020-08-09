@@ -1,20 +1,20 @@
 import React from 'react';
+import { getCollectionBySlug } from 'utils';
 
 import { Layout, Historias as HistoriasContainer } from 'containers';
 
-function Historias({ slug }) {
+function Historias(props) {
   return (
     <Layout>
-      <HistoriasContainer />
+      <HistoriasContainer data={props}/>
     </Layout>
   );
 }
 
-Historias.getInitialProps = ctx => {
-  const { slug } = ctx.query;
-  //FETCH
-  return {
-    slug
-  };
-};
+export async function getServerSideProps({ res, params }) {
+    const { slug } = params;
+    const data = await getCollectionBySlug(slug,'historias',res)
+    return { props: data }
+}
+
 export default Historias;

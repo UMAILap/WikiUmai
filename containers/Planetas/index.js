@@ -37,39 +37,9 @@ function PlanetasContainer({ data }) {
         objetos,
         hitos,
         articulos,
-        avatar
+        avatar,
     } = data;
 
-    const arrayPersonajes = [
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-        {
-            nombre: 'Guardían Zoro',
-            img: '/personaje.png',
-        },
-    ];
     return (
         <>
             <PlanetasBanner>
@@ -79,9 +49,7 @@ function PlanetasContainer({ data }) {
                             <NombrePlaneta>
                                 Planeta <span>{nombre}</span>
                             </NombrePlaneta>
-                            <BajadaPlaneta>
-                                {descripcion}
-                            </BajadaPlaneta>
+                            <BajadaPlaneta>{descripcion}</BajadaPlaneta>
                         </BannerInfo>
 
                         <BannerImagen>
@@ -104,31 +72,25 @@ function PlanetasContainer({ data }) {
                     <Historias>
                         <Titulos>Historias</Titulos>
                         <SeccionLinks>
-                            <Link href="/historias/nombre" passHref>
-                                <LinksHistorias>Origen del personaje</LinksHistorias>
-                            </Link>
-                            <Link href="/historias/nombre" passHref>
-                                <LinksHistorias>
-                                    Pelea entre mundos: la guerra por el poder
-                </LinksHistorias>
-                            </Link>
-                            <Link href="/historias/nombre" passHref>
-                                <LinksHistorias>Prisionero de guerra: el escape</LinksHistorias>
-                            </Link>
+                            {historias.map(({ titulo, slug }) =>
+                                <Link href={`/historias/${slug}`} passHref>
+                                    <LinksHistorias>{titulo}</LinksHistorias>
+                                </Link>
+                            )}
                         </SeccionLinks>
                         <ContenedorBoton>
                             <BotonVioleta href="/historias/crear/">
                                 + Agregar historia
-              </BotonVioleta>
+                            </BotonVioleta>
                         </ContenedorBoton>
                     </Historias>
 
                     <Personajes>
-                        <IconosPersonajes personajes={arrayPersonajes}></IconosPersonajes>
+                        <IconosPersonajes personajes={personajes}></IconosPersonajes>
                         <ContenedorBoton>
                             <BotonVioleta href="/personajes/crear/">
                                 + Agregar personaje
-              </BotonVioleta>
+                            </BotonVioleta>
                         </ContenedorBoton>
                     </Personajes>
 
@@ -138,14 +100,14 @@ function PlanetasContainer({ data }) {
                             <Link href="/historias/la-historia-del-otro-planeta" passHref>
                                 <LinksHistorias>
                                     La historia del otro planeta que se relaciona con este
-                </LinksHistorias>
+                                </LinksHistorias>
                             </Link>
                             <Link
                                 href="/personaje/este-personaje-que-fue-a-este-planeta"
                                 passHref>
                                 <LinksHistorias>
                                     Este personaje que fue a este planeta
-                </LinksHistorias>
+                                </LinksHistorias>
                             </Link>
                             <Link href="/tecnologias/el-pipiri_de_ajayu" passHref>
                                 <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
@@ -156,20 +118,16 @@ function PlanetasContainer({ data }) {
                     <Objetos>
                         <Titulos>Objetos y Tecnologías</Titulos>
                         <SeccionLinks>
-                            <Link href="/tecnologias/ajayu" passHref>
-                                <LinksHistorias>Ajayu</LinksHistorias>
-                            </Link>
-                            <Link href="/tecnologias/kakuru" passHref>
-                                <LinksHistorias>Kakuru</LinksHistorias>
-                            </Link>
-                            <Link href="/tecnologias/pepiru" passHref>
-                                <LinksHistorias>Pepiru</LinksHistorias>
-                            </Link>
+                            {objetos.map(({ nombre, slug }) =>
+                                <Link href={`/tecnologias/${slug}`} passHref>
+                                    <LinksHistorias>{nombre}</LinksHistorias>
+                                </Link>
+                            )}
                         </SeccionLinks>
                         <ContenedorBoton>
                             <BotonVioleta href="/tecnologias/crear/">
                                 + Agregar objetos
-              </BotonVioleta>
+                            </BotonVioleta>
                         </ContenedorBoton>
                     </Objetos>
                 </AgregarNuevas>

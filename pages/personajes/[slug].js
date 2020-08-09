@@ -1,19 +1,20 @@
 import React from 'react';
+import { getCollectionBySlug } from 'utils';
 
 import { Layout, Personajes as PersonajesContainer } from 'containers';
 
-function Personajes({ slug }) {
+function Personajes(props) {
   return (
     <Layout>
-      <PersonajesContainer />
+      <PersonajesContainer data={props} />
     </Layout>
   );
 }
-Personajes.getInitialProps = ctx => {
-  const { slug } = ctx.query;
-  //FETCH
-  return {
-    slug
-  };
-};
+
+export async function getServerSideProps({ res, params }) {
+    const { slug } = params;
+    const data = await getCollectionBySlug(slug,'personajes',res)
+    return { props: data }
+}
+
 export default Personajes;

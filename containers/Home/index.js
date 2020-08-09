@@ -43,7 +43,7 @@ function HomeContainer() {
         const responseData = response.data;
         setPlanetas(responseData);
       } catch (error) {
-        console.log('Error al obtener los planetas', errror);
+        console.log('Error al obtener los planetas', error);
       }
     };
     fetchData();
@@ -115,7 +115,7 @@ function HomeContainer() {
 
           <ContainerSlider>
             <Slider {...settings}>
-              {planetas !== [] &&
+              {planetas.length &&
                 planetas.map(planeta => {
                   const { id, nombre, avatar, slug } = planeta;
                   return (
@@ -124,7 +124,7 @@ function HomeContainer() {
                       href={`/planeta/${slug}`}
                       passHref>
                       <Card>
-                        <CardImg src={`${BASE_URL}${avatar.url}`}></CardImg>
+                        <CardImg src={`${avatar ? BASE_URL + avatar.url : '/placeholderAvatar.png'}`}></CardImg>
                         <TituloCard>{nombre}</TituloCard>
                       </Card>
                     </Link>
