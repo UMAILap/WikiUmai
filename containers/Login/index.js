@@ -25,11 +25,10 @@ function LoginContainer() {
     const password = e.target.elements['password'].value;
 
     api
-      .post(`${routes.login}`, { identifier, password })
+      .post(`/api/auth/login`, { identifier, password })
       .then(response => {
-        const token = response.data.jwt;
-        const { user } = response.data;
-        setToken(token, user);
+        //const token = response.data.jwt;
+        console.log(response)
       })
       .catch(error => {
         setErrors(error.response.data || []);

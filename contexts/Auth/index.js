@@ -6,27 +6,21 @@ import Router from 'next/router';
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children, authToken }) => {
   const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const token = Cookies.get('token');
-    if (token) {
-      setToken(token);
-    }
-  }, []);
+  const [token, setToken] = useState(null);
 
   const updateUser = user => {
     console.log(user);
     setUser(user);
   };
 
-  const setToken = async (token, user) => {
-    Cookies.set('token', token);
-    addBearerToken(token);
-    updateUser(user);
-    redirectAfterLogin();
-  };
+//   const setToken = async (token, user) => {
+//     Cookies.set('token', token);
+//     addBearerToken(token);
+//     updateUser(user);
+//     redirectAfterLogin();
+//   };
 
   const logout = () => {
     Cookies.remove('token');
