@@ -1,54 +1,92 @@
 import styled from 'styled-components';
-import { breakpoints, leerColor, colores } from 'constants';
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 export const Container = styled.footer`
+  padding-top: 20px;
   padding-bottom: 20px;
+  max-height: 100px;
+  font-family: 'Proxima Nova';
   align-self: flex-end;
+  /*background-color: ${leerColor(colores.blanco)};*/
+    background-color: transparent;
+
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 `;
 
 export const ContainerFooter = styled.div`
-  display: grid;
   grid-template-columns: 100%;
-  width: 100%;
-  grid-template-rows: 1fr;
-  justify-content: center;
+
   @media (min-width: ${breakpoints.mobile}) {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
   }
+
   @media (min-width: ${breakpoints.tablet}) {
-    grid-template-columns: 50% 50%;
   }
+
   @media (min-width: ${breakpoints.laptop}) {
+    grid-template-columns: 40% 60%;
   }
 `;
 export const Texto = styled.a`
-  font-size: 12px;
-  text-align: center;
-  line-height: 20px;
-  color: #fff;
-  @media (min-width: ${breakpoints.mobile}) {
-  }
+  font-size: ${pxToRem(8)};
+  color: ${leerColor(colores.blanco)};
+  font-size: ${pxToRem(11)};
+  font-style: italic;
+  line-height: 13px;
+
   @media (min-width: ${breakpoints.tablet}) {
-    text-align: left;
+    font-size: ${pxToRem(12)};
+    font-style: italic;
+    line-height: ${pxToRem(16)};
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: ${pxToRem(12)};;
+    font-style: italic;
+    line-height: 16px;
   }
 `;
 export const Imagenes = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
   img {
-    width: 25%;
-    height: fit-content;
+    width: 20%;
   }
+
+  @media (min-width: ${breakpoints.mobileGrande}) {
+    img {
+      width: 15%;
+      margin: 0;
+    }
+  }
+
   @media (min-width: ${breakpoints.tablet}) {
-    padding-top: 0;
+    img {
+      width: 10%;
+    }
   }
-  @media (min-width: ${breakpoints.laptopL}) {
-    padding: 0;
+
+  @media (min-width: ${breakpoints.laptop}) {
+    justify-content: flex-end;
+    align-items: baseline;
+    img {
+      width: 15%;
+      padding-right: 10px;
+    }
   }
+
   @media (min-width: ${breakpoints.laptopL}) {
     img {
-      width: auto;
+      width: 12%;
     }
   }
 `;

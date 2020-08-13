@@ -108,7 +108,6 @@ export const SeccionLinks = styled.div`
   width: 100%;
 
   @media (min-width: ${breakpoints.laptop}) {
-    
   }
 `;
 
@@ -160,19 +159,18 @@ export const Personajes = styled.div`
   flex-flow: row wrap;
   padding-bottom: 40px;
 
-  div{
-    width:100%;
+  div {
+    width: 100%;
     padding: 0 0 0 0;
   }
 `;
 
 export const ContenedorBoton = styled.div`
-  
-  width: 100%!important;
-  padding: 7% 0%!important;
+  width: 100% !important;
+  padding: 7% 0% !important;
 
   @media (min-width: ${breakpoints.tablet}) {
-    width: 50%!important;
+    width: 50% !important;
     text-align: center;
     padding: 0% 0%;
   }
