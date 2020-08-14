@@ -1,11 +1,14 @@
 import React from 'react';
 
-import { Layout, EditarTecnologia as TecnologiaContainer } from 'containers';
+import { 
+    Layout, 
+    // EditarTecnologia as TecnologiaContainer 
+} from 'containers';
 
 function EditarTecnologia({ slug }) {
     return (
         <Layout>
-            <TecnologiaContainer />
+            {/* <TecnologiaContainer /> */}
         </Layout>
     );
 }

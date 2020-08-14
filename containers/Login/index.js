@@ -28,7 +28,7 @@ function LoginContainer() {
       .post(`/api/auth/login`, { identifier, password })
       .then(response => {
         //const token = response.data.jwt;
-        console.log(response)
+        console.log(response);
       })
       .catch(error => {
         setErrors(error.response.data || []);

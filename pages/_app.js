@@ -2,11 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import GlobalStyle from 'constants/globalStyle';
 import { AuthProvider } from 'contexts';
-import { parseCookies, setCookie, destroyCookie } from 'nookies'
+import { parseCookies, setCookie, destroyCookie } from 'nookies';
 import { parse } from 'cookie';
 
 export default function MyApp({ Component, pageProps, cookies }) {
-    console.log('token 3',cookies)
+  console.log('token 3', cookies);
   return (
     <>
       <Head>
@@ -19,16 +19,16 @@ export default function MyApp({ Component, pageProps, cookies }) {
         <title>Wiki Umai</title>
       </Head>
       <GlobalStyle />
-      <AuthProvider >
+      <AuthProvider>
         <Component {...pageProps} />
       </AuthProvider>
     </>
   );
 }
 
-MyApp.getInitialProps = async function({ctx}) {
-    // Parse
-    const cookies = parseCookies(ctx);
-    console.log(cookies)
-    return { cookies };
-  };
+MyApp.getInitialProps = async function({ ctx }) {
+  // Parse
+  const cookies = parseCookies(ctx);
+  console.log(cookies);
+  return { cookies };
+};

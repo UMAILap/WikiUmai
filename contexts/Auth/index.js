@@ -15,12 +15,12 @@ export const AuthProvider = ({ children, authToken }) => {
     setUser(user);
   };
 
-//   const setToken = async (token, user) => {
-//     Cookies.set('token', token);
-//     addBearerToken(token);
-//     updateUser(user);
-//     redirectAfterLogin();
-//   };
+  //   const setToken = async (token, user) => {
+  //     Cookies.set('token', token);
+  //     addBearerToken(token);
+  //     updateUser(user);
+  //     redirectAfterLogin();
+  //   };
 
   const logout = () => {
     Cookies.remove('token');
