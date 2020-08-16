@@ -18,8 +18,8 @@ import {
 
 import { BotonVioleta, Titulos } from 'components';
 
-function MiPerfil({data}) {
-    const {nombre, username, email } = data
+function MiPerfil({ data }) {
+  const { nombre, username, email } = data;
   const isBotonRosa = true;
   return (
     <MiPerfilContainer>
@@ -54,10 +54,10 @@ function MiPerfil({data}) {
   );
 }
 
-function Input(placeholder,value) {
+function Input(placeholder, value) {
   return (
     <DivInput>
-      <input type="text" placeholder={placeholder} value={value}/>
+      <input type="text" placeholder={placeholder} value={value} />
       <Edit src="./edit.svg"></Edit>
     </DivInput>
   );

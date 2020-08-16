@@ -13,9 +13,8 @@ import {
   IconosPersonajes,
 } from 'components';
 function PerfilContainer({ data }) {
-
-    console.log('data user', data)
-    const { nombre } = data
+  console.log('data user', data);
+  const { nombre } = data;
 
   //HARDCODEADO
   const arrayContribuciones = [
@@ -77,7 +76,7 @@ function PerfilContainer({ data }) {
     <ContainerMain>
       <ContainerBanner>
         <WrapperPersonajesPlanetas>
-            <Titulo>{nombre}</Titulo>
+          <Titulo>{nombre}</Titulo>
         </WrapperPersonajesPlanetas>
       </ContainerBanner>
       <WrapperPersonajesPlanetas>
