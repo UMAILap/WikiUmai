@@ -8,7 +8,7 @@ export default (req, res) => {
     .post(`${routes.login}`, { identifier, password })
     .then(response => {
       const token = response.data.jwt;
-      const user = response.data.user
+      const user = response.data.user;
       res.setHeader(
         'Set-Cookie',
         serialize('token', token, { path: '/', httpOnly: true }),
