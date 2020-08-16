@@ -1,27 +1,19 @@
 import React from 'react';
-import { api, addBearerToken, routes } from 'utils';
-import Cookies from 'js-cookie';
+import { getUserData } from 'utils';
 
 import { Layout, Perfil as PerfilContainer } from 'containers';
 
-function Perfil() {
-  // { perfilData }
-  //console.log('user data', perfilData)
+function Perfil(props) {
   return (
     <Layout>
-      <PerfilContainer />
+      <PerfilContainer data={props} />
     </Layout>
   );
 }
 
 export default Perfil;
 
-// Perfil.getInitialProps = async (ctx) => {
-//     const cookie = ctx.req ? ctx.req.headers.cookie  : null
-//    // const token = Cookies.get('token')
-//     const token = cookie.substring(6);
-//     console.log(token)
-//     addBearerToken(token)
-//     const { data } = await api.get(`${routes.me}`);
-//     return { userList: data };
-// }
+export async function getServerSideProps(ctx) {
+    const data = await getUserData(ctx)
+    return { props: data }
+}

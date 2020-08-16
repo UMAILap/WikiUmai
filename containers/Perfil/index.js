@@ -82,7 +82,7 @@ function PerfilContainer() {
           {/* type = 'historias' | 'discusiones'*/}
           <WrapperCreaciones>
             <ListaPerfil contribuciones={arrayContribuciones} />
-            <IconosPersonajes personajes={arrayPersonajes}></IconosPersonajes>
+            {/* <IconosPersonajes personajes={arrayPersonajes}></IconosPersonajes> */}
           </WrapperCreaciones>
         </>
       </WrapperPersonajesPlanetas>

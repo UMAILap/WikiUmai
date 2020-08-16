@@ -33,7 +33,6 @@ import {
 
 //galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
 function PersonajesContainer({ data }) {
-  console.log(data);
   const {
     nombre,
     historias,

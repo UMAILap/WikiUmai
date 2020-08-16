@@ -6,7 +6,7 @@ import { parseCookies, setCookie, destroyCookie } from 'nookies';
 import { parse } from 'cookie';
 
 export default function MyApp({ Component, pageProps, cookies }) {
-  console.log('token 3', cookies);
+  const token = cookies.token;
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps, cookies }) {
         <title>Wiki Umai</title>
       </Head>
       <GlobalStyle />
-      <AuthProvider>
+      <AuthProvider authToken={token}>
         <Component {...pageProps} />
       </AuthProvider>
     </>
@@ -27,8 +27,7 @@ export default function MyApp({ Component, pageProps, cookies }) {
 }
 
 MyApp.getInitialProps = async function({ ctx }) {
-  // Parse
   const cookies = parseCookies(ctx);
-  console.log(cookies);
+  //console.log(cookies);
   return { cookies };
 };
