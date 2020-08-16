@@ -18,9 +18,9 @@ import {
 
 import { BotonVioleta, Titulos } from 'components';
 
-function MiPerfil() {
+function MiPerfil({data}) {
+    const {nombre, username, email } = data
   const isBotonRosa = true;
-
   return (
     <MiPerfilContainer>
       <Titulos>Mi perfil</Titulos>
@@ -33,13 +33,13 @@ function MiPerfil() {
           {/* <BtnEditarFoto>Editar Foto</BtnEditarFoto> */}
         </MiPerfilImagen>
         <MiPerfilInputs>
-          {Input('Nombre real')}
+          {Input('Nombre real', nombre)}
           {/* <input type="text" placeholder="Nombre real" /> */}
-          {Input('Usuario')}
+          {Input('Usuario', username)}
           {/* <input type="text" placeholder="Usuario" /> */}
         </MiPerfilInputs>
         <MiPerfilInputBoton>
-          {Input('Email')}
+          {Input('Email', email)}
           <MiPerfilCuentaBotones>
             <BotonVioleta>Cambiar contraseña</BotonVioleta>
             <BotonVioleta>Eliminar cuenta</BotonVioleta>
@@ -54,10 +54,10 @@ function MiPerfil() {
   );
 }
 
-function Input(placeholder) {
+function Input(placeholder,value) {
   return (
     <DivInput>
-      <input type="text" placeholder={placeholder} />
+      <input type="text" placeholder={placeholder} value={value}/>
       <Edit src="./edit.svg"></Edit>
     </DivInput>
   );

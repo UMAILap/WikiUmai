@@ -12,7 +12,11 @@ import {
   ListaPerfil,
   IconosPersonajes,
 } from 'components';
-function PerfilContainer() {
+function PerfilContainer({ data }) {
+
+    console.log('data user', data)
+    const { nombre } = data
+
   //HARDCODEADO
   const arrayContribuciones = [
     {
@@ -73,12 +77,12 @@ function PerfilContainer() {
     <ContainerMain>
       <ContainerBanner>
         <WrapperPersonajesPlanetas>
-          <Titulo>Nombre</Titulo>
+            <Titulo>{nombre}</Titulo>
         </WrapperPersonajesPlanetas>
       </ContainerBanner>
       <WrapperPersonajesPlanetas>
         <>
-          <MiPerfil />
+          <MiPerfil data={data} />
           {/* type = 'historias' | 'discusiones'*/}
           <WrapperCreaciones>
             <ListaPerfil contribuciones={arrayContribuciones} />
