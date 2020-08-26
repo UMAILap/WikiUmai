@@ -17,22 +17,37 @@ export const PersonajesContainer = styled.div`
 
 export const PersonajesRelacionados = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 80% !important;
   margin-top: 5%;
   @media (max-width: ${breakpoints.laptop}) {
+  }
+  a{
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: ${breakpoints.laptop}){
+    width: 100% !important;
+    a{
+      width: 80px;
+      height:80px;
+    }
   }
 `;
 
 export const PersonajesItem = styled.img`
-  border-radius: 80%;
+
+  width:100%;
+  height: 100%;
+  border-radius: 100%;
   border: 4px solid hsl(268.6, 66%, 31.2%);
   margin: 0% 4% 2% 0%;
+  object-fit: cover !important;
   @media (max-width: ${breakpoints.laptop}) {
-    width: 16%;
-    border: 3px solid hsl(268.6, 66%, 31.2%);
+    width: 100%;
+    border: 4px solid hsl(268.6, 66%, 31.2%);
   }
 `;
