@@ -54,7 +54,7 @@ function Header() {
           <ContainerBotones>
             <ul>
               <li onClick={() => setOpen(!open)}>
-                <StyledLink>Universo</StyledLink>
+                <div>Universo</div>
                 <div className={open ? 'dropdown' : 'dropup'}>
                   <StyledLink href="/personajes">Personajes</StyledLink>
                   <StyledLink href="/tecnologias">Tecnologias</StyledLink>

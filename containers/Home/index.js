@@ -119,20 +119,22 @@ function HomeContainer() {
                 planetas.map(planeta => {
                   const { id, nombre, avatar, slug } = planeta;
                   return (
-                    <Link
-                      key={`${id}-${nombre}`}
-                      href={`/planeta/${slug}`}
-                      passHref>
-                      <Card>
-                        <CardImg
-                          src={`${
-                            avatar
-                              ? BASE_URL + avatar.url
-                              : '/placeholderAvatar.png'
-                          }`}></CardImg>
-                        <TituloCard>{nombre}</TituloCard>
-                      </Card>
-                    </Link>
+                    <div key={`${id}-${nombre}`}>
+                      <Link
+                        key={`${id}-${nombre}`}
+                        href={`/planeta/${slug}`}
+                        passHref>
+                        <Card>
+                          <CardImg
+                            src={`${
+                              avatar
+                                ? BASE_URL + avatar.url
+                                : '/placeholderAvatar.png'
+                              }`}></CardImg>
+                          <TituloCard>{nombre}</TituloCard>
+                        </Card>
+                      </Link>
+                    </div>
                   );
                 })}
             </Slider>

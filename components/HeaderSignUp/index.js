@@ -40,7 +40,7 @@ function HeaderSignUp() {
       <Wrapper>
         {/* <MenuSlide>
         <div onClick={() => setOpenMenu(!openMenu)}>
-              <img src="/menu.svg" />           
+              <img src="/menu.svg" />
         </div>
           <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
                       <StyledLink href="#">Personajes</StyledLink>
@@ -53,7 +53,7 @@ function HeaderSignUp() {
             <img src="/menu.svg" />
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
               <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
-                <StyledLink className="universo">
+                <div className="universo">
                   Universo
                   <div
                     className={
@@ -63,7 +63,7 @@ function HeaderSignUp() {
                     <StyledLink href="/tecnologias">Tecnologias</StyledLink>
                     <StyledLink href="/historias">Historias</StyledLink>
                   </div>
-                </StyledLink>
+                </div>
               </div>
               <StyledLink>Foro</StyledLink>
               <StyledLink>Ayudas y reglas</StyledLink>

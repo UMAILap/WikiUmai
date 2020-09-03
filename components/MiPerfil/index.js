@@ -57,7 +57,7 @@ function MiPerfil({ data }) {
 function Input(placeholder, value) {
   return (
     <DivInput>
-      <input type="text" placeholder={placeholder} value={value} />
+      <input type="text" placeholder={placeholder} defaultValue={value} />
       <Edit src="./edit.svg"></Edit>
     </DivInput>
   );
