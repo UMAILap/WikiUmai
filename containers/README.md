@@ -20,5 +20,5 @@ Los cambios que se realicen solo afectará a la página donde se hicieron los ca
 **CrearPersonaje:** Desarrollo y estilos de la page 'crearPersonaje.js'.
 **Perfil:** Desarrollo y estilos de la page 'perfil.js'. 
 
-
+  
 **index.js: En este archivo, siempre se deben exportar los containers creados.** 

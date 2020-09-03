@@ -1,17 +1,6 @@
 # Hello developer!
 Bienvenido al Universo Transmedia de la Universidad Maimónides.
 
-## ESTRUCTURA DEL PROYECTO
-Pages:
-Cada archivo de pages es la referencia a una página específica. Estas están formadas en principio por el contenedor de toda la página, el cual es el componente <Layout>, dentro de este se coloca el container que se desea crear. Por ejemplo: <Login />.
-Algunas páginas como personajes tienen la función de crear y editar, por eso se crean distintas carpetas, donde en  crear se utiliza la misma estructura ya explicada anteriormente, pero en la carpeta editar funciona de la siguiente manera:
-**
-
-Containers: En estos archivos se crean los containers que luego se utilizaran en pages. Estos son la estructura completa de cada página, sin la sección layout, ya que esta esta por fuera de la página. Para crear containers, dentro de la carpeta containers, se crea una carpeta con el nombre del nuevo container. Dentro de esta carpeta se crean dos archivos: index.js y styles.js, el primero lleva todo el contenido html y el segundo el contenido css. Dentro de esta se puede tanto crear styled components, dentro del archivo css; como importar componentes completos, por ejemplo el componente títulos, el cual crea un objeto h1 con los estilos determinados dentro del componente, así evitamos crear el mismo archivo y repetir el mismo código cada vez que utilizamos un título.
-
-Componentes: acá se encuentran los distintos elementos que se utilizarán a lo largo del desarrollo, aquellos que sean constantes dentro de este. Para crear componentes, dentro de la carpeta componentes, se crea una carpeta con el nombre del nuevo componente. Dentro de esta carpeta se crean dos archivos: index.js y styles.js, el primero lleva todo el contenido html y el segundo el contenido css.
-finalmente se deben exportar en el archivo index.js de la carpeta componentes, para luego poder importarlos desde la página que se desee, llamadas containers.
-
 
 ## ¿QUÉ ES COMPONENTS?
 Los componentes son secciones reutilizables del sitio, es decir que pueden utilizarse en más de una página.
@@ -56,18 +45,6 @@ se encuentra en el container personaje.
 
 
 
-## CONSTANTS
-Global.styles exporta todas las tipografías utilizadas dentro del proyecto. Estas luego son utilizadas en el archivo styles de la siguiente manera:
-Ej: font-family: ‘Raleway’;
 
-Breakpoints: estas son las medidas que se utilizaran para crear el contenido responsive, ya han sido marcadas cada punto de cambio, desde pc hasta mobile. Se utilizan de la siguiente froma:
-Ej: @media (min-width: ${breakpoints.mobile}) {
-  }
-dentro de las llaves se escribe el css que se desea cambiar.
-
-Colores: se declaran los colores que se utilizan para los distintos objetos, estos se declaran mediante rgb, d ela siguiente manera:
-  blanco: Color.rgb(255, 255, 255),
-Luego se importa dentro del archivo styles en el que se usará y se implementa de la siguiente forma:
-    color: ${leerColor(colores.blanco)};
 
 
