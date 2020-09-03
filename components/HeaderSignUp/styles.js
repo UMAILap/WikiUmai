@@ -21,7 +21,7 @@ export const MenuSlide = styled.div`
   .MenuDown a {
     background-color: ${leerColor(colores.violetaOscuro)};
     background-color: ${props =>
-      props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
     padding-left: ${props => (props.displayBotton ? '10px' : '40px')};
   }
 
@@ -364,38 +364,39 @@ export const ContainerBotones = styled.div`
 `;
 
 export const StyledLink = styled.a`
+    cursor:pointer;
     color: ${leerColor(colores.blanco)};
     display: ${props => (props.IniciarSesion ? 'none' : '')};
-    display: ${props => (props.displayBotton ? 'flex' : '')};   
+    display: ${props => (props.displayBotton ? 'flex' : '')};
     /* background-color: ${leerColor(colores.violeta)}; */
     background-color: ${props =>
-      props.displayBotton ? 'rgb(255, 189, 105)' : ''}; 
+    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
     font-size: 18px;
     font-family: 'Proxima Nova';
     width: ${props => (props.displayBotton ? '80%' : '100%')};
     height: ${props => (props.displayBotton ? '35px' : '')};
     color: ${props =>
-      props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'}; 
-    align-self: ${props => (props.displayBotton ? 'end' : '')}; 
-    justify-self: ${props => (props.displayBotton ? 'center' : '')}; 
-    margin-bottom: ${props => (props.displayBotton ? '50%' : '')}; 
-    padding: ${props => (props.displayBotton ? '10px' : '')}; 
-    padding-left: ${props => (props.displayBotton ? '10px' : '20px')}; 
-    padding-right: ${props => (props.displayBotton ? '10px' : '')}; 
-    padding-bottom: ${props => (props.displayBotton ? '' : '20px')}; 
-    justify-content: ${props => (props.displayBotton ? 'center' : '')}; 
+    props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'};
+    align-self: ${props => (props.displayBotton ? 'end' : '')};
+    justify-self: ${props => (props.displayBotton ? 'center' : '')};
+    margin-bottom: ${props => (props.displayBotton ? '50%' : '')};
+    padding: ${props => (props.displayBotton ? '10px' : '')};
+    padding-left: ${props => (props.displayBotton ? '10px' : '20px')};
+    padding-right: ${props => (props.displayBotton ? '10px' : '')};
+    padding-bottom: ${props => (props.displayBotton ? '' : '20px')};
+    justify-content: ${props => (props.displayBotton ? 'center' : '')};
     /* border-bottom:1px solid white; */
     border-bottom:${props => (props.displayBotton ? '' : '1px solid white')};
     border-radius: ${props => (props.displayBotton ? '20px' : '0')};
-    
+
 
   @media (min-width: ${breakpoints.laptop}) {
     background-color: #4d1b84;
-    display: ${props => (props.IniciarSesion ? 'block' : '')};     
+    display: ${props => (props.IniciarSesion ? 'block' : '')};
     background-color: ${props =>
-      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''}; 
+    props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
     padding: 12px 15px;
-    font-size: ${props => (props.IniciarSesion ? '17px' : '14px')}; 
+    font-size: ${props => (props.IniciarSesion ? '17px' : '14px')};
     margin: 2%;
     width:auto;
     border-radius: 20px;
@@ -404,7 +405,7 @@ export const StyledLink = styled.a`
   @media (min-width: ${breakpoints.laptopL}) {
     /* padding: 12px 30px; */
     margin: 2%;
-    font-size: ${props => (props.IniciarSesion ? '14px' : '12px')}; 
+    font-size: ${props => (props.IniciarSesion ? '14px' : '12px')};
   }
-  
+
 `;

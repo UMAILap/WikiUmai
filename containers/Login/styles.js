@@ -89,6 +89,7 @@ export const Olvidaste = styled.a`
 `;
 
 export const IniciarSesion = styled.button`
+  cursor:pointer;
   width: 100%;
   background-color: ${leerColor(colores.naranja)};
   color: ${leerColor(colores.violeta)};
@@ -112,6 +113,7 @@ export const IniciarSesion = styled.button`
 `;
 
 export const SolicitarCuenta = styled.button`
+  cursor: pointer;
   width: 100%;
   background-color: ${leerColor(colores.gris)};
   color: ${leerColor(colores.violeta)};

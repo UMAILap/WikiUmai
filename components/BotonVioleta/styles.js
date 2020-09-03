@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const VioletaBoton = styled.a`
+  cursor: pointer;
   font-family: 'Proxima Nova';
   border-radius: 20px;
   background-color: ${leerColor(colores.violeta)};

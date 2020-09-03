@@ -239,6 +239,7 @@ export const ContainerBotones = styled.div`
     border-radius: 20px;
     list-style: none;
   }
+
   .dropdown {
     display: grid;
     position: absolute;
@@ -256,6 +257,7 @@ export const ContainerBotones = styled.div`
 `;
 
 export const StyledLink = styled.a`
+  cursor: pointer;
   @media (min-width: ${breakpoints.laptop}) {
     border-radius: 20px;
     background-color: #4d1b84;

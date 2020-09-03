@@ -14,6 +14,7 @@ import {
   ImagenLogin,
   Olvidaste,
 } from './styles';
+import Link from 'next/link';
 import { Wrapper, ContainerBlanco } from 'components';
 
 function LoginContainer() {
@@ -63,7 +64,8 @@ function LoginContainer() {
                 type="text"
                 placeholder="Contraseña"
               />
-              <Olvidaste>¿Olvidaste tu contraseña?</Olvidaste>
+              <Link href={'#'}
+                passHref><Olvidaste>¿Olvidaste tu contraseña?</Olvidaste></Link>
               <IniciarSesion id="submit">Iniciar Sesión</IniciarSesion>
               <SolicitarCuenta id="submit">Solicitar cuenta</SolicitarCuenta>
             </FormLogin>
