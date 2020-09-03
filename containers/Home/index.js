@@ -130,7 +130,7 @@ function HomeContainer() {
                               avatar
                                 ? BASE_URL + avatar.url
                                 : '/placeholderAvatar.png'
-                              }`}></CardImg>
+                            }`}></CardImg>
                           <TituloCard>{nombre}</TituloCard>
                         </Card>
                       </Link>
