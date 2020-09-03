@@ -3,7 +3,18 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { UniversoCard } from './styles';
 
-function CardUniverso({ children, href }) {
+
+const CardUniverso = React.forwardRef(({ onClick, children, href }, ref) => {
+
+  return (
+    <UniversoCard href={href} onClick={onClick} ref={ref}>
+      {children}
+    </UniversoCard>
+  )
+})
+
+//VERSIÓN SIN REACT.FORWARDREF CON HOOK ROUTER
+/* function CardUniverso({ children, href }) {
   const router = useRouter();
   const handleClick = e => {
     e.preventDefault();
@@ -14,9 +25,15 @@ function CardUniverso({ children, href }) {
       {children}
     </UniversoCard>
   );
-}
+} */
+
+
 CardUniverso.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.array.isRequired,
+};
+
+CardUniverso.defaultProps = {
+  children: [],
 };
 
 export default CardUniverso;

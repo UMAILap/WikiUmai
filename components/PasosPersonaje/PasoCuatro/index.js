@@ -17,7 +17,7 @@ function PasoCuatro({ colorFondo }) {
   );
 }
 PasoCuatro.propTypes = {
-  colorFondo: PropTypes.element.isRequired,
+  colorFondo: PropTypes.element,
 };
 
 export default PasoCuatro;

@@ -17,7 +17,7 @@ function PasoTres({ colorFondo }) {
   );
 }
 PasoTres.propTypes = {
-  colorFondo: PropTypes.element.isRequired,
+  colorFondo: PropTypes.element,
 };
 
 export default PasoTres;

@@ -25,6 +25,8 @@ function CrearHistoriaContainer() {
       </Wrapper>
       <WrapperPersonajesPlanetas>
         <PasoTres />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoFinal />
       </WrapperPersonajesPlanetas>
     </ContainerMain>

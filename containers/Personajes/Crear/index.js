@@ -28,9 +28,17 @@ function CrearPersonajeContainer() {
       </Wrapper>
       <WrapperPersonajesPlanetas>
         <PasoTres />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoCuatro />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoCinco />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoSeis />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoFinal />
       </WrapperPersonajesPlanetas>
     </ContainerMain>

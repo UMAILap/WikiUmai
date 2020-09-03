@@ -17,7 +17,7 @@ function PasoDos({ colorFondo }) {
   );
 }
 PasoDos.propTypes = {
-  colorFondo: PropTypes.element.isRequired,
+  colorFondo: PropTypes.element,
 };
 
 export default PasoDos;

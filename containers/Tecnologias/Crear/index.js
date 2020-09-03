@@ -25,6 +25,8 @@ function CrearTecnologiaContainer() {
       </Wrapper>
       <WrapperPersonajesPlanetas>
         <PasoTres />
+      </WrapperPersonajesPlanetas>
+      <WrapperPersonajesPlanetas>
         <PasoFinal />
       </WrapperPersonajesPlanetas>
     </ContainerMain>
