@@ -33,7 +33,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [openMenuUniverso, setOpenMenuUniverso] = useState(false);
-
+  const [openMenuUser, setOpenMenuUser] = useState(false);
   const IniciarSesion = true;
   const displayBotton = true;
   return (
@@ -126,12 +126,22 @@ function Header() {
             <StyledLink href="/login" IniciarSesion={IniciarSesion}>
               Iniciar Sesion
             </StyledLink>
+
             <ContainerAvatar>
-              <Link href="/perfil" passHref>
-                <User>
-                  <img src="/perfil-header.png" />
-                </User>
-              </Link>
+              <ul>
+                <li onClick={() => setOpenMenuUser(!openMenuUser)}>
+                  <User>
+                    <img src="/perfil-header.png" />
+                  </User>
+                  <div className={openMenuUser ? 'dropdown' : 'dropup'}>
+                    {/* Hacer bien los Links */}
+                    <StyledLink href="/perfil">Perfil</StyledLink>
+                    <StyledLink href="/logout">Cerrar Sesión</StyledLink>
+
+                  </div>
+                </li>
+              </ul>
+
             </ContainerAvatar>
           </ContainerUser>
         </ContainerHeader>
