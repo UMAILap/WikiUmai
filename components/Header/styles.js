@@ -8,7 +8,27 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
 `;
+export const MenuSlide = styled.div`
+  .MenuDown {
+    display: grid;
+    position: absolute;
+    max-width: 45%;
+    z-index: 1;
+    margin-bottom: 2%;
+    height: 90%;
+    margin-left: -1%;
+  }
+  .MenuDown a {
+    background-color: ${leerColor(colores.violetaOscuro)};
+    background-color: ${props =>
+    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+    padding-left: ${props => (props.displayBotton ? '10px' : '40px')};
+  }
 
+  .MenuUp {
+    display: none;
+  }
+`;
 export const ContainerHeader = styled.div`
   width: 100%;
   display: grid;
@@ -123,6 +143,85 @@ export const MenuHamburguesa = styled.h1`
   @media (min-width: ${breakpoints.laptop}) {
     display: none;
   }
+
+  div {
+    display: flex;
+    align-items: center;
+    background-color: ${leerColor(colores.violetaOscuro)};
+    margin-top: 20px;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-top: 0;
+    }
+  }
+  .MenuDown {
+    display: grid;
+    grid-template-rows: 10% 10% 10% auto;
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    margin-bottom: 2%;
+    height: 95%;
+    margin-left: -3%;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-left: -10%;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+      margin-left: -5%;
+    }
+  }
+  .MenuDown a {
+  }
+
+  .MenuUp {
+    display: none;
+  }
+  .MenuDownUniverso {
+    display: flex;
+    flex-direction: column;
+    margin-left: 89%;
+    position: absolute;
+    width: 68%;
+    background-color: ${leerColor(colores.violeta)};
+    height: 187px;
+    margin-top: -24px;
+    justify-content: space-around;
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-left: 90%;
+      margin-top: 0;
+    }
+    @media (min-width: ${breakpoints.mobileGrande}) {
+      margin-left: 92%;
+      width: 72%;
+    }
+    @media (min-width: ${breakpoints.tablet}) {
+      margin-left: 95%;
+      height: 248px;
+      margin-top: -10px;
+    }
+    @media (min-width: ${breakpoints.laptop}) {
+      display: flex;
+      position: absolute;
+      width: 60%;
+      z-index: 1;
+      margin-bottom: 2%;
+      height: 95%;
+      margin-left: 3%;
+    }
+  }
+  .MenuDownUniverso a {
+    width: 100%;
+    border-bottom: none;
+    @media (min-width: ${breakpoints.laptop}) {
+      width: 60%;
+    }
+  }
+
+  .MenuUpUniverso {
+    display: none;
+  }
+  .universo {
+    display: flex;
+  }
 `;
 export const ContainerSearch = styled.div`
   display: none;
@@ -221,31 +320,39 @@ export const ContainerBotones = styled.div`
     overflow: hidden;
     @media (min-width: ${breakpoints.laptop}) {
       border-radius: 20px;
-      background-color: #4d1b84;
-      padding: 12px 15px;
+      /* background-color: #4d1b84; */
+      /* padding: 12px 15px; */
       color: #fff;
       font-size: 12px;
       margin: 2%;
     }
     @media (min-width: ${breakpoints.laptopL}) {
-      padding: 12px 30px;
+      padding: 12px 0;
       margin: 2%;
     }
   }
   ul li {
     max-height: 35px;
-    background-color: ${leerColor(colores.violeta)};
+    /* background-color: ${leerColor(colores.violeta)}; */
     font-size: 12px;
     border-radius: 20px;
     list-style: none;
   }
-
   .dropdown {
     display: grid;
     position: absolute;
-    min-width: 100px;
+    width: auto;
     z-index: 1;
     margin-bottom: 2%;
+  }
+  .dropdown a {
+    margin: 0;
+    background-color: ${leerColor(colores.violetaOscuro)};
+
+    @media (min-width: ${breakpoints.laptop}) {
+      background-color: ${leerColor(colores.violeta)};
+
+    }
   }
   .dropdown a {
     margin: 0;
@@ -257,17 +364,52 @@ export const ContainerBotones = styled.div`
 `;
 
 export const StyledLink = styled.a`
-  cursor: pointer;
+    cursor:pointer;
+    color: ${leerColor(colores.blanco)};
+    display: ${props => (props.IniciarSesion ? 'none' : '')};
+    display: ${props => (props.displayBotton ? 'flex' : '')};
+    /* background-color: ${leerColor(colores.violeta)}; */
+    background-color: ${props =>
+    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+    font-size: 18px;
+    font-family: 'Proxima Nova';
+    width: ${props => (props.displayBotton ? '80%' : '100%')};
+    height: ${props => (props.displayBotton ? '35px' : '')};
+    color: ${props =>
+    props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'};
+    align-self: ${props => (props.displayBotton ? 'end' : '')};
+    justify-self: ${props => (props.displayBotton ? 'center' : '')};
+    margin-bottom: ${props => (props.displayBotton ? '50%' : '')};
+    padding: ${props => (props.displayBotton ? '10px' : '')};
+    padding-left: ${props => (props.displayBotton ? '10px' : '20px')};
+    padding-right: ${props => (props.displayBotton ? '10px' : '')};
+    padding-bottom: ${props => (props.displayBotton ? '' : '20px')};
+    justify-content: ${props => (props.displayBotton ? 'center' : '')};
+    /* border-bottom:1px solid white; */
+    border-bottom:${props => (props.displayBotton ? '' : '1px solid white')};
+    border-radius: ${props => (props.displayBotton ? '20px' : '0')};
+
+
   @media (min-width: ${breakpoints.laptop}) {
-    border-radius: 20px;
     background-color: #4d1b84;
+    display: ${props => (props.IniciarSesion ? 'block' : '')};
+    background-color: ${props =>
+    props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
     padding: 12px 15px;
-    color: #fff;
-    font-size: 12px;
+    font-size: ${props => (props.IniciarSesion ? '17px' : '14px')};
     margin: 2%;
+    width:auto;
+    border-radius: 20px;
+    border-bottom: 0;
   }
   @media (min-width: ${breakpoints.laptopL}) {
     /* padding: 12px 30px; */
     margin: 2%;
+    font-size: ${props => (props.IniciarSesion ? '14px' : '12px')};
   }
+
+`;
+export const ContainerAvatar = styled.div`{
+  display:none;
+}
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const WhiteContainer = styled.div`
+  margin-top: 75px !important;
   background-color: #fff;
   border-radius: 20px;
   display: flex;
@@ -10,7 +11,8 @@ export const WhiteContainer = styled.div`
   align-items: center;
   padding: 25px 25px 40px;
   height: fit-content;
-  @media (min-width: ${breakpoints.mobile}) {
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 25px !important;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
     width: 80%;

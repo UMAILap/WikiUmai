@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Header, Footer, HeaderSignUp } from 'components';
+import { Header, Footer } from 'components';
 import { ContainerBody } from './styles';
 
 function Layout({ children, isHome }) {
   return (
     <ContainerBody>
       {/* <Header /> */}
-      <HeaderSignUp />
+      <Header />
       {children}
       <Footer isHome={isHome} />
     </ContainerBody>

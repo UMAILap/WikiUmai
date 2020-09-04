@@ -10,10 +10,12 @@ import {
   MenuHamburguesa,
   Logo,
   ContainerUser,
+  ContainerAvatar,
   Notification,
   User,
   ContainerBotones,
   StyledLink,
+  MenuSlide,
 } from './styles';
 import { Wrapper } from 'components';
 
@@ -29,13 +31,50 @@ function Header() {
   //   }
   //}
   const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenuUniverso, setOpenMenuUniverso] = useState(false);
 
+  const IniciarSesion = true;
+  const displayBotton = true;
   return (
     <Container>
       <Wrapper>
+        {/* <MenuSlide>
+        <div onClick={() => setOpenMenu(!openMenu)}>
+              <img src="/menu.svg" />
+        </div>
+          <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
+                      <StyledLink href="#">Personajes</StyledLink>
+                      <StyledLink href="#">Tecnologias</StyledLink>
+                      <StyledLink href="#">Historias</StyledLink>
+          </div>
+      </MenuSlide> */}
         <ContainerHeader>
-          <MenuHamburguesa>
+          <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
             <img src="/menu.svg" />
+            <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
+              <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
+                <div className="universo">
+                  Universo
+                  <div
+                    className={
+                      openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'
+                    }>
+                    <StyledLink href="/personajes">Personajes</StyledLink>
+                    <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+                    <StyledLink href="/historias">Historias</StyledLink>
+                  </div>
+                </div>
+              </div>
+              <StyledLink>Foro</StyledLink>
+              <StyledLink>Ayudas y reglas</StyledLink>
+              <StyledLink
+                href="/login"
+                IniciarSesion={IniciarSesion}
+                displayBotton={displayBotton}>
+                Iniciar Sesion
+              </StyledLink>
+            </div>
           </MenuHamburguesa>
           <Logo>
             <Link href="/index">
@@ -54,7 +93,7 @@ function Header() {
           <ContainerBotones>
             <ul>
               <li onClick={() => setOpen(!open)}>
-                <div>Universo</div>
+                <StyledLink>Universo</StyledLink>
                 <div className={open ? 'dropdown' : 'dropup'}>
                   <StyledLink href="/personajes">Personajes</StyledLink>
                   <StyledLink href="/tecnologias">Tecnologias</StyledLink>
@@ -73,16 +112,27 @@ function Header() {
             <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
+
           <ContainerUser>
             <Search>
               <img src="/search.png" />
             </Search>
-            <Notification src="/notificacion-header.svg" />
+            {/* <Notification src="/notificacion-header.svg" />
             <Link href="/perfil" passHref>
               <User>
                 <img src="/perfil-header.png" />
               </User>
-            </Link>
+            </Link> */}
+            <StyledLink href="/login" IniciarSesion={IniciarSesion}>
+              Iniciar Sesion
+            </StyledLink>
+            <ContainerAvatar>
+              <Link href="/perfil" passHref>
+                <User>
+                  <img src="/perfil-header.png" />
+                </User>
+              </Link>
+            </ContainerAvatar>
           </ContainerUser>
         </ContainerHeader>
       </Wrapper>

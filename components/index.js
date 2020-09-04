@@ -4,8 +4,6 @@
 
 // ---------- HEADER ------------- //
 export { default as Header } from './Header';
-export { default as HeaderSignUp } from './HeaderSignUp';
-export { default as HeaderLogin } from './HeaderLogin';
 
 // ---------- FOOTER ------------- //
 export { default as Footer } from './Footer';

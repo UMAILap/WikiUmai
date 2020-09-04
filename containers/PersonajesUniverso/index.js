@@ -36,7 +36,7 @@ function PersonajesUniversoContainer() {
           <Personajes>
             <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
-                <img src="/images/PersonajesUniverso/sofovich.png" />
+                <img src="/images/PersonajesUniverso/sofovich.png" alt="imagen_personaje" />
                 <PersonajeInfo>
                   <Titulos>The router</Titulos>
                   <p>
