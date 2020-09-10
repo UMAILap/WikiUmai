@@ -14,6 +14,9 @@ export const ContainerSlider = styled.div`
   width: 100%;
 `;
 export const Hito = styled.span`
+color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
+  font-weight: ${props => props.selected ? 'font-weight: bold' : 'font-weight: 400'};
+  background-color: ${props => (props.selected ? `${leerColor(colores.naranja)}` : `${leerColor(colores.gris)}`)};
   cursor: pointer;
   border-radius: 10px;
   justify-content: center;
@@ -21,8 +24,7 @@ export const Hito = styled.span`
   text-align: center;
   padding: 3% 15%;
   line-height: 20px;
-  background-color: ${props =>
-    props.colorFondo ? leerColor(colores.naranja) : leerColor(colores.gris)};
+
 
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width: 95%;
@@ -31,9 +33,8 @@ export const Hito = styled.span`
 export const HitoTitulo = styled.h1`
   font-family: 'Raleway';
   font-size: 15px;
-  color: ${props =>
-    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)};
-  font-weight: ${props => (props.fontWeight ? 'bold' : '400')};
+  color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
+  font-weight: ${props => props.selected ? 'bold' : '400'};
   padding: 10% 0;
   @media (min-width: ${breakpoints.notebook}) {
   }
@@ -42,9 +43,8 @@ export const HitoTitulo = styled.h1`
 export const HitoAnio = styled.p`
   font-family: 'Proxima Nova';
   font-size: 15px;
-  color: ${props =>
-    props.colorTypo ? leerColor(colores.violeta) : leerColor(colores.negro)};
-  font-weight: ${props => (props.fontWeight ? 'bold' : '400')};
+  color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
+  font-weight: ${props => props.selected ? 'bold' : '400'};
   padding-bottom: 10%;
   @media (min-width: ${breakpoints.notebook}) {
   }

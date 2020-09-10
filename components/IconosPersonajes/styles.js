@@ -19,13 +19,15 @@ export const PersonajesRelacionados = styled.div`
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 80% !important;
   margin-top: 5%;
   @media (max-width: ${breakpoints.laptop}) {
   }
   a{
+    margin-right: 1em;
+    margin-bottom: 1em;
     width: 60px;
     height: 60px;
   }

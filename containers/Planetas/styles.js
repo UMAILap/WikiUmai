@@ -5,7 +5,7 @@ export const PlanetasBanner = styled.div`
   background-image: url(/banner_personajes.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
-  height: 700px;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -25,7 +25,8 @@ export const ContenedorBannerInfo = styled.div`
   display: flex;
   flex-direction: row-reverse;
   flex-direction: column-reverse;
-
+  justify-content: space-between;
+  width: 100%;
   @media (min-width: ${breakpoints.laptop}) {
     flex-direction: row;
   }
@@ -75,7 +76,7 @@ export const BajadaPlaneta = styled.p`
 
 export const BannerImagen = styled.div`
   text-align: center;
-
+  margin-right: 5%;
   img {
     border-radius: 50%;
     width: 220px;
@@ -166,11 +167,13 @@ export const Personajes = styled.div`
 `;
 
 export const ContenedorBoton = styled.div`
-  width: 100% !important;
+  width: 100%;
   padding: 7% 0% !important;
-
+  a{
+    width: fit-content;
+  }
   @media (min-width: ${breakpoints.tablet}) {
-    width: 50% !important;
+    width: 100%;
     text-align: center;
     padding: 0% 0%;
   }

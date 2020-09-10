@@ -30,7 +30,7 @@ function HitosTimeLine() {
     );
   }
 
-  const [selectedHito, setSelectedHito] = useState(null);
+  const [selectedHito, setSelectedHito] = useState('');
 
   function handleClickHito(hito) {
     setSelectedHito(hito);
@@ -101,137 +101,105 @@ function HitosTimeLine() {
     <ContainerSlider>
       <Slider {...settings}>
         <Hito
-          colorFondo={selectedHito === '200' ? true : false}
-          onClick={() => handleClickHito('200')}>
+          onClick={() => handleClickHito('200')}
+          selected={selectedHito === '200' ? true : false}>
           <HitoTitulo
-            colorTypo={selectedHito === '200' ? true : false}
-            fontWeight={selectedHito === '200'}
-            onClick={() => handleClickHito('200')}>
+            selected={selectedHito === '200' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '200' ? true : false}
-            fontWeight={selectedHito === '200'}
-            onClick={() => handleClickHito('200')}>
+            selected={selectedHito === '200' ? true : false}>
             200
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '1500' ? true : false}
+          selected={selectedHito === '1500' ? true : false}
           onClick={() => handleClickHito('1500')}>
           <HitoTitulo
-            colorTypo={selectedHito === '1500' ? true : false}
-            fontWeight={selectedHito === '1500'}
-            onClick={() => handleClickHito('1500')}>
+            selected={selectedHito === '1500' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '1500' ? true : false}
-            fontWeight={selectedHito === '1500'}
-            onClick={() => handleClickHito('1500')}>
+            selected={selectedHito === '1500' ? true : false}>
             1500
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2020' ? true : false}
+          selected={selectedHito === '2020' ? true : false}
           onClick={() => handleClickHito('2020')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2020' ? true : false}
-            fontWeight={selectedHito === '2020'}
-            onClick={() => handleClickHito('2020')}>
+            selected={selectedHito === '2020' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2020' ? true : false}
-            fontWeight={selectedHito === '2020'}
-            onClick={() => handleClickHito('2020')}>
+            selected={selectedHito === '2020' ? true : false}>
             2020
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2032' ? true : false}
+          selected={selectedHito === '2032' ? true : false}
           onClick={() => handleClickHito('2032')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2032' ? true : false}
-            fontWeight={selectedHito === '2032'}
-            onClick={() => handleClickHito('2032')}>
+            selected={selectedHito === '2032' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2032' ? true : false}
-            fontWeight={selectedHito === '2032'}
-            onClick={() => handleClickHito('2032')}>
+            selected={selectedHito === '2032' ? true : false}>
             2032
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2040' ? true : false}
+          selected={selectedHito === '2040' ? true : false}
           onClick={() => handleClickHito('2040')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2040' ? true : false}
-            fontWeight={selectedHito === '2040'}
-            onClick={() => handleClickHito('2040')}>
+            selected={selectedHito === '2040' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2040' ? true : false}
-            fontWeight={selectedHito === '2040'}
-            onClick={() => handleClickHito('2040')}>
+            selected={selectedHito === '2040' ? true : false}>
             2040
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2072' ? true : false}
+          selected={selectedHito === '2072' ? true : false}
           onClick={() => handleClickHito('2072')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2072' ? true : false}
-            fontWeight={selectedHito === '2072'}
-            onClick={() => handleClickHito('2072')}>
+            selected={selectedHito === '2072' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2072' ? true : false}
-            fontWeight={selectedHito === '2072'}
-            onClick={() => handleClickHito('2072')}>
+            selected={selectedHito === '2072' ? true : false}>
             2072
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2086' ? true : false}
+          selected={selectedHito === '2086' ? true : false}
           onClick={() => handleClickHito('2086')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2086' ? true : false}
-            fontWeight={selectedHito === '2086'}
-            onClick={() => handleClickHito('2086')}>
+            selected={selectedHito === '2086' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2086' ? true : false}
-            fontWeight={selectedHito === '2086'}
-            onClick={() => handleClickHito('2086')}>
+            selected={selectedHito === '2086' ? true : false}>
             2086
           </HitoAnio>
         </Hito>
 
         <Hito
-          colorFondo={selectedHito === '2098' ? true : false}
+          selected={selectedHito === '2098' ? true : false}
           onClick={() => handleClickHito('2098')}>
           <HitoTitulo
-            colorTypo={selectedHito === '2098' ? true : false}
-            fontWeight={selectedHito === '2098'}
-            onClick={() => handleClickHito('2098')}>
+            selected={selectedHito === '2098' ? true : false}>
             Titulo del hito seleccionado
           </HitoTitulo>
           <HitoAnio
-            colorTypo={selectedHito === '2098' ? true : false}
-            fontWeight={selectedHito === '2098'}
-            onClick={() => handleClickHito('2098')}>
+            selected={selectedHito === '2098' ? true : false}>
             2098
           </HitoAnio>
         </Hito>
