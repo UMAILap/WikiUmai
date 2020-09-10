@@ -6,7 +6,7 @@ Para comprender como se utiliza cada parte del proyecto se creo un archivo readm
 Pages (README.md de Pages):
 Cada archivo de pages es la referencia a una página específica. Estas están formadas en principio por el contenedor de toda la página, el cual es el componente <Layout>, dentro de este se coloca el container que se desea crear. Por ejemplo: <Login />.
 Algunas páginas como personajes tienen la función de crear y editar, por eso se crean distintas carpetas, donde en  crear se utiliza la misma estructura ya explicada anteriormente, pero en la carpeta editar funciona de la siguiente manera:
-**
+en esta carpeta va un archivo [slug] para editar al artículo de nombre [slug]. Así, la ruta queda: .../colección/editar/[nombre artículo], donde slug es el elemento a editar dentro del mundo, ya sea un personaje, una tecnologia, etc. Los unicos elementos del universo que no se editan son los planetas.
 
 Containers (README.md de Containers): 
 En estos archivos se crean los containers que luego se utilizaran en pages. Estos son la estructura completa de cada página, sin la sección layout, ya que esta esta por fuera de la página. Para crear containers, dentro de la carpeta containers, se crea una carpeta con el nombre del nuevo container. Dentro de esta carpeta se crean dos archivos: index.js y styles.js, el primero lleva todo el contenido html y el segundo el contenido css. Dentro de esta se puede tanto crear styled components, dentro del archivo css; como importar componentes completos, por ejemplo el componente títulos, el cual crea un objeto h1 con los estilos determinados dentro del componente, así evitamos crear el mismo archivo y repetir el mismo código cada vez que utilizamos un título.
