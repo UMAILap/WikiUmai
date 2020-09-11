@@ -16,11 +16,9 @@ function PlanetasPills({ isFlex, multiple }) {
       /* const newValuesArray = _.pull(copieValuesArray, planet_name); */
       setSelectedPlanet(copieValuesArray);
     } else {
-      console.log('selectedPlanet', [...selectedPlanet, planet_name]);
       setSelectedPlanet([...selectedPlanet, planet_name]);
       return;
     }
-    console.log('HOLA ESTOY ACÁ');
     if (!multiple) {
       setSelectedPlanet(planet_name);
     }

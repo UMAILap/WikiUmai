@@ -41,7 +41,7 @@ export const HitoTitulo = styled.h1`
   font-family: 'Raleway';
   font-size: 15px;
   color: ${leerColor(colores.negro)};
-  font-weight: ${props => (props.selected ? 'bold' : '400')};
+  font-weight: 400;
   padding: 10% 0;
   @media (min-width: ${breakpoints.notebook}) {
   }
@@ -50,19 +50,21 @@ export const HitoTitulo = styled.h1`
     css`
       color: ${leerColor(colores.violeta)};
       font-weight: bold;
-      background-color: ${leerColor(colores.naranja)};
     `}
 `;
 
 export const HitoAnio = styled.p`
   font-family: 'Proxima Nova';
   font-size: 15px;
-  color: ${props =>
-    props.selected
-      ? `${leerColor(colores.violeta)}`
-      : `${leerColor(colores.negro)}`};
-  font-weight: ${props => (props.selected ? 'bold' : '400')};
+  color: ${leerColor(colores.negro)};
+  font-weight: 400;
   padding-bottom: 10%;
   @media (min-width: ${breakpoints.notebook}) {
   }
+  ${props =>
+    props.selected &&
+    css`
+      color: ${leerColor(colores.violeta)};
+      font-weight: bold;
+    `}
 `;

@@ -15,9 +15,8 @@ import {
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
-function HistoriasUniversoContainer() {
+function HistoriasUniversoContainer({ data }) {
   const isFlex = true;
-
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -33,7 +32,31 @@ function HistoriasUniversoContainer() {
           </PlanetasNav>
 
           <Personajes>
-            <Link href="/historias/nombre" passHref>
+            {data.length &&
+              data.map(historia => {
+                return (
+                  <Link
+                    key={historia.id}
+                    href={`/historias/${historia.slug}`}
+                    passHref>
+                    <PersonajeFicha>
+                      <PersonajeInfo>
+                        <Titulos>{historia.titulo}</Titulos>
+                        <p>{historia.sinopsis}</p>
+
+                        <PersonajeCaracteristica>
+                          <PersonajePlaneta>
+                            <img src="/images/icons/planet.svg" />
+                            <h6>{historia.planeta?.nombre}</h6>
+                          </PersonajePlaneta>
+                        </PersonajeCaracteristica>
+                      </PersonajeInfo>
+                    </PersonajeFicha>
+                  </Link>
+                );
+              })}
+
+            {/* <Link href="/historias/nombre" passHref>
               <PersonajeFicha>
                 <PersonajeInfo>
                   <Titulos>Cuando las emociones opuestas se cruzan</Titulos>
@@ -152,7 +175,7 @@ function HistoriasUniversoContainer() {
                   </PersonajeCaracteristica>
                 </PersonajeInfo>
               </PersonajeFicha>
-            </Link>
+            </Link> */}
           </Personajes>
         </Container>
       </Wrapper>
