@@ -5,3 +5,4 @@ export { removeBearerToken } from './Api';
 export { getCollectionBySlug } from './Api';
 export { getUserData } from './Api';
 export { routes } from './Routes';
+export { getDataCollection } from './Api'

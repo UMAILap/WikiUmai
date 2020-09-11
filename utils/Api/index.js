@@ -31,10 +31,32 @@ export const removeBearerToken = () => {
   delete api.defaults.headers.Authorization;
 };
 
-//GET para collections
+//GET para collections por Slug
 export const getCollectionBySlug = async (slug, collection, res) => {
   try {
     const response = await api.get(`${BASE_URL}/${collection}?slug=${slug}`);
+    const responseData = response.data;
+    if (responseData.length) {
+      const dataObject = responseData[0];
+      return { ...dataObject };
+    } else {
+      res.setHeader('location', '/404');
+      res.statusCode = 302;
+      res.end();
+      return {};
+    }
+  } catch (error) {
+    res.setHeader('location', '/404');
+    res.statusCode = 302;
+    res.end();
+    return {};
+  }
+};
+
+//GET para collections
+export const getDataCollection = async (collection, res) => {
+  try {
+    const response = await api.get(`${BASE_URL}/${collection}`);
     const responseData = response.data;
     if (responseData.length) {
       const dataObject = responseData[0];

@@ -31,6 +31,8 @@ function TecnologiasUniversoContainer() {
             <PlanetasPills isFlex={isFlex} multiple />
           </PlanetasNav>
 
+
+
           <Personajes>
             <Link href="/tecnologias/ajayu" passHref>
               <PersonajeFicha>
@@ -153,10 +155,13 @@ function TecnologiasUniversoContainer() {
               </PersonajeFicha>
             </Link>
           </Personajes>
+          
         </Container>
       </Wrapper>
     </ContainerMain>
   );
+
+  
 }
 
 export default TecnologiasUniversoContainer;
