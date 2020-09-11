@@ -13,7 +13,7 @@ const api = Axios.create({
 
 api.interceptors.response.use(
   response => response,
-  function(error) {
+  function (error) {
     if (401 === error.response.status) {
       Router.push('/login');
     } else {
@@ -56,17 +56,8 @@ export const getCollectionBySlug = async (slug, collection, res) => {
 //GET para collections
 export const getDataCollection = async (collection, res) => {
   try {
-    const response = await api.get(`${BASE_URL}/${collection}`);
-    const responseData = response.data;
-    if (responseData.length) {
-      const dataObject = responseData;
-      return { ...dataObject };
-    } else {
-      res.setHeader('location', '/404');
-      res.statusCode = 302;
-      res.end();
-      return {};
-    }
+    const { data } = await api.get(`${BASE_URL}/${collection}`);
+    return data;
   } catch (error) {
     res.setHeader('location', '/404');
     res.statusCode = 302;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const ContainerSlider = styled.div`
@@ -14,9 +14,10 @@ export const ContainerSlider = styled.div`
   width: 100%;
 `;
 export const Hito = styled.span`
-color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
-  font-weight: ${props => props.selected ? 'font-weight: bold' : 'font-weight: 400'};
-  background-color: ${props => (props.selected ? `${leerColor(colores.naranja)}` : `${leerColor(colores.gris)}`)};
+
+  color: ${leerColor(colores.negro)};
+  font-weight: 400;
+  background-color: ${leerColor(colores.gris)};
   cursor: pointer;
   border-radius: 10px;
   justify-content: center;
@@ -24,7 +25,11 @@ color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColo
   text-align: center;
   padding: 3% 15%;
   line-height: 20px;
-
+  ${props => props.selected && css`
+  color: ${leerColor(colores.violeta)};
+  font-weight: bold;
+  background-color: ${leerColor(colores.naranja)};
+  `}
 
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width: 95%;
