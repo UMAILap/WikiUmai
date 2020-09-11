@@ -6,12 +6,17 @@ import {
   TecnologiasUniverso as TecnologiasUniversoContainer,
 } from 'containers';
 
-function TecnologiasUniverso( props ) {
+function TecnologiasUniverso( {data} ) {
   return (
     <Layout>
-      <TecnologiasUniversoContainer data={ props }/>
+      <TecnologiasUniversoContainer data={data} />
     </Layout>
   );
+}
+
+export async function getServerSideProps({ res }) {
+  const data = await getDataCollection('objetos', res);
+  return { props: { data } };
 }
 
 /*
@@ -23,14 +28,5 @@ TecnologiasUniverso.getInitialProps = ctx => {
   };
 };
 */
-
-
-export async function getServerSideProps({ res }) {
-  const data = await getDataCollection('objetos', res);
-  console.log(data)
-  return { props: data }
-}
-
-
 
 export default TecnologiasUniverso;
