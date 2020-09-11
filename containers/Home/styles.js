@@ -34,6 +34,7 @@ export const SectorTitulos = styled.div`
 export const ContainerBanner = styled.div`
   background-image: none;
   background-color: ${leerColor(colores.naranja)};
+  display: flex;
   @media (min-width: ${breakpoints.mobile}) {
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
@@ -161,10 +162,29 @@ export const Card = styled.a`
   }
 `;
 
-export const CardImg = styled.img`
+export const ContImg = styled.div`
   border-radius: 10px;
   width: 90%;
   margin: 10px auto;
+  max-height: 143px;
+  overflow: hidden;
+
+  @media (max-width: ${breakpoints.notebook}) {
+    max-height: 122px;
+  }
+
+  @media (max-width: 1438px) {
+    max-height: 80px;
+  }
+
+  @media (max-width: 1023px) {
+    max-height: 63px;
+  }
+  
+`;
+
+export const CardImg = styled.img`
+  width: 100%;
 `;
 
 export const TituloCard = styled.h2`
