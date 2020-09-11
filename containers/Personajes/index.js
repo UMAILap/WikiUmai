@@ -146,7 +146,7 @@ function PersonajesContainer({ data }) {
                 {historias.map(({ titulo, slug }) => (
                   <li>
                     <Link href={`/historias/${slug}`} passHref>
-                      {titulo}
+                      <a>{titulo}</a>
                     </Link>
                   </li>
                 ))}
