@@ -59,7 +59,7 @@ export const getDataCollection = async (collection, res) => {
     const response = await api.get(`${BASE_URL}/${collection}`);
     const responseData = response.data;
     if (responseData.length) {
-      const dataObject = responseData[0];
+      const dataObject = responseData;
       return { ...dataObject };
     } else {
       res.setHeader('location', '/404');
