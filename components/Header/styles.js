@@ -305,6 +305,7 @@ export const ContainerBotones = styled.div`
     height: fit-content;
     display: flex;
     justify-content: start;
+    align-items: center;
   }
   div {
     display: flex;
@@ -317,7 +318,6 @@ export const ContainerBotones = styled.div`
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     @media (min-width: ${breakpoints.laptop}) {
       border-radius: 20px;
       /* background-color: #4d1b84; */
@@ -405,14 +405,14 @@ export const StyledLink = styled.a`
   @media (min-width: ${breakpoints.laptopL}) {
     /* padding: 12px 30px; */
     margin: 2%;
-    font-size: ${props => (props.IniciarSesion ? '14px' : '12px')};
+    font-size: ${props => (props.IniciarSesion ? '14px' : '14px')};
   }
 
 `;
-export const ContainerAvatar = styled.div`{
+export const ContainerAvatar = styled.div`
   /* Sacar display:none cuando esté iniciada la sesión */
-  display:none !important;
-font-family: 'Chivo';
+  display:none !important ;
+  font-family : 'Chivo';
   display: none;
   @media (min-width: 376px) {
   }
@@ -479,5 +479,4 @@ font-family: 'Chivo';
   .dropup {
     display: none;
   }
-}
 `;

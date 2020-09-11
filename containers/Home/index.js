@@ -17,6 +17,7 @@ import {
   ContainerSlider,
   Card,
   CardImg,
+  ContImg,
   TituloCard,
   ParteSuperior,
   GrillaSeccionActualizaciones,
@@ -125,12 +126,14 @@ function HomeContainer() {
                         href={`/planeta/${slug}`}
                         passHref>
                         <Card>
-                          <CardImg
-                            src={`${
-                              avatar
-                                ? BASE_URL + avatar.url
-                                : '/placeholderAvatar.png'
-                            }`}></CardImg>
+                          <ContImg>
+                            <CardImg
+                              src={`${
+                                avatar
+                                  ? BASE_URL + avatar.url
+                                  : '/placeholderAvatar.png'
+                              }`}></CardImg>
+                          </ContImg>
                           <TituloCard>{nombre}</TituloCard>
                         </Card>
                       </Link>
