@@ -25,11 +25,13 @@ export const Hito = styled.span`
   text-align: center;
   padding: 3% 15%;
   line-height: 20px;
-  ${props => props.selected && css`
-  color: ${leerColor(colores.violeta)};
-  font-weight: bold;
-  background-color: ${leerColor(colores.naranja)};
-  `}
+  ${props =>
+    props.selected &&
+    css`
+      color: ${leerColor(colores.violeta)};
+      font-weight: bold;
+      background-color: ${leerColor(colores.naranja)};
+    `}
 
   @media (min-width: ${breakpoints.mobileGrande}) {
     max-width: 95%;
@@ -38,18 +40,28 @@ export const Hito = styled.span`
 export const HitoTitulo = styled.h1`
   font-family: 'Raleway';
   font-size: 15px;
-  color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
-  font-weight: ${props => props.selected ? 'bold' : '400'};
+  color: ${leerColor(colores.negro)};
+  font-weight: ${props => (props.selected ? 'bold' : '400')};
   padding: 10% 0;
   @media (min-width: ${breakpoints.notebook}) {
   }
+  ${props =>
+    props.selected &&
+    css`
+      color: ${leerColor(colores.violeta)};
+      font-weight: bold;
+      background-color: ${leerColor(colores.naranja)};
+    `}
 `;
 
 export const HitoAnio = styled.p`
   font-family: 'Proxima Nova';
   font-size: 15px;
-  color: ${props => props.selected ? `${leerColor(colores.violeta)}` : `${leerColor(colores.negro)}`};
-  font-weight: ${props => props.selected ? 'bold' : '400'};
+  color: ${props =>
+    props.selected
+      ? `${leerColor(colores.violeta)}`
+      : `${leerColor(colores.negro)}`};
+  font-weight: ${props => (props.selected ? 'bold' : '400')};
   padding-bottom: 10%;
   @media (min-width: ${breakpoints.notebook}) {
   }

@@ -13,7 +13,7 @@ const api = Axios.create({
 
 api.interceptors.response.use(
   response => response,
-  function (error) {
+  function(error) {
     if (401 === error.response.status) {
       Router.push('/login');
     } else {

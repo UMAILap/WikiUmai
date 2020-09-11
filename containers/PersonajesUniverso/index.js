@@ -40,41 +40,45 @@ function PersonajesUniversoContainer({ data }) {
           <Personajes>
             {/* data.map*/}
 
-            {data.length && data.map(personaje => {
-              return (<Link href={`/personajes/${personaje.nombre}`} passHref>
-                <PersonajeFicha>
-                  <img src={`${BASE_URL}${personaje.avatares[0]?.url}`} alt="imagen_personaje" />
-                  <PersonajeInfo>
-                    {console.log('PERSONAJE', personaje)}
-                    <Titulos>{personaje.nombre}</Titulos>
-                    <p>
-                      {personaje.sinopsis}
-                    </p>
+            {data.length &&
+              data.map(personaje => {
+                return (
+                  <Link href={`/personajes/${personaje.nombre}`} passHref>
+                    <PersonajeFicha>
+                      <img
+                        src={`${BASE_URL}${personaje.avatares[0]?.url}`}
+                        alt="imagen_personaje"
+                      />
+                      <PersonajeInfo>
+                        {console.log('PERSONAJE', personaje)}
+                        <Titulos>{personaje.nombre}</Titulos>
+                        <p>{personaje.sinopsis}</p>
 
-                    <PersonajeCaracteristica>
-                      <PersonajePlaneta>
-                        <img src="/images/icons/planet.svg" />
-                        <h6>{personaje.planeta?.nombre}</h6>
-                      </PersonajePlaneta>
+                        <PersonajeCaracteristica>
+                          <PersonajePlaneta>
+                            <img src="/images/icons/planet.svg" />
+                            <h6>{personaje.planeta?.nombre}</h6>
+                          </PersonajePlaneta>
 
-                      <Caracteristicas>
-                        <img src="/fuerza.svg" />
-                        <span>2</span>
+                          <Caracteristicas>
+                            <img src="/fuerza.svg" />
+                            <span>2</span>
 
-                        <img src="/inteligencia.svg" />
-                        <span>4</span>
+                            <img src="/inteligencia.svg" />
+                            <span>4</span>
 
-                        <img src="/habilidad.svg" />
-                        <span>3</span>
+                            <img src="/habilidad.svg" />
+                            <span>3</span>
 
-                        <img src="/suerte.svg" />
-                        <span>1</span>
-                      </Caracteristicas>
-                    </PersonajeCaracteristica>
-                  </PersonajeInfo>
-                </PersonajeFicha>
-              </Link>)
-            })}
+                            <img src="/suerte.svg" />
+                            <span>1</span>
+                          </Caracteristicas>
+                        </PersonajeCaracteristica>
+                      </PersonajeInfo>
+                    </PersonajeFicha>
+                  </Link>
+                );
+              })}
             {/* <Link href="/personajes/nombre" passHref>
               <PersonajeFicha>
                 <img src="/images/PersonajesUniverso/sofovich.png" alt="imagen_personaje" />

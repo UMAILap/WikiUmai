@@ -6,22 +6,24 @@ function PlanetasPills({ isFlex, multiple }) {
   const [selectedPlanet, setSelectedPlanet] = useState(multiple ? [] : null);
 
   function handleClickPlaneta(planet_name) {
-    if ((multiple = true && _.includes(selectedPlanet, planet_name))) {     
-      const copieValuesArray = selectedPlanet; //copiamos el array
+    if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
+      const copieValuesArray = _.filter(selectedPlanet, function(s) {
+        return s !== planet_name;
+      });
       // const newValuesArray =  _.remove(copieValuesArray, objeto =>
       //       _.isEqual(planet_name, objeto),
-      //     ); 
-      const newValuesArray =  _.pull(copieValuesArray, planet_name );
-      console.log(newValuesArray);
-      setSelectedPlanet({
-        ...selectedPlanet,
-         selectedPlanet: newValuesArray,
-      });
+      //     );
+      /* const newValuesArray = _.pull(copieValuesArray, planet_name); */
+      setSelectedPlanet(copieValuesArray);
     } else {
+      console.log('selectedPlanet', [...selectedPlanet, planet_name]);
       setSelectedPlanet([...selectedPlanet, planet_name]);
       return;
     }
-    setSelectedPlanet(planet_name);
+    console.log('HOLA ESTOY ACÁ');
+    if (!multiple) {
+      setSelectedPlanet(planet_name);
+    }
   }
   function handleColorPlaneta(nombrePlaneta) {
     if (multiple) {
