@@ -31,14 +31,14 @@ import {
 
 import { Wrapper, Titulos, BotonVioleta } from 'components';
 import Link from 'next/link';
-import axios from 'axios'
+import axios from 'axios';
 
 function HomeContainer() {
   const [planetas, setPlanetas] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const {data} = await axios.get(`api/planetas`);
+        const { data } = await axios.get(`api/planetas`);
         setPlanetas(data);
       } catch (error) {
         console.log('Error al obtener los planetas', error);
