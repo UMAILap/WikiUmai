@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useRouter } from 'next/router';
-import { api } from 'utils';
-import { BASE_URL, routes } from 'utils';
+import { BASE_URL } from 'utils';
 
 import {
   ContainerBanner,
@@ -33,16 +31,15 @@ import {
 
 import { Wrapper, Titulos, BotonVioleta } from 'components';
 import Link from 'next/link';
+import axios from 'axios'
 
 function HomeContainer() {
-  //Trae los planetas para el slider cuando carga la pag. (Lean)
   const [planetas, setPlanetas] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await api.get(`${BASE_URL}/planetas`);
-        const responseData = response.data;
-        setPlanetas(responseData);
+        const {data} = await axios.get(`api/planetas`);
+        setPlanetas(data);
       } catch (error) {
         console.log('Error al obtener los planetas', error);
       }
