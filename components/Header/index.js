@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   Container,
   ContainerHeader,
@@ -36,6 +36,47 @@ function Header() {
   const [openMenuUser, setOpenMenuUser] = useState(false);
   const IniciarSesion = true;
   const displayBotton = true;
+
+  const DropdownVariants = {
+    hidden: {
+      opacity: 0,
+      height: 0,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      height: 'auto',
+      scale: 1,
+      transition: {
+        when: 'beforeChildren',
+        staggerChildren: 0.1,
+        duration: 0.2,
+      },
+    },
+    exit: {
+      opacity: 0,
+      height: 0,
+      scale: 0,
+      transition: {
+        when: 'afterChildren',
+        staggerChildren: 0.1,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  const DropdownChildVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
+
   return (
     <Container>
       <Wrapper>
@@ -94,11 +135,40 @@ function Header() {
             <ul>
               <li onClick={() => setOpen(!open)}>
                 <StyledLink>Universo</StyledLink>
-                <div className={open ? 'dropdown' : 'dropup'}>
-                  <StyledLink href="/personajes">Personajes</StyledLink>
-                  <StyledLink href="/tecnologias">Tecnologias</StyledLink>
-                  <StyledLink href="/historias">Historias</StyledLink>
-                </div>
+
+                <AnimatePresence>
+                  {open && (
+                    <motion.div
+                      key="dropdown"
+                      className="dropdown"
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      variants={DropdownVariants}>
+                      <StyledLink
+                        href="/personajes"
+                        initial="hidden"
+                        exit="exit"
+                        variants={DropdownChildVariants}>
+                        Personajes
+                      </StyledLink>
+                      <StyledLink
+                        href="/tecnologias"
+                        initial="hidden"
+                        exit="exit"
+                        variants={DropdownChildVariants}>
+                        Tecnologias
+                      </StyledLink>
+                      <StyledLink
+                        href="/historias"
+                        initial="hidden"
+                        exit="exit"
+                        variants={DropdownChildVariants}>
+                        Historias
+                      </StyledLink>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </li>
             </ul>
             {/* <div>
@@ -137,11 +207,9 @@ function Header() {
                     {/* Hacer bien los Links */}
                     <StyledLink href="/perfil">Perfil</StyledLink>
                     <StyledLink href="/logout">Cerrar Sesión</StyledLink>
-
                   </div>
                 </li>
               </ul>
-
             </ContainerAvatar>
           </ContainerUser>
         </ContainerHeader>

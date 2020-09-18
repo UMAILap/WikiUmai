@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Container = styled.header`
@@ -21,7 +22,7 @@ export const MenuSlide = styled.div`
   .MenuDown a {
     background-color: ${leerColor(colores.violetaOscuro)};
     background-color: ${props =>
-    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+      props.displayBotton ? 'rgb(255, 189, 105)' : ''};
     padding-left: ${props => (props.displayBotton ? '10px' : '40px')};
   }
 
@@ -363,20 +364,20 @@ export const ContainerBotones = styled.div`
   }
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled(motion.a)`
     cursor:pointer;
     color: ${leerColor(colores.blanco)};
     display: ${props => (props.IniciarSesion ? 'none' : '')};
     display: ${props => (props.displayBotton ? 'flex' : '')};
     /* background-color: ${leerColor(colores.violeta)}; */
     background-color: ${props =>
-    props.displayBotton ? 'rgb(255, 189, 105)' : ''};
+      props.displayBotton ? 'rgb(255, 189, 105)' : ''};
     font-size: 18px;
     font-family: 'Proxima Nova';
     width: ${props => (props.displayBotton ? '80%' : '100%')};
     height: ${props => (props.displayBotton ? '35px' : '')};
     color: ${props =>
-    props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'};
+      props.IniciarSesion ? 'rgb(56, 20, 96)' : '255, 255, 255'};
     align-self: ${props => (props.displayBotton ? 'end' : '')};
     justify-self: ${props => (props.displayBotton ? 'center' : '')};
     margin-bottom: ${props => (props.displayBotton ? '50%' : '')};
@@ -394,7 +395,7 @@ export const StyledLink = styled.a`
     background-color: #4d1b84;
     display: ${props => (props.IniciarSesion ? 'block' : '')};
     background-color: ${props =>
-    props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
+      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
     padding: 12px 15px;
     font-size: ${props => (props.IniciarSesion ? '17px' : '14px')};
     margin: 2%;
