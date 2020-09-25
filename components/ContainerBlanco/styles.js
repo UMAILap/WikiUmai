@@ -21,11 +21,10 @@ export const WhiteContainer = styled.div`
   }
   @media (min-width: ${breakpoints.tablet}) {
     margin: unset;
-    
+
     padding: 40px 25px;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    
     padding: 25px 40px 30px;
   }
   @media (min-width: ${breakpoints.laptopL}) {
