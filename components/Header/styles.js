@@ -226,12 +226,7 @@ export const MenuHamburguesa = styled.h1`
 `;
 export const ContainerSearch = styled.div`
   display: none;
-  @media (min-width: ${breakpoints.mobile}) {
-  }
-  @media (min-width: ${breakpoints.mobileGrande}) {
-  }
-  @media (min-width: ${breakpoints.tablet}) {
-  }
+
   @media (min-width: ${breakpoints.laptop}) {
     display: flex;
     justify-content: center;
@@ -389,15 +384,15 @@ export const StyledLink = styled(motion.a)`
     /* border-bottom:1px solid white; */
     border-bottom:${props => (props.displayBotton ? '' : '1px solid white')};
     border-radius: ${props => (props.displayBotton ? '20px' : '0')};
+    text-align: center;
 
 
   @media (min-width: ${breakpoints.laptop}) {
     background-color: #4d1b84;
     display: ${props => (props.IniciarSesion ? 'block' : '')};
-    background-color: ${props =>
-      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
+    background-color: ${props => props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
     padding: 12px 15px;
-    font-size: ${props => (props.IniciarSesion ? '17px' : '14px')};
+    font-size: 15px;
     margin: 2%;
     width:auto;
     border-radius: 20px;
