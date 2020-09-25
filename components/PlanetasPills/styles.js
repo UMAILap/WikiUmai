@@ -2,17 +2,21 @@ import styled, { css } from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Planetas = styled.div`
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+
   ${props =>
     props.isFlex &&
     css`
       display: flex;
+      gap: 20px;
       justify-content: space-between;
       width: 50%;
     `}
+    @media (max-width: ${breakpoints.mobile}) {
+    display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 3%;
+  }
 `;
 export const Planeta = styled.span`
   cursor: pointer;

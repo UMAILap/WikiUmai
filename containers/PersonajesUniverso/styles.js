@@ -38,7 +38,7 @@ export const PlanetasNav = styled.div`
 `;
 
 export const Personajes = styled.div`
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
 
   @media (min-width: ${breakpoints.laptopL}) {
@@ -63,16 +63,26 @@ export const PersonajeFicha = styled.a`
     width: 40%;
   }
 `;
+export const ImagenPersonaje = styled.img`
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 25px;
+`;
 
 export const PersonajeInfo = styled.div`
   width: 70%;
   margin-left: 30px;
   p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-family: 'Proxima Nova';
     font-size: 14px;
     line-height: 26px;
     color: ${leerColor(colores.negro)};
-    padding: 15px 0px;
+    padding-top: 15px;
   }
 `;
 
@@ -95,44 +105,38 @@ export const PersonajePlaneta = styled.div`
 
 export const Caracteristicas = styled.div`
   display: flex;
-  
+
   align-items: center;
   margin-top: 30px;
   img {
+    width: 1em;
   }
 
   span {
     font-family: 'Proxima Nova';
-    font-size: 25px;
+    font-size: 1em;
     font-weight: bold;
     color: ${leerColor(colores.violeta)};
     margin-left: 10px;
     margin-right: 10px;
   }
 
-
-
   @media (min-width: ${breakpoints.tablet}) {
     margin-top: 0px;
     margin-left: 20px;
-    
-
   }
-
 
   @media (min-width: ${breakpoints.notebook}) {
     margin-left: 30px;
     flex-direction: row;
-
-
   }
 `;
 
-
-
 export const PersonajeCaracteristica = styled.div`
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-    @media (min-width: ${breakpoints.tablet}) {
-      flex-wrap: revert;    }
+  @media (min-width: ${breakpoints.tablet}) {
+    flex-wrap: revert;
+  }
 `;

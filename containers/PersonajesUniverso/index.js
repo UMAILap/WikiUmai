@@ -9,6 +9,7 @@ import {
   PlanetasNav,
   Personajes,
   PersonajeFicha,
+  ImagenPersonaje,
   PersonajeInfo,
   PersonajePlaneta,
   Caracteristicas,
@@ -41,7 +42,7 @@ function PersonajesUniversoContainer({ data }) {
                     href={`/personajes/${personaje.slug}`}
                     passHref>
                     <PersonajeFicha>
-                      <img
+                      <ImagenPersonaje
                         src={`${BASE_URL}${personaje.avatares[0]?.url}`}
                         alt={`imagen_${personaje.nombre}`}
                       />
