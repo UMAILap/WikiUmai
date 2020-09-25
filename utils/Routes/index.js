@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://wikiumai.revisionalpha.com:1337';
+export const BASE_URL = 'https://umaiwikiapi.revisionalpha.com';
 
 export const routes = {
   signup: `${BASE_URL}/auth/signup/`,
