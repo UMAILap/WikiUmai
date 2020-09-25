@@ -15,21 +15,20 @@ export const WhiteContainer = styled.div`
     margin-top: 25px !important;
   }
   @media (min-width: ${breakpoints.mobileGrande}) {
-    width: 80%;
+    max-width: 532px;
     padding: 50px 40px;
     margin: 0 auto;
   }
   @media (min-width: ${breakpoints.tablet}) {
     margin: unset;
-    width: 50%;
+    
     padding: 40px 25px;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    width: 45%;
+    
     padding: 25px 40px 30px;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    width: 40%;
     padding: 25px 40px 30px;
   }
 `;
