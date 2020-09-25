@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
-
+import { motion } from 'framer-motion';
 export const Planetas = styled.div`
 
   ${props =>
@@ -11,14 +11,14 @@ export const Planetas = styled.div`
       justify-content: space-between;
       width: 50%;
     `}
-    @media (max-width: ${breakpoints.mobile}) {
+    @media (max-width: ${breakpoints.tablet}) {
     display: grid !important;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 10px;
   grid-column-gap: 3%;
   }
 `;
-export const Planeta = styled.span`
+export const Planeta = styled(motion.span)`
   cursor: pointer;
   color: ${leerColor(colores.violeta)};
   width: 100%;

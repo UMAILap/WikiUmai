@@ -2,17 +2,18 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Container = styled.footer`
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-height: 100px;
+margin-top: 50px;
+height: 100px;
+  display:flex;
+  /* max-height: 100px; */
   font-family: 'Proxima Nova';
   align-self: flex-end;
   /*background-color: ${leerColor(colores.blanco)};*/
     background-color: ${props =>
-      props.home == true ? 'rgb(236, 236, 236)' : 'rgb(255,255,255)'};  
+      props.home == true ? 'rgb(236, 236, 236)' : 'rgb(255,255,255)'};
 
 
-  @media (min-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.tablet}) {
     padding-top: 10px;
     padding-bottom: 20px;
   }

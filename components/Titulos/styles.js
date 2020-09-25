@@ -16,14 +16,14 @@ export const EstilosTitulos = styled.h1`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    font-size: 31px;
+    font-size: 24px;
   }
 `;

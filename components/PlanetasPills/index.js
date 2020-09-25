@@ -33,36 +33,48 @@ function PlanetasPills({ isFlex, multiple }) {
   return (
     <Planetas isFlex={isFlex}>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('wereld')}
         onClick={() => handleClickPlaneta('wereld')}>
         Wereld
       </Planeta>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('zoro')}
         onClick={() => handleClickPlaneta('zoro')}>
         Zoro
       </Planeta>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('sol')}
         onClick={() => handleClickPlaneta('sol')}>
         Sol
       </Planeta>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('ikigai')}
         onClick={() => handleClickPlaneta('ikigai')}>
         Ikigai
       </Planeta>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('nima')}
         onClick={() => handleClickPlaneta('nima')}>
         Nima
       </Planeta>
       <Planeta
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
         colorFondo={handleColorPlaneta('adhera')}
         onClick={() => handleClickPlaneta('adhera')}>
