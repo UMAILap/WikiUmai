@@ -126,6 +126,16 @@ export const PuntosPersonajes = styled.div`
   }
 `;
 
+export const ContImg = styled.div`
+    border-radius: 10px;
+    height: 224px;
+    width: 224px;
+    margin: 10px auto;
+    overflow: hidden;
+    background: white;
+    img{ width: 100%; }
+`;
+
 export const FotoPersonaje = styled.img`
   border-radius: 10px;
   width: auto;
@@ -312,10 +322,6 @@ export const GaleriaImagenes = styled.div`
   flex-direction: row;
   flex-flow: wrap;
   margin-top: 40px;
-  img {
-    border-radius: 20px;
-    width: 30%;
-  }
 `;
 
 export const Relacionados = styled.div`

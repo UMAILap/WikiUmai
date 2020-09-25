@@ -22,6 +22,7 @@ import {
   RelacionadosCards,
   Dato,
   DatoFixed,
+  ContImg,
 } from './styles';
 import {
   Wrapper,
@@ -79,12 +80,14 @@ function PersonajesContainer({ data }) {
                   <span>1</span>
                 </PuntosPersonajes>
               </CaracteristicasPuntos>
+              <ContImg>
               <img
                 src={`${
                   avatares.length
                     ? BASE_URL + avatares[0].url
                     : '/placeholderAvatar.png'
                 }`}></img>
+              </ContImg>
             </PersonajeCaracteristicas>
           </BannerPersonaje>
         </Wrapper>
@@ -162,9 +165,15 @@ function PersonajesContainer({ data }) {
             <Galeria>
               <Titulos>Galeria</Titulos>
               <GaleriaImagenes>
-                <img src="/placeholder_personaje.png"></img>
-                <img src="/placeholder_personaje.png"></img>
-                <img src="/placeholder_personaje.png"></img>
+                <ContImg>
+                  <img src="/placeholder_personaje.png"></img>
+                </ContImg>
+                <ContImg>
+                  <img src="/placeholder_personaje.png"></img>
+                </ContImg>
+                <ContImg>
+                  <img src="/placeholder_personaje.png"></img>
+                </ContImg>
               </GaleriaImagenes>
             </Galeria>
             <Relacionados>
