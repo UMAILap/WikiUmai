@@ -85,7 +85,8 @@ function PersonajesContainer({ data }) {
                 <img
                   src={`${
                     avatares.length
-                      ? BASE_URL + avatares[0].url : '/placeholderAvatar.png'
+                      ? BASE_URL + avatares[0].url
+                      : '/placeholderAvatar.png'
                   }`}></img>
               </ContImg>
             </PersonajeCaracteristicas>
@@ -143,7 +144,7 @@ function PersonajesContainer({ data }) {
           </PersonajeDatos>
           <ContenidoPrincipal>
             <ContSinopsis>
-            <p> {sinopsis} </p> 
+              <p> {sinopsis} </p>
             </ContSinopsis>
             <PersonajeHistorias>
               <Titulos isColorPink={isColorPink}>Historias</Titulos>

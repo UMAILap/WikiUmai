@@ -66,7 +66,7 @@ export const ContImg = styled.div`
   height: 160px;
   overflow: hidden;
   border-radius: 25px;
-  background-color:  ${leerColor(colores.gris)};
+  background-color: ${leerColor(colores.gris)};
 `;
 
 export const ImagenPersonaje = styled.img`
