@@ -147,6 +147,9 @@ export const ContainerSlider = styled.div`
   & .slick-slide > div {
     margin: auto 10px;
   }
+  & .slick-track{
+    padding: 40px 0px;
+  }
 `;
 
 export const Card = styled.a`
