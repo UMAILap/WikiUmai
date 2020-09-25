@@ -81,12 +81,12 @@ function PersonajesContainer({ data }) {
                 </PuntosPersonajes>
               </CaracteristicasPuntos>
               <ContImg>
-              <img
-                src={`${
-                  avatares.length
-                    ? BASE_URL + avatares[0].url
-                    : '/placeholderAvatar.png'
-                }`}></img>
+                <img
+                  src={`${
+                    avatares.length
+                      ? BASE_URL + avatares[0].url
+                      : '/placeholderAvatar.png'
+                  }`}></img>
               </ContImg>
             </PersonajeCaracteristicas>
           </BannerPersonaje>

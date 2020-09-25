@@ -127,13 +127,15 @@ export const PuntosPersonajes = styled.div`
 `;
 
 export const ContImg = styled.div`
-    border-radius: 10px;
-    height: 224px;
-    width: 224px;
-    margin: 10px auto;
-    overflow: hidden;
-    background: white;
-    img{ width: 100%; }
+  border-radius: 10px;
+  height: 224px;
+  width: 224px;
+  margin: 10px auto;
+  overflow: hidden;
+  background: white;
+  img {
+    width: 100%;
+  }
 `;
 
 export const FotoPersonaje = styled.img`
