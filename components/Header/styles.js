@@ -390,7 +390,8 @@ export const StyledLink = styled(motion.a)`
   @media (min-width: ${breakpoints.laptop}) {
     background-color: #4d1b84;
     display: ${props => (props.IniciarSesion ? 'block' : '')};
-    background-color: ${props => props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
+    background-color: ${props =>
+      props.IniciarSesion ? 'rgb(255, 189, 105)' : ''};
     padding: 12px 15px;
     font-size: 15px;
     margin: 2%;
