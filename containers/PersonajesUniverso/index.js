@@ -14,6 +14,7 @@ import {
   PersonajePlaneta,
   Caracteristicas,
   PersonajeCaracteristica,
+  ContImg,
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
@@ -44,10 +45,12 @@ function PersonajesUniversoContainer({ data }) {
                     <PersonajeFicha
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}>
-                      <ImagenPersonaje
-                        src={`${BASE_URL}${personaje.avatares[0]?.url}`}
-                        alt={`imagen_${personaje.nombre}`}
-                      />
+                      <ContImg>
+                        <ImagenPersonaje
+                          src={`${BASE_URL}${personaje.avatares[0]?.url}`}
+                          alt={`imagen_${personaje.nombre}`}
+                        />
+                      </ContImg>
                       <PersonajeInfo>
                         <Titulos>{personaje.nombre}</Titulos>
                         <p>{personaje.sinopsis}</p>

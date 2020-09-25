@@ -319,11 +319,23 @@ export const ContenedorPersonajeGaleria = styled.div`
     border-radius: 20px;
   }
 `;
+
+export const ContSinopsis = styled.div`
+  p{ font-size: 17px;
+  color: ${leerColor(colores.violeta)};
+  font-family: 'Proxima nova';
+   }
+`;
+
 export const GaleriaImagenes = styled.div`
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   margin-top: 40px;
+  
+  div{
+    background-color: ${leerColor(colores.gris)};
+  }
 `;
 
 export const Relacionados = styled.div`

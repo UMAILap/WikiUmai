@@ -59,15 +59,18 @@ export const PersonajeFicha = styled(motion.a)`
   width: fit-content;
   padding-bottom: 50px;
   border-bottom: 1px solid ${leerColor(colores.gris)};
-  img {
-    width: 40%;
-  }
 `;
-export const ImagenPersonaje = styled.img`
+
+export const ContImg = styled.div`
   width: 160px;
   height: 160px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 25px;
+  background-color:  ${leerColor(colores.gris)};
+`;
+
+export const ImagenPersonaje = styled.img`
+  width: 100%;
 `;
 
 export const PersonajeInfo = styled.div`
