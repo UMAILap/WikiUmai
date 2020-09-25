@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
-
+import { motion } from 'framer-motion';
 export const ContainerMain = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
   }
@@ -52,7 +52,7 @@ export const Personajes = styled.div`
   }
 `;
 
-export const PersonajeFicha = styled.a`
+export const PersonajeFicha = styled(motion.a)`
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;

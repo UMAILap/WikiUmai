@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
-
+import { motion } from 'framer-motion';
 export const ContainerMain = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
   }
@@ -52,7 +52,7 @@ export const Personajes = styled.div`
   }
 `;
 
-export const PersonajeFicha = styled.a`
+export const PersonajeFicha = styled(motion.a)`
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -67,11 +67,15 @@ export const PersonajeFicha = styled.a`
 export const PersonajeInfo = styled.div`
   width: 100%;
   p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-family: 'Proxima Nova';
     font-size: ${pxToRem(14)};
     line-height: 26px;
     color: ${leerColor(colores.negro)};
-    padding: 15px 0px;
+    padding-top: 15px;
   }
 `;
 
@@ -110,6 +114,7 @@ export const Caracteristicas = styled.div`
 `;
 
 export const PersonajeCaracteristica = styled.div`
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
 `;

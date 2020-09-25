@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_URL } from 'utils';
-
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   ContainerBanner,
   SectorTitulos,
@@ -117,7 +117,10 @@ function HomeContainer() {
                 planetas.map(planeta => {
                   const { id, nombre, avatar, slug } = planeta;
                   return (
-                    <div key={`${id}-${nombre}`}>
+                    <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      key={`${id}-${nombre}`}>
                       <Link
                         key={`${id}-${nombre}`}
                         href={`/planeta/${slug}`}
@@ -134,14 +137,14 @@ function HomeContainer() {
                           <TituloCard>{nombre}</TituloCard>
                         </Card>
                       </Link>
-                    </div>
+                    </motion.div>
                   );
                 })}
             </Slider>
           </ContainerSlider>
         </Container>
       </Wrapper>
-
+      {/*
       <FondoGris>
         <Wrapper>
           <SeccionActualizaciones>
@@ -360,7 +363,7 @@ function HomeContainer() {
             </GrillaSeccionActualizaciones>
           </SeccionActualizaciones>
         </Wrapper>
-      </FondoGris>
+      </FondoGris> */}
     </>
   );
 }

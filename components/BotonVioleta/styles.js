@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
-
-export const VioletaBoton = styled.a`
+import { motion } from 'framer-motion';
+export const VioletaBoton = styled(motion.a)`
   cursor: pointer;
   font-family: 'Proxima Nova';
   border-radius: 20px;

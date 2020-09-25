@@ -39,7 +39,9 @@ function HistoriasUniversoContainer({ data }) {
                     key={historia.id}
                     href={`/historias/${historia.slug}`}
                     passHref>
-                    <PersonajeFicha>
+                    <PersonajeFicha
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}>
                       <PersonajeInfo>
                         <Titulos>{historia.titulo}</Titulos>
                         <p>{historia.sinopsis}</p>

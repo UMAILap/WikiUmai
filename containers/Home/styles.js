@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
+import { motion } from 'framer-motion';
 
 export const ParteSuperior = styled.div`
   display: flex;
@@ -180,7 +181,6 @@ export const ContImg = styled.div`
   @media (max-width: 1023px) {
     max-height: 63px;
   }
-  
 `;
 
 export const CardImg = styled.img`

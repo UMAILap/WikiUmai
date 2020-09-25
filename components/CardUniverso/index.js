@@ -3,15 +3,18 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { UniversoCard } from './styles';
 
-
 const CardUniverso = React.forwardRef(({ onClick, children, href }, ref) => {
-
   return (
-    <UniversoCard href={href} onClick={onClick} ref={ref}>
+    <UniversoCard
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      href={href}
+      onClick={onClick}
+      ref={ref}>
       {children}
     </UniversoCard>
-  )
-})
+  );
+});
 
 //VERSIÓN SIN REACT.FORWARDREF CON HOOK ROUTER
 /* function CardUniverso({ children, href }) {
@@ -26,7 +29,6 @@ const CardUniverso = React.forwardRef(({ onClick, children, href }, ref) => {
     </UniversoCard>
   );
 } */
-
 
 CardUniverso.propTypes = {
   children: PropTypes.array.isRequired,

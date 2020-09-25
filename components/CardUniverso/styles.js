@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
-
-export const UniversoCard = styled.a`
+import { motion } from 'framer-motion';
+export const UniversoCard = styled(motion.a)`
   background-color: ${leerColor(colores.gris)};
   border-radius: 8px;
   display: flex;

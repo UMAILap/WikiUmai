@@ -14,7 +14,6 @@ import {
   PersonajeCaracteristica,
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
-
 function TecnologiasUniversoContainer({ data }) {
   const isFlex = true;
   return (
@@ -39,7 +38,9 @@ function TecnologiasUniversoContainer({ data }) {
                     key={tecnologia.id}
                     href={`/tecnologias/${tecnologia.nombre}`}
                     passHref>
-                    <PersonajeFicha>
+                    <PersonajeFicha
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}>
                       <PersonajeInfo>
                         <Titulos>{tecnologia.nombre}</Titulos>
                         <p>
