@@ -38,7 +38,7 @@ function PersonajesContainer({ data }) {
   const {
     nombre,
     historias,
-    avatares,
+    avatar,
     planeta,
     introduccion,
     sinopsis,
@@ -84,8 +84,8 @@ function PersonajesContainer({ data }) {
               <ContImg>
                 <img
                   src={`${
-                    avatares.length
-                      ? BASE_URL + avatares[0].url
+                    avatar !== null
+                      ? BASE_URL + avatar.url
                       : '/placeholderAvatar.png'
                   }`}></img>
               </ContImg>

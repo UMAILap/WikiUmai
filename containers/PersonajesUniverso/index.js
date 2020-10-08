@@ -20,6 +20,7 @@ import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function PersonajesUniversoContainer({ data }) {
   const isFlex = true;
+  console.log('PERSONAJESUNIVERSO', data);
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -35,7 +36,7 @@ function PersonajesUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {data.length &&
+            {data &&
               data.map(personaje => {
                 return (
                   <Link
@@ -47,13 +48,13 @@ function PersonajesUniversoContainer({ data }) {
                       whileTap={{ scale: 0.9 }}>
                       <ContImg>
                         <ImagenPersonaje
-                          src={`${BASE_URL}${personaje.avatares[0]?.url}`}
+                          src={`${BASE_URL}${personaje.avatar?.url}`}
                           alt={`imagen_${personaje.nombre}`}
                         />
                       </ContImg>
                       <PersonajeInfo>
                         <Titulos>{personaje.nombre}</Titulos>
-                        <p>{personaje.sinopsis}</p>
+                        <p>{personaje.introduccion}</p>
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>
                             <img src="/images/icons/planet.svg" />
