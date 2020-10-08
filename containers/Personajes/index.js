@@ -182,41 +182,51 @@ function PersonajesContainer({ data }) {
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-                <CardUniverso href="/tecnologias/cuchillo-ejercito-wereld">
+              <Link href="/tecnologias/cuchillo-ejercito-wereld">
+                <CardUniverso>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/personajes/guardian-zoro">
+              </Link>
+              <Link href="/personajes/guardian-zoro">
+                <CardUniverso>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Personaje</h5>
                     <span>Guardian Zoro</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/planeta/wereld">
+              </Link>
+              <Link href="/planeta/wereld">
+                <CardUniverso >
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Wereld </span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/planeta/nima">
+              </Link>
+              <Link href="/planeta/nima">
+                <CardUniverso>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>Nima</span>
                   </div>
                 </CardUniverso>
-                <CardUniverso href="/tecnologias/cuchillo-ejercito-wereld">
+              </Link>
+              <Link href="/tecnologias/cuchillo-ejercito-wereld">
+                <CardUniverso>
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Tecnologia</h5>
                     <span>Wereld Cuchillo</span>
                   </div>
                 </CardUniverso>
+              </Link>
               </RelacionadosCards>
             </Relacionados>
             <p>Ultima edicion por Facundo Brahim</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   ContainerMain,
@@ -79,23 +80,27 @@ function TecnologiasContainer({ data }) {
             <ArticuloData>
               <Titulos>Relacionados</Titulos>
               <Relacionados>
-                <CardUniverso href={`/planeta/${planeta.slug}`}>
-                  <img src="/images/slider/2.png" />
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>{planeta.nombre}</span>
-                  </div>
-                </CardUniverso>
+                <Link href={`/planeta/${planeta.slug}`}>
+                  <CardUniverso>
+                    <img src="/images/slider/2.png" />
+                    <div>
+                      <h5>Planeta</h5>
+                      <span>{planeta.nombre}</span>
+                    </div>
+                  </CardUniverso>
+                </Link>
                 {personajes.length &&
                   personajes.map(personaje => {
                     return (
-                      <CardUniverso href={`/personajes/${personaje.id}`}>
-                        <img src="/images/slider/2.png" />
-                        <div>
-                          <h5>Personaje</h5>
-                          <span>{personaje.nombre}</span>
-                        </div>
-                      </CardUniverso>
+                      <Link href={`/personajes/${personaje.slug}`}>
+                        <CardUniverso>
+                          <img src="/images/slider/2.png" />
+                          <div>
+                            <h5>Personaje</h5>
+                            <span>{personaje.nombre}</span>
+                          </div>
+                        </CardUniverso>
+                      </Link>
                     );
                   })}
 
