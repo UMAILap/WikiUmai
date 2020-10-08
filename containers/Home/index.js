@@ -33,7 +33,8 @@ import { Wrapper, Titulos, BotonVioleta } from 'components';
 import Link from 'next/link';
 import axios from 'axios';
 
-function HomeContainer() {
+function HomeContainer({data}) {
+  console.log(data)
   const [planetas, setPlanetas] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -144,7 +145,7 @@ function HomeContainer() {
           </ContainerSlider>
         </Container>
       </Wrapper>
-      {/*
+
       <FondoGris>
         <Wrapper>
           <SeccionActualizaciones>
@@ -154,6 +155,37 @@ function HomeContainer() {
             </ParteSuperior>
 
             <GrillaSeccionActualizaciones>
+              
+            {data.length &&
+              data.map(entrada => {
+                return (
+                  <Link href={`/${entrada.tipo}/${entrada.slug}`} passHref>
+                    <ActualizacionesAlumnos>
+                      <Contenidos>
+                        <ImagenesContenidos>
+                          {' '}
+                          <img src="/SOFI.png" />
+                        </ImagenesContenidos>
+                        <EdicionActualizacionesTitulo>
+                          sofi.hadjilias
+                        </EdicionActualizacionesTitulo>
+                      </Contenidos>
+
+                      <Contenidos>
+                        <ImagenesContenidos>
+                          {' '}
+                          <img src="/historias.png" />
+                        </ImagenesContenidos>
+                        <TextoOverlay>{entrada.tipo}</TextoOverlay>
+                      </Contenidos>
+
+                      <TituloOverlay>{entrada.nombre}</TituloOverlay>
+                    </ActualizacionesAlumnos>
+                  </Link>
+                );
+              })}
+
+              {/*
               <Link href="/personajes/nombre" passHref>
                 <ActualizacionesAlumnos>
                   <Contenidos>
@@ -329,41 +361,17 @@ function HomeContainer() {
                     </ImagenesContenidos>
                     <TextoOverlay>Personaje</TextoOverlay>
                   </Contenidos>
-
                   <TituloOverlay>
                     Título de encabezado de lo que sea
                   </TituloOverlay>
                 </ActualizacionesAlumnos>
               </Link>
 
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
+              */}
             </GrillaSeccionActualizaciones>
           </SeccionActualizaciones>
         </Wrapper>
-      </FondoGris> */}
+      </FondoGris> 
     </>
   );
 }
