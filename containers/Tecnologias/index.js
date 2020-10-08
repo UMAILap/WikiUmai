@@ -86,10 +86,11 @@ function TecnologiasContainer({ data }) {
                     <span>{planeta.nombre}</span>
                   </div>
                 </CardUniverso>
+
                 {personajes.length &&
                   personajes.map(personaje => {
                     return (
-                      <CardUniverso href={`/personajes/${personaje.id}`}>
+                      <CardUniverso href={`/personajes/${personaje.slug}`}>
                         <img src="/images/slider/2.png" />
                         <div>
                           <h5>Personaje</h5>
