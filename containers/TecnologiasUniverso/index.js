@@ -20,7 +20,7 @@ function TecnologiasUniversoContainer({ data }) {
     <ContainerMain>
       <ContainerBanner>
         <Wrapper>
-          <Titulo>Tecnologias del Universo</Titulo>
+          <Titulo>Tecnologías del Universo</Titulo>
         </Wrapper>
       </ContainerBanner>
 
@@ -32,28 +32,23 @@ function TecnologiasUniversoContainer({ data }) {
 
           <Personajes>
             {data.length &&
-              data.map(tecnologia => {
+              data.map(objeto => {
                 return (
                   <Link
-                    key={tecnologia.id}
-                    href={`/tecnologias/${tecnologia.nombre}`}
+                    key={objeto.id}
+                    href={`/tecnologias/${objeto.slug}`}
                     passHref>
                     <PersonajeFicha
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}>
                       <PersonajeInfo>
-                        <Titulos>{tecnologia.nombre}</Titulos>
-                        <p>
-                          Contrary to popular belief, Lorem Ipsum is not simply
-                          random text. It has roots in a piece of classical
-                          Latin literature from 45 BC, making it over 2000 years
-                          old. Richard McClintock, a Latin...
-                        </p>
+                        <Titulos>{objeto.nombre}</Titulos>
+                        <p>{objeto.origen || 'FALTA DESCRIPCIÓN ACÁ'}</p>
 
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>
                             <img src="/images/icons/planet.svg" />
-                            <h6>{tecnologia.planeta.nombre}</h6>
+                            <h6>{objeto.planeta.nombre}</h6>
                           </PersonajePlaneta>
                         </PersonajeCaracteristica>
                       </PersonajeInfo>
