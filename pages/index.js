@@ -6,7 +6,7 @@ function Home({ data, planetas }) {
   const isHome = true;
   return (
     <Layout>
-      <HomeContainer data={data} planetas={planetas}/>
+      <HomeContainer data={data} planetas={planetas} />
     </Layout>
   );
 }

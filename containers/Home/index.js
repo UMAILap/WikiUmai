@@ -34,7 +34,6 @@ import Link from 'next/link';
 import axios from 'axios';
 
 function HomeContainer({ data, planetas }) {
-  
   /*
   const [planetas, setPlanetas] = useState([]);
   useEffect(() => {
@@ -114,8 +113,7 @@ function HomeContainer({ data, planetas }) {
             </TextosPlanetasMobile>
           </ContainerUniversos>
 
-
-          <ContainerSlider> 
+          <ContainerSlider>
             <Slider {...settings}>
               {planetas.length &&
                 planetas.map(planeta => {
