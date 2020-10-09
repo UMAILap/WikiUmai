@@ -216,6 +216,7 @@ export const FondoGris = styled.div`
 export const SeccionActualizaciones = styled.div`
   display: grid;
   margin: 40px 0px;
+  width: 100%;
 `;
 
 export const GrillaSeccionActualizaciones = styled.div`
@@ -252,16 +253,15 @@ export const GrillaSeccionActualizaciones = styled.div`
   }
 `;
 
-export const ActualizacionesAlumnos = styled.a`
+export const ActualizacionesAlumnos = styled.div`
   flex-direction: column;
   display: flex;
   border-radius: 15px;
-  margin: 0px 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./paula.png);
   background-repeat: no-repeat;
-  height: 250px;
-  max-height: 250px;
+  max-height: 287px;
+  max-width: 347px;
 
   justify-content: flex-end;
   img {

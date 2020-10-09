@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_URL } from 'utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Grid, Col } from '../../components/Grid'
 import {
   ContainerBanner,
   SectorTitulos,
@@ -155,32 +156,34 @@ function HomeContainer({ data, planetas }) {
               <BotonVioleta>Ver más</BotonVioleta>
             </ParteSuperior>
 
-            <GrillaSeccionActualizaciones>
+            <Grid colGap={20} rowGap={30}>
               {data.length &&
                 data.map(entrada => {
                   return (
                     <Link href={`/${entrada.tipo}/${entrada.slug}`} passHref>
-                      <ActualizacionesAlumnos>
-                        <Contenidos>
-                          <ImagenesContenidos>
-                            {' '}
-                            <img src="/SOFI.png" />
-                          </ImagenesContenidos>
-                          <EdicionActualizacionesTitulo>
-                            sofi.hadjilias
-                          </EdicionActualizacionesTitulo>
-                        </Contenidos>
+                      <Col desktop={3} tablet={6} mobile={12}>
+                        <ActualizacionesAlumnos>
+                          <Contenidos>
+                            <ImagenesContenidos>
+                              {' '}
+                              <img src="/SOFI.png" />
+                            </ImagenesContenidos>
+                            <EdicionActualizacionesTitulo>
+                              sofi.hadjilias
+                            </EdicionActualizacionesTitulo>
+                          </Contenidos>
 
-                        <Contenidos>
-                          <ImagenesContenidos>
-                            {' '}
-                            <img src="/historias.png" />
-                          </ImagenesContenidos>
-                          <TextoOverlay>{entrada.tipo}</TextoOverlay>
-                        </Contenidos>
+                          <Contenidos>
+                            <ImagenesContenidos>
+                              {' '}
+                              <img src="/historias.png" />
+                            </ImagenesContenidos>
+                            <TextoOverlay>{entrada.tipo}</TextoOverlay>
+                          </Contenidos>
 
-                        <TituloOverlay>{entrada.nombre}</TituloOverlay>
-                      </ActualizacionesAlumnos>
+                          <TituloOverlay>{entrada.nombre}</TituloOverlay>
+                        </ActualizacionesAlumnos>
+                      </Col>
                     </Link>
                   );
                 })}
@@ -368,7 +371,7 @@ function HomeContainer({ data, planetas }) {
               </Link>
 
               */}
-            </GrillaSeccionActualizaciones>
+            </Grid>
           </SeccionActualizaciones>
         </Wrapper>
       </FondoGris>
