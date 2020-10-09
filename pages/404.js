@@ -2,20 +2,17 @@ import React from 'react';
 import { Layout } from 'containers';
 import { Wrapper, Titulos } from 'components';
 
-function My404() { 
-  return(
-
+function My404() {
+  return (
     <Layout>
-      <Wrapper direction="column" >
+      <Wrapper direction="column">
         <img src="/images/404.png" />
         <Titulos level="1">
           La página solicitada no fue encontrada. Viajero perdido!
         </Titulos>
       </Wrapper>
     </Layout>
-  
-
-  ) 
+  );
 }
 
 export default My404;
