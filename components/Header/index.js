@@ -179,7 +179,6 @@ function Header() {
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>
             </ul>
             </div> */}
-            <StyledLink>Foro</StyledLink>
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
 
