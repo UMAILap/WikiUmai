@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BASE_URL } from 'utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Grid, Col } from '../../components/Grid'
+import { Grid, Col } from '../../components/Grid';
 import {
   ContainerBanner,
   SectorTitulos,
