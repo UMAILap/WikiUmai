@@ -20,13 +20,14 @@ import {
   MapaArticulos,
   Titulos,
   CardUniverso,
+  Markdown,
 } from 'components';
 
 function TecnologiasContainer({ data }) {
   const {
     id,
     nombre,
-    planeta,
+    planetas,
     slug,
     tipo,
     origen,
@@ -49,7 +50,11 @@ function TecnologiasContainer({ data }) {
               </Nombres>
             </TecnologiaNombre>
             <TecnologiaInfo>
-              <p>{contexto_uso || 'No hay info'}</p>
+            {contexto_uso ? (
+                <Markdown source={contexto_uso}></Markdown>
+              ) : (
+                <p>No hay Contexto de Uso para mostrar.</p>
+              )}
             </TecnologiaInfo>
           </Tecnologia>
         </Wrapper>
@@ -60,35 +65,53 @@ function TecnologiasContainer({ data }) {
           <TecnologiaArticulos>
             <ArticuloData>
               <Titulos>Origen</Titulos>
-              <p>{origen || 'No hay Origen para mostrar.'}</p>
+              {origen ? (
+                <Markdown source={origen}></Markdown>
+              ) : (
+                <p>No hay Origen para mostrar.</p>
+              )}
             </ArticuloData>
             <ArticuloData>
               <Titulos>Contexto de uso</Titulos>
-              <p>{contexto_uso || 'No hay Contexto de Uso para mostrar.'}</p>
+              {contexto_uso ? (
+                <Markdown source={contexto_uso}></Markdown>
+              ) : (
+                <p>No hay Contexto de Uso para mostrar.</p>
+              )}
             </ArticuloData>
             <ArticuloData>
               <Titulos>Modo de uso</Titulos>
-              <p>{modo_uso || 'No hay Modo de Uso para mostrar.'}</p>
+              {modo_uso ? (
+                <Markdown source={modo_uso}></Markdown>
+              ) : (
+                <p>No hay Modo de Uso para mostrar.</p>
+              )}
             </ArticuloData>
             <ArticuloData>
               <img src="/images/imgArticulos.png" />
             </ArticuloData>
             <ArticuloData>
               <Titulos>Impacto social</Titulos>
-              <p>{impacto_social || 'No hay Impacto social para mostrar.'}</p>
+              {impacto_social ? (
+                <Markdown source={impacto_social}></Markdown>
+              ) : (
+                <p>No hay Impacto Social para mostrar.</p>
+              )}
             </ArticuloData>
             <ArticuloData>
               <Titulos>Relacionados</Titulos>
               <Relacionados>
-                <CardUniverso href={`/planeta/${planeta.slug}`}>
-                  <img src="/images/slider/2.png" />
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>{planeta.nombre}</span>
-                  </div>
-                </CardUniverso>
-
-                {personajes.length &&
+                {planetas &&
+                  planetas.map(planeta => (
+                    <CardUniverso href={`/planeta/${planeta.slug}`}>
+                      <img src="/images/slider/2.png" />
+                      <div>
+                        <h5>Planeta</h5>
+                        <span>{planeta.nombre}</span>
+                      </div>
+                    </CardUniverso>
+                  ))}
+                {personajes &&
                   personajes.map(personaje => {
                     return (
                       <CardUniverso href={`/personajes/${personaje.slug}`}>

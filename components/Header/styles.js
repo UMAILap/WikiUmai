@@ -360,6 +360,10 @@ export const ContainerBotones = styled.div`
 `;
 
 export const StyledLink = styled(motion.a)`
+    :disabled{
+      background-color: ${leerColor(colores.gris)} !important;
+      cursor: not-allowed !important;
+    }
     cursor:pointer;
     color: ${leerColor(colores.blanco)};
     display: ${props => (props.IniciarSesion ? 'none' : '')};

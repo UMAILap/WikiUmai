@@ -107,7 +107,6 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <StyledLink>Foro</StyledLink>
               <StyledLink>Ayudas y reglas</StyledLink>
               <StyledLink
                 href="/login"
@@ -192,10 +191,11 @@ function Header() {
                 <img src="/perfil-header.png" />
               </User>
             </Link> */}
-            <StyledLink href="/login" IniciarSesion={IniciarSesion}>
+            <Link href="/login" passHref>
+            <StyledLink  IniciarSesion={IniciarSesion}>
               Iniciar Sesion
             </StyledLink>
-
+            </Link>
             <ContainerAvatar>
               <ul>
                 <li onClick={() => setOpenMenuUser(!openMenuUser)}>

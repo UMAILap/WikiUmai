@@ -13,6 +13,12 @@ export const PersonajesContainer = styled.div`
     margin-bottom: 1em;
     padding: 0;
   }
+  p{
+    font-family: 'Proxima Nova';
+  color: ${leerColor(colores.violeta)};
+  font-size: ${pxToRem(16)};
+  margin-top: 1em;
+  }
 `;
 
 export const PersonajesRelacionados = styled.div`

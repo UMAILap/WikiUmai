@@ -53,7 +53,7 @@ function PlanetasContainer({ data }) {
             </BannerInfo>
 
             <BannerImagen>
-              <img src={`${BASE_URL}${avatar.url}`} />
+              <img src={`${BASE_URL}${avatar?.url}`} />
             </BannerImagen>
           </ContenedorBannerInfo>
         </Wrapper>
@@ -72,11 +72,11 @@ function PlanetasContainer({ data }) {
           <Historias>
             <Titulos>Historias</Titulos>
             <SeccionLinks>
-              {historias.map(({ titulo, slug }) => (
+              {historias.length ? historias.map(({ titulo, slug }) => (
                 <Link href={`/historias/${slug}`} passHref>
                   <LinksHistorias>{titulo}</LinksHistorias>
                 </Link>
-              ))}
+              )) : <p>No hay historias para mostrar.</p>}
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta href="/historias/crear/">
@@ -86,6 +86,7 @@ function PlanetasContainer({ data }) {
           </Historias>
 
           <Personajes>
+
             <IconosPersonajes personajes={personajes}></IconosPersonajes>
             <ContenedorBoton>
               <BotonVioleta href="/personajes/crear/">
@@ -118,11 +119,11 @@ function PlanetasContainer({ data }) {
           <Objetos>
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
-              {objetos.map(({ nombre, slug }) => (
+              {objetos.length ? objetos.map(({ nombre, slug }) => (
                 <Link href={`/tecnologias/${slug}`} passHref>
                   <LinksHistorias>{nombre}</LinksHistorias>
                 </Link>
-              ))}
+              )) : <p>No hay objetos para mostrar.</p>}
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta href="/tecnologias/crear/">

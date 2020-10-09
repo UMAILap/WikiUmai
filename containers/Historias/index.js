@@ -20,6 +20,7 @@ import {
   MapaArticulos,
   Titulos,
   CardUniverso,
+  Markdown
 } from 'components';
 
 function HistoriasContainer({ data }) {
@@ -46,7 +47,11 @@ function HistoriasContainer({ data }) {
               </Nombres>
             </HistoriaNombre>
             <HistoriaInfo>
-              <p>{sinopsis}</p>
+            {sinopsis ? (
+                <Markdown source={sinopsis}></Markdown>
+              ) : (
+                <p>No hay Sinopsis para mostrar.</p>
+              )}
             </HistoriaInfo>
           </Historia>
         </Wrapper>
@@ -83,7 +88,11 @@ function HistoriasContainer({ data }) {
 
             <ArticuloData>
               <Titulos>Historia Completa</Titulos>
-              <p>{contenido || 'No hay contenido.'}</p>
+              {contenido ? (
+                <Markdown source={contenido}></Markdown>
+              ) : (
+                <p>No hay Contenido para mostrar.</p>
+              )}
             </ArticuloData>
 
             <ArticuloData>

@@ -82,7 +82,7 @@ function HomeContainer({ data, planetas }) {
       <ContainerBanner>
         <Wrapper direction="row">
           <SectorTitulos>
-            <Titulos>¡Bienvenido, Facundo Brahim!</Titulos>
+            <Titulos>¡Bienvenide!</Titulos>
             <Textos>
               El universo Transmedia de la Escuela de Comunicación y Diseño
               Multimedial de Universidad Maimonides es un proyecto colaborativo

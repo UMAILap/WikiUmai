@@ -11,14 +11,14 @@ import {
 } from './styles';
 
 function IconosPersonajes({ personajes }) {
-  const getPersonajesItem = personajes.map(({ nombre, avatares, slug }) => {
+  const getPersonajesItem = personajes.map(({ nombre, avatar, slug }) => {
     return (
       <Link href={'/personajes/' + slug} passHref key={nombre}>
         <a>
           <PersonajesItem
             src={`${
-              avatares.length
-                ? BASE_URL + avatares[0].url
+              avatar
+                ? BASE_URL + avatar.url
                 : '/placeholderAvatar.png'
             }`}></PersonajesItem>
         </a>
@@ -28,7 +28,9 @@ function IconosPersonajes({ personajes }) {
   return (
     <PersonajesContainer>
       <Titulos>Personajes</Titulos>
-      <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados>
+      {personajes.length ?
+      <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados> : <p>No hay personajes para mostrar.</p>
+}
     </PersonajesContainer>
   );
 }

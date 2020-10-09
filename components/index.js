@@ -36,3 +36,6 @@ export { default as PlanetasPills } from './PlanetasPills';
 // ---------- OTROS ------------- //
 export { default as ContainerBlanco } from './ContainerBlanco';
 export { default as IconosPersonajes } from './IconosPersonajes';
+
+// ---------- MARKDOWN ------------- //
+export {default as Markdown} from './Markdown';
