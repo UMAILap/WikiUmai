@@ -217,7 +217,7 @@ export const Objetos = styled.div`
   flex-direction: row;
   justify-content: stretch;
   margin-top: 20px;
-  span {
+  a {
     font-family: 'Raleway';
     font-size: 18px;
     background-color: ${leerColor(colores.naranja)};
@@ -226,6 +226,11 @@ export const Objetos = styled.div`
     padding: 10px;
     border-radius: 10px;
     margin: 20px 15px 5px 0;
+  }
+  p{
+    font-family: 'Proxima Nova';
+    color: ${leerColor(colores.violeta)};
+    font-size: 16px;
   }
 `;
 export const InventarioPersonaje = styled.div`

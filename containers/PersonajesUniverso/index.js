@@ -63,16 +63,16 @@ function PersonajesUniversoContainer({ data }) {
 
                           <Caracteristicas>
                             <img src="/fuerza.svg" />
-                            <span>2</span>
+                            <span>{personaje.habilidades?.fuerza || '-'}</span>
 
                             <img src="/inteligencia.svg" />
-                            <span>4</span>
+                            <span>{personaje.habilidades?.inteligencia || '-'}</span>
 
                             <img src="/habilidad.svg" />
-                            <span>3</span>
+                            <span>{personaje.habilidades?.habilidad || '-'}</span>
 
                             <img src="/suerte.svg" />
-                            <span>1</span>
+                            <span>{personaje.habilidades?.suerte || '-'}</span>
                           </Caracteristicas>
                         </PersonajeCaracteristica>
                       </PersonajeInfo>
