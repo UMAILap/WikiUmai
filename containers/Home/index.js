@@ -174,9 +174,13 @@ function HomeContainer({ data, planetas }) {
                           }/${entrada.slug}`}
                           passHref>
                           <ActualizacionesAlumnos
-                            srcImagen={entrada.tipo == 'personajes' ? `${BASE_URL}${entrada.avatar?.url}` :
-                            entrada.tipo == 'objetos' ? '/images/icons/cohete.svg' :
-                            '/images/icons/historias.svg'}>
+                            srcImagen={
+                              entrada.tipo == 'personajes'
+                                ? `${BASE_URL}${entrada.avatar?.url}`
+                                : entrada.tipo == 'objetos'
+                                ? '/images/icons/cohete.svg'
+                                : '/images/icons/historias.svg'
+                            }>
                             <Contenidos>
                               <ImagenesContenidos>
                                 {' '}
