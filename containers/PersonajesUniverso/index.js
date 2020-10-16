@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { BASE_URL } from 'utils';
 import {
@@ -17,10 +17,21 @@ import {
   ContImg,
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
+import _ from 'lodash';
 
 function PersonajesUniversoContainer({ data }) {
+
   const isFlex = true;
   console.log('PERSONAJESUNIVERSO', data);
+
+  const selectedPlanet = ["zoro", "nima"];
+
+  const dataFiltered = _.filter(data, function(character){
+    if(_.includes(selectedPlanet, character.planeta.slug) === true){
+      return character
+    }
+  })
+
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -32,12 +43,12 @@ function PersonajesUniversoContainer({ data }) {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills isFlex={isFlex} multiple />
+            <PlanetasPills isFlex={isFlex} multiple  />
           </PlanetasNav>
 
           <Personajes>
-            {data &&
-              data.map(personaje => {
+            {dataFiltered &&
+              dataFiltered.map(personaje => {
                 return (
                   <Link
                     key={personaje.id}

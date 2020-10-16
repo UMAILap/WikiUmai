@@ -4,7 +4,8 @@ import { Planetas, Planeta } from './styles';
 
 function PlanetasPills({ isFlex, multiple }) {
   const [selectedPlanet, setSelectedPlanet] = useState(multiple ? [] : null);
-
+  
+  console.log(selectedPlanet);
   function handleClickPlaneta(planet_name) {
     if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
       const copieValuesArray = _.filter(selectedPlanet, function(s) {
@@ -23,6 +24,7 @@ function PlanetasPills({ isFlex, multiple }) {
       setSelectedPlanet(planet_name);
     }
   }
+
   function handleColorPlaneta(nombrePlaneta) {
     if (multiple) {
       return _.includes(selectedPlanet, nombrePlaneta);
