@@ -61,16 +61,18 @@ function HistoriasContainer({ data }) {
           <MapaArticulos />
           <HistoriaArticulos>
             <ArticuloData>
-              <Titulos id='aparece' className='content'>Aparecen en esta historia</Titulos>
+              <Titulos id="aparece" className="content">
+                Aparecen en esta historia
+              </Titulos>
               <Relacionados>
                 <Link href={`/planeta/${planeta.slug}`} passHref>
-                <CardUniverso >
-                  <img src="/images/slider/2.png" />
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>{planeta.nombre}</span>
-                  </div>
-                </CardUniverso>
+                  <CardUniverso>
+                    <img src="/images/slider/2.png" />
+                    <div>
+                      <h5>Planeta</h5>
+                      <span>{planeta.nombre}</span>
+                    </div>
+                  </CardUniverso>
                 </Link>
                 {personajes.length &&
                   personajes.map(personaje => {

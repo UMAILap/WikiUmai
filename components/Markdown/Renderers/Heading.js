@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 const StyledH2 = styled.h2`
-font-size: 20px;
+  font-size: 20px;
   font-style: bold;
   color: ${leerColor(colores.violeta)};
   color: ${props => (props.isColorPink ? leerColor(colores.rosa) : '')};
@@ -29,11 +29,14 @@ font-size: 20px;
   }
 `;
 
-function Heading({children}) {
-    const id = children[0].props.value.replace(/\s+/g, '-').toLowerCase();
+function Heading({ children }) {
+  const id = children[0].props.value.replace(/\s+/g, '-').toLowerCase();
 
-    return <StyledH2 className='content' id={id}>{children}</StyledH2>
-
+  return (
+    <StyledH2 className="content" id={id}>
+      {children}
+    </StyledH2>
+  );
 }
 
 export default Heading;

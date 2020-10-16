@@ -6,9 +6,9 @@ function PlanetasPills({ isFlex, multiple, onChange }) {
   const [selectedPlanet, setSelectedPlanet] = useState(multiple ? [] : null);
   useEffect(() => {
     if (onChange) {
-        onChange(selectedPlanet);
+      onChange(selectedPlanet);
     }
-  }, [selectedPlanet])
+  }, [selectedPlanet]);
   function handleClickPlaneta(planet_name) {
     if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
       const copieValuesArray = _.filter(selectedPlanet, function(s) {

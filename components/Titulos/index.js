@@ -32,7 +32,15 @@ function Titulos({ children, isColorPink, level, className, id, style }) {
     }
   `;
 
-  return <EstilosTitulos style={style} id={id} className={className} isColorPink={isColorPink}>{children}</EstilosTitulos>;
+  return (
+    <EstilosTitulos
+      style={style}
+      id={id}
+      className={className}
+      isColorPink={isColorPink}>
+      {children}
+    </EstilosTitulos>
+  );
 }
 
 Titulos.propTypes = {
