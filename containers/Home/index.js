@@ -121,8 +121,8 @@ function HomeContainer({ data, planetas }) {
                   const { id, nombre, avatar, slug } = planeta;
                   return (
                     <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 1 }}
                       key={`${id}-${nombre}`}>
                       <Link
                         key={`${id}-${nombre}`}
@@ -163,8 +163,8 @@ function HomeContainer({ data, planetas }) {
                   return (
                     <Col desktop={3} tablet={6} mobile={12}>
                       <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 1 }}
                         key={`${entrada.tipo}-${entrada.nombre}`}>
                         <Link
                           href={`/${

@@ -6,8 +6,8 @@ import { UniversoCard } from './styles';
 const CardUniverso = React.forwardRef(({ onClick, children, href }, ref) => {
   return (
     <UniversoCard
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.04 }}
+      whileTap={{ scale: 1 }}
       href={href}
       onClick={onClick}
       ref={ref}>

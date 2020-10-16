@@ -39,8 +39,8 @@ function TecnologiasUniversoContainer({ data }) {
                     href={`/tecnologias/${objeto.slug}`}
                     passHref>
                     <PersonajeFicha
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}>
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 1 }}>
                       <PersonajeInfo>
                         <Titulos>{objeto.nombre}</Titulos>
                         <p>{objeto.origen || 'FALTA DESCRIPCIÓN ACÁ'}</p>
