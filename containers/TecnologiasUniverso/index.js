@@ -16,16 +16,16 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function TecnologiasUniversoContainer({ data }) {
-  console.log(data)
+
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
   useEffect(() => {
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
-       if (_.includes(filtros, character.planetas[0].slug) === true) {
+        if (_.includes(filtros, character.planetas[0].slug) === true) {
           return character;
-        } 
+        }
       });
       setDataToShow(dataFiltered);
     } else {

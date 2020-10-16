@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import _ from 'lodash';
 
@@ -17,7 +17,7 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function HistoriasUniversoContainer({ data }) {
-  console.log(data)
+
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
@@ -26,7 +26,7 @@ function HistoriasUniversoContainer({ data }) {
       const dataFiltered = _.filter(data, function(character) {
         if (_.includes(filtros, character.planeta.slug) === true) {
           return character;
-        } 
+        }
       });
       setDataToShow(dataFiltered);
     } else {

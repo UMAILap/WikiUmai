@@ -18,6 +18,7 @@ import {
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 import _ from 'lodash';
+
 function PersonajesUniversoContainer({ data }) {
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
