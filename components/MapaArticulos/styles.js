@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Articulos = styled.div`
+top: 50px;
+left: 0;
+  position: sticky;
   border-left: 6px solid ${leerColor(colores.rosa)};
   padding-left: 10px;
   margin-top: 60px;
@@ -27,12 +30,17 @@ export const MapaTitulo = styled.h3`
   padding-bottom: 10px;
 `;
 export const ArticulosSescciones = styled.ul`
+display: flex;
+flex-direction: column;
   font-family: 'Proxima Nova';
   font-size: 18px;
   color: ${leerColor(colores.negro)};
-  li {
+  a {
     padding-top: 15px;
     cursor: pointer;
+  }
+  a:hover{
+    color: ${leerColor(colores.rosa)};
   }
   &.seleccionado {
     font-weight: bold;

@@ -254,6 +254,7 @@ const GlobalStyle = createGlobalStyle`
 
  html {
    font-family: 'Raleway';
+   scroll-behavior: smooth;
  }
 `;
 

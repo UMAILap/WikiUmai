@@ -61,16 +61,17 @@ function HistoriasContainer({ data }) {
           <MapaArticulos />
           <HistoriaArticulos>
             <ArticuloData>
-              <Titulos>Aparecen en esta historia</Titulos>
+              <Titulos id='aparece' className='content'>Aparecen en esta historia</Titulos>
               <Relacionados>
-                <CardUniverso href={`/planeta/${planeta.slug}`}>
+                <Link href={`/planeta/${planeta.slug}`} passHref>
+                <CardUniverso >
                   <img src="/images/slider/2.png" />
                   <div>
                     <h5>Planeta</h5>
                     <span>{planeta.nombre}</span>
                   </div>
                 </CardUniverso>
-
+                </Link>
                 {personajes.length &&
                   personajes.map(personaje => {
                     return (
@@ -87,7 +88,7 @@ function HistoriasContainer({ data }) {
             </ArticuloData>
 
             <ArticuloData>
-              <Titulos>Historia Completa</Titulos>
+              {/* <Titulos>Historia Completa</Titulos> */}
               {contenido ? (
                 <Markdown source={contenido}></Markdown>
               ) : (

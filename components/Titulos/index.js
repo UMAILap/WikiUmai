@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
-function Titulos({ children, isColorPink, level }) {
+function Titulos({ children, isColorPink, level, className, id, style }) {
   const EstilosTitulos = styled(`h${level}`)`
     font-size: 20px;
     font-style: bold;
@@ -32,7 +32,7 @@ function Titulos({ children, isColorPink, level }) {
     }
   `;
 
-  return <EstilosTitulos isColorPink={isColorPink}>{children}</EstilosTitulos>;
+  return <EstilosTitulos style={style} id={id} className={className} isColorPink={isColorPink}>{children}</EstilosTitulos>;
 }
 
 Titulos.propTypes = {

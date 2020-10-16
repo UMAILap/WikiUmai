@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 import { Planetas, Planeta } from './styles';
 
-function PlanetasPills({ isFlex, multiple }) {
+function PlanetasPills({ isFlex, multiple, onChange }) {
   const [selectedPlanet, setSelectedPlanet] = useState(multiple ? [] : null);
-  
-  console.log(selectedPlanet);
+  useEffect(() => {
+    if (onChange) {
+        onChange(selectedPlanet);
+    }
+  }, [selectedPlanet])
   function handleClickPlaneta(planet_name) {
     if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
       const copieValuesArray = _.filter(selectedPlanet, function(s) {

@@ -18,19 +18,23 @@ import {
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 import _ from 'lodash';
-
 function PersonajesUniversoContainer({ data }) {
-
+  const [filtros, setFiltros] = useState([]);
+  const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
-  console.log('PERSONAJESUNIVERSO', data);
+  useEffect(() => {
+    if (filtros.length !== 0) {
+      const dataFiltered = _.filter(data, function(character){
 
-  const selectedPlanet = ["zoro", "nima"];
-
-  const dataFiltered = _.filter(data, function(character){
-    if(_.includes(selectedPlanet, character.planeta.slug) === true){
-      return character
+        if(_.includes(filtros, character.planeta.slug) === true){
+          return character
+        }
+      })
+      setDataToShow(dataFiltered);
+    }else{
+      setDataToShow(data);
     }
-  })
+  }, [filtros])
 
   return (
     <ContainerMain>
@@ -43,12 +47,12 @@ function PersonajesUniversoContainer({ data }) {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills isFlex={isFlex} multiple  />
+            <PlanetasPills onChange={arr => setFiltros(arr)} isFlex={isFlex} multiple  />
           </PlanetasNav>
 
           <Personajes>
-            {dataFiltered &&
-              dataFiltered.map(personaje => {
+            {dataToShow &&
+              dataToShow.map(personaje => {
                 return (
                   <Link
                     key={personaje.id}
