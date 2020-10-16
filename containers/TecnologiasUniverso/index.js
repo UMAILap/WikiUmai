@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-
+import _ from 'lodash';
 import {
   ContainerMain,
   ContainerBanner,
@@ -14,8 +14,25 @@ import {
   PersonajeCaracteristica,
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
+
 function TecnologiasUniversoContainer({ data }) {
+  console.log(data)
+  const [filtros, setFiltros] = useState([]);
+  const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
+  useEffect(() => {
+    if (filtros.length !== 0) {
+      const dataFiltered = _.filter(data, function(character) {
+       if (_.includes(filtros, character.planetas[0].slug) === true) {
+          return character;
+        } 
+      });
+      setDataToShow(dataFiltered);
+    } else {
+      setDataToShow(data);
+    }
+  }, [filtros]);
+
   return (
     <ContainerMain>
       <ContainerBanner>
@@ -27,12 +44,16 @@ function TecnologiasUniversoContainer({ data }) {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills isFlex={isFlex} multiple />
+            <PlanetasPills
+              onChange={arr => setFiltros(arr)}
+              isFlex={isFlex}
+              multiple
+            />
           </PlanetasNav>
 
           <Personajes>
-            {data.length &&
-              data.map(objeto => {
+            {dataToShow.length &&
+              dataToShow.map(objeto => {
                 return (
                   <Link
                     key={objeto.id}
