@@ -55,8 +55,8 @@ function PersonajesUniversoContainer({ data }) {
                     href={`/personajes/${personaje.slug}`}
                     passHref>
                     <PersonajeFicha
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}>
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 1 }}>
                       <ContImg>
                         <ImagenPersonaje
                           src={`${BASE_URL}${personaje.avatar?.url}`}

@@ -170,7 +170,7 @@ export const ContImg = styled.div`
   border-radius: 10px;
   width: 90%;
   margin: 10px auto;
-  max-height: 143px;
+  height: 143px;
   overflow: hidden;
 
   @media (max-width: ${breakpoints.notebook}) {
@@ -188,6 +188,8 @@ export const ContImg = styled.div`
 
 export const CardImg = styled.img`
   width: 100%;
+  min-width: 100%;
+  min-height: 100%;
 `;
 
 export const TituloCard = styled.h2`
