@@ -157,34 +157,42 @@ function HomeContainer({ data, planetas }) {
             </ParteSuperior>
 
             <Grid colGap={20} rowGap={30}>
+              {console.log(data)}
               {data.length &&
                 data.map(entrada => {
                   return (
-                    <Link href={`/${entrada.tipo}/${entrada.slug}`} passHref>
+
                       <Col desktop={3} tablet={6} mobile={12}>
-                        <ActualizacionesAlumnos>
-                          <Contenidos>
-                            <ImagenesContenidos>
-                              {' '}
-                              <img src="/SOFI.png" />
-                            </ImagenesContenidos>
-                            <EdicionActualizacionesTitulo>
-                              sofi.hadjilias
-                            </EdicionActualizacionesTitulo>
-                          </Contenidos>
+                        <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      key={`${entrada.tipo}-${entrada.nombre}`}>
+                          <Link href={`/${entrada.tipo == 'objetos' ? 'tecnologias' : entrada.tipo}/${entrada.slug}`} passHref>
+                          <ActualizacionesAlumnos srcImagen={`${BASE_URL}${entrada.avatar?.url}`}>
+                            <Contenidos>
+                              <ImagenesContenidos>
+                                {' '}
+                                <img src="/SOFI.png" />
+                              </ImagenesContenidos>
+                              <EdicionActualizacionesTitulo>
+                                alum.multimedia
+                              </EdicionActualizacionesTitulo>
+                            </Contenidos>
 
-                          <Contenidos>
-                            <ImagenesContenidos>
-                              {' '}
-                              <img src="/historias.png" />
-                            </ImagenesContenidos>
-                            <TextoOverlay>{entrada.tipo}</TextoOverlay>
-                          </Contenidos>
+                            <Contenidos>
+                              <ImagenesContenidos>
+                                {' '}
+                                <img src="/historias.png" />
+                              </ImagenesContenidos>
+                              <TextoOverlay>{entrada.tipo == 'objetos' ? 'Tecnologías' : entrada.tipo}</TextoOverlay>
+                            </Contenidos>
 
-                          <TituloOverlay>{entrada.nombre}</TituloOverlay>
-                        </ActualizacionesAlumnos>
+                            <TituloOverlay>{entrada.nombre}</TituloOverlay>
+                          </ActualizacionesAlumnos>
+                          </Link>
+                        </motion.div>
                       </Col>
-                    </Link>
+
                   );
                 })}
 

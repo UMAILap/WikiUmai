@@ -253,12 +253,13 @@ export const GrillaSeccionActualizaciones = styled.div`
   }
 `;
 
-export const ActualizacionesAlumnos = styled.div`
+export const ActualizacionesAlumnos = styled.a`
   flex-direction: column;
   display: flex;
   border-radius: 15px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./paula.png);
+  /* background:
+    url(./paula.png); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.srcImagen});
   background-repeat: no-repeat;
   max-height: 287px;
   max-width: 347px;

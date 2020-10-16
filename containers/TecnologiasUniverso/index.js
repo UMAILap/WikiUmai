@@ -48,7 +48,7 @@ function TecnologiasUniversoContainer({ data }) {
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>
                             <img src="/images/icons/planet.svg" />
-                            <h6>{objeto.planeta.nombre}</h6>
+                            <h6>{objeto.planetas[0]?.nombre}</h6>
                           </PersonajePlaneta>
                         </PersonajeCaracteristica>
                       </PersonajeInfo>

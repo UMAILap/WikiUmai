@@ -94,10 +94,6 @@ function HistoriasContainer({ data }) {
                 <p>No hay Contenido para mostrar.</p>
               )}
             </ArticuloData>
-
-            <ArticuloData>
-              <img src="/images/imgArticulos.png" />
-            </ArticuloData>
           </HistoriaArticulos>
         </SeccionArticulos>
       </Wrapper>

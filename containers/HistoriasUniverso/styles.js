@@ -67,11 +67,17 @@ export const PersonajeFicha = styled(motion.a)`
 export const PersonajeInfo = styled.div`
   width: 100%;
   p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-family: 'Proxima Nova';
     font-size: ${pxToRem(14)};
     line-height: 26px;
     color: ${leerColor(colores.negro)};
-    padding: 15px 0px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+
   }
 `;
 

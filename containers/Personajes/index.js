@@ -192,7 +192,7 @@ function PersonajesContainer({ data }) {
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-              <Link href={`/planeta/${planeta.slug}`}>
+              <Link href={`/planeta/${planeta.slug}`} passHref>
                 <CardUniverso>
                   <img src={`${BASE_URL}${planeta.avatar?.url}`}/>
                   <div>
@@ -203,7 +203,7 @@ function PersonajesContainer({ data }) {
               </Link>
                 {objetos.length && objetos.map(objeto => {
                   return(
-                  <Link key={`objetorelacionado${objeto.id}`} href={`/tecnologias/${objeto.slug}`}>
+                  <Link key={`objetorelacionado${objeto.id}`} href={`/tecnologias/${objeto.slug}`} passHref>
                     <CardUniverso>
                       <img src="/images/icons/cohete.svg" />
                       <div>
