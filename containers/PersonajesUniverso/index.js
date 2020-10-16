@@ -20,17 +20,16 @@ import { Wrapper, PlanetasPills, Titulos } from 'components';
 import _ from 'lodash';
 
 function PersonajesUniversoContainer({ data }) {
-
   const isFlex = true;
   console.log('PERSONAJESUNIVERSO', data);
 
-  const selectedPlanet = ["zoro", "nima"];
+  const selectedPlanet = ['zoro', 'nima'];
 
-  const dataFiltered = _.filter(data, function(character){
-    if(_.includes(selectedPlanet, character.planeta.slug) === true){
-      return character
+  const dataFiltered = _.filter(data, function(character) {
+    if (_.includes(selectedPlanet, character.planeta.slug) === true) {
+      return character;
     }
-  })
+  });
 
   return (
     <ContainerMain>
@@ -43,7 +42,7 @@ function PersonajesUniversoContainer({ data }) {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills isFlex={isFlex} multiple  />
+            <PlanetasPills isFlex={isFlex} multiple />
           </PlanetasNav>
 
           <Personajes>
@@ -77,10 +76,14 @@ function PersonajesUniversoContainer({ data }) {
                             <span>{personaje.habilidades?.fuerza || '-'}</span>
 
                             <img src="/inteligencia.svg" />
-                            <span>{personaje.habilidades?.inteligencia || '-'}</span>
+                            <span>
+                              {personaje.habilidades?.inteligencia || '-'}
+                            </span>
 
                             <img src="/habilidad.svg" />
-                            <span>{personaje.habilidades?.habilidad || '-'}</span>
+                            <span>
+                              {personaje.habilidades?.habilidad || '-'}
+                            </span>
 
                             <img src="/suerte.svg" />
                             <span>{personaje.habilidades?.suerte || '-'}</span>
