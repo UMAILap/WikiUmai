@@ -20,7 +20,7 @@ import {
   MapaArticulos,
   Titulos,
   CardUniverso,
-  Markdown
+  Markdown,
 } from 'components';
 
 function HistoriasContainer({ data }) {
@@ -47,7 +47,7 @@ function HistoriasContainer({ data }) {
               </Nombres>
             </HistoriaNombre>
             <HistoriaInfo>
-            {sinopsis ? (
+              {sinopsis ? (
                 <Markdown source={sinopsis}></Markdown>
               ) : (
                 <p>No hay Sinopsis para mostrar.</p>

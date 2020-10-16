@@ -259,7 +259,8 @@ export const ActualizacionesAlumnos = styled.a`
   border-radius: 15px;
   /* background:
     url(./paula.png); */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.srcImagen});
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${props => props.srcImagen});
   background-repeat: no-repeat;
   max-height: 287px;
   max-width: 347px;

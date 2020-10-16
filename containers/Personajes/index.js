@@ -48,11 +48,13 @@ function PersonajesContainer({ data }) {
     historias,
     avatar,
     objetos,
-    hitos
+    hitos,
   } = data;
   const isColorPink = true;
   const objetosProfesion = objetos.filter(objeto => objeto.tipo == 'profesion');
-  const objetosInventario = objetos.filter(objeto => objeto.tipo == 'inventario');
+  const objetosInventario = objetos.filter(
+    objeto => objeto.tipo == 'inventario',
+  );
 
   return (
     <>
@@ -130,26 +132,39 @@ function PersonajesContainer({ data }) {
             <ObjetosPersonaje>
               <h5>Objetos de profesión:</h5>
               <Objetos>
-                {objetosProfesion.length ? objetosProfesion.map(objeto => {
-                  return(
-                    <Link key={`objetos${objeto.id}`} href={`/tecnologias/${objeto.slug}`} passHref>
-                      <a>{objeto.nombre}</a>
-                    </Link>
-                  )
-                }) : <p>No hay información.</p>}
+                {objetosProfesion.length ? (
+                  objetosProfesion.map(objeto => {
+                    return (
+                      <Link
+                        key={`objetos${objeto.id}`}
+                        href={`/tecnologias/${objeto.slug}`}
+                        passHref>
+                        <a>{objeto.nombre}</a>
+                      </Link>
+                    );
+                  })
+                ) : (
+                  <p>No hay información.</p>
+                )}
               </Objetos>
             </ObjetosPersonaje>
             <InventarioPersonaje>
               <h5>Inventario</h5>
               <Objetos>
-              {objetosInventario.length ? objetosInventario.map(objeto => {
-                  return(
-                    <Link key={`objetos${objeto.id}`}href={`/tecnologias/${objeto.slug}`} passHref>
-                      <a>{objeto.nombre}</a>
-                    </Link>
-                  )
-                }) : <p>No hay información.</p>}
-
+                {objetosInventario.length ? (
+                  objetosInventario.map(objeto => {
+                    return (
+                      <Link
+                        key={`objetos${objeto.id}`}
+                        href={`/tecnologias/${objeto.slug}`}
+                        passHref>
+                        <a>{objeto.nombre}</a>
+                      </Link>
+                    );
+                  })
+                ) : (
+                  <p>No hay información.</p>
+                )}
               </Objetos>
             </InventarioPersonaje>
           </PersonajeDatos>
@@ -160,13 +175,17 @@ function PersonajesContainer({ data }) {
             <PersonajeHistorias>
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
               <ul>
-                {historias.length ? historias.map(({ titulo, slug }) => (
-                  <li key={`historia${slug}`}>
-                    <Link href={`/historias/${slug}`} passHref>
-                      <a>{titulo}</a>
-                    </Link>
-                  </li>
-                )) : <p>Este personaje no tiene historias.</p>}
+                {historias.length ? (
+                  historias.map(({ titulo, slug }) => (
+                    <li key={`historia${slug}`}>
+                      <Link href={`/historias/${slug}`} passHref>
+                        <a>{titulo}</a>
+                      </Link>
+                    </li>
+                  ))
+                ) : (
+                  <p>Este personaje no tiene historias.</p>
+                )}
               </ul>
               {/* <Link href='/crear-historia' passHref> */}
               <BotonVioleta
@@ -179,43 +198,50 @@ function PersonajesContainer({ data }) {
             <Galeria>
               <Titulos>Galeria</Titulos>
               <GaleriaImagenes>
-                {galeria.length ? galeria.map(imagen => {
-                  return (
-                    <ContImg key={`galeria${galeria.id}`}>
-                      <img src={`${BASE_URL}${imagen.url}`}></img>
-                    </ContImg>
-                  )
-                }) : <p>No hay imágenes para mostrar.</p>}
-
+                {galeria.length ? (
+                  galeria.map(imagen => {
+                    return (
+                      <ContImg key={`galeria${galeria.id}`}>
+                        <img src={`${BASE_URL}${imagen.url}`}></img>
+                      </ContImg>
+                    );
+                  })
+                ) : (
+                  <p>No hay imágenes para mostrar.</p>
+                )}
               </GaleriaImagenes>
             </Galeria>
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-              <Link href={`/planeta/${planeta.slug}`} passHref>
-                <CardUniverso>
-                  <img src={`${BASE_URL}${planeta.avatar?.url}`}/>
-                  <div>
-                    <h5>Planeta</h5>
-                    <span>{planeta.nombre}</span>
-                  </div>
-                </CardUniverso>
-              </Link>
-                {objetos.length && objetos.map(objeto => {
-                  return(
-                  <Link key={`objetorelacionado${objeto.id}`} href={`/tecnologias/${objeto.slug}`} passHref>
-                    <CardUniverso>
-                      <img src="/images/icons/cohete.svg" />
-                      <div>
-                        <h5>Tecnologia</h5>
-                        <span>{objeto.nombre}</span>
-                      </div>
-                    </CardUniverso>
+                <Link href={`/planeta/${planeta.slug}`} passHref>
+                  <CardUniverso>
+                    <img src={`${BASE_URL}${planeta.avatar?.url}`} />
+                    <div>
+                      <h5>Planeta</h5>
+                      <span>{planeta.nombre}</span>
+                    </div>
+                  </CardUniverso>
                 </Link>
-                )})}
+                {objetos.length &&
+                  objetos.map(objeto => {
+                    return (
+                      <Link
+                        key={`objetorelacionado${objeto.id}`}
+                        href={`/tecnologias/${objeto.slug}`}
+                        passHref>
+                        <CardUniverso>
+                          <img src="/images/icons/cohete.svg" />
+                          <div>
+                            <h5>Tecnologia</h5>
+                            <span>{objeto.nombre}</span>
+                          </div>
+                        </CardUniverso>
+                      </Link>
+                    );
+                  })}
               </RelacionadosCards>
             </Relacionados>
-
           </ContenidoPrincipal>
         </PersonajeInfo>
       </Wrapper>

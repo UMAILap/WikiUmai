@@ -161,14 +161,22 @@ function HomeContainer({ data, planetas }) {
               {data.length &&
                 data.map(entrada => {
                   return (
-
-                      <Col desktop={3} tablet={6} mobile={12}>
-                        <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      key={`${entrada.tipo}-${entrada.nombre}`}>
-                          <Link href={`/${entrada.tipo == 'objetos' ? 'tecnologias' : entrada.tipo}/${entrada.slug}`} passHref>
-                          <ActualizacionesAlumnos srcImagen={`${BASE_URL}${entrada.avatar?.url}`}>
+                    <Col desktop={3} tablet={6} mobile={12}>
+                      <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        key={`${entrada.tipo}-${entrada.nombre}`}>
+                        <Link
+                          href={`/${
+                            entrada.tipo == 'objetos'
+                              ? 'tecnologias'
+                              : entrada.tipo
+                          }/${entrada.slug}`}
+                          passHref>
+                          <ActualizacionesAlumnos
+                            srcImagen={entrada.tipo == 'personajes' ? `${BASE_URL}${entrada.avatar?.url}` :
+                            entrada.tipo == 'objetos' ? '/images/icons/cohete.svg' :
+                            '/images/icons/historias.svg'}>
                             <Contenidos>
                               <ImagenesContenidos>
                                 {' '}
@@ -184,15 +192,18 @@ function HomeContainer({ data, planetas }) {
                                 {' '}
                                 <img src="/historias.png" />
                               </ImagenesContenidos>
-                              <TextoOverlay>{entrada.tipo == 'objetos' ? 'Tecnologías' : entrada.tipo}</TextoOverlay>
+                              <TextoOverlay>
+                                {entrada.tipo == 'objetos'
+                                  ? 'Tecnologías'
+                                  : entrada.tipo}
+                              </TextoOverlay>
                             </Contenidos>
 
                             <TituloOverlay>{entrada.nombre}</TituloOverlay>
                           </ActualizacionesAlumnos>
-                          </Link>
-                        </motion.div>
-                      </Col>
-
+                        </Link>
+                      </motion.div>
+                    </Col>
                   );
                 })}
 

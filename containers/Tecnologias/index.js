@@ -50,7 +50,7 @@ function TecnologiasContainer({ data }) {
               </Nombres>
             </TecnologiaNombre>
             <TecnologiaInfo>
-            {contexto_uso ? (
+              {contexto_uso ? (
                 <Markdown source={contexto_uso}></Markdown>
               ) : (
                 <p>No hay Contexto de Uso para mostrar.</p>
