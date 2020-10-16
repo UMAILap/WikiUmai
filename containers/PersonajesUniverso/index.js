@@ -24,17 +24,16 @@ function PersonajesUniversoContainer({ data }) {
   const isFlex = true;
   useEffect(() => {
     if (filtros.length !== 0) {
-      const dataFiltered = _.filter(data, function(character){
-
-        if(_.includes(filtros, character.planeta.slug) === true){
-          return character
+      const dataFiltered = _.filter(data, function(character) {
+        if (_.includes(filtros, character.planeta.slug) === true) {
+          return character;
         }
-      })
+      });
       setDataToShow(dataFiltered);
-    }else{
+    } else {
       setDataToShow(data);
     }
-  }, [filtros])
+  }, [filtros]);
 
   return (
     <ContainerMain>
@@ -47,7 +46,11 @@ function PersonajesUniversoContainer({ data }) {
       <Wrapper>
         <Container>
           <PlanetasNav>
-            <PlanetasPills onChange={arr => setFiltros(arr)} isFlex={isFlex} multiple  />
+            <PlanetasPills
+              onChange={arr => setFiltros(arr)}
+              isFlex={isFlex}
+              multiple
+            />
           </PlanetasNav>
 
           <Personajes>
