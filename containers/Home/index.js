@@ -121,7 +121,7 @@ function HomeContainer({ data, planetas }) {
                   const { id, nombre, avatar, slug } = planeta;
                   return (
                     <motion.div
-                      whileHover={{ scale: 1.04 }}
+                      whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 1 }}
                       key={`${id}-${nombre}`}>
                       <Link

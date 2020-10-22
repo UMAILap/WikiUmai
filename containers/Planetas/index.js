@@ -28,6 +28,8 @@ import {
   IconosPersonajes,
 } from 'components';
 
+import { Grid, Col } from '../../components/Grid';
+
 function PlanetasContainer({ data }) {
   const {
     nombre,

@@ -7,7 +7,7 @@ const BotonVioleta = React.forwardRef(
   ({ onClick, isColorPink, isBotonRosa, children, href }, ref) => {
     return (
       <VioletaBoton
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 1 }}
         isColorPink={isColorPink}
         isBotonRosa={isBotonRosa}
