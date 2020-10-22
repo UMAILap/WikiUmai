@@ -58,7 +58,7 @@ function PersonajesContainer({ data }) {
 
   return (
     <>
-      <BannerTecnologiasHistorias>
+      <BannerTecnologiasHistorias type='personaje'>
         <Wrapper>
           <BannerPersonaje>
             <PersonajeIntro>

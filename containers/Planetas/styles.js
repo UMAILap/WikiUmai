@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 export const PlanetasBanner = styled.div`
-  background-image: url(/banner_personajes.svg);
+  background-image: url(/banner_historias.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
   height: 50vh;
