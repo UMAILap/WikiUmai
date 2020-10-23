@@ -77,6 +77,7 @@ export const BajadaPlaneta = styled.p`
 export const BannerImagen = styled.div`
   text-align: center;
   margin-right: 5%;
+  height: 100%;
   img {
     border-radius: 50%;
     width: 220px;
