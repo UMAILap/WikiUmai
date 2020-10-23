@@ -107,11 +107,11 @@ export const ContenedorHitos = styled.div`
 
 export const SeccionLinks = styled.div`
   width: 100%;
-  p{
+  p {
     font-family: 'Proxima Nova';
-  color: ${leerColor(colores.violeta)};
-  font-size: ${pxToRem(16)};
-  margin-top: 1em;
+    color: ${leerColor(colores.violeta)};
+    font-size: ${pxToRem(16)};
+    margin-top: 1em;
   }
   @media (min-width: ${breakpoints.laptop}) {
   }
@@ -125,7 +125,6 @@ export const LinksHistorias = styled.address`
   padding: 0% 0% 1%;
   cursor: pointer;
   text-decoration-line: underline;
-
 `;
 
 export const AgregarNuevas = styled.div`
@@ -175,7 +174,7 @@ export const Personajes = styled.div`
 export const ContenedorBoton = styled.div`
   width: 100%;
   padding: 7% 0% !important;
-  a{
+  a {
     width: fit-content;
   }
   @media (min-width: ${breakpoints.tablet}) {

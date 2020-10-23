@@ -30,7 +30,7 @@ export const TecnologiaNombre = styled.div`
   margin: 0;
   padding-bottom: 20px;
   img {
-    width: 10%;
+    /* width: 10%; */
   }
   @media (min-width: ${breakpoints.mobile}) {
   }
@@ -41,7 +41,7 @@ export const TecnologiaNombre = styled.div`
     margin: 0 auto;
     padding-bottom: 60px;
     img {
-      width: 100%;
+      /* width: 100%; */
     }
   }
 `;

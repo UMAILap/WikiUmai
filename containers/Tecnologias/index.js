@@ -88,9 +88,6 @@ function TecnologiasContainer({ data }) {
               )}
             </ArticuloData>
             <ArticuloData>
-              <img src="/images/imgArticulos.png" />
-            </ArticuloData>
-            <ArticuloData>
               <Titulos className="content" id="impacto">Impacto social</Titulos>
               {impacto_social ? (
                 <Markdown source={impacto_social}></Markdown>

@@ -4,7 +4,7 @@ import { breakpoints, leerColor, colores } from 'constants';
 export const Banner = styled.div`
   display: flex;
   width: 100%;
-  background-image: ${(props) => {
+  background-image: ${props => {
     switch (props.type) {
       case 'personaje':
         return `url(/banner_personajes.svg)`;

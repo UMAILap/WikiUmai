@@ -31,6 +31,7 @@ import {
   BannerTecnologiasHistorias,
   BotonVioleta,
   CardUniverso,
+  Markdown,
 } from 'components';
 
 //galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
@@ -58,7 +59,7 @@ function PersonajesContainer({ data }) {
 
   return (
     <>
-      <BannerTecnologiasHistorias type='personaje'>
+      <BannerTecnologiasHistorias type="personaje">
         <Wrapper>
           <BannerPersonaje>
             <PersonajeIntro>
@@ -170,7 +171,12 @@ function PersonajesContainer({ data }) {
           </PersonajeDatos>
           <ContenidoPrincipal>
             <ContSinopsis>
-              <p> {sinopsis} </p>
+            {sinopsis ? (
+                <Markdown source={sinopsis}></Markdown>
+              ) : (
+                <p>No hay Sinopsis para mostrar.</p>
+              )}
+
             </ContSinopsis>
             <PersonajeHistorias>
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
