@@ -64,7 +64,9 @@ function TecnologiasContainer({ data }) {
           <MapaArticulos />
           <TecnologiaArticulos>
             <ArticuloData>
-              <Titulos className="content" id="origen">Origen</Titulos>
+              <Titulos className="content" id="origen">
+                Origen
+              </Titulos>
               {origen ? (
                 <Markdown source={origen}></Markdown>
               ) : (
@@ -72,7 +74,9 @@ function TecnologiasContainer({ data }) {
               )}
             </ArticuloData>
             <ArticuloData>
-              <Titulos className="content" id="contexto">Contexto de uso</Titulos>
+              <Titulos className="content" id="contexto">
+                Contexto de uso
+              </Titulos>
               {contexto_uso ? (
                 <Markdown source={contexto_uso}></Markdown>
               ) : (
@@ -80,7 +84,9 @@ function TecnologiasContainer({ data }) {
               )}
             </ArticuloData>
             <ArticuloData>
-              <Titulos className="content" id="modo-de-uso">Modo de uso</Titulos>
+              <Titulos className="content" id="modo-de-uso">
+                Modo de uso
+              </Titulos>
               {modo_uso ? (
                 <Markdown source={modo_uso}></Markdown>
               ) : (
@@ -88,7 +94,9 @@ function TecnologiasContainer({ data }) {
               )}
             </ArticuloData>
             <ArticuloData>
-              <Titulos className="content" id="impacto">Impacto social</Titulos>
+              <Titulos className="content" id="impacto">
+                Impacto social
+              </Titulos>
               {impacto_social ? (
                 <Markdown source={impacto_social}></Markdown>
               ) : (
@@ -96,7 +104,9 @@ function TecnologiasContainer({ data }) {
               )}
             </ArticuloData>
             <ArticuloData>
-              <Titulos className="content" id="relacionados">Relacionados</Titulos>
+              <Titulos className="content" id="relacionados">
+                Relacionados
+              </Titulos>
               <Relacionados>
                 {planetas &&
                   planetas.map(planeta => (

@@ -171,12 +171,11 @@ function PersonajesContainer({ data }) {
           </PersonajeDatos>
           <ContenidoPrincipal>
             <ContSinopsis>
-            {sinopsis ? (
+              {sinopsis ? (
                 <Markdown source={sinopsis}></Markdown>
               ) : (
                 <p>No hay Sinopsis para mostrar.</p>
               )}
-
             </ContSinopsis>
             <PersonajeHistorias>
               <Titulos isColorPink={isColorPink}>Historias</Titulos>
