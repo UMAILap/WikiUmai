@@ -46,18 +46,20 @@ function PlanetasContainer({ data }) {
     <>
       <PlanetasBanner>
         <Wrapper>
-          <ContenedorBannerInfo>
-            <BannerInfo>
+          <Grid colGap={20} rowGap={30}>
+            <Col desktop={9} tablet={12} mobile={12}>
               <NombrePlaneta>
                 Planeta <span>{nombre}</span>
               </NombrePlaneta>
               <BajadaPlaneta>{descripcion}</BajadaPlaneta>
-            </BannerInfo>
+            </Col>
 
-            <BannerImagen>
-              <img src={`${BASE_URL}${avatar?.url}`} />
-            </BannerImagen>
-          </ContenedorBannerInfo>
+            <Col desktop={3} tablet={12} mobile={12}>
+              <BannerImagen>
+                <img src={`${BASE_URL}${avatar?.url}`} />
+              </BannerImagen>
+            </Col>
+          </Grid>
         </Wrapper>
       </PlanetasBanner>
 
@@ -74,11 +76,15 @@ function PlanetasContainer({ data }) {
           <Historias>
             <Titulos>Historias</Titulos>
             <SeccionLinks>
-              {historias.length ? historias.map(({ titulo, slug }) => (
-                <Link href={`/historias/${slug}`} passHref>
-                  <LinksHistorias>{titulo}</LinksHistorias>
-                </Link>
-              )) : <p>No hay historias para mostrar.</p>}
+              {historias.length ? (
+                historias.map(({ titulo, slug }) => (
+                  <Link href={`/historias/${slug}`} passHref>
+                    <LinksHistorias>{titulo}</LinksHistorias>
+                  </Link>
+                ))
+              ) : (
+                <p>No hay historias para mostrar.</p>
+              )}
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta href="/historias/crear/">
@@ -88,7 +94,6 @@ function PlanetasContainer({ data }) {
           </Historias>
 
           <Personajes>
-
             <IconosPersonajes personajes={personajes}></IconosPersonajes>
             <ContenedorBoton>
               <BotonVioleta href="/personajes/crear/">
@@ -121,11 +126,15 @@ function PlanetasContainer({ data }) {
           <Objetos>
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
-              {objetos.length ? objetos.map(({ nombre, slug }) => (
-                <Link href={`/tecnologias/${slug}`} passHref>
-                  <LinksHistorias>{nombre}</LinksHistorias>
-                </Link>
-              )) : <p>No hay objetos para mostrar.</p>}
+              {objetos.length ? (
+                objetos.map(({ nombre, slug }) => (
+                  <Link href={`/tecnologias/${slug}`} passHref>
+                    <LinksHistorias>{nombre}</LinksHistorias>
+                  </Link>
+                ))
+              ) : (
+                <p>No hay objetos para mostrar.</p>
+              )}
             </SeccionLinks>
             <ContenedorBoton>
               <BotonVioleta href="/tecnologias/crear/">
