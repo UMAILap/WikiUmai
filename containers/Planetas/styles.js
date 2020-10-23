@@ -79,6 +79,7 @@ export const BannerImagen = styled.div`
   margin-right: 5%;
   height: 100%;
   img {
+    object-fit: cover;
     border-radius: 50%;
     width: 220px;
     height: 220px;
