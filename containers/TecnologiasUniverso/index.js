@@ -52,7 +52,7 @@ function TecnologiasUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow.length &&
+            {dataToShow.length !== 0 ?
               dataToShow.map(objeto => {
                 return (
                   <Link
@@ -60,7 +60,8 @@ function TecnologiasUniversoContainer({ data }) {
                     href={`/tecnologias/${objeto.slug}`}
                     passHref>
                     <PersonajeFicha
-                      whileHover={{ scale: 1.04 }}
+                      initial={{borderColor: `rgb(236, 236, 236)`}}
+                      whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 1 }}>
                       <PersonajeInfo>
                         <Titulos>{objeto.nombre}</Titulos>
@@ -76,7 +77,7 @@ function TecnologiasUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              })}
+              }) : <p>No hay tecnologías para mostrar.</p>}
           </Personajes>
         </Container>
       </Wrapper>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { leerColor, colores } from 'constants';
 import { BASE_URL } from 'utils';
 import {
   ContainerMain,
@@ -55,7 +56,7 @@ function PersonajesUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow &&
+            {dataToShow.length !== 0 ?
               dataToShow.map(personaje => {
                 return (
                   <Link
@@ -63,7 +64,8 @@ function PersonajesUniversoContainer({ data }) {
                     href={`/personajes/${personaje.slug}`}
                     passHref>
                     <PersonajeFicha
-                      whileHover={{ scale: 1.04 }}
+                    initial={{borderColor: `rgb(236, 236, 236)`}}
+                      whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 1 }}>
                       <ContImg>
                         <ImagenPersonaje
@@ -102,7 +104,7 @@ function PersonajesUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              })}
+              }) : <p>No hay personajes para mostrar.</p>}
           </Personajes>
         </Container>
       </Wrapper>

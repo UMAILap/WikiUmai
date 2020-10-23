@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-const GlobalStyle = createGlobalStyle`
+import { leerColor, colores } from './index';
 
+const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Chivo';
     src: url('/fonts/Chivo/Chivo-Italic.woff2') format('woff2'),
@@ -254,6 +255,12 @@ const GlobalStyle = createGlobalStyle`
  html {
    font-family: 'Raleway';
    scroll-behavior: smooth;
+ }
+ *{
+     ::selection{
+         background-color: ${leerColor(colores.naranja)};
+         color: ${leerColor(colores.violeta)};
+     }
  }
 `;
 

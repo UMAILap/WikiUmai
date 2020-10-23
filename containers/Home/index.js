@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SVG from 'react-inlinesvg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -178,8 +179,8 @@ function HomeContainer({ data, planetas }) {
                               entrada.tipo == 'personajes'
                                 ? `${BASE_URL}${entrada.avatar?.url}`
                                 : entrada.tipo == 'objetos'
-                                ? '/images/icons/cohete.svg'
-                                : '/images/icons/historias.svg'
+                                ? '/placeholderAvatar.png'
+                                : '/placeholderAvatar.png'
                             }>
                             <Contenidos>
                               <ImagenesContenidos>
@@ -194,7 +195,14 @@ function HomeContainer({ data, planetas }) {
                             <Contenidos>
                               <ImagenesContenidos>
                                 {' '}
-                                <img src="/historias.png" />
+                                <SVG src={
+                              entrada.tipo == 'personajes'
+                                ? '/Robot_Personajes.svg'
+                                : entrada.tipo == 'objetos'
+                                ? '/images/icons/cohete.svg'
+                                : '/images/icons/historias.svg'
+                            }
+                             />
                               </ImagenesContenidos>
                               <TextoOverlay>
                                 {entrada.tipo == 'objetos'
@@ -210,190 +218,6 @@ function HomeContainer({ data, planetas }) {
                     </Col>
                   );
                 })}
-
-              {/*
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              <Link href="/personajes/nombre" passHref>
-                <ActualizacionesAlumnos>
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/SOFI.png" />
-                    </ImagenesContenidos>
-                    <EdicionActualizacionesTitulo>
-                      sofi.hadjilias
-                    </EdicionActualizacionesTitulo>
-                  </Contenidos>
-
-                  <Contenidos>
-                    <ImagenesContenidos>
-                      {' '}
-                      <img src="/historias.png" />
-                    </ImagenesContenidos>
-                    <TextoOverlay>Personaje</TextoOverlay>
-                  </Contenidos>
-                  <TituloOverlay>
-                    Título de encabezado de lo que sea
-                  </TituloOverlay>
-                </ActualizacionesAlumnos>
-              </Link>
-
-              */}
             </Grid>
           </SeccionActualizaciones>
         </Wrapper>

@@ -53,7 +53,7 @@ function HistoriasUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow.length &&
+            {dataToShow.length !== 0 ?
               dataToShow.map(historia => {
                 return (
                   <Link
@@ -61,7 +61,8 @@ function HistoriasUniversoContainer({ data }) {
                     href={`/historias/${historia.slug}`}
                     passHref>
                     <PersonajeFicha
-                      whileHover={{ scale: 1.1 }}
+                      initial={{borderColor: `rgb(236, 236, 236)`}}
+                      whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 0.9 }}>
                       <PersonajeInfo>
                         <Titulos>{historia.titulo}</Titulos>
@@ -77,7 +78,7 @@ function HistoriasUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              })}
+              }) : <p>No hay historias para mostrar.</p>}
           </Personajes>
         </Container>
       </Wrapper>

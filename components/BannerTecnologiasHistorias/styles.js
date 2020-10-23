@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Banner = styled.div`
+*{
+  ::selection{
+    background-color: ${leerColor(colores.blanco)};
+    color: ${leerColor(colores.violeta)};
+  }
+}
+
   display: flex;
   width: 100%;
   background-image: ${props => {

@@ -102,7 +102,7 @@ function PlanetasContainer({ data }) {
             </ContenedorBoton>
           </Personajes>
 
-          <Articulos>
+          {/* <Articulos>
             <Titulos>Articulos externos relacionados</Titulos>
             <SeccionLinks>
               <Link href="/historias/la-historia-del-otro-planeta" passHref>
@@ -121,7 +121,7 @@ function PlanetasContainer({ data }) {
                 <LinksHistorias>El pipiri de Ajayu</LinksHistorias>
               </Link>
             </SeccionLinks>
-          </Articulos>
+          </Articulos> */}
 
           <Objetos>
             <Titulos>Objetos y Tecnologías</Titulos>

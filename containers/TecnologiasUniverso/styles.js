@@ -40,7 +40,11 @@ export const PlanetasNav = styled.div`
 export const Personajes = styled.div`
   display: flex;
   flex-wrap: wrap;
-
+  p{
+    font-size: 17px;
+    color: ${leerColor(colores.violeta)};
+    font-family: 'Proxima nova';
+  }
   @media (min-width: ${breakpoints.laptop}) {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -56,9 +60,9 @@ export const PersonajeFicha = styled(motion.a)`
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
-  width: fit-content;
+  width: 100%;
   padding-bottom: 50px;
-  border-bottom: 1px solid ${leerColor(colores.gris)};
+  border-bottom: 1px solid /* ${leerColor(colores.gris)} */;
   img {
     width: 40%;
   }

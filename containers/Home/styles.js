@@ -266,7 +266,8 @@ export const ActualizacionesAlumnos = styled.a`
   background-repeat: no-repeat;
   max-height: 287px;
   max-width: 347px;
-
+  background-size: contain;
+  background-position: center;
   justify-content: flex-end;
   img {
     width: 100%;
@@ -274,9 +275,13 @@ export const ActualizacionesAlumnos = styled.a`
 `;
 
 export const ImagenesContenidos = styled.div`
+  overflow:hidden;
   width: 11%;
-  img {
-    width: auto;
+  svg {
+    path{
+      fill: white;
+    }
+    width: 80%;
   }
 `;
 

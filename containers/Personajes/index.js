@@ -228,7 +228,7 @@ function PersonajesContainer({ data }) {
                     </div>
                   </CardUniverso>
                 </Link>
-                {objetos.length &&
+                {objetos.length !== 0 ?
                   objetos.map(objeto => {
                     return (
                       <Link
@@ -244,7 +244,7 @@ function PersonajesContainer({ data }) {
                         </CardUniverso>
                       </Link>
                     );
-                  })}
+                  }): ''}
               </RelacionadosCards>
             </Relacionados>
           </ContenidoPrincipal>
