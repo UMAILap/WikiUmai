@@ -56,7 +56,7 @@ function PersonajesUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow.length !== 0 ?
+            {dataToShow.length !== 0 ? (
               dataToShow.map(personaje => {
                 return (
                   <Link
@@ -64,7 +64,7 @@ function PersonajesUniversoContainer({ data }) {
                     href={`/personajes/${personaje.slug}`}
                     passHref>
                     <PersonajeFicha
-                    initial={{borderColor: `rgb(236, 236, 236)`}}
+                      initial={{ borderColor: `rgb(236, 236, 236)` }}
                       whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 1 }}>
                       <ContImg>
@@ -104,7 +104,10 @@ function PersonajesUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              }) : <p>No hay personajes para mostrar.</p>}
+              })
+            ) : (
+              <p>No hay personajes para mostrar.</p>
+            )}
           </Personajes>
         </Container>
       </Wrapper>

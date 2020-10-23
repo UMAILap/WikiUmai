@@ -17,7 +17,6 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function HistoriasUniversoContainer({ data }) {
-
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
@@ -53,7 +52,7 @@ function HistoriasUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow.length !== 0 ?
+            {dataToShow.length !== 0 ? (
               dataToShow.map(historia => {
                 return (
                   <Link
@@ -61,7 +60,7 @@ function HistoriasUniversoContainer({ data }) {
                     href={`/historias/${historia.slug}`}
                     passHref>
                     <PersonajeFicha
-                      initial={{borderColor: `rgb(236, 236, 236)`}}
+                      initial={{ borderColor: `rgb(236, 236, 236)` }}
                       whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 0.9 }}>
                       <PersonajeInfo>
@@ -78,7 +77,10 @@ function HistoriasUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              }) : <p>No hay historias para mostrar.</p>}
+              })
+            ) : (
+              <p>No hay historias para mostrar.</p>
+            )}
           </Personajes>
         </Container>
       </Wrapper>

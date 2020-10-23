@@ -195,14 +195,15 @@ function HomeContainer({ data, planetas }) {
                             <Contenidos>
                               <ImagenesContenidos>
                                 {' '}
-                                <SVG src={
-                              entrada.tipo == 'personajes'
-                                ? '/Robot_Personajes.svg'
-                                : entrada.tipo == 'objetos'
-                                ? '/images/icons/cohete.svg'
-                                : '/images/icons/historias.svg'
-                            }
-                             />
+                                <SVG
+                                  src={
+                                    entrada.tipo == 'personajes'
+                                      ? '/Robot_Personajes.svg'
+                                      : entrada.tipo == 'objetos'
+                                      ? '/images/icons/cohete.svg'
+                                      : '/images/icons/historias.svg'
+                                  }
+                                />
                               </ImagenesContenidos>
                               <TextoOverlay>
                                 {entrada.tipo == 'objetos'

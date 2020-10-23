@@ -16,7 +16,6 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
 function TecnologiasUniversoContainer({ data }) {
-
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
@@ -52,7 +51,7 @@ function TecnologiasUniversoContainer({ data }) {
           </PlanetasNav>
 
           <Personajes>
-            {dataToShow.length !== 0 ?
+            {dataToShow.length !== 0 ? (
               dataToShow.map(objeto => {
                 return (
                   <Link
@@ -60,7 +59,7 @@ function TecnologiasUniversoContainer({ data }) {
                     href={`/tecnologias/${objeto.slug}`}
                     passHref>
                     <PersonajeFicha
-                      initial={{borderColor: `rgb(236, 236, 236)`}}
+                      initial={{ borderColor: `rgb(236, 236, 236)` }}
                       whileHover={{ borderColor: `rgb(77, 27, 132)` }}
                       whileTap={{ scale: 1 }}>
                       <PersonajeInfo>
@@ -77,7 +76,10 @@ function TecnologiasUniversoContainer({ data }) {
                     </PersonajeFicha>
                   </Link>
                 );
-              }) : <p>No hay tecnologías para mostrar.</p>}
+              })
+            ) : (
+              <p>No hay tecnologías para mostrar.</p>
+            )}
           </Personajes>
         </Container>
       </Wrapper>

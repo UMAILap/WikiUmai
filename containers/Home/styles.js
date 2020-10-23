@@ -275,10 +275,10 @@ export const ActualizacionesAlumnos = styled.a`
 `;
 
 export const ImagenesContenidos = styled.div`
-  overflow:hidden;
+  overflow: hidden;
   width: 11%;
   svg {
-    path{
+    path {
       fill: white;
     }
     width: 80%;

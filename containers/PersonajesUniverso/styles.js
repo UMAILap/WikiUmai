@@ -40,7 +40,7 @@ export const PlanetasNav = styled.div`
 export const Personajes = styled.div`
   display: flex;
   flex-wrap: wrap;
-  p{
+  p {
     font-size: 17px;
     color: ${leerColor(colores.violeta)};
     font-family: 'Proxima nova';

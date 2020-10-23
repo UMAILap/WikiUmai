@@ -228,23 +228,24 @@ function PersonajesContainer({ data }) {
                     </div>
                   </CardUniverso>
                 </Link>
-                {objetos.length !== 0 ?
-                  objetos.map(objeto => {
-                    return (
-                      <Link
-                        key={`objetorelacionado${objeto.id}`}
-                        href={`/tecnologias/${objeto.slug}`}
-                        passHref>
-                        <CardUniverso>
-                          <img src="/images/icons/cohete.svg" />
-                          <div>
-                            <h5>Tecnologia</h5>
-                            <span>{objeto.nombre}</span>
-                          </div>
-                        </CardUniverso>
-                      </Link>
-                    );
-                  }): ''}
+                {objetos.length !== 0
+                  ? objetos.map(objeto => {
+                      return (
+                        <Link
+                          key={`objetorelacionado${objeto.id}`}
+                          href={`/tecnologias/${objeto.slug}`}
+                          passHref>
+                          <CardUniverso>
+                            <img src="/images/icons/cohete.svg" />
+                            <div>
+                              <h5>Tecnologia</h5>
+                              <span>{objeto.nombre}</span>
+                            </div>
+                          </CardUniverso>
+                        </Link>
+                      );
+                    })
+                  : ''}
               </RelacionadosCards>
             </Relacionados>
           </ContenidoPrincipal>
