@@ -69,7 +69,7 @@ function PersonajesUniversoContainer({ data }) {
                       whileTap={{ scale: 1 }}>
                       <ContImg>
                         <ImagenPersonaje
-                          src={`${BASE_URL}${personaje.avatar?.url}`}
+                          src={personaje.avatar ? `${BASE_URL}${personaje.avatar?.url}` : `/placeholderAvatar.png`}
                           alt={`imagen_${personaje.nombre}`}
                         />
                       </ContImg>

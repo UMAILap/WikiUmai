@@ -97,14 +97,13 @@ function Header() {
               {/* <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
                 <div className="universo">Universo
                 <div className={openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'}> */}
-                <StyledLink href="/personajes">Personajes</StyledLink>
-                <StyledLink href="/tecnologias">Tecnologias</StyledLink>
-                <StyledLink href="/historias">Historias</StyledLink>
-                <StyledLink href="/ayudas">Ayudas y reglas</StyledLink>
-                </div>
-                {/* </div>
+              <StyledLink href="/personajes">Personajes</StyledLink>
+              <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+              <StyledLink href="/historias">Historias</StyledLink>
+              <StyledLink href="/ayudas">Ayudas y reglas</StyledLink>
+            </div>
+            {/* </div>
               </div> */}
-
 
             {/* </div> */}
           </MenuHamburguesa>

@@ -6,7 +6,7 @@ const StyledH2 = styled.h2`
   font-size: 20px;
   font-style: bold;
   color: ${leerColor(colores.violeta)};
-  color: ${props => (props.isColorPink ? leerColor(colores.rosa) : '')};
+  /* color: ${props => (props.isColorPink ? leerColor(colores.rosa) : '')}; */
   padding-top: 20px;
   font-weight: bolder;
   font-family: 'Raleway';

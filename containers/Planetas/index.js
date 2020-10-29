@@ -77,8 +77,8 @@ function PlanetasContainer({ data }) {
             <Titulos>Historias</Titulos>
             <SeccionLinks>
               {historias.length ? (
-                historias.map(({ titulo, slug }) => (
-                  <Link href={`/historias/${slug}`} passHref>
+                historias.map(({ id, titulo, slug }) => (
+                  <Link key={id} href={`/historias/${slug}`} passHref>
                     <LinksHistorias>{titulo}</LinksHistorias>
                   </Link>
                 ))
@@ -86,20 +86,20 @@ function PlanetasContainer({ data }) {
                 <p>No hay historias para mostrar.</p>
               )}
             </SeccionLinks>
-            <ContenedorBoton>
+            {/* <ContenedorBoton>
               <BotonVioleta href="/historias/crear/">
                 + Agregar historia
               </BotonVioleta>
-            </ContenedorBoton>
+            </ContenedorBoton> */}
           </Historias>
 
           <Personajes>
             <IconosPersonajes personajes={personajes}></IconosPersonajes>
-            <ContenedorBoton>
+            {/* <ContenedorBoton>
               <BotonVioleta href="/personajes/crear/">
                 + Agregar personaje
               </BotonVioleta>
-            </ContenedorBoton>
+            </ContenedorBoton> */}
           </Personajes>
 
           {/* <Articulos>
@@ -127,8 +127,8 @@ function PlanetasContainer({ data }) {
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
               {objetos.length ? (
-                objetos.map(({ nombre, slug }) => (
-                  <Link href={`/tecnologias/${slug}`} passHref>
+                objetos.map(({ id, nombre, slug }) => (
+                  <Link key={id} href={`/tecnologias/${slug}`} passHref>
                     <LinksHistorias>{nombre}</LinksHistorias>
                   </Link>
                 ))
@@ -136,11 +136,11 @@ function PlanetasContainer({ data }) {
                 <p>No hay objetos para mostrar.</p>
               )}
             </SeccionLinks>
-            <ContenedorBoton>
+            {/* <ContenedorBoton>
               <BotonVioleta href="/tecnologias/crear/">
                 + Agregar objetos
               </BotonVioleta>
-            </ContenedorBoton>
+            </ContenedorBoton> */}
           </Objetos>
         </AgregarNuevas>
       </Wrapper>

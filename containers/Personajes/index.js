@@ -193,11 +193,11 @@ function PersonajesContainer({ data }) {
                 )}
               </ul>
               {/* <Link href='/crear-historia' passHref> */}
-              <BotonVioleta
+              {/* <BotonVioleta
                 isColorPink={isColorPink}
                 href={'/historias/crear/'}>
                 + Agregar historias
-              </BotonVioleta>
+              </BotonVioleta> */}
               {/* </Link> */}
             </PersonajeHistorias>
             <Galeria>
@@ -219,12 +219,12 @@ function PersonajesContainer({ data }) {
             <Relacionados>
               <Titulos>Relacionados</Titulos>
               <RelacionadosCards>
-                <Link href={`/planeta/${planeta.slug}`} passHref>
+                <Link href={`/planeta/${planeta?.slug}`} passHref>
                   <CardUniverso>
                     <img src={`${BASE_URL}${planeta.avatar?.url}`} />
                     <div>
                       <h5>Planeta</h5>
-                      <span>{planeta.nombre}</span>
+                      <span>{planeta?.nombre}</span>
                     </div>
                   </CardUniverso>
                 </Link>

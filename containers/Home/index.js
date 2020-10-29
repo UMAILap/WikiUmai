@@ -83,7 +83,7 @@ function HomeContainer({ data, planetas }) {
       <ContainerBanner>
         <Wrapper direction="row">
           <SectorTitulos>
-            <Titulos>¡Bienvenide!</Titulos>
+            <Titulos>Un universo transmedia salvaje ha aparecido.</Titulos>
             <Textos>
               El universo Transmedia de la Escuela de Comunicación y Diseño
               Multimedial de Universidad Maimonides es un proyecto colaborativo
@@ -126,7 +126,6 @@ function HomeContainer({ data, planetas }) {
                       whileTap={{ scale: 1 }}
                       key={`${id}-${nombre}`}>
                       <Link
-                        key={`${id}-${nombre}`}
                         href={`/planeta/${slug}`}
                         passHref>
                         <Card>
@@ -158,15 +157,14 @@ function HomeContainer({ data, planetas }) {
             </ParteSuperior>
 
             <Grid colGap={20} rowGap={30}>
-              {console.log(data)}
               {data.length &&
                 data.map(entrada => {
                   return (
-                    <Col desktop={3} tablet={6} mobile={12}>
+                    <Col desktop={3} tablet={6} mobile={12} key={`${entrada.tipo}-${entrada.id}`}>
                       <motion.div
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 1 }}
-                        key={`${entrada.tipo}-${entrada.nombre}`}>
+                        >
                         <Link
                           href={`/${
                             entrada.tipo == 'objetos'
