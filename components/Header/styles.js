@@ -17,7 +17,7 @@ export const MenuSlide = styled.div`
     z-index: 1;
     margin-bottom: 2%;
     height: 90%;
-    margin-left: -1%;
+    left: 0;
   }
   .MenuDown a {
     background-color: ${leerColor(colores.violetaOscuro)};
@@ -155,6 +155,7 @@ export const MenuHamburguesa = styled.h1`
     }
   }
   .MenuDown {
+    padding-top: 1em;
     display: grid;
     grid-template-rows: 10% 10% 10% auto;
     position: absolute;
@@ -162,13 +163,13 @@ export const MenuHamburguesa = styled.h1`
     z-index: 1;
     margin-bottom: 2%;
     height: 95%;
-    margin-left: -3%;
-    @media (min-width: ${breakpoints.mobile}) {
+    left: 0;
+    /* @media (min-width: ${breakpoints.mobile}) {
       margin-left: -10%;
     }
     @media (min-width: ${breakpoints.tablet}) {
       margin-left: -5%;
-    }
+    } */
   }
   .MenuDown a {
   }
@@ -179,25 +180,27 @@ export const MenuHamburguesa = styled.h1`
   .MenuDownUniverso {
     display: flex;
     flex-direction: column;
-    margin-left: 89%;
+
     position: absolute;
     width: 68%;
     background-color: ${leerColor(colores.violeta)};
     height: 187px;
-    margin-top: -24px;
+    margin-top: 50px;
+    top: 0;
+
     justify-content: space-around;
     @media (min-width: ${breakpoints.mobile}) {
-      margin-left: 90%;
+
       margin-top: 0;
     }
     @media (min-width: ${breakpoints.mobileGrande}) {
-      margin-left: 92%;
+
       width: 72%;
     }
     @media (min-width: ${breakpoints.tablet}) {
-      margin-left: 95%;
+
       height: 248px;
-      margin-top: -10px;
+
     }
     @media (min-width: ${breakpoints.laptop}) {
       display: flex;
@@ -221,7 +224,12 @@ export const MenuHamburguesa = styled.h1`
     display: none;
   }
   .universo {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Proxima Nova';
+    color: ${leerColor(colores.blanco)};
     display: flex;
+    flex-direction: column;
   }
 `;
 export const ContainerSearch = styled.div`

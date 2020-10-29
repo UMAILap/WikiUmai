@@ -94,6 +94,24 @@ function Header() {
           <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
             <img src="/menu.svg" />
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
+              {/* <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
+                <div className="universo">Universo
+                <div className={openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'}> */}
+                <StyledLink href="/personajes">Personajes</StyledLink>
+                <StyledLink href="/tecnologias">Tecnologias</StyledLink>
+                <StyledLink href="/historias">Historias</StyledLink>
+                <StyledLink href="/ayudas">Ayudas y reglas</StyledLink>
+                </div>
+                {/* </div>
+              </div> */}
+
+
+            {/* </div> */}
+          </MenuHamburguesa>
+
+          {/* <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
+            <img src="/menu.svg" />
+            <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
               <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
                 <div className="universo">
                   Universo
@@ -115,7 +133,7 @@ function Header() {
                 Iniciar Sesion
               </StyledLink>
             </div>
-          </MenuHamburguesa>
+          </MenuHamburguesa> */}
           <Logo>
             <Link href="/index">
               <a>
@@ -192,9 +210,9 @@ function Header() {
               </User>
             </Link> */}
             <Link href="/login" passHref>
-            <StyledLink  IniciarSesion={IniciarSesion}>
-              Iniciar Sesion
-            </StyledLink>
+              <StyledLink IniciarSesion={IniciarSesion}>
+                Iniciar Sesion
+              </StyledLink>
             </Link>
             <ContainerAvatar>
               <ul>

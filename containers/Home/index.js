@@ -98,7 +98,7 @@ function HomeContainer({ data, planetas }) {
           <ContainerUniversos>
             <ParteSuperior>
               <Titulos>Explora y crea el universo Maimónides </Titulos>
-              <BotonVioleta> + Agregar entrada</BotonVioleta>
+              {/* <BotonVioleta> + Agregar entrada</BotonVioleta> */}
             </ParteSuperior>
             <TextosPlanetas>
               Compuesto por planetas independientes, que orbitan alrededor de
@@ -154,7 +154,7 @@ function HomeContainer({ data, planetas }) {
           <SeccionActualizaciones>
             <ParteSuperior>
               <Titulos>Últimas actualizaciones</Titulos>
-              <BotonVioleta>Ver más</BotonVioleta>
+              {/* <BotonVioleta>Ver más</BotonVioleta> */}
             </ParteSuperior>
 
             <Grid colGap={20} rowGap={30}>

@@ -174,15 +174,15 @@ export const ContImg = styled.div`
   overflow: hidden;
 
   @media (max-width: ${breakpoints.notebook}) {
-    max-height: 122px;
+    /* max-height: 122px; */
   }
 
   @media (max-width: 1438px) {
-    max-height: 80px;
+    /* max-height: 80px; */
   }
 
   @media (max-width: 1023px) {
-    max-height: 63px;
+    /* max-height: 63px; */
   }
 `;
 
