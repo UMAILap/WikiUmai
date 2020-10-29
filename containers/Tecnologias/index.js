@@ -110,7 +110,10 @@ function TecnologiasContainer({ data }) {
               <Relacionados>
                 {planetas &&
                   planetas.map(planeta => (
-                    <Link key={planeta.id} href={`/planeta/${planeta.slug}`} passHref>
+                    <Link
+                      key={planeta.id}
+                      href={`/planeta/${planeta.slug}`}
+                      passHref>
                       <CardUniverso>
                         <img src="/images/slider/2.png" />
                         <div>
@@ -123,7 +126,10 @@ function TecnologiasContainer({ data }) {
                 {personajes &&
                   personajes.map(personaje => {
                     return (
-                      <Link key={personaje.id} href={`/personajes/${personaje.slug}`} passHref>
+                      <Link
+                        key={personaje.id}
+                        href={`/personajes/${personaje.slug}`}
+                        passHref>
                         <CardUniverso>
                           <img src="/images/slider/2.png" />
                           <div>

@@ -125,9 +125,7 @@ function HomeContainer({ data, planetas }) {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 1 }}
                       key={`${id}-${nombre}`}>
-                      <Link
-                        href={`/planeta/${slug}`}
-                        passHref>
+                      <Link href={`/planeta/${slug}`} passHref>
                         <Card>
                           <ContImg>
                             <CardImg
@@ -160,11 +158,14 @@ function HomeContainer({ data, planetas }) {
               {data.length &&
                 data.map(entrada => {
                   return (
-                    <Col desktop={3} tablet={6} mobile={12} key={`${entrada.tipo}-${entrada.id}`}>
+                    <Col
+                      desktop={3}
+                      tablet={6}
+                      mobile={12}
+                      key={`${entrada.tipo}-${entrada.id}`}>
                       <motion.div
                         whileHover={{ scale: 1.03 }}
-                        whileTap={{ scale: 1 }}
-                        >
+                        whileTap={{ scale: 1 }}>
                         <Link
                           href={`/${
                             entrada.tipo == 'objetos'

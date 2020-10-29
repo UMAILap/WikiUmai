@@ -77,7 +77,9 @@ function HistoriasContainer({ data }) {
                 {personajes.length &&
                   personajes.map(personaje => {
                     return (
-                      <CardUniverso key={personaje.id} href={`/personajes/${personaje.slug}`}>
+                      <CardUniverso
+                        key={personaje.id}
+                        href={`/personajes/${personaje.slug}`}>
                         <img src="/images/slider/2.png" />
                         <div>
                           <h5>Personaje</h5>
