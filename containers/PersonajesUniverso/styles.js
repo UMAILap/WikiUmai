@@ -94,7 +94,7 @@ export const PersonajeInfo = styled.div`
     color: ${leerColor(colores.negro)};
     padding-top: 15px;
   }
-  h1{
+  h1 {
     padding: 0;
   }
 `;
