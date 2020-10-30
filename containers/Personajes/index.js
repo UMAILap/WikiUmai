@@ -34,6 +34,8 @@ import {
   Markdown,
 } from 'components';
 
+import { Grid, Col } from '../../components/Grid';
+
 //galeria tiene que ser un slider y acomodar estilos sobre todo banner, todo esto es en mobile.
 function PersonajesContainer({ data }) {
   const {
@@ -61,114 +63,51 @@ function PersonajesContainer({ data }) {
     <>
       <BannerTecnologiasHistorias type="personaje">
         <Wrapper>
-          <BannerPersonaje>
-            <PersonajeIntro>
-              <img src="/Robot_Personajes.svg"></img>
-              <h6>Personaje</h6>
-              <h1>{nombre}</h1>
-              <p>{introduccion}</p>
-            </PersonajeIntro>
-            <PersonajeCaracteristicas>
-              <CaracteristicasPuntos>
-                <PuntosPersonajes>
-                  <img src="/fuerza.svg" />
-                  <span>{habilidades?.fuerza || '-'}</span>
-                </PuntosPersonajes>
-                <PuntosPersonajes>
-                  <img src="/inteligencia.svg" />
-                  <span>{habilidades?.inteligencia || '-'}</span>
-                </PuntosPersonajes>
-                <PuntosPersonajes>
-                  <img src="/habilidad.svg" />
-                  <span>{habilidades?.habilidad || '-'}</span>
-                </PuntosPersonajes>
-                <PuntosPersonajes>
-                  <img src="/suerte.svg" />
-                  <span>{habilidades?.suerte || '-'}</span>
-                </PuntosPersonajes>
-              </CaracteristicasPuntos>
-              <ContImg>
-                <img
-                  src={`${
-                    avatar !== null
-                      ? BASE_URL + avatar.url
-                      : '/placeholderAvatar.png'
-                  }`}></img>
-              </ContImg>
-            </PersonajeCaracteristicas>
-          </BannerPersonaje>
+          <Grid colGap={90} rowGap={30}>
+            <Col desktop={8} tablet={12} mobile={12}>
+              <PersonajeIntro>
+                  <img src="/Robot_Personajes.svg"></img>
+                  <h6>Personaje</h6>
+                  <h1>{nombre}</h1>
+                  <p>{introduccion}</p>
+              </PersonajeIntro>
+            </Col>
+            <Col desktop={4} tablet={12} mobile={12}>
+              <PersonajeCaracteristicas>
+                <CaracteristicasPuntos>
+                  <PuntosPersonajes>
+                    <img src="/fuerza.svg" />
+                    <span>{habilidades?.fuerza || '-'}</span>
+                  </PuntosPersonajes>
+                  <PuntosPersonajes>
+                    <img src="/inteligencia.svg" />
+                    <span>{habilidades?.inteligencia || '-'}</span>
+                  </PuntosPersonajes>
+                  <PuntosPersonajes>
+                    <img src="/habilidad.svg" />
+                    <span>{habilidades?.habilidad || '-'}</span>
+                  </PuntosPersonajes>
+                  <PuntosPersonajes>
+                    <img src="/suerte.svg" />
+                    <span>{habilidades?.suerte || '-'}</span>
+                  </PuntosPersonajes>
+                </CaracteristicasPuntos>
+                <ContImg>
+                  <img
+                    src={`${
+                      avatar !== null
+                        ? BASE_URL + avatar.url
+                        : '/placeholderAvatar.png'
+                    }`}></img>
+                </ContImg>
+              </PersonajeCaracteristicas>
+            </Col>
+          </Grid>
         </Wrapper>
       </BannerTecnologiasHistorias>
       <Wrapper>
-        <PersonajeInfo>
-          <PersonajeDatos>
-            <PersonajeCard>
-              <Dato>
-                <h6>Raza</h6>
-                <p>{caracteristicas?.raza || 'Desconocido'}</p>
-              </Dato>
-              <Dato>
-                <h6>Género</h6>
-                <p>{caracteristicas?.genero || 'Desconocido'}</p>
-              </Dato>
-              <Dato>
-                <DatoFixed>
-                  <h6>Edad</h6>
-                  <p>{caracteristicas?.edad || 'Desconocido'}</p>
-                </DatoFixed>
-                <DatoFixed>
-                  <h6>Altura</h6>
-                  <p>{caracteristicas?.altura || 'Desconocido'}</p>
-                </DatoFixed>
-              </Dato>
-              <Dato>
-                <h6>Planeta</h6>
-                <p>{planeta && planeta.nombre}</p>
-              </Dato>
-              <Dato>
-                <h6>Profesión</h6>
-                <p>{caracteristicas?.profesion || 'Desconocido'}</p>
-              </Dato>
-            </PersonajeCard>
-            <ObjetosPersonaje>
-              <h5>Objetos de profesión:</h5>
-              <Objetos>
-                {objetosProfesion.length ? (
-                  objetosProfesion.map(objeto => {
-                    return (
-                      <Link
-                        key={`objetos${objeto.id}`}
-                        href={`/tecnologias/${objeto.slug}`}
-                        passHref>
-                        <a>{objeto.nombre}</a>
-                      </Link>
-                    );
-                  })
-                ) : (
-                  <p>No hay información.</p>
-                )}
-              </Objetos>
-            </ObjetosPersonaje>
-            <InventarioPersonaje>
-              <h5>Inventario</h5>
-              <Objetos>
-                {objetosInventario.length ? (
-                  objetosInventario.map(objeto => {
-                    return (
-                      <Link
-                        key={`objetos${objeto.id}`}
-                        href={`/tecnologias/${objeto.slug}`}
-                        passHref>
-                        <a>{objeto.nombre}</a>
-                      </Link>
-                    );
-                  })
-                ) : (
-                  <p>No hay información.</p>
-                )}
-              </Objetos>
-            </InventarioPersonaje>
-          </PersonajeDatos>
+        <Grid colGap={90} rowGap={30}>
+          <Col desktop={8} tablet={12} mobile={12}>
           <ContenidoPrincipal>
             <ContSinopsis>
               {sinopsis ? (
@@ -249,7 +188,78 @@ function PersonajesContainer({ data }) {
               </RelacionadosCards>
             </Relacionados>
           </ContenidoPrincipal>
-        </PersonajeInfo>
+          </Col>
+          <Col desktop={4} tablet={12} mobile={12}>
+          <PersonajeDatos>
+            <PersonajeCard>
+              <Dato>
+                <h6>Raza</h6>
+                <p>{caracteristicas?.raza || 'Desconocido'}</p>
+              </Dato>
+              <Dato>
+                <h6>Género</h6>
+                <p>{caracteristicas?.genero || 'Desconocido'}</p>
+              </Dato>
+              <Dato>
+                <DatoFixed>
+                  <h6>Edad</h6>
+                  <p>{caracteristicas?.edad || 'Desconocido'}</p>
+                </DatoFixed>
+                <DatoFixed>
+                  <h6>Altura</h6>
+                  <p>{caracteristicas?.altura || 'Desconocido'}</p>
+                </DatoFixed>
+              </Dato>
+              <Dato>
+                <h6>Planeta</h6>
+                <p>{planeta && planeta.nombre}</p>
+              </Dato>
+              <Dato>
+                <h6>Profesión</h6>
+                <p>{caracteristicas?.profesion || 'Desconocido'}</p>
+              </Dato>
+            </PersonajeCard>
+            <ObjetosPersonaje>
+              <h5>Objetos de profesión:</h5>
+              <Objetos>
+                {objetosProfesion.length ? (
+                  objetosProfesion.map(objeto => {
+                    return (
+                      <Link
+                        key={`objetos${objeto.id}`}
+                        href={`/tecnologias/${objeto.slug}`}
+                        passHref>
+                        <a>{objeto.nombre}</a>
+                      </Link>
+                    );
+                  })
+                ) : (
+                  <p>No hay información.</p>
+                )}
+              </Objetos>
+            </ObjetosPersonaje>
+            <InventarioPersonaje>
+              <h5>Inventario</h5>
+              <Objetos>
+                {objetosInventario.length ? (
+                  objetosInventario.map(objeto => {
+                    return (
+                      <Link
+                        key={`objetos${objeto.id}`}
+                        href={`/tecnologias/${objeto.slug}`}
+                        passHref>
+                        <a>{objeto.nombre}</a>
+                      </Link>
+                    );
+                  })
+                ) : (
+                  <p>No hay información.</p>
+                )}
+              </Objetos>
+            </InventarioPersonaje>
+          </PersonajeDatos>
+          </Col>
+        </Grid>
       </Wrapper>
     </>
   );

@@ -10,7 +10,7 @@ export const BannerPersonaje = styled.div`
   }
 `;
 export const PersonajeIntro = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
@@ -162,8 +162,8 @@ export const PersonajeDatos = styled.div`
   width: 100%;
   padding-bottom: 40px;
   @media (min-width: ${breakpoints.laptop}) {
-    width: 40%;
-    margin-left: 40px;
+    width: 100%;
+    /*margin-left: 40px;*/
     padding-top: 90px;
     padding-bottom: 0;
     align-self: flex-start;
@@ -186,9 +186,7 @@ export const PersonajeCard = styled.div`
   @media (min-width: ${breakpoints.laptop}) {
     margin-top: 0;
   }
-  @media (min-width: ${breakpoints.laptopL}) {
-    width: 70%;
-  }
+
   h6 {
     font-family: 'Proxima Nova';
     color: ${leerColor(colores.violeta)};
@@ -254,7 +252,7 @@ export const ContenidoPrincipal = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: ${breakpoints.laptop}) {
-    width: 60%;
+    /*width: 60%;*/
     padding-top: 90px;
   }
   p {
