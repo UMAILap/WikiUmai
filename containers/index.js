@@ -33,3 +33,6 @@ export { default as TecnologiasUniverso } from './TecnologiasUniverso';
 
 // ---------- PLANETAS ------------- //
 export { default as Planetas } from './Planetas';
+
+// ---------- REGLAS ------------- //
+export { default as Reglas } from './Reglas';

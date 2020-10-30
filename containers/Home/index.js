@@ -83,7 +83,7 @@ function HomeContainer({ data, planetas }) {
       <ContainerBanner>
         <Wrapper direction="row">
           <SectorTitulos>
-            <Titulos>Un universo transmedia salvaje ha aparecido.</Titulos>
+            <Titulos>Un universo salvaje ha aparecido.</Titulos>
             <Textos>
               El universo Transmedia de la Escuela de Comunicación y Diseño
               Multimedial de Universidad Maimonides es un proyecto colaborativo

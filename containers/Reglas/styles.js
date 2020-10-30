@@ -1,0 +1,123 @@
+import styled from 'styled-components';
+import { breakpoints, leerColor, colores, pxToRem } from 'constants';
+
+export const ContainerMain = styled.div`
+  @media (min-width: ${breakpoints.mobile}) {
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+  }
+`;
+
+export const ContainerBanner = styled.div`
+  display: flex;
+  width: 100%;
+  background-image: url(./images/crearPersonajeBanner.svg);
+  background-repeat: no-repeat;
+  height: 152px;
+  background-position: center;
+  background-size: auto 100%;
+  background-color: ${leerColor(colores.violeta)};
+  margin-bottom: 40px;
+`;
+
+export const Tecnologia = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: ${breakpoints.mobile}) {
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 70%;
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    width: 70%;
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 40%;
+  }
+`;
+export const TecnologiaNombre = styled.div`
+  display: block;
+  margin: 0;
+  padding-bottom: 20px;
+  img {
+    /* width: 10%; */
+  }
+  @media (min-width: ${breakpoints.mobile}) {
+  }
+  @media (min-width: ${breakpoints.tablet}) {
+    display: flex;
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    margin: 0 auto;
+    padding-bottom: 60px;
+    img {
+      /* width: 100%; */
+    }
+  }
+`;
+export const Nombres = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-around;
+  @media (min-width: ${breakpoints.tablet}) {
+    margin-left: 30px;
+  }
+`;
+export const Subtitulo = styled.h6`
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: ${leerColor(colores.blanco)};
+  margin: 10px 0;
+`;
+export const Titulo = styled.h1`
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: ${leerColor(colores.blanco)};
+  font-size: ${pxToRem(35)};
+`;
+export const TecnologiaInfo = styled.div`
+  font-size: ${pxToRem(16)};
+  font-family: 'Proxima Nova';
+  line-height: 38px;
+  color: ${leerColor(colores.blanco)};
+  @media (min-width: ${breakpoints.mobile}) {
+  }
+  @media (min-width: ${breakpoints.laptop}) {
+    font-size: ${pxToRem(18)};
+    text-align: center;
+  }
+`;
+export const SeccionArticulos = styled.div`
+  display: flex;
+`;
+export const TecnologiaArticulos = styled.div`
+  width: 100%;
+  margin: 40px auto;
+  @media (min-width: ${breakpoints.mobile}) {
+  }
+  @media (min-width: ${breakpoints.laptopL}) {
+    width: 55%;
+  }
+`;
+export const ArticuloData = styled.div`
+  padding-bottom: 30px;
+  p {
+    padding-top: 10px;
+    font-family: 'Proxima Nova';
+    font-size: 17px;
+    color: ${leerColor(colores.negro)};
+    line-height: 38px;
+  }
+  img {
+    width: 100%;
+  }
+`;
+export const Relacionados = styled.div`
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+`;
