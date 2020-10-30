@@ -54,9 +54,9 @@ export const getCollectionBySlug = async (slug, collection, res) => {
 };
 
 //GET para collections
-export const getDataCollection = async (collection, res) => {
+export const getDataCollection = async (collection, res, params) => {
   try {
-    const { data } = await api.get(`${BASE_URL}/${collection}`);
+    const { data } = await api.get(`${BASE_URL}/${collection}`, params ? {params} : {});
     return data;
   } catch (error) {
     res.setHeader('location', '/404');

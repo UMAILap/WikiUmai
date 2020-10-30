@@ -41,16 +41,16 @@ export const ContainerHeader = styled.div`
   @media (min-width: ${breakpoints.mobileGrande}) {
   }
   @media (min-width: ${breakpoints.tablet}) {
-    grid-template-columns: 15% 65% 20%;
+    grid-template-columns: 10% auto 20%;
   }
   @media (min-width: ${breakpoints.laptop}) {
-    grid-template-columns: 15% 30% 40% 15%;
+    grid-template-columns: 10% auto auto 20%;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    grid-template-columns: 10% 35% 40% 15%;
+    grid-template-columns: 10% auto auto 20%;
   }
   @media (min-width: ${breakpoints.notebook}) {
-    grid-template-columns: 10% 35% 40% 15%;
+    grid-template-columns: 10% auto auto 20%;
   }
 `;
 
@@ -298,6 +298,7 @@ export const Notification = styled.img`
 `;
 
 export const ContainerBotones = styled.div`
+grid-column: auto/5;
   font-family: 'Chivo';
   display: none;
   @media (min-width: 376px) {

@@ -97,7 +97,7 @@ function HomeContainer({ data, planetas }) {
         <Container>
           <ContainerUniversos>
             <ParteSuperior>
-              <Titulos>Explora y crea el universo Maimónides </Titulos>
+              <Titulos>Explorá y creá el universo Maimónides.</Titulos>
               {/* <BotonVioleta> + Agregar entrada</BotonVioleta> */}
             </ParteSuperior>
             <TextosPlanetas>

@@ -91,21 +91,14 @@ function Header() {
           </div>
       </MenuSlide> */}
         <ContainerHeader>
-          <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
-            <img src="/menu.svg" />
+          <MenuHamburguesa >
+            <img src="/menu.svg" onClick={() => setOpenMenu(!openMenu)}/>
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
-              {/* <div onClick={() => setOpenMenuUniverso(!openMenuUniverso)}>
-                <div className="universo">Universo
-                <div className={openMenuUniverso ? 'MenuDownUniverso' : 'MenuUpUniverso'}> */}
               <StyledLink href="/personajes">Personajes</StyledLink>
               <StyledLink href="/tecnologias">Tecnologias</StyledLink>
               <StyledLink href="/historias">Historias</StyledLink>
               <StyledLink href="/ayudas">Ayudas y reglas</StyledLink>
             </div>
-            {/* </div>
-              </div> */}
-
-            {/* </div> */}
           </MenuHamburguesa>
 
           {/* <MenuHamburguesa onClick={() => setOpenMenu(!openMenu)}>
@@ -140,13 +133,13 @@ function Header() {
               </a>
             </Link>
           </Logo>
-          <ContainerSearch>
+          {/* <ContainerSearch>
             <input
               type="text"
               name="search"
               placeholder="Buscar contenido"></input>
             <i className="fas fa-search"></i>
-          </ContainerSearch>
+          </ContainerSearch> */}
           <ContainerBotones>
             <ul>
               <li onClick={() => setOpen(!open)}>
@@ -198,16 +191,11 @@ function Header() {
             <StyledLink>Ayudas y reglas</StyledLink>
           </ContainerBotones>
 
-          <ContainerUser>
+          {/* <ContainerUser>
             <Search>
               <img src="/search.png" />
             </Search>
-            {/* <Notification src="/notificacion-header.svg" />
-            <Link href="/perfil" passHref>
-              <User>
-                <img src="/perfil-header.png" />
-              </User>
-            </Link> */}
+
             <Link href="/login" passHref>
               <StyledLink IniciarSesion={IniciarSesion}>
                 Iniciar Sesion
@@ -220,14 +208,14 @@ function Header() {
                     <img src="/perfil-header.png" />
                   </User>
                   <div className={openMenuUser ? 'dropdown' : 'dropup'}>
-                    {/* Hacer bien los Links */}
+
                     <StyledLink href="/perfil">Perfil</StyledLink>
                     <StyledLink href="/logout">Cerrar Sesión</StyledLink>
                   </div>
                 </li>
               </ul>
             </ContainerAvatar>
-          </ContainerUser>
+          </ContainerUser> */}
         </ContainerHeader>
       </Wrapper>
     </Container>

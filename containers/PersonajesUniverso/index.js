@@ -25,9 +25,15 @@ function PersonajesUniversoContainer({ data }) {
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
   useEffect(() => {
+    if (!_.isEqual(data, dataToShow)) {
+      setDataToShow(data);
+    }
+  }, [data])
+  useEffect(() => {
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
-        if (_.includes(filtros, character.planeta.slug) === true) {
+        console.log('CHARACTER', character);
+        if (_.includes(filtros, character.planeta?.slug) === true) {
           return character;
         }
       });
@@ -35,7 +41,7 @@ function PersonajesUniversoContainer({ data }) {
     } else {
       setDataToShow(data);
     }
-  }, [filtros]);
+  }, [filtros, data]);
 
   return (
     <ContainerMain>

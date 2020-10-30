@@ -81,9 +81,9 @@ function PlanetasPills({ isFlex, multiple, onChange }) {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         isFlex={isFlex}
-        colorFondo={handleColorPlaneta('adhera')}
-        onClick={() => handleClickPlaneta('adhera')}>
-        Adhera
+        colorFondo={handleColorPlaneta('adhara')}
+        onClick={() => handleClickPlaneta('adhara')}>
+        Adhara
       </Planeta>
     </Planetas>
   );
