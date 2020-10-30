@@ -91,8 +91,8 @@ function Header() {
           </div>
       </MenuSlide> */}
         <ContainerHeader>
-          <MenuHamburguesa >
-            <img src="/menu.svg" onClick={() => setOpenMenu(!openMenu)}/>
+          <MenuHamburguesa>
+            <img src="/menu.svg" onClick={() => setOpenMenu(!openMenu)} />
             <div className={openMenu ? 'MenuDown' : 'MenuUp'}>
               <StyledLink href="/personajes">Personajes</StyledLink>
               <StyledLink href="/tecnologias">Tecnologias</StyledLink>

@@ -28,7 +28,7 @@ function PersonajesUniversoContainer({ data }) {
     if (!_.isEqual(data, dataToShow)) {
       setDataToShow(data);
     }
-  }, [data])
+  }, [data]);
   useEffect(() => {
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {

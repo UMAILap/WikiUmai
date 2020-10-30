@@ -1,5 +1,5 @@
 import React from 'react';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import { getDataCollection } from 'utils';
 import ReactPaginate from 'react-paginate';
 import {
@@ -9,15 +9,17 @@ import {
 
 function PersonajesUniverso({ data, pageNumber, totalPages }) {
   const router = useRouter();
-  const handlePageChange = ({selected}) => {
+  const handlePageChange = ({ selected }) => {
     console.log('hola', selected);
-    if (selected === 0 ) {
-      router.push(`/personajes`, undefined, {shallow: false});
+    if (selected === 0) {
+      router.push(`/personajes`, undefined, { shallow: false });
     } else {
-      router.push(`/personajes?page=${selected+1}`, undefined, {shallow: false});
+      router.push(`/personajes?page=${selected + 1}`, undefined, {
+        shallow: false,
+      });
     }
   };
-  console.log({data});
+  console.log({ data });
   return (
     <Layout>
       <PersonajesUniversoContainer data={data} />
