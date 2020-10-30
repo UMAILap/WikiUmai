@@ -80,6 +80,9 @@ export const ImagenPersonaje = styled.img`
 export const PersonajeInfo = styled.div`
   width: 70%;
   margin-left: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -90,6 +93,9 @@ export const PersonajeInfo = styled.div`
     line-height: 26px;
     color: ${leerColor(colores.negro)};
     padding-top: 15px;
+  }
+  h1{
+    padding: 0;
   }
 `;
 

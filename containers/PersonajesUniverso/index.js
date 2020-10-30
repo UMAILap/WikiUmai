@@ -84,8 +84,10 @@ function PersonajesUniversoContainer({ data }) {
                         />
                       </ContImg>
                       <PersonajeInfo>
-                        <Titulos>{personaje.nombre}</Titulos>
-                        <p>{personaje.introduccion}</p>
+                        <div>
+                          <Titulos>{personaje.nombre}</Titulos>
+                          <p>{personaje.introduccion}</p>
+                        </div>
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>
                             <img src="/images/icons/planet.svg" />
