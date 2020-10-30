@@ -188,7 +188,7 @@ function Header() {
               <StyledLink className={open ? 'dropdown' : 'dropup'}>Historias</StyledLink>
             </ul>
             </div> */}
-            <StyledLink href='/reglas'>Ayudas y reglas</StyledLink>
+            <StyledLink href="/reglas">Ayudas y reglas</StyledLink>
           </ContainerBotones>
 
           {/* <ContainerUser>

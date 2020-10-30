@@ -11,9 +11,9 @@ function Reglas(props) {
   );
 }
 export async function getServerSideProps({ res }) {
-    const data = await getDataCollection('ayuda', res);
-    console.log('hola', res);
-    return { props: { data } };
+  const data = await getDataCollection('ayuda', res);
+  console.log('hola', res);
+  return { props: { data } };
 }
 
 export default Reglas;

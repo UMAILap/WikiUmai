@@ -25,14 +25,10 @@ import {
 } from 'components';
 
 function ReglasContainer({ data }) {
-  const {
-    id,
-    titulo,
-    contenido,
-  } = data;
+  const { id, titulo, contenido } = data;
   return (
     <ContainerMain>
-        <ContainerBanner>
+      <ContainerBanner>
         <Wrapper>
           <Titulo>Ayuda y Reglas</Titulo>
         </Wrapper>
@@ -52,7 +48,6 @@ function ReglasContainer({ data }) {
                 <p>No hay Contenido para mostrar.</p>
               )}
             </ArticuloData>
-
           </TecnologiaArticulos>
         </SeccionArticulos>
       </Wrapper>
