@@ -225,7 +225,7 @@ export const Objetos = styled.div`
     border-radius: 10px;
     margin: 20px 15px 5px 0;
   }
-  p{
+  p {
     font-family: 'Proxima Nova';
     color: ${leerColor(colores.violeta)};
     font-size: 16px;
