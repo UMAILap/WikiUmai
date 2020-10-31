@@ -115,35 +115,35 @@ function HomeContainer({ data, planetas }) {
             </TextosPlanetasMobile>
           </ContainerUniversos>
         </Container>
-        </Wrapper>
-          <ContainerSlider>
-            <Slider {...settings}>
-              {planetas.length &&
-                planetas.map(planeta => {
-                  const { id, nombre, avatar, slug } = planeta;
-                  return (
-                    <motion.div
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 1 }}
-                      key={`${id}-${nombre}`}>
-                      <Link href={`/planeta/${slug}`} passHref>
-                        <Card>
-                          <ContImg>
-                            <CardImg
-                              src={`${
-                                avatar
-                                  ? BASE_URL + avatar.url
-                                  : '/placeholderAvatar.png'
-                              }`}></CardImg>
-                          </ContImg>
-                          <TituloCard>{nombre}</TituloCard>
-                        </Card>
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-            </Slider>
-          </ContainerSlider>
+      </Wrapper>
+      <ContainerSlider>
+        <Slider {...settings}>
+          {planetas.length &&
+            planetas.map(planeta => {
+              const { id, nombre, avatar, slug } = planeta;
+              return (
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 1 }}
+                  key={`${id}-${nombre}`}>
+                  <Link href={`/planeta/${slug}`} passHref>
+                    <Card>
+                      <ContImg>
+                        <CardImg
+                          src={`${
+                            avatar
+                              ? BASE_URL + avatar.url
+                              : '/placeholderAvatar.png'
+                          }`}></CardImg>
+                      </ContImg>
+                      <TituloCard>{nombre}</TituloCard>
+                    </Card>
+                  </Link>
+                </motion.div>
+              );
+            })}
+        </Slider>
+      </ContainerSlider>
 
       <FondoGris>
         <Wrapper>

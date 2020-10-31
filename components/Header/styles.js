@@ -41,14 +41,13 @@ export const ContainerHeader = styled.div`
   align-items: center;
   padding: 10px 0;
 
-  @media (max-width: ${breakpoints.laptopL}){
+  @media (max-width: ${breakpoints.laptopL}) {
     grid-template-columns: 25% auto auto 29%;
   }
 
-  @media (max-width: ${breakpoints.laptop}){
+  @media (max-width: ${breakpoints.laptop}) {
     grid-template-columns: 11% 100% auto 20%;
   }
-
 `;
 
 export const Logo = styled.h1`

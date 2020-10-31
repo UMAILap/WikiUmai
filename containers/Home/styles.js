@@ -152,8 +152,8 @@ export const ContainerSlider = styled.div`
   & .slick-track {
     padding: 40px 0px;
   }
-  max-width:100%;
-  overflow:hidden;
+  max-width: 100%;
+  overflow: hidden;
   width: 1240px;
   margin: 0 auto;
 
@@ -163,14 +163,13 @@ export const ContainerSlider = styled.div`
 
   @media (max-width: ${breakpoints.laptopL}) {
     max-width: 850px;
-    overflow:hidden;
+    overflow: hidden;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 100vw;
-    overflow:hidden;
+    overflow: hidden;
   }
-
 `;
 
 export const Card = styled.a`
