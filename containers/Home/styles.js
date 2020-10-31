@@ -157,12 +157,21 @@ export const ContainerSlider = styled.div`
   width: 1240px;
   margin: 0 auto;
 
-  @media (max-width: ${breakpoints.notebook}) {
-    max-width: 1440px;
+  & .slick-arrow{
+    display: none!important;
+  }
+
+  @media (min-width: ${breakpoints.notebook}) {
+    width: 1440px;
   }
 
   @media (max-width: ${breakpoints.laptopL}) {
     max-width: 850px;
+    overflow: hidden;
+  }
+
+  @media (max-width: ${breakpoints.laptop}) {
+    max-width: 700px;
     overflow: hidden;
   }
 

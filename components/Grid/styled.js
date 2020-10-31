@@ -8,7 +8,7 @@ const GridContainer = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 20px;
   }
 `;
 

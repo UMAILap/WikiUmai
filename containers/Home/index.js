@@ -159,7 +159,7 @@ function HomeContainer({ data, planetas }) {
                   return (
                     <Col
                       desktop={3}
-                      tablet={6}
+                      tablet={12}
                       mobile={12}
                       key={`${entrada.tipo}-${entrada.id}`}>
                       <motion.div
