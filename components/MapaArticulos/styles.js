@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Articulos = styled.div`
-  top: 50px;
+  top: 155px;
   left: 0;
   position: sticky;
   border-left: 6px solid ${leerColor(colores.rosa)};
