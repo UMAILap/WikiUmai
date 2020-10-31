@@ -8,6 +8,9 @@ export const Container = styled.header`
   padding-bottom: 5px;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 `;
 export const MenuSlide = styled.div`
   .MenuDown {
@@ -33,25 +36,19 @@ export const MenuSlide = styled.div`
 export const ContainerHeader = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 15% 65% 20%;
+  grid-template-columns: 20% auto auto 20%;
   grid-template-rows: 1fr;
   align-items: center;
   padding: 10px 0;
 
-  @media (min-width: ${breakpoints.mobileGrande}) {
+  @media (max-width: ${breakpoints.laptopL}){
+    grid-template-columns: 25% auto auto 29%;
   }
-  @media (min-width: ${breakpoints.tablet}) {
-    grid-template-columns: 10% auto 20%;
+
+  @media (max-width: ${breakpoints.laptop}){
+    grid-template-columns: 11% 100% auto 20%;
   }
-  @media (min-width: ${breakpoints.laptop}) {
-    grid-template-columns: 10% auto auto 20%;
-  }
-  @media (min-width: ${breakpoints.laptopL}) {
-    grid-template-columns: 10% auto auto 20%;
-  }
-  @media (min-width: ${breakpoints.notebook}) {
-    grid-template-columns: 10% auto auto 20%;
-  }
+
 `;
 
 export const Logo = styled.h1`
@@ -155,14 +152,14 @@ export const MenuHamburguesa = styled.h1`
     }
   }
   .MenuDown {
-    padding-top: 1em;
+    margin-top: 1em;
     display: grid;
     grid-template-rows: 10% 10% 10% auto;
     position: absolute;
-    width: 60%;
+    width: 75%;
     z-index: 1;
     margin-bottom: 2%;
-    height: 95%;
+    height: 100vh;
     left: 0;
     /* @media (min-width: ${breakpoints.mobile}) {
       margin-left: -10%;

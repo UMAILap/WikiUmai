@@ -114,7 +114,8 @@ function HomeContainer({ data, planetas }) {
               personajes y objetos.
             </TextosPlanetasMobile>
           </ContainerUniversos>
-
+        </Container>
+        </Wrapper>
           <ContainerSlider>
             <Slider {...settings}>
               {planetas.length &&
@@ -143,8 +144,6 @@ function HomeContainer({ data, planetas }) {
                 })}
             </Slider>
           </ContainerSlider>
-        </Container>
-      </Wrapper>
 
       <FondoGris>
         <Wrapper>

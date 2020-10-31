@@ -10,26 +10,28 @@ export const ParteSuperior = styled.div`
 
 export const SectorTitulos = styled.div`
   width: 100%;
+  padding: 30px 0;
   @media (min-width: ${breakpoints.mobile}) {
     width: 95%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 30px 0;
   }
 
   @media (min-width: ${breakpoints.tablet}) {
     justify-self: center;
-    height: 15vh;
+    padding: 30px 0;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
     width: 40%;
-    height: 18vh;
+    padding: 30px 0;
   }
 
   @media (min-width: ${breakpoints.laptopL}) {
-    height: 25vh;
+    padding: 30px 0;
   }
 `;
 export const ContainerBanner = styled.div`
@@ -150,6 +152,25 @@ export const ContainerSlider = styled.div`
   & .slick-track {
     padding: 40px 0px;
   }
+  max-width:100%;
+  overflow:hidden;
+  width: 1240px;
+  margin: 0 auto;
+
+  @media (max-width: ${breakpoints.notebook}) {
+    max-width: 1440px;
+  }
+
+  @media (max-width: ${breakpoints.laptopL}) {
+    max-width: 850px;
+    overflow:hidden;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 100vw;
+    overflow:hidden;
+  }
+
 `;
 
 export const Card = styled.a`
@@ -265,7 +286,7 @@ export const ActualizacionesAlumnos = styled.a`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${props => props.srcImagen});
   background-repeat: no-repeat;
-  max-height: 287px;
+  height: 287px;
   max-width: 347px;
   background-size: contain;
   background-position: center;
