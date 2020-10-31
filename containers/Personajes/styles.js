@@ -130,7 +130,6 @@ export const ContImg = styled.div`
   border-radius: 10px;
   height: 224px;
   width: 224px;
-  margin: 10px auto;
   overflow: hidden;
   background: white;
   img {
@@ -215,6 +214,8 @@ export const Objetos = styled.div`
   flex-direction: row;
   justify-content: stretch;
   margin-top: 20px;
+  display: flex;
+    flex-wrap: wrap;
   a {
     font-family: 'Raleway';
     font-size: 18px;

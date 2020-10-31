@@ -6,6 +6,10 @@ const GridContainer = styled.div`
   grid-column-gap: ${props => props.colGap || 30}px;
   grid-row-gap: ${props => props.rowGap || 40}px;
   width: 100%;
+  @media (max-width: 768px) {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 `;
 
 const ColContainer = styled.div`

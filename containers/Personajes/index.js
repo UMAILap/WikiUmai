@@ -63,7 +63,7 @@ function PersonajesContainer({ data }) {
     <>
       <BannerTecnologiasHistorias type="personaje">
         <Wrapper>
-          <Grid colGap={90} rowGap={30}>
+          <Grid colGap={40} rowGap={30}>
             <Col desktop={8} tablet={12} mobile={12}>
               <PersonajeIntro>
                 <img src="/Robot_Personajes.svg"></img>
@@ -106,7 +106,7 @@ function PersonajesContainer({ data }) {
         </Wrapper>
       </BannerTecnologiasHistorias>
       <Wrapper>
-        <Grid colGap={90} rowGap={30}>
+        <Grid colGap={40} rowGap={30}>
           <Col desktop={8} tablet={12} mobile={12}>
             <ContenidoPrincipal>
               <ContSinopsis>
