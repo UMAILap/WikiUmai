@@ -215,7 +215,7 @@ export const Objetos = styled.div`
   justify-content: stretch;
   margin-top: 20px;
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   a {
     font-family: 'Raleway';
     font-size: 18px;
