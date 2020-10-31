@@ -157,8 +157,8 @@ export const ContainerSlider = styled.div`
   width: 1240px;
   margin: 0 auto;
 
-  & .slick-arrow{
-    display: none!important;
+  & .slick-arrow {
+    display: none !important;
   }
 
   @media (min-width: ${breakpoints.notebook}) {
