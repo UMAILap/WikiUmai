@@ -158,9 +158,17 @@ function PersonajesContainer({ data }) {
               <Relacionados>
                 <Titulos>Relacionados</Titulos>
                 <RelacionadosCards>
-                  <Link href={planeta ? `/planeta/${planeta?.slug}` : ''} passHref>
+                  <Link
+                    href={planeta ? `/planeta/${planeta?.slug}` : ''}
+                    passHref>
                     <CardUniverso>
-                      <img src={planeta?.avatar ? `${BASE_URL}${planeta.avatar.url}` : `/images/icons/planet.svg`} />
+                      <img
+                        src={
+                          planeta?.avatar
+                            ? `${BASE_URL}${planeta.avatar.url}`
+                            : `/images/icons/planet.svg`
+                        }
+                      />
                       <div>
                         <h5>Planeta</h5>
                         <span>{planeta ? planeta?.nombre : 'Universo'}</span>

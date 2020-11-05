@@ -74,20 +74,21 @@ function HistoriasContainer({ data }) {
                     </div>
                   </CardUniverso>
                 </Link>
-                {personajes ?
-                  personajes.map(personaje => {
-                    return (
-                      <CardUniverso
-                        key={personaje.id}
-                        href={`/personajes/${personaje.slug}`}>
-                        <img src="/images/slider/2.png" />
-                        <div>
-                          <h5>Personaje</h5>
-                          <span>{personaje.nombre}</span>
-                        </div>
-                      </CardUniverso>
-                    );
-                  }): ''}
+                {personajes
+                  ? personajes.map(personaje => {
+                      return (
+                        <CardUniverso
+                          key={personaje.id}
+                          href={`/personajes/${personaje.slug}`}>
+                          <img src="/images/slider/2.png" />
+                          <div>
+                            <h5>Personaje</h5>
+                            <span>{personaje.nombre}</span>
+                          </div>
+                        </CardUniverso>
+                      );
+                    })
+                  : ''}
               </Relacionados>
             </ArticuloData>
 

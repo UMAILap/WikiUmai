@@ -330,13 +330,13 @@ export const ContSinopsis = styled.div`
     color: ${leerColor(colores.violeta)};
     font-family: 'Proxima nova';
   }
-  a{
+  a {
     color: ${leerColor(colores.rosa)} !important;
   }
-  strong{
+  strong {
     font-weight: bolder;
   }
-  ul{
+  ul {
     font-family: 'Proxima nova';
     color: ${leerColor(colores.violeta)};
     display: flex;
@@ -344,7 +344,7 @@ export const ContSinopsis = styled.div`
     list-style-type: circle !important;
     margin-left: 1em;
     width: 100%;
-    li{
+    li {
       line-height: 30px !important;
       margin-bottom: 1em;
       width: 80%;

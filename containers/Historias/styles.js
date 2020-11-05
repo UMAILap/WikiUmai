@@ -106,10 +106,10 @@ export const ArticuloData = styled.div`
   img {
     width: 100%;
   }
-  a{
+  a {
     color: ${leerColor(colores.rosa)} !important;
   }
-  ul{
+  ul {
     font-family: 'Proxima nova';
     color: ${leerColor(colores.violeta)};
     display: flex;
@@ -118,7 +118,7 @@ export const ArticuloData = styled.div`
     margin-left: 1em;
     width: 100%;
     line-height: 30px !important;
-    li{
+    li {
       line-height: 30px !important;
       margin-bottom: 1em;
       width: 80%;

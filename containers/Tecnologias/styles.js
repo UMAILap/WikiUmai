@@ -106,7 +106,7 @@ export const ArticuloData = styled.div`
   img {
     width: 100%;
   }
-  a{
+  a {
     color: ${leerColor(colores.rosa)};
   }
 `;
