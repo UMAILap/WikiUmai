@@ -3,7 +3,7 @@ import { getDataCollection } from 'utils';
 
 import { Layout, Reglas as ReglasContainer } from 'containers';
 
-function Reglas({data}) {
+function Reglas({ data }) {
   return (
     <Layout>
       <ReglasContainer data={data} />
