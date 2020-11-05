@@ -3,16 +3,16 @@ import { getDataCollection } from 'utils';
 
 import { Layout, Reglas as ReglasContainer } from 'containers';
 
-function Reglas(props) {
+function Reglas({data}) {
   return (
     <Layout>
-      <ReglasContainer data={props} />
+      <ReglasContainer data={data} />
     </Layout>
   );
 }
 export async function getServerSideProps({ res }) {
   const data = await getDataCollection('ayuda', res);
-  console.log('hola', res);
+  console.log('hola', data);
   return { props: { data } };
 }
 
