@@ -100,11 +100,29 @@ export const ArticuloData = styled.div`
     padding-top: 10px;
     font-family: 'Proxima Nova';
     font-size: 17px;
-    color: ${leerColor(colores.negro)};
+    color: ${leerColor(colores.violeta)};
     line-height: 38px;
   }
   img {
     width: 100%;
+  }
+  a{
+    color: ${leerColor(colores.rosa)} !important;
+  }
+  ul{
+    font-family: 'Proxima nova';
+    color: ${leerColor(colores.violeta)};
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle !important;
+    margin-left: 1em;
+    width: 100%;
+    line-height: 30px !important;
+    li{
+      line-height: 30px !important;
+      margin-bottom: 1em;
+      width: 80%;
+    }
   }
 `;
 export const Relacionados = styled.div`

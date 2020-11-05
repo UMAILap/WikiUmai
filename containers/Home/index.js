@@ -180,7 +180,7 @@ function HomeContainer({ data, planetas }) {
                                 ? '/placeholderAvatar.png'
                                 : '/placeholderAvatar.png'
                             }>
-                            <Contenidos>
+                            {/* <Contenidos>
                               <ImagenesContenidos>
                                 {' '}
                                 <img src="/SOFI.png" />
@@ -188,7 +188,7 @@ function HomeContainer({ data, planetas }) {
                               <EdicionActualizacionesTitulo>
                                 alum.multimedia
                               </EdicionActualizacionesTitulo>
-                            </Contenidos>
+                            </Contenidos> */}
 
                             <Contenidos>
                               <ImagenesContenidos>

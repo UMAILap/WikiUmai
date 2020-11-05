@@ -74,7 +74,7 @@ function HistoriasContainer({ data }) {
                     </div>
                   </CardUniverso>
                 </Link>
-                {personajes.length &&
+                {personajes ?
                   personajes.map(personaje => {
                     return (
                       <CardUniverso
@@ -87,7 +87,7 @@ function HistoriasContainer({ data }) {
                         </div>
                       </CardUniverso>
                     );
-                  })}
+                  }): ''}
               </Relacionados>
             </ArticuloData>
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 const StyledH2 = styled.h2`
-  font-size: 20px;
+  font-size: 24px;
   font-style: bold;
   color: ${leerColor(colores.violeta)};
   /* color: ${props => (props.isColorPink ? leerColor(colores.rosa) : '')}; */
@@ -17,7 +17,7 @@ const StyledH2 = styled.h2`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (min-width: ${breakpoints.laptop}) {

@@ -6,6 +6,7 @@ export const ParteSuperior = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 1.5em;
 `;
 
 export const SectorTitulos = styled.div`

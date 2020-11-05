@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { breakpoints, leerColor, colores } from 'constants';
 
 export const Container = styled.footer`
-margin-top: 50px;
 height: 100px;
   display:flex;
   /* max-height: 100px; */

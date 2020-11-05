@@ -91,7 +91,7 @@ function PersonajesUniversoContainer({ data }) {
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>
                             <img src="/images/icons/planet.svg" />
-                            <h6>{personaje.planeta?.nombre}</h6>
+                            <h6>{personaje.planeta ? personaje.planeta.nombre : 'Universo'}</h6>
                           </PersonajePlaneta>
 
                           <Caracteristicas>

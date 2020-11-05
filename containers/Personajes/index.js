@@ -158,12 +158,12 @@ function PersonajesContainer({ data }) {
               <Relacionados>
                 <Titulos>Relacionados</Titulos>
                 <RelacionadosCards>
-                  <Link href={`/planeta/${planeta?.slug}`} passHref>
+                  <Link href={planeta ? `/planeta/${planeta?.slug}` : ''} passHref>
                     <CardUniverso>
-                      <img src={`${BASE_URL}${planeta.avatar?.url}`} />
+                      <img src={planeta?.avatar ? `${BASE_URL}${planeta.avatar.url}` : `/images/icons/planet.svg`} />
                       <div>
                         <h5>Planeta</h5>
-                        <span>{planeta?.nombre}</span>
+                        <span>{planeta ? planeta?.nombre : 'Universo'}</span>
                       </div>
                     </CardUniverso>
                   </Link>
@@ -212,7 +212,7 @@ function PersonajesContainer({ data }) {
                 </Dato>
                 <Dato>
                   <h6>Planeta</h6>
-                  <p>{planeta && planeta.nombre}</p>
+                  <p>{planeta ? planeta.nombre : 'Universo'}</p>
                 </Dato>
                 <Dato>
                   <h6>Profesión</h6>

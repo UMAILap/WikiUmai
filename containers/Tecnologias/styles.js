@@ -106,6 +106,9 @@ export const ArticuloData = styled.div`
   img {
     width: 100%;
   }
+  a{
+    color: ${leerColor(colores.rosa)};
+  }
 `;
 export const Relacionados = styled.div`
   display: flex;

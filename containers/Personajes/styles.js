@@ -330,6 +330,26 @@ export const ContSinopsis = styled.div`
     color: ${leerColor(colores.violeta)};
     font-family: 'Proxima nova';
   }
+  a{
+    color: ${leerColor(colores.rosa)} !important;
+  }
+  strong{
+    font-weight: bolder;
+  }
+  ul{
+    font-family: 'Proxima nova';
+    color: ${leerColor(colores.violeta)};
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle !important;
+    margin-left: 1em;
+    width: 100%;
+    li{
+      line-height: 30px !important;
+      margin-bottom: 1em;
+      width: 80%;
+    }
+  }
 `;
 
 export const GaleriaImagenes = styled.div`
