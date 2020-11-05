@@ -24,7 +24,8 @@ Recordá importarlo en la página que lo utilices.
 **CardUniveso:** Se utiliza en las páginas que deseen tener una sección de "Relacionados". Es una vista previa de planetas, personajes, etc.
 **HitosTimeLine:** Slider (Slick) de hitos. Está en 'Planetas', 'CrearPersonaje', 'CrearHistoria'.
 **ListaPerfil:** Es la lista de contribuciones que hizo el usuario en la wiki. Recibe de Perfil un array con objetos que adentro guardan el tipo y título de cada contribución.
-**MapaArticulos:** Nav de 'Tecnologías', 'Historias'.
+**MapaArticulos:** Nav de los componentes 'Tecnologías', 'Historias'.
+**Markdown** son los datos que se muestran en la grilla delos personajes, historias y tcnologias. Se utilizan para crear los cuadrados estilo card.
 **MiPerfil:** Son los datos de la cuenta, foto, nombre, usuario, mail y botones de acción para cambiarlos.
 **PasosPersonaje**: Carpeta con subcarpetas de los distintos pasos de creación de personaje.
 **PlanetasPills:** Listado de planetas con PROPS. Está en la página 'CrearPersonaje', 'Personajes del Universo', 'Historias del Universo', 'Tecnologías del
