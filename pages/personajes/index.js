@@ -22,7 +22,7 @@ function PersonajesUniverso({ data, pageNumber, totalPages, filter }) {
   console.log({ data });
   return (
     <Layout>
-      <PersonajesUniversoContainer data={data} filter={filter}/>
+      <PersonajesUniversoContainer data={data} filter={filter} />
       {/* <ReactPaginate pageCount={totalPages} pageRangeDisplayed={5} marginPagesDisplayed={2} initialPage={pageNumber-1} onPageChange={(o) => handlePageChange(o)}/> */}
     </Layout>
   );
