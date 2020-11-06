@@ -12,13 +12,14 @@ import {
 
 function IconosPersonajes({ personajes }) {
   const getPersonajesItem = personajes.map(({ nombre, avatar, slug }) => {
+    console.log(avatar)
     return (
       <Link href={'/personajes/' + slug} passHref key={nombre}>
         <a>
           <PersonajesItem
             src={`${
               avatar
-                ? BASE_URL + avatar.url
+                ? BASE_URL + avatar.formats.thumbnail.url
                 : '/placeholderAvatar.png'
             }`}></PersonajesItem>
         </a>
