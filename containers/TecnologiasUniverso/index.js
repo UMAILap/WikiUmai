@@ -22,7 +22,7 @@ function TecnologiasUniversoContainer({ data }) {
   useEffect(() => {
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
-        if (_.includes(filtros, character.planetas[0].slug) === true) {
+        if (_.includes(filtros, character.planetas[0]?.slug) === true) {
           return character;
         }
       });

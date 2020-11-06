@@ -127,7 +127,7 @@ function Header() {
             </div>
           </MenuHamburguesa> */}
           <Logo>
-            <Link href="/index">
+            <Link href="/">
               <a>
                 <img src="/logo.png" />
               </a>

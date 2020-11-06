@@ -23,7 +23,7 @@ function HistoriasUniversoContainer({ data }) {
   useEffect(() => {
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
-        if (_.includes(filtros, character.planeta.slug) === true) {
+        if (_.includes(filtros, character.planeta?.slug) === true) {
           return character;
         }
       });
