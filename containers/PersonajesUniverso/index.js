@@ -77,7 +77,7 @@ function PersonajesUniversoContainer({ data }) {
                         <ImagenPersonaje
                           src={
                             personaje.avatar
-                              ? `${BASE_URL}${personaje.avatar?.url}`
+                              ? `${BASE_URL}${personaje.avatar.formats.thumbnail.url}`
                               : `/placeholderAvatar.png`
                           }
                           alt={`imagen_${personaje.nombre}`}

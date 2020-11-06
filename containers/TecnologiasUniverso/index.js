@@ -64,7 +64,7 @@ function TecnologiasUniversoContainer({ data }) {
                       whileTap={{ scale: 1 }}>
                       <PersonajeInfo>
                         <Titulos>{objeto.nombre}</Titulos>
-                        <p>{objeto.origen || 'FALTA DESCRIPCIÓN ACÁ'}</p>
+                        <p>{objeto.contexto_uso || 'FALTA DESCRIPCIÓN ACÁ'}</p>
 
                         <PersonajeCaracteristica>
                           <PersonajePlaneta>

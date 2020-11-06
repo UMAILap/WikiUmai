@@ -175,7 +175,7 @@ function HomeContainer({ data, planetas }) {
                           <ActualizacionesAlumnos
                             srcImagen={
                               entrada.tipo == 'personajes'
-                                ? `${BASE_URL}${entrada.avatar?.url}`
+                                ? `${BASE_URL}${entrada.avatar?.formats.thumbnail.url}`
                                 : entrada.tipo == 'objetos'
                                 ? '/placeholderAvatar.png'
                                 : '/placeholderAvatar.png'

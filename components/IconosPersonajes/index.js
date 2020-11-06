@@ -12,7 +12,6 @@ import {
 
 function IconosPersonajes({ personajes }) {
   const getPersonajesItem = personajes.map(({ nombre, avatar, slug }) => {
-    console.log(avatar)
     return (
       <Link href={'/personajes/' + slug} passHref key={nombre}>
         <a>
@@ -29,9 +28,11 @@ function IconosPersonajes({ personajes }) {
   return (
     <PersonajesContainer>
       <Titulos>Personajes</Titulos>
-      {personajes.length ?
-      <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados> : <p>No hay personajes para mostrar.</p>
-}
+      {personajes.length ? (
+        <PersonajesRelacionados>{getPersonajesItem}</PersonajesRelacionados>
+      ) : (
+        <p>No hay personajes para mostrar.</p>
+      )}
     </PersonajesContainer>
   );
 }
