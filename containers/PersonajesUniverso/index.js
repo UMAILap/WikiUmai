@@ -20,7 +20,7 @@ import {
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 import _ from 'lodash';
 
-function PersonajesUniversoContainer({ data }) {
+function PersonajesUniversoContainer({ data, filter }) {
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
@@ -30,9 +30,9 @@ function PersonajesUniversoContainer({ data }) {
     }
   }, [data]);
   useEffect(() => {
+    console.log(filtros);
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
-        console.log('CHARACTER', character);
         if (_.includes(filtros, character.planeta?.slug) === true) {
           return character;
         }
@@ -42,7 +42,9 @@ function PersonajesUniversoContainer({ data }) {
       setDataToShow(data);
     }
   }, [filtros, data]);
-
+  useEffect(() => {
+    setFiltros([filter]);
+  }, [])
   return (
     <ContainerMain>
       <ContainerBanner>

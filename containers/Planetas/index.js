@@ -40,7 +40,8 @@ function PlanetasContainer({ data }) {
     hitos,
     articulos,
     avatar,
-  } = data;
+    slug,
+  } = data[0];
 
   return (
     <>
@@ -95,11 +96,11 @@ function PlanetasContainer({ data }) {
 
           <Personajes>
             <IconosPersonajes personajes={personajes}></IconosPersonajes>
-            {/* <ContenedorBoton>
-              <BotonVioleta href="/personajes/crear/">
-                + Agregar personaje
+            <ContenedorBoton>
+              <BotonVioleta href={`/personajes?filter=${slug}`}>
+                Ver más
               </BotonVioleta>
-            </ContenedorBoton> */}
+            </ContenedorBoton>
           </Personajes>
 
           {/* <Articulos>

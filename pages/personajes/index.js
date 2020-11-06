@@ -7,7 +7,7 @@ import {
   PersonajesUniverso as PersonajesUniversoContainer,
 } from 'containers';
 
-function PersonajesUniverso({ data, pageNumber, totalPages }) {
+function PersonajesUniverso({ data, pageNumber, totalPages, filter }) {
   const router = useRouter();
   const handlePageChange = ({ selected }) => {
     console.log('hola', selected);
@@ -22,20 +22,21 @@ function PersonajesUniverso({ data, pageNumber, totalPages }) {
   console.log({ data });
   return (
     <Layout>
-      <PersonajesUniversoContainer data={data} />
+      <PersonajesUniversoContainer data={data} filter={filter}/>
       {/* <ReactPaginate pageCount={totalPages} pageRangeDisplayed={5} marginPagesDisplayed={2} initialPage={pageNumber-1} onPageChange={(o) => handlePageChange(o)}/> */}
     </Layout>
   );
 }
 
 export async function getServerSideProps({ res, query }) {
-  console.log('FUNCO');
+  const filter = query.filter;
+  console.log(filter);
   const pageNumber = query.page ? parseInt(query.page) : 1;
   /* const params = {_start: pageNumber * 10 - 10, _limit: 10}; */
   const data = await getDataCollection('personajes', res);
   const totalEntries = await getDataCollection('personajes/count', res);
   const totalPages = Math.ceil(totalEntries / 10);
-  return { props: { data, pageNumber, totalPages } };
+  return { props: { data, pageNumber, totalPages, filter } };
 }
 
 export default PersonajesUniverso;

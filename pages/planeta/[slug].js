@@ -1,19 +1,19 @@
 import React from 'react';
-import { getCollectionBySlug } from 'utils';
+import { getDataCollection } from 'utils';
 import { Layout, Planetas as PlanetasContainer } from 'containers';
 
-function Planetas(props) {
+function Planetas({data}) {
     return (
         <Layout>
-            <PlanetasContainer data={props} />
+            <PlanetasContainer data={data} />
         </Layout>
     );
 }
 
 export async function getServerSideProps({ res, params }) {
     const { slug } = params;
-    const data = await getCollectionBySlug(slug,'planetas',res)
-    return { props: data }
+    const data = await getDataCollection(`planetas/slug/${slug}`, res);
+    return { props: {data} }
 }
 
 
