@@ -87,6 +87,11 @@ function PlanetasContainer({ data }) {
                 <p>No hay historias para mostrar.</p>
               )}
             </SeccionLinks>
+            <ContenedorBoton>
+              <BotonVioleta href={`/historias?filter=${slug}`}>
+                Ver más
+              </BotonVioleta>
+            </ContenedorBoton>
             {/* <ContenedorBoton>
               <BotonVioleta href="/historias/crear/">
                 + Agregar historia
@@ -137,6 +142,11 @@ function PlanetasContainer({ data }) {
                 <p>No hay objetos para mostrar.</p>
               )}
             </SeccionLinks>
+            <ContenedorBoton>
+              <BotonVioleta href={`/tecnologias?filter=${slug}`}>
+                Ver más
+              </BotonVioleta>
+            </ContenedorBoton>
             {/* <ContenedorBoton>
               <BotonVioleta href="/tecnologias/crear/">
                 + Agregar objetos

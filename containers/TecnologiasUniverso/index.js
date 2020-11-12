@@ -15,11 +15,17 @@ import {
 } from './styles';
 import { Wrapper, PlanetasPills, Titulos } from 'components';
 
-function TecnologiasUniversoContainer({ data }) {
+function TecnologiasUniversoContainer({ data, filter }) {
   const [filtros, setFiltros] = useState([]);
   const [dataToShow, setDataToShow] = useState(data);
   const isFlex = true;
   useEffect(() => {
+    if (!_.isEqual(data, dataToShow)) {
+      setDataToShow(data);
+    }
+  }, [data]);
+  useEffect(() => {
+    console.log(filtros);
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
         if (_.includes(filtros, character.planetas[0]?.slug) === true) {
@@ -30,7 +36,15 @@ function TecnologiasUniversoContainer({ data }) {
     } else {
       setDataToShow(data);
     }
-  }, [filtros]);
+  }, [filtros, data]);
+  useEffect(() => {
+    if (filter) {
+      setFiltros([filter]);
+    }else{
+      setFiltros([]);
+    }
+
+  }, []);
 
   return (
     <ContainerMain>

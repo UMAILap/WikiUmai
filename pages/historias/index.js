@@ -5,15 +5,21 @@ import {
   HistoriasUniverso as HistoriasUniversoContainer,
 } from 'containers';
 
-function HistoriasUniverso({ data }) {
+function HistoriasUniverso({ data, filter }) {
   return (
     <Layout>
-      <HistoriasUniversoContainer data={data} />
+      {filter ? <HistoriasUniversoContainer data={data} filter={filter} /> : <HistoriasUniversoContainer data={data} />}
     </Layout>
   );
 }
-export async function getServerSideProps({ res }) {
+export async function getServerSideProps({ res, query }) {
+  const filter = query.filter;
+  console.log(filter);
   const data = await getDataCollection('historias', res);
-  return { props: { data } };
+  if (filter) {
+    return { props: { data, filter } };
+  }else{
+    return { props: { data } };
+  }
 }
 export default HistoriasUniverso;

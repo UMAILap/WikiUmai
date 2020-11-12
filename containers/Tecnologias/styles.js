@@ -22,7 +22,7 @@ export const Tecnologia = styled.div`
     width: 70%;
   }
   @media (min-width: ${breakpoints.laptopL}) {
-    width: 40%;
+    width: 80%;
   }
 `;
 export const TecnologiaNombre = styled.div`

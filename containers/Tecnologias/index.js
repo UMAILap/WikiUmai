@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
+import { BASE_URL } from 'utils';
 import {
   ContainerMain,
   Tecnologia,
@@ -36,6 +36,7 @@ function TecnologiasContainer({ data }) {
     impacto_social,
     personajes,
     hitos,
+    descripcion,
   } = data;
   return (
     <ContainerMain>
@@ -50,10 +51,10 @@ function TecnologiasContainer({ data }) {
               </Nombres>
             </TecnologiaNombre>
             <TecnologiaInfo>
-              {contexto_uso ? (
-                <Markdown source={contexto_uso}></Markdown>
+              {descripcion ? (
+                <Markdown source={descripcion}></Markdown>
               ) : (
-                <p>No hay Contexto de Uso para mostrar.</p>
+                <p>No hay Descripción para mostrar.</p>
               )}
             </TecnologiaInfo>
           </Tecnologia>
@@ -115,7 +116,7 @@ function TecnologiasContainer({ data }) {
                       href={`/planeta/${planeta.slug}`}
                       passHref>
                       <CardUniverso>
-                        <img src="/images/slider/2.png" />
+                        <img src={`${BASE_URL}${planeta.avatar?.formats.thumbnail.url}`} />
                         <div>
                           <h5>Planeta</h5>
                           <span>{planeta.nombre}</span>
@@ -131,7 +132,8 @@ function TecnologiasContainer({ data }) {
                         href={`/personajes/${personaje.slug}`}
                         passHref>
                         <CardUniverso>
-                          <img src="/images/slider/2.png" />
+                          {console.log(personaje)}
+                          <img src={`${BASE_URL}${personaje.avatar?.formats.thumbnail.url}`} />
                           <div>
                             <h5>Personaje</h5>
                             <span>{personaje.nombre}</span>

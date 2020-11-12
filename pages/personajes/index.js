@@ -22,7 +22,8 @@ function PersonajesUniverso({ data, pageNumber, totalPages, filter }) {
   console.log({ data });
   return (
     <Layout>
-      <PersonajesUniversoContainer data={data} filter={filter} />
+      {filter ? <PersonajesUniversoContainer data={data} filter={filter} /> : <PersonajesUniversoContainer data={data} />}
+
       {/* <ReactPaginate pageCount={totalPages} pageRangeDisplayed={5} marginPagesDisplayed={2} initialPage={pageNumber-1} onPageChange={(o) => handlePageChange(o)}/> */}
     </Layout>
   );
@@ -36,7 +37,12 @@ export async function getServerSideProps({ res, query }) {
   const data = await getDataCollection('personajes', res);
   const totalEntries = await getDataCollection('personajes/count', res);
   const totalPages = Math.ceil(totalEntries / 10);
-  return { props: { data, pageNumber, totalPages, filter } };
+  if (filter) {
+    return { props: { data, pageNumber, totalPages, filter } };
+  }else{
+    return { props: { data, pageNumber, totalPages } };
+  }
+
 }
 
 export default PersonajesUniverso;

@@ -10,6 +10,7 @@ export const UniversoCard = styled(motion.a)`
   margin-right: 20px;
   margin-bottom: 20px;
   img {
+    object-fit: cover;
     border-radius: 50%;
     width: 50px !important;
     height: 50px;

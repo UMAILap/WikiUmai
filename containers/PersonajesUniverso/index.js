@@ -43,7 +43,12 @@ function PersonajesUniversoContainer({ data, filter }) {
     }
   }, [filtros, data]);
   useEffect(() => {
-    setFiltros([filter]);
+    if (filter) {
+      setFiltros([filter]);
+    }else{
+      setFiltros([]);
+    }
+
   }, []);
   return (
     <ContainerMain>

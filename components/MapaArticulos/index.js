@@ -11,10 +11,10 @@ function MapaArticulos({ children }) {
     setListItems(h2Arr);
     console.log(h2Arr);
   }, []);
-  
+
   return (
     <Articulos>
-      <MapaTitulo>Mapa Artículos</MapaTitulo>
+      <MapaTitulo>Contenido</MapaTitulo>
       <ArticulosSescciones>
         {listItems &&
           listItems.map(item => (

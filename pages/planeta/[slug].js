@@ -5,7 +5,7 @@ import { Layout, Planetas as PlanetasContainer } from 'containers';
 function Planetas({data}) {
     return (
         <Layout>
-            <PlanetasContainer data={data} />
+            <PlanetasContainer data={data}/>
         </Layout>
     );
 }
