@@ -258,7 +258,7 @@ export const ContenidoPrincipal = styled.div`
   }
   p {
     font-family: 'Proxima Nova';
-    color: ${leerColor(colores.violeta)};
+    color: ${leerColor(colores.negro)};
     font-size: 18px;
     line-height: 38px;
     padding-bottom: 10px;
@@ -327,7 +327,7 @@ export const ContenedorPersonajeGaleria = styled.div`
 export const ContSinopsis = styled.div`
   p {
     font-size: 17px;
-    color: ${leerColor(colores.violeta)};
+    color: ${leerColor(colores.negro)};
     font-family: 'Proxima nova';
   }
   a {
@@ -338,7 +338,7 @@ export const ContSinopsis = styled.div`
   }
   ul {
     font-family: 'Proxima nova';
-    color: ${leerColor(colores.violeta)};
+    color: ${leerColor(colores.negro)};
     display: flex;
     flex-direction: column;
     list-style-type: circle !important;
@@ -348,6 +348,9 @@ export const ContSinopsis = styled.div`
       line-height: 30px !important;
       margin-bottom: 1em;
       width: 80%;
+      a {
+        color: ${leerColor(colores.violeta)} !important;
+      }
     }
   }
 `;

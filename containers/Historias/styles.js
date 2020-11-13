@@ -100,7 +100,7 @@ export const ArticuloData = styled.div`
     padding-top: 10px;
     font-family: 'Proxima Nova';
     font-size: 17px;
-    color: ${leerColor(colores.violeta)};
+    color: ${leerColor(colores.negro)};
     line-height: 38px;
   }
   img {
@@ -111,7 +111,7 @@ export const ArticuloData = styled.div`
   }
   ul {
     font-family: 'Proxima nova';
-    color: ${leerColor(colores.violeta)};
+    color: ${leerColor(colores.negro)};
     display: flex;
     flex-direction: column;
     list-style-type: circle !important;
@@ -122,6 +122,9 @@ export const ArticuloData = styled.div`
       line-height: 30px !important;
       margin-bottom: 1em;
       width: 80%;
+      a {
+        color: ${leerColor(colores.violeta)} !important;
+      }
     }
   }
 `;

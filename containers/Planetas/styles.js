@@ -148,7 +148,7 @@ export const LinksHistorias = styled.a`
 
 export const AgregarNuevas = styled.div`
   grid-template-columns: 0%;
-
+  margin-top: 40px;
   @media (min-width: ${breakpoints.tablet}) {
     width: 100%;
     display: grid;

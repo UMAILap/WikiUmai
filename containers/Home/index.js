@@ -133,7 +133,8 @@ function HomeContainer({ data, planetas }) {
                           src={`${
                             avatar
                               ? BASE_URL + avatar.url
-                              : '/placeholderAvatar.png'
+                              : BASE_URL +
+                                '/uploads/slider_Img_be2e3d6147_19e0273f1b.png'
                           }`}></CardImg>
                       </ContImg>
                       <TituloCard>{nombre}</TituloCard>
