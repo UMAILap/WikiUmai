@@ -42,11 +42,11 @@ export const ContainerHeader = styled.div`
   padding: 10px 0;
 
   @media (max-width: ${breakpoints.laptopL}) {
-    grid-template-columns: 25% auto auto 29%;
+    grid-template-columns: 22% auto auto 29%;
   }
 
   @media (max-width: ${breakpoints.laptop}) {
-    grid-template-columns: 11% 100% auto 20%;
+    grid-template-columns: 10% 90% auto auto;
   }
 `;
 

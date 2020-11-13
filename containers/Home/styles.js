@@ -203,17 +203,18 @@ export const ContImg = styled.div`
   height: 143px;
   overflow: hidden;
 
-  @media (max-width: ${breakpoints.notebook}) {
-    /* max-height: 122px; */
+  @media (max-width: ${breakpoints.laptopL}) {
+    height: 100px;
   }
 
-  @media (max-width: 1438px) {
-    /* max-height: 80px; */
+  @media (max-width: ${breakpoints.laptopL}) {
+    height: 80px;
   }
 
-  @media (max-width: 1023px) {
-    /* max-height: 63px; */
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 130px;
   }
+
 `;
 
 export const CardImg = styled.img`
@@ -227,7 +228,7 @@ export const TituloCard = styled.h2`
   font-family: 'Raleway';
   font-size: ${pxToRem(15)};
   color: ${leerColor(colores.violeta)};
-  padding: 10% 0;
+  padding: 1em 0;
   border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
