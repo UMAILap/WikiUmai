@@ -70,14 +70,14 @@ function PlanetasContainer({ data }) {
         </Wrapper>
       </PlanetasBanner>
 
-      <Wrapper>
+      {/* <Wrapper>
         <ContenedorHitos>
           <Titulos>Hitos</Titulos>
           <ContenidoPlaneta>
             <HitosTimeLine />
           </ContenidoPlaneta>
         </ContenedorHitos>
-      </Wrapper>
+      </Wrapper> */}
       <Wrapper>
         <AgregarNuevas>
           <Historias>
