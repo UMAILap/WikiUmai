@@ -74,8 +74,8 @@ export const ContImg = styled.div`
 `;
 
 export const ImagenPersonaje = styled.img`
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 `;
 
 export const PersonajeInfo = styled.div`
