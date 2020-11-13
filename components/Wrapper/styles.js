@@ -5,7 +5,7 @@ export const WrapperContainer = styled.div`
   max-width: 300px;
   width: 100%;
   display: flex;
-  flex-direction:${props => props.direction};
+  flex-direction: ${props => props.direction};
   margin: 0 auto;
   justify-content: flex-start;
   @media (min-width: ${breakpoints.mobile}) {
@@ -23,7 +23,7 @@ export const WrapperContainer = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    max-width: 850px;
+    max-width: 1000px;
     width: 100%;
   }
 
