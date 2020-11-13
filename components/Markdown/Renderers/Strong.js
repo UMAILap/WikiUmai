@@ -5,6 +5,7 @@ import { breakpoints, leerColor, colores, pxToRem } from 'constants';
 
 const StyledStrong = styled.strong`
   font-weight: bolder;
+  color: ${leerColor(colores.violeta)};
 `;
 function Strong({ children, ...props }) {
   console.log(props);
