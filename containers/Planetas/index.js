@@ -57,7 +57,7 @@ function PlanetasContainer({ data }) {
 
             <Col desktop={3} tablet={12} mobile={12}>
               <BannerImagen>
-                <img src={`${BASE_URL}${avatar?.url}`} />
+                <img src={avatar ? `${BASE_URL}${avatar.url}` : `${BASE_URL}/uploads/slider_Img_be2e3d6147_19e0273f1b.png`} />
               </BannerImagen>
             </Col>
           </Grid>
