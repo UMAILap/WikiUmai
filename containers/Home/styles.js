@@ -214,7 +214,6 @@ export const ContImg = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     height: 130px;
   }
-
 `;
 
 export const CardImg = styled.img`
