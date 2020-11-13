@@ -16,6 +16,8 @@ export const Planetas = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 10px;
   grid-column-gap: 3%;
+  width: 100%;
+  margin-bottom: 2em;
   }
 `;
 export const Planeta = styled(motion.span)`

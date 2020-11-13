@@ -297,7 +297,7 @@ export const ActualizacionesAlumnos = styled.a`
   background-repeat: no-repeat;
   height: 287px;
   max-width: 347px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   justify-content: flex-end;
   img {
