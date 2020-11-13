@@ -40,10 +40,9 @@ function TecnologiasUniversoContainer({ data, filter }) {
   useEffect(() => {
     if (filter) {
       setFiltros([filter]);
-    }else{
+    } else {
       setFiltros([]);
     }
-
   }, []);
 
   return (

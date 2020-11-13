@@ -8,7 +8,11 @@ import {
 function HistoriasUniverso({ data, filter }) {
   return (
     <Layout>
-      {filter ? <HistoriasUniversoContainer data={data} filter={filter} /> : <HistoriasUniversoContainer data={data} />}
+      {filter ? (
+        <HistoriasUniversoContainer data={data} filter={filter} />
+      ) : (
+        <HistoriasUniversoContainer data={data} />
+      )}
     </Layout>
   );
 }
@@ -18,7 +22,7 @@ export async function getServerSideProps({ res, query }) {
   const data = await getDataCollection('historias', res);
   if (filter) {
     return { props: { data, filter } };
-  }else{
+  } else {
     return { props: { data } };
   }
 }

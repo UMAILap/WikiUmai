@@ -67,7 +67,9 @@ function HistoriasContainer({ data }) {
               <Relacionados>
                 <Link href={`/planeta/${planeta.slug}`} passHref>
                   <CardUniverso>
-                    <img src={`${BASE_URL}${planeta.avatar?.formats.thumbnail.url}`} />
+                    <img
+                      src={`${BASE_URL}${planeta.avatar?.formats.thumbnail.url}`}
+                    />
                     <div>
                       <h5>Planeta</h5>
                       <span>{planeta.nombre}</span>
@@ -80,9 +82,13 @@ function HistoriasContainer({ data }) {
                         <CardUniverso
                           key={personaje.id}
                           href={`/personajes/${personaje.slug}`}>
-                          <img src={personaje.avatar
-                              ? `${BASE_URL}${personaje.avatar.formats.thumbnail.url}`
-                              : `/placeholderAvatar.png`}/>
+                          <img
+                            src={
+                              personaje.avatar
+                                ? `${BASE_URL}${personaje.avatar.formats.thumbnail.url}`
+                                : `/placeholderAvatar.png`
+                            }
+                          />
                           <div>
                             <h5>Personaje</h5>
                             <span>{personaje.nombre}</span>

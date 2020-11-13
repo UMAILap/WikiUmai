@@ -6,11 +6,14 @@ import {
   TecnologiasUniverso as TecnologiasUniversoContainer,
 } from 'containers';
 
-function TecnologiasUniverso( {data, filter} ) {
+function TecnologiasUniverso({ data, filter }) {
   return (
     <Layout>
-      {filter ? <TecnologiasUniversoContainer data={data} filter={filter} /> : <TecnologiasUniversoContainer data={data} />}
-
+      {filter ? (
+        <TecnologiasUniversoContainer data={data} filter={filter} />
+      ) : (
+        <TecnologiasUniversoContainer data={data} />
+      )}
     </Layout>
   );
 }
@@ -21,7 +24,7 @@ export async function getServerSideProps({ res, query }) {
   const data = await getDataCollection('objetos', res);
   if (filter) {
     return { props: { data, filter } };
-  }else{
+  } else {
     return { props: { data } };
   }
 }
