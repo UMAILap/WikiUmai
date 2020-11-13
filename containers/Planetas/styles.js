@@ -108,7 +108,10 @@ export const ContenedorHitos = styled.div`
 `;
 
 export const SeccionLinks = styled.div`
+display: flex;
+flex-direction: column;
   width: 100%;
+  padding-right: 2rem;
   p {
     font-family: 'Proxima Nova';
     color: ${leerColor(colores.violeta)};
@@ -119,7 +122,7 @@ export const SeccionLinks = styled.div`
   }
 `;
 
-export const LinksHistorias = styled.address`
+export const LinksHistorias = styled.a`
   font-family: 'Proxima Nova';
   color: ${leerColor(colores.violeta)};
   font-size: ${pxToRem(16)};
@@ -127,6 +130,10 @@ export const LinksHistorias = styled.address`
   padding: 0% 0% 1%;
   cursor: pointer;
   text-decoration-line: underline;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
 `;
 
 export const AgregarNuevas = styled.div`

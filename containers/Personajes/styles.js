@@ -357,7 +357,7 @@ export const GaleriaImagenes = styled.div`
   flex-direction: row;
   flex-flow: wrap;
   margin-top: 40px;
-
+  gap: 1em;
   div {
     background-color: ${leerColor(colores.gris)};
   }

@@ -64,6 +64,7 @@ function PersonajesUniversoContainer({ data, filter }) {
               onChange={arr => setFiltros(arr)}
               isFlex={isFlex}
               multiple
+              selected={filtros}
             />
           </PlanetasNav>
 

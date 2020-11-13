@@ -46,7 +46,7 @@ function Titulos({ children, isColorPink, level, className, id, style }) {
 Titulos.propTypes = {
   children: PropTypes.string,
   level: PropTypes.oneOfType([
-    1 | '1' | 2 | '2' | 3 | '3' | '4' | 4 | '5' | 5 | 6 | '6',
+    PropTypes.number, PropTypes.string
   ]),
 };
 

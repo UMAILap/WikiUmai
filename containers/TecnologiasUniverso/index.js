@@ -25,7 +25,6 @@ function TecnologiasUniversoContainer({ data, filter }) {
     }
   }, [data]);
   useEffect(() => {
-    console.log(filtros);
     if (filtros.length !== 0) {
       const dataFiltered = _.filter(data, function(character) {
         if (_.includes(filtros, character.planetas[0]?.slug) === true) {
@@ -60,6 +59,7 @@ function TecnologiasUniversoContainer({ data, filter }) {
               onChange={arr => setFiltros(arr)}
               isFlex={isFlex}
               multiple
+              selected={filtros}
             />
           </PlanetasNav>
 

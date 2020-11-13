@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BASE_URL } from 'utils';
-
+import _ from 'lodash';
 import {
   PlanetasBanner,
   ContenedorBannerInfo,
@@ -78,7 +78,7 @@ function PlanetasContainer({ data }) {
             <Titulos>Historias</Titulos>
             <SeccionLinks>
               {historias.length ? (
-                historias.map(({ id, titulo, slug }) => (
+                _.slice(historias, 0, 10).map(({ id, titulo, slug }) => (
                   <Link key={id} href={`/historias/${slug}`} passHref>
                     <LinksHistorias>{titulo}</LinksHistorias>
                   </Link>
@@ -100,7 +100,7 @@ function PlanetasContainer({ data }) {
           </Historias>
 
           <Personajes>
-            <IconosPersonajes personajes={personajes}></IconosPersonajes>
+            <IconosPersonajes personajes={_.slice(personajes, 0, 20)}></IconosPersonajes>
             <ContenedorBoton>
               <BotonVioleta href={`/personajes?filter=${slug}`}>
                 Ver más
@@ -133,7 +133,7 @@ function PlanetasContainer({ data }) {
             <Titulos>Objetos y Tecnologías</Titulos>
             <SeccionLinks>
               {objetos.length ? (
-                objetos.map(({ id, nombre, slug }) => (
+                _.slice(objetos, 0, 10).map(({ id, nombre, slug }) => (
                   <Link key={id} href={`/tecnologias/${slug}`} passHref>
                     <LinksHistorias>{nombre}</LinksHistorias>
                   </Link>
