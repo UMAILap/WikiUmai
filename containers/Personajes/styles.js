@@ -348,7 +348,7 @@ export const ContSinopsis = styled.div`
       line-height: 30px !important;
       margin-bottom: 1em;
       width: 80%;
-      a{
+      a {
         color: ${leerColor(colores.violeta)} !important;
       }
     }
