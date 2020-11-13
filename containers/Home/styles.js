@@ -167,7 +167,7 @@ export const ContainerSlider = styled.div`
   }
 
   @media (max-width: ${breakpoints.laptopL}) {
-    max-width: 850px;
+    max-width: 1000px;
     overflow: hidden;
   }
 

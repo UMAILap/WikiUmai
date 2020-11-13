@@ -23,7 +23,7 @@ export const WrapperContainer = styled.div`
   }
 
   @media (min-width: ${breakpoints.laptop}) {
-    max-width: 850px;
+    max-width: 1000px;
     width: 100%;
   }
 
