@@ -13,8 +13,7 @@ function PlanetasPills({ isFlex, multiple, onChange, selected }) {
     if (selected.length) {
       setSelectedPlanet(selected);
     }
-
-  }, [selected])
+  }, [selected]);
   function handleClickPlaneta(planet_name) {
     if ((multiple = true && _.includes(selectedPlanet, planet_name))) {
       const copieValuesArray = _.filter(selectedPlanet, function(s) {

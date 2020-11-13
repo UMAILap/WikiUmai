@@ -108,8 +108,8 @@ export const ContenedorHitos = styled.div`
 `;
 
 export const SeccionLinks = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-right: 2rem;
   p {
@@ -130,10 +130,9 @@ export const LinksHistorias = styled.a`
   padding: 0% 0% 1%;
   cursor: pointer;
   text-decoration-line: underline;
-  overflow:hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
 `;
 
 export const AgregarNuevas = styled.div`

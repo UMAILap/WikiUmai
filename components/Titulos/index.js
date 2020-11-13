@@ -45,9 +45,7 @@ function Titulos({ children, isColorPink, level, className, id, style }) {
 
 Titulos.propTypes = {
   children: PropTypes.string,
-  level: PropTypes.oneOfType([
-    PropTypes.number, PropTypes.string
-  ]),
+  level: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 Titulos.defaultProps = {

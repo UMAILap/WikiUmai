@@ -100,7 +100,8 @@ function PlanetasContainer({ data }) {
           </Historias>
 
           <Personajes>
-            <IconosPersonajes personajes={_.slice(personajes, 0, 20)}></IconosPersonajes>
+            <IconosPersonajes
+              personajes={_.slice(personajes, 0, 20)}></IconosPersonajes>
             <ContenedorBoton>
               <BotonVioleta href={`/personajes?filter=${slug}`}>
                 Ver más
