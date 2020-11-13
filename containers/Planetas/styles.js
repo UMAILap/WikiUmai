@@ -5,10 +5,14 @@ export const PlanetasBanner = styled.div`
   background-image: url(/banner_historias.svg);
   background-color: ${leerColor(colores.violetaOscuro)};
   background-size: auto 100%;
-  height: 50vh;
+  min-height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding-bottom: 40px;
+  }
 
   @media (min-width: ${breakpoints.notebook}) {
     background-image: none;
@@ -67,6 +71,8 @@ export const BajadaPlaneta = styled.p`
   height: fit-content;
   font-size: ${pxToRem(14)};
   line-height: 30px;
+  max-height: 150px;
+  overflow: hidden;
   @media (min-width: ${breakpoints.laptop}) {
     font-size: ${pxToRem(17)};
     line-height: 30px;
@@ -84,6 +90,11 @@ export const BannerImagen = styled.div`
     width: 220px;
     height: 220px;
     border: 4px solid ${leerColor(colores.naranja)};
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 180px;
+      height: 180px;
+    }
   }
 
   @media (min-width: ${breakpoints.laptop}) {
